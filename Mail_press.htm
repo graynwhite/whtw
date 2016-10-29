@@ -1,0 +1,113 @@
+<HTML>
+<head>
+<TITLE>
+Press Release Form
+</TITLE>
+
+</head>
+<BODY bgcolor="#FFFF33" text="#000000" alink="#FF0000" vlink="#FF00FF" link="#0000FF">
+<h1>Press Release Mail control</h1>
+&nbsp;<hr>
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.source_name.value == "")
+  {
+    alert("Please enter a value for the \"Source name required\" field.");
+    theForm.source_name.focus();
+    return (false);
+  }
+
+  if (theForm.source_address.value == "")
+  {
+    alert("Please enter a value for the \"Address required\" field.");
+    theForm.source_address.focus();
+    return (false);
+  }
+
+  if (theForm.source_city.value == "")
+  {
+    alert("Please enter a value for the \"source_city\" field.");
+    theForm.source_city.focus();
+    return (false);
+  }
+
+  if (theForm.source_phone.value == "")
+  {
+    alert("Please enter a value for the \"source_phone\" field.");
+    theForm.source_phone.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><FORM METHOD= GET Action="http://www.graynwhite.com/cgi-bin/mail_press.cgi" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
+<TABLE ALIGN="center" BORDER="1" WIDTH="905" height="367" >
+<TR><TD width="6" height="38">&nbsp;</TD><TD width="295" height="38">Password:<br>(Only authorized members can use this system.)</TD>
+  <TD width="582" height="38"><INPUT TYPE="password" NAME="pswrd" SIZE="8" MAXLENGTH="8"></TD></TR>
+<TR><TD width="6" height="21">
+&nbsp;</TD>
+  <TD width="295" height="21">
+Club submitting Press Release</TD>
+<TD width="582" height="21">
+<input type="radio" name="Club" value="Sailing Singles" checked>Sailing Singles
+<input type="radio" name="Club" value="Somerset Singles Ski and Golf Club">Somerset</TD>
+</TR>
+<TR><TD width="6" height="38">
+&nbsp;</TD>
+  <TD width="295" height="38">
+Email From:<br>(Your E-mail Address)</TD>
+<TD width="582" height="38">
+<INPUT TYPE=TEXT NAME=email_from SIZE="40"></TD>
+</TR>
+<TR><TD width="6" height="38">&nbsp;</TD><TD width="295" height="38">Signature:<br>(Your Name and optionally your phone number)</TD>
+  <TD width="582" height="38"><INPUT TYPE="text" NAME="signature" SIZE="40" MAXLENGTH="40"></TD></TR>
+
+<TR><TD width="6" height="22">&nbsp;</TD>
+  <TD width="295" height="22">Date of Event</TD>
+<TD width="582" height="22">
+<input type="text" name="event_date" size="20"></TD>
+</tr>
+
+<TR><TD width="6" height="23">&nbsp;</TD>
+  <TD width="295" height="23">Subject:</TD>
+<TD width="582" height="23">
+<INPUT TYPE=TEXT NAME=subject SIZE=40>
+</TD>
+</tr>
+<TR><TD width="6" height="22">&nbsp;</TD><TD width="295" height="22">Person to contact for further information</TD>
+  <TD width="582" height="22">
+<!--webbot bot="Validation" s-display-name="Source name required" b-value-required="TRUE" --><input type="text" name="source_name" size="40"></TD></TR>
+<TR><TD width="6" height="22">&nbsp;</TD><TD width="295" height="22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Address:</TD>
+  <TD width="582" height="22">
+<!--webbot bot="Validation" s-display-name="Address required" b-value-required="TRUE" --><input type="text" name="source_address" size="40"></TD></TR>
+<TR><TD width="6" height="22">&nbsp;</TD><TD width="295" height="22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; City , state and zip</TD>
+  <TD width="582" height="22">
+<!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="source_city" size="40"></TD></TR>
+<TR><TD width="6" height="27">&nbsp;</TD><TD width="295" height="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Daytime Phone number</TD>
+  <TD width="582" height="27">
+<!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="source_phone" size="20"></TD></TR>
+<TR><TD width="6" height="28">&nbsp;</TD><TD width="295" height="28">Action:</TD>
+  <TD width="582" height="28">
+<input type="radio" name="action" value="test" checked >Test (You will see how your message will be composed.)<br>
+<INPUT TYPE="radio" NAME="action" VALUE="send">
+Send the message<br>
+&nbsp;</TD></TR>
+</TABLE>
+
+<p>
+It is advisable to compose your message in Notepad or some other text processing 
+program that does some spell checking<br>
+
+and then pasting into the message box below Your browser may erase the password 
+on submission in which case it&nbsp; must be re-entered .<p>
+<b>Message</b>:<br>
+<textarea cols=80 rows=10 name=messagebody>
+</textarea>
+<p align="center">
+<INPUT TYPE=SUBMIT VALUE="Email Message">
+<INPUT TYPE=RESET VALUE="Clear Message">
+<hr>
+</FORM>
+</BODY>
+</HTML>

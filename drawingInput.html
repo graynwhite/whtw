@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prize Drawing Input</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="drawingInput.html" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+<meta name="viewport" content="width=device-width, user-scalable=yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon"
+ 	type="image/vnd.microsoft.icon"
+ 	href="../gwlogo.gif" />
+    
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/template.css" />
+	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/validationEngine.jquery.css" />
+	<link rel="stylesheet" href="mobile.css"/>
+    
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
+		<script src="http://www.graynwhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
+		<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
+		<script src="http://www.graynwhite.com/dough/Dough/dough.min.js"></script>
+        
+    <script>
+	$(document).ready(function(){
+	
+	 
+	   
+
+  jQuery("#formInput").validationEngine(
+  
+  );
+});
+</script>
+<script src="http://www.graynwhite.com/gwanalytics.js"></script>
+</head>
+<body>
+	
+    <div data-role="page" id="page1">
+    <div data-role="header">
+	  <h1>Input Form for Prize Drawing</h1>
+	  </div>
+      <div data-role="content">
+      <form action="post_prize_input.php" method="post">
+      
+	  <label for "firstname">My first name</label>
+    <input type="text" id="firstname" name="firstname"/><br />
+    
+    <label for "lastname">My last name&nbsp;</label>
+    <input type="text" id="lastname" name="lastname"/><br />
+    
+    <label for "myemail">My Email</label>
+    <input type="email" id="myemail" name="myemail"/><br />
+    <br />
+    
+    <div data-role='fieldcontain'>
+    <fieldset data-role="controlgroup" data-type="horizontal">
+    <legend>Sign up:</legend>
+    
+<label for 'signupyes'>Yes</label>
+<input type="radio" name="signupans" id="signupyes" checked="checked" value="yes"  />
+<label for 'signupregistered'>Already signed up</label>
+<input type="radio" name="signupans" id="signupregistered" value="registered" />
+<label for 'signupno'>No</label>
+<input type="radio" name="signupans" id="signupno" value="no" />
+</fieldset>
+</div> <!-- field contain -->
+ <input type="submit" value="Submit">   
+   
+    </form>
+    <div data-role="footer">
+  <h1>Prize drawing input</h1>
+  </div> 
+    </div>	<!--end of content --> 
+    </div> <!-- end of page -->
+    
+</body>
+</html>

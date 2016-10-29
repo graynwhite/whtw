@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+	<TITLE>Set a cookie based on a form</TITLE>
+	<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+		<!-- Hide script from older browsers
+	
+		expireDate = new Date
+		expireDate.setMonth(expireDate.getMonth()+6)
+	
+		userName = ""
+		if (document.cookie != "") {
+			userName = document.cookie.split("=")[1]
+		}
+	
+		function setCookie() {
+			userName = document.myForm.nameField.value
+			document.cookie = "userName="+userName+";expires=" + expireDate.toGMTString()
+		}
+		
+		// End hiding script -->
+	</SCRIPT>	
+</HEAD>
+<BODY BGCOLOR="WHITE" onLoad="document.myForm.nameField.value = userName">
+<FORM NAME="myForm">
+	<H1>Enter your name:<INPUT TYPE="TEXT" NAME="nameField" onBlur="setCookie()"></H1>
+</FORM>
+</BODY>
+</HTML>
+

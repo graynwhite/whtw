@@ -1,0 +1,247 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Peggy Jo's Cultural events input</title>
+<meta name="keywords" content="cultural peggy jo wise marcuse events michigan">
+<Script language=Javascript>
+<!--  Hide script from older browsers
+function cleardates()
+{
+	
+	document.culture.day1.value="";
+	document.culture.Time1.value="";
+	document.culture.day2.value="";
+	document.culture.Time2.value="";
+	document.culture.day3.value="";
+	document.culture.Time3.value="";
+	document.culture.day4.value="";
+	document.culture.Time4.value="";
+	document.culture.day5.value="";
+	document.culture.Time5.value="";
+	document.culture.day6.value="";
+	document.culture.Time6.value="";
+	document.culture.day7.value="";
+	document.culture.Time7.value="";
+	
+}
+function GetThisDay(field) {
+  dayName = new Array ("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+  day_string = field.value
+  day_array = day_string.split("/")
+  
+   var thismonth = day_array[0]-1  
+  this_day = new Date(day_array[2],thismonth,day_array[1])
+  var dowPtr = this_day.getDay()
+  var dow = dayName[dowPtr]
+  
+  alert("Is the day correct?" + " " + dowPtr+ " " + dow + " " + day_array[2] + "-" + day_array[0] + "-" + day_array[1] )
+  
+}
+
+function check_page(form) {
+   // set var radio_choice to false
+var radio_choice = false;
+dayName = new Array ("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+  day_string = form.Start_Date.value
+  day_array = day_string.split("/")
+  
+   var thismonth = day_array[0]-1  
+  this_day = new Date(day_array[2],thismonth,day_array[1])
+  var dowPtr = this_day.getDay()
+  var dow = dayName[dowPtr]
+  if (dow != form.day1.value){
+  alert("Day of week is not correct. It should be " + dow)
+  form.day1.focus()
+  return false
+  
+  }
+// Loop from zero to the one minus the number of radio button selections
+for (counter = 0; counter < form.Venue.length; counter++)
+{
+// If a radio button has been selected it will return true
+// (If not it will return false)
+if (form.Venue[counter].checked)
+radio_choice = true; 
+}
+
+if (!radio_choice)
+{
+// If there were no selections made display an alert box 
+alert("Please select a Venue.")
+return (false);
+}
+if (form.showtitle.value==""){
+alert("Show title must not be blank")
+form.showtitle.focus() 
+return false
+}
+if (form.day1.value==""){
+alert("Day one  must not be blank")
+form.day1.focus() 
+return false
+}
+if (form.Time1.value==""){
+alert("Time one  must not be blank")
+form.Time1.focus() 
+return false
+}
+
+if (form.Start_Date.value==""){
+alert("Start Date must not be blank")
+form.Start_Date.focus() 
+return false
+}
+
+
+return (true);
+    
+	
+} 
+//-->
+
+</script>
+</head>
+
+<body>
+
+<h1>Peggy Jo's Cultural and Charitable Event Input.</h1>
+<form method="post" action="http://www.graynwhite.com/whtw/peggyjo_event_input.php"
+         onSubmit="return check_page(this)" name="culture">
+	<p>&nbsp;</p>
+	<table border="1" width="100%">
+		<tr>
+			<td width="104">Venue</td>
+		  <td><p><strong>DSO</strong>
+	        <input type="radio" value="dso" name="Venue">
+		    DSO
+			<input type="radio" name="Venue" value="allesee">
+			Allesee Hall
+			<input type="radio" name="Venue" value="mbox">
+			Music Box
+			<br>
+			<input type="radio" name="Venue" value="MT">
+			Masonic Temple</p>
+		    <p><strong>Chamber Music Society of Detroit</strong>
+		      <input name="Venue" type="radio" value="cmsd">
+		      <br>
+	          <strong>WSU</strong>
+	          <input type="radio" name="Venue" value="Bonstelle">
+		      Bonstelle
+		      <input type="radio" name="Venue" value="Hillberry">
+		      Hillberry<br>
+	          <strong>Meadowbrook Theater</strong>
+	          <input name="Venue" type="radio" value="meadowbrook">
+	          <br>
+	          <strong>Stagecrafters</strong>
+	          <input type="radio" name="Venue" value="Baldwin">
+		      Baldwin
+		      <input type="radio" name="Venue" value="Baldwin2">
+		      Baldwin 
+		      2nd Stage<br> 
+	        </p>
+		    <label>
+			<input name="Venue" type="radio" value="ridgedale">
+			Ridgedale Playhouse</label>
+            <input name="Venue" type="radio" value="villagePlayers">			
+            Village Players<br>
+			<input type="radio" name="Venue" value="Auburn">OCC 
+			Auburn<input type="radio" name="Venue" value="Highland">OCC Highland
+			<input type="radio" name="Venue" value="Orchard">OCC Orchard
+			<input type="radio" name="Venue" value="RoyalOak">			OCC Royal Oak<br>
+			<input type="radio" name="Venue" value="bbso">
+			BirmBloomSO<br>
+			<label>
+			<strong>U 
+			of M</strong>
+			<input name="Venue" type="radio" value="hillAud">
+			Hill Auditoriun 
+			<input name="Venue2" type="radio" value="power">
+			Power Center
+			<input name="Venue2" type="radio" value="rackham">
+			Rackham AA
+			<input name="Venue2" type="radio" value="michtheater">
+			Michigan Theater Ann Arbor<br>
+			<input name="Venue2" type="radio" value="stFrancis">
+			St. Francis Assisi Ann Arbor<br>
+			<strong>MSU</strong> 
+			<input name="Venue2" type="radio" value="wharton">
+			Wharton Center
+            <input name="Venue2" type="radio" value="fairchild">			
+            Fairchild Theater 
+            <input name="Venue2" type="radio" value="cobbhall">
+            Cobb Great Hall 
+            <input name="Venue2" type="radio" value="pasant">
+            Pasant Theatre<br>
+            <input name="Venue2" type="radio" value="msuauditorium">            
+            MSU Auditorium
+            <br>
+		  </label></td>
+		</tr>
+		
+		<tr>
+			<td width="104">Start Date</td>
+		  <td><input name="Start_Date" type="text" size="12" >
+		    <label for="textfield">End_date</label>
+            <input name="end_date" type="text" id="end_date" size="12">
+            <label></label></td>
+		</tr>
+		<tr>
+			<td width="104">Performances</td>
+		  <td>
+			<table border="1" width="20%">
+				<tr>
+					<th width="48">Day</th>
+					<th>Time</th>				</tr>
+				<tr>
+					<td width="48"><input type="text" name="day1" size="3"></td>
+					<td><input type="text" name="Time1" size="10"></td>
+				</tr>
+				<tr>
+					<td width="48"><input type="text" name="day2" size="3"></td>
+					<td><input type="text" name="Time2" size="10"></td>
+				</tr>
+				<tr>
+					<td width="48"><input type="text" name="day3" size="3"></td>
+					<td><input type="text" name="Time3" size="10"></td>
+				</tr>
+				<tr>
+					<td width="48"><input type="text" name="day4" size="3"></td>
+					<td><input type="text" name="Time4" size="10"></td>
+				</tr>
+				<tr>
+					<td width="48"><input type="text" name="day5" size="3"></td>
+					<td><input type="text" name="Time5" size="10"></td>
+				</tr>
+				<tr>
+					<td width="48"><input type="text" name="day6" size="3"></td>
+					<td><input type="text" name="Time6" size="10"></td>
+				</tr>
+				<tr>
+					<td width="48"><input type="text" name="day7" size="3"></td>
+					<td><input type="text" name="Time7" size="10"></td>
+				</tr>
+		</table>		
+	    <input name="ClearDates" type="button" id="ClearDates" onClick="cleardates()"  value="Clear Dates">		</tr>
+		<tr>
+			<td width="104">Title</td>
+			<td><input type="text" name="showtitle" size="70"> 
+			  Price
+			<input type="text" name="price" size="12"></td>
+		</tr>
+		<tr>
+			<td width="104">Description</td>
+			<td><textarea name="Description" cols="100" rows="2"></textarea></td>
+		</tr>
+		<tr>
+		  <td>Media Data </td>
+		  <td><textarea name="media" cols="100" rows="6" id="media"></textarea></td>
+	  </tr>
+		</table>
+	<p>&nbsp;<input type="submit" value="Submit" name="Submit"><input type="reset" value="Reset" name="B2"></p>
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Advertising Control</title>
+<style type="text/css">
+		@import "http://o.aolcdn.com/dojo/1.0.0/dojox/grid/_grid/tundraGrid.css";
+        @import "http://o.aolcdn.com/dojo/1.0.0/dijit/themes/tundra/tundra.css";
+        @import "http://o.aolcdn.com/dojo/1.0.0/dojo/resources/dojo.css"
+    </style>
+    <script type="text/javascript" src="http://o.aolcdn.com/dojo/1.0.0/dojo/dojo.xd.js"
+        djConfig="parseOnLoad: true"></script>
+	<script type="text/javascript"
+    src="http://o.aolcdn.com/dojo/1.0.0/dojo/dojo.xd.js">
+	</script>
+  <script type="text/javascript">	
+   
+       dojo.require("dojo.parser");
+	    dojo.require("dijit.form.Button");
+	   dojo.require("dijit.form.TextBox");
+		dojo.require("dijit.form.CheckBox");
+		dojo.require("dijit.form.TextArea");
+		dojo.require("dijit.form.DateTextBox");
+		 dojo.require("dojo.data.ItemFileReadStore");
+         dojo.require("dojox.grid.Grid");
+         dojo.require("dojox.grid._data.model");
+         dojo.require("dojo.parser");
+		// a grid view is a group of columns. 
+                var view1 = {
+                        cells:[[
+                                {name: 'Namespace', field: "namespace"},
+                                {name: 'Class', width: "25em", field: "className"}
+                          ],
+						  [
+						  	(name : 'Summary', colSpan: "2" field: "summary")
+						]	
+                };
+                // a grid layout is an array of views.
+                var layout = [ view1 ];
+		
+		function hello() 
+		{
+		 console.log ("at hello");
+		 }
+		function getGrid()
+		{
+      	dojo.xhrPost( 
+		
+		{ 
+        // The following URL must match that used to test the server.
+        url: "http://www.graynwhite.com/whtw/advertising_control.php", 
+        handleAs: "json",
+		timeout: 5000, 
+
+        // The LOAD function will be called on a successful response.
+        load: function(response, ioArgs) {
+         
+          return response; 
+        },
+
+        // The ERROR function will be called in an error case.
+        error: function(response, ioArgs) {
+          console.error("HTTP status code: ", ioArgs.xhr.status); 
+          return response; 
+          }
+		  
+        }
+		)
+		}// end of function getgrid
+      
+		function call_function()
+		 {
+              console.log("Button was clicked.");
+			 hello();
+           }
+    </script>
+</head>
+
+<body class="tundra">
+<h1>Peggy Jo Studio Advertising Control</h1>
+
+
+
+
+	<td><table width="720" border="2" cellpadding="2">
+      <tr>
+        <th width="360" scope="col">
+		<div dojoType="dojo.data.ItemFileReadStore"
+                jsId="jsonStore" url="dijits.txt">
+        </div>
+        <div dojoType="dojox.grid.data.DojoData" jsId="model"
+                rowsPerPage="20" store="jsonStore" query="{ namespace: '*' }">
+        </div>
+		
+        <div id="grid" dojoType="dojox.Grid" model="model" structure="layout"></div>
+		
+        <th width="360" scope="col"><p align="left">ID</strong>
+            <input name="id" type="text" id="id" size="10"  readonly="true">
+        </p>
+        <p align="left"><strong>Name</strong>
+          <input name="addName" type="text" id="addName" size="30" dojotype="dijit.form.TextBox" />
+          <br /><strong>Add Text</strong> </p>
+        <p>
+          <textarea name="text" cols="50" rows="12" id="text"
+		dojotype="dijit.form.TextArea"></textarea>
+        </p>
+        <p align="left">Priority
+          <input name="priority" type="text" id="priority" size="2" maxlength="30" 
+		dojotype="dijit.form.TextBox"
+		trim="true" propercase="true" />
+        </p>
+        <p align="left"><strong>Status</strong>
+          <input name="status" type="radio" value="active" checked="checked" />
+Active
+<input name="status" type="radio" value="inactive" />
+        Inactive</p>
+        <p align="left"><strong>Begin Date</strong> 
+          <input name="date_begin" type="text" id="date_begin" 
+		dojotype="dijit.form.DateTextBox" required="true" selector="date" datepattern="yyyy-mm-dd" />
+        </p>
+        <p align="left"><strong>End Date</strong>
+          <input name="date_end" type="text" id="date_end" 
+		dojotype="dijit.form.DateTextBox" required="true"selector="date"datepattern="yyyy-mm-dd"/>
+</p>
+        <p><strong>Weeks</strong>
+          <input type="checkbox" name="checkbox" value="yes"
+		dojotype="dijit.form.CheckBox" />
+First
+<input type="checkbox" name="checkbox2" value="yes" 
+			dojotype="dijit.form.CheckBox"/>
+Second
+<input type="checkbox" name="checkbox3" value="yes" 
+			dojotype="dijit.form.CheckBox"/>
+Third
+<input type="checkbox" name="checkbox4" value="yes" 
+			dojotype="dijit.form.CheckBox"/>
+Fourth
+<input type="checkbox" name="checkbox5" value="yes" 
+			dojotype="dijit.form.CheckBox"/>
+Fifth</p>
+        <p><button dojotype="dijit.form.Button" onclick="call_function()"
+		iconclass="dijitEditorIcon dijitEditorIconPaste" >
+		        Update
+        </button>
+		<button dojotype="dijit.form.Button" onclick="call_function()">
+                Insert        </button>
+		<button dojotype="dijit.form.Button" onclick="call_function()">
+                Delete        </button>
+		  <button dojotype="dijit.form.Button" onclick="call_function()">
+      Exit        </button> </p></th>
+      </tr>
+ </table>
+	
+</body>
+</html>

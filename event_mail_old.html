@@ -1,0 +1,174 @@
+<HTML>
+<HEAD>
+<TITLE>Club event Change screen</TITLE>
+<META NAME="generator" CONTENT="Microsoft FrontPage 5.0">
+<Script language="javascript1.1">
+<!--
+function check_page(form){
+	var foundError = false;
+	if (form.Orgname.value.length = 0){
+		alert('Organization name must be entered')
+		foundError = true
+		form.Orgname.focus()
+		return false
+	}
+	if (!re.test(form.EMAILID.value)) {
+		alert("Invalid email Address")
+		foundError = true
+		form.emailid.focus()
+		return false
+	}
+	
+} // end of check page 
+function clear_form(form){
+form.reset();
+}
+function submit_page(form){
+var foundError = false;
+var Radio_state = "   ";
+pass = new MakeArray(11);
+pass[0]= "water";
+pass[1]= "holes";
+pass[2]= "mounds";
+pass[3]= "east";
+pass[4]= "west";
+pass[5]= "hope";
+pass[6]= "good";
+pass[7]= "boats"; 
+pass[8]= "nocars";
+pass[9]= "bird";
+pass[10]= "fjc719";
+
+//
+	
+	
+
+	
+	if (!foundError) {
+		form.submit()
+	}	
+// Check for blank field
+function isFieldBlank(theField) {
+	if (theField.value.length == 0)
+	     return true;
+	else
+	     return false;
+    }	
+// make array
+function MakeArray(n){
+	this.length = n;
+	for (var i = 1;i <=n; i ++){
+	 this[i] = 0}
+	return this
+ }	
+}
+//-->
+
+</script>
+
+
+<style type="text/css">
+<!--
+.Required {
+	color: #FF0000;
+}
+.fieldName {
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+}
+.expalanation {
+	font-size: small;
+	font-style: italic;
+	font-weight: normal;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<H1>Other  Club Event Information</H1>
+
+<form  onSubmit="return check_page(this)" method=POST action="/cgi-bin/contact" name='formInput' id='formInput'>
+<input type=hidden name="Subject" Value=" WHTW Entry">
+<input type=hidden name="Sender" Value=+Email+>
+<input type=hidden name="recipient" value="webmaster@graynwhite.com">
+<input type=hidden name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT">
+<input type=hidden name="bgcolor" value="#ffffff">
+<input type=hidden name="text_color" value="#000000">
+<input type=hidden name="return_link_url" value="http://graynwhite.com/whtw">
+<input type=hidden name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page">
+<Table Align = "left" Border= "1" Width = "100%" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+
+<TR >
+<TD width="18%" class="fieldName">Organization Name </TD>
+<TD width="38%"><input name="Orgname" type="text" class="Required" size="40" maxlength="40">
+  <span class="Required">*</span></TD>
+<td width="6%" class="fieldName"> Your Name:</TD><TD width="37%"><INPUT Name="yname" Type="Text" size="40" maxlength="40">
+  <span class="Required">*</span> </TD>
+</TR>
+<TR>
+ <TD class="fieldName">Your E-Mail Address</TD>
+<TD><INPUT Name="EMAILID" Type ="text" size="45" maxlength="45"> 
+  <span class="Required">*</span> </TD>
+<TD class="fieldName"> Your phone Number</TD>
+<TD><INPUT Name="Yphone" type = "text" size="20" maxlength="20"></TD>
+</TR>
+<TR>
+<TD class="fieldName">Date From :</TD>
+<TD><span class="expalanation">This is the date of the event or the beginning date of a multiple day event 
+in the form mm/dd/yyyy</span><BR><INPUT NAME="From_date" TYPE="text" size="20" maxlength="20">
+<span class="Required">*</span></td>
+<TD><span class="fieldName">To Date </span>:</td><TD><span class="expalanation">This is the ending date of a multiple day event or the same as the Date From for a single day 
+event in the form </span>mm/dd/yyy <INPUT TYPE="text" NAME="To_date" size="20"></td></tr>
+<TR><TD class="fieldName">Start Time</TD><TD><span class="expalanation">The start time of the event if applicable or blank for multiple day events 
+  in the form hh:mm&nbsp; AM/PM</span>.<INPUT TYPE="text" NAME="Start_Time" size="20">
+  <span class="Required">*</span></td>
+<td class="fieldName">End Time:</TD><td><span class="expalanation">Ending time of the event or blank</span>.<INPUT TYPE="TEXT" NAME="To_Time" size="20"></td></tr>
+<TR><td><span class="fieldName">Day of Week</span> :</td><TD>Day of the week or Weekend, Week, etc.<INPUT TYPE="TEXT" NAME="Day_of_week" size="20">
+    <span class="Required">*</span></td>
+<TD class="fieldName">Reserve by Date</TD><TD class="expalanation">This is the date that reservations must be made if applicable. <INPUT TYPE="text" NAME="resby" SIZE="12" MAXLENGTH="12" ></TD><TD width="1%"></TD></TR>
+<TR>
+  <TD class="fieldName">Comments: <span class="expalanation">These will not appear in Events but may appear in news stories </span></TD>
+  <TD COLSPAN="3"><textarea name ="comments" cols ="60" rows ="4"></textarea></TD>
+</TR>
+<TR>
+  <TD><b><font size="4">Place</font></b> :Enter the place, including address 
+  and phone number  here. (only the first 256 characters will be accepted) </TD><TD COLSPAN = "3"><textarea name ="Place" cols ="60" rows ="4"></textarea></TD></TR>
+<TR>
+  <TD><b><font size="4">Event </font></b>:Describe the event here. Include a 
+  person and phone number to contact if desired (Only the the first 256 characters will be accepted) </TD><TD COLSPAN ="3"><Textarea name ="Event_name" cols ="60" rows ="4"></TEXTAREA></TD></TR>
+<TR><td>Price Members :</td><TD><input type="text" name="Price_Member" size="20" maxlength="50" ></TD>
+<TD>Price Guests</TD><TD><input type="text" name="Non_Member_Price" size="20" maxlength="50" ></td>
+</TR>
+<TR><TD>&nbsp;</TD>
+<TD Colspan ="3">&nbsp;</TD>
+</tr>
+<tr><td COLSPAN="4"><span class="fieldName">Recurring Event?</span><BR> <input type="radio" Name="recurring" Value ="Yes">Yes<BR>
+<input Type="radio" Name="recurring" Value="No" checked>No<BR>
+Day of week: Mon<input Type="checkbox" Name="Mon" value="ON">
+ Tue <Input Type="checkbox" Name="TUE." value="ON">
+ Wed  <Input Type="checkbox" Name="Wed." value="ON">
+ Thu <Input Type="checkbox" Name="Thu." value="ON">
+ Fri <Input Type="checkbox" Name="Fri" value="ON">
+ Sat <Input Type="checkbox" Name="sat." value="ON">
+ Sun <Input Type="checkbox" Name="Sun." value="ON"><BR>
+Week of Month: 1st <input Type="checkbox" Name ="first" value="ON">
+ 2nd <Input Type="checkbox" Name="Second." value="ON">
+ 3rd <Input Type="checkbox" Name="Third." value="ON">
+ 4th <Input Type="checkbox" Name="fourth." value="ON">
+ 5th <Input Type="checkbox" Name="Fifth" value="ON"><BR>
+From DATE <BR>Enter the beginning date of this recurring event (The first time it occurs)<INPUT Type=text name="recurbegin" size="20"> <BR>To Date Enter the date of the last time this recurring event will occur 
+  <input Type =Text name="recurend" size="20">
+</TD></tr>
+
+<tr><TD colspan = "4">
+<CENTER><input type = "Button" NAME="Submit" VALUE="Submit Form" onclick ="submit_page(this.form)" ></CENTER></TD>
+</TR>
+</table>
+
+
+	
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,8 @@
+RemoteCwd /usr/www/graynwhite/htdocs/whtw
+LocalCwd d:\program files\omni\htdocs\whtw
+RemoteCwd /usr/www/graynwhite/htdocs
+RemoteCwd /usr/www/graynwhite/htdocs/cgi-bin
+LocalCwd d:\program files\omni\htdocs
+LocalCwd d:\program files\omni
+LocalCwd d:\program files\omni\htdocs
+LocalCwd d:\program files\omni\htdocs\sessions

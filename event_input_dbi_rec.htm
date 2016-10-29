@@ -1,0 +1,651 @@
+<HTML>
+<HEAD>
+<TITLE> Club event input screen </TITLE>
+<META NAME="generator" CONTENT="Microsoft FrontPage 5.0">
+<Script>
+<!--
+function clear_form(form){
+form.reset();
+}
+function submit_page(form){
+var foundError = false;
+var Radio_state = "   ";
+//
+	if(isFieldBlank(form.Password)) {
+		alert("You left the Password field blank.");
+		foundError = true;
+	}
+	
+	
+	if(form.To_mm.selectedIndex == 0){
+	    if (form.To_day.selectedIndex != 0 ||
+	        form.To_year.selectedIndex != 0){
+	       alert("To Date not correct");
+	       foundError = true;
+	    }
+	 } 
+	 if(form.To_mm.selectedIndex != 0){
+	    if (form.To_day.selectedIndex == 0 ||
+	        form.To_year.selectedIndex == 0){
+	       alert("To Date not correct");
+	       foundError = true;
+	    }
+	 }
+		
+	if(form.Start_Time_Hours.selectedIndex == 0){
+	    if (form.Start_Time_Minutes.selectedIndex != 0 ||
+	        form.Start_AMPM.selectedIndex != 0 ){
+	       alert("Start Time not correct");
+	       foundError = true;
+	    }
+	 } 
+	 if(form.Start_Time_Hours.selectedIndex != 0){
+	    if (form.Start_Time_Minutes.selectedIndex == 0 ||
+	        form.Start_AMPM.selectedIndex == 0){
+	       alert("Start time not correct");
+	       foundError = true;
+	    }
+	}
+	if(form.To_Time_Hours.selectedIndex == 0){
+	    if (form.To_Time_Minutes.selectedIndex != 0 ||
+	        form.To_AMPM.selectedIndex != 0 ){
+	       alert("To  Time not correct");
+	       foundError = true;
+	    }
+	 } 
+	 if(form.To_Time_Hours.selectedIndex != 0){
+	    if (form.To_Time_Minutes.selectedIndex == 0 ||
+	        form.To_AMPM.selectedIndex == 0){
+	       alert("To time not correct");
+	       foundError = true;
+	    }
+	}	
+	if (!foundError) {
+		form.submit()
+	}	
+// Check for blank field
+function isFieldBlank(theField) {
+	if (theField.value.length == 0)
+	     return true;
+	else
+	     return false;
+    }	
+// make array
+function MakeArray(n){
+	this.length = n;
+	for (var i = 1;i <=n; i ++){
+	 this[i] = 0}
+	return this
+ }	
+}
+//-->
+
+</script>
+
+
+</HEAD>
+<BODY>
+<H1>Post Club Event Information</H1>
+
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.emailid.value == "")
+  {
+    alert("Please enter a value for the \"emailid\" field.");
+    theForm.emailid.focus();
+    return (false);
+  }
+
+  if (theForm.yourpswd.value == "")
+  {
+    alert("Please enter a value for the \"yourpswd\" field.");
+    theForm.yourpswd.focus();
+    return (false);
+  }
+
+  if (theForm.yourpswd.value.length < 5)
+  {
+    alert("Please enter at least 5 characters in the \"yourpswd\" field.");
+    theForm.yourpswd.focus();
+    return (false);
+  }
+
+  if (theForm.yourpswd.value.length > 8)
+  {
+    alert("Please enter at most 8 characters in the \"yourpswd\" field.");
+    theForm.yourpswd.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><Form action =
+"http://graynwhite.com/cgi-bin/club_entry_dbi.cgi" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
+<CENTER><input TYPE="Button" NAME= "CLEAR1" Value = "Reset Form"
+onclick ="clear_form(this.form)"></CENTER>
+<Table Align = "left" Border= "1" Width = "903" height="954">
+<TR><TD width="191" height="84">Action</td>
+<td width="294" height="84">Add<INPUT TYPE="radio" NAME="action" VALUE="Add" CHECKED><BR>
+Recurring<INPUT type="radio" NAME="action" Value="Recurring"></td>
+<TR >
+<td width="191" height="22">Your Identification: (email)</td>
+<TD width="294" height="22">
+ 
+	<!--webbot bot="Validation" b-value-required="TRUE" --><input type="text" name="emailid" size="40"></td>
+<TD width="195" height="22" >Your Password</TD>
+<TD width="195" height="22">	
+<!--webbot bot="Validation" b-value-required="TRUE" i-minimum-length="5" i-maximum-length="8" --><input type="password" name="yourpswd" size="8" maxlength="8"></td>
+
+</TR>
+<TR >
+<td width="191" height="23">Organization Name: </td>
+<TD width="294" height="23">
+ 
+<SELECT NAME="Org" size="1" >
+	<OPTION VALUE="allst>All Star Singles
+	<OPTION VALUE="ASI>American Sailing Institute
+	<OPTION VALUE="A2>Ann Arbor Ski Club
+	<OPTION VALUE="at>Argentine Tango Club of Detroit
+	<OPTION VALUE="aval>Avalanche Ski Team
+	<OPTION VALUE="BethE>Bethany East
+	<OPTION VALUE="BethN>Bethany North Oakland
+	<OPTION VALUE="BethR>Bethany Rochester
+	<OPTION VALUE="BetSo>Bethany South
+	<OPTION VALUE="BethS>Bethany South Oakland
+	<OPTION VALUE="BethW>Bethany Suburban West
+	<OPTION VALUE="char>Charity Event
+	<OPTION VALUE="cot>Church of Today's Singles
+	<OPTION VALUE="desc>Detroit Edison Ski Club
+	<OPTION VALUE="drya>Detroit Regional Yacht-racing Associatio
+	<OPTION VALUE="d300>Detroit Tricentenial
+	<OPTION VALUE="FSP>Farmington Single Professionals
+	<OPTION VALUE="fas>Fenton Area Singles
+	<OPTION VALUE="FS>Ford Singles
+	<OPTION VALUE="tbird>Ford Thunderbird Ski Club
+	<OPTION VALUE="fsj>Friday Singles Jubilee & Saturday Night Singles
+	<OPTION VALUE="gcs>Glass City Singles
+	<OPTION VALUE="GM>GM Ski Club
+	<OPTION VALUE="gpsc>Grosse Pointe Ski Club
+	<OPTION VALUE="HOL>Holiday or Special Event
+	<OPTION VALUE="jug>Jug & Mug Ski Club of  Lansing.MI
+	<OPTION VALUE="Kirk>Kirk Singles
+	<OPTION VALUE="lssc>Lake Shore Sail Club
+	<OPTION VALUE="liv>Livonia Ski Skule
+	<OPTION VALUE="lhcd>Lovett Hall Contra Dance
+	<OPTION VALUE="MSP>Metropolitan Single Professinals
+	<OPTION VALUE="msda>Michigan Swing Dance Association
+	<OPTION VALUE="mtc>Mount Clemens Ski Club
+	<OPTION VALUE="octds>Oakland County Traditional Dance Society
+	<OPTION VALUE="os>Ohio Singles
+	<OPTION VALUE="owdc>Old World Dance Cooperative
+	<OPTION VALUE="Other>Other Events
+	<OPTION VALUE="Hope>Project Hope League
+	<OPTION VALUE="pwpsc>PWP St. Clair Shores
+	<OPTION VALUE="pwpr>PWP- Rochester
+	<OPTION VALUE="shs>Sacred Heart Singles
+	<OPTION VALUE="Sail>Sailing Singles
+	<OPTION VALUE="Selsg>Selective Singles Travel Club
+	<OPTION VALUE="spm>Single Point Ministries
+	<OPTION VALUE="SC>Singles Coalition
+	<OPTION VALUE="Skwii>Skiwi Ski Club
+	<OPTION VALUE="sscs>Snowdrifters Ski Club of Saginaw
+	<OPTION VALUE="Somer>Somerset Ski & Golf Club
+	<OPTION VALUE="stren>St. Rene 35+ Singles
+	<OPTION VALUE="test>Test Org
+	<OPTION VALUE="rjbb>The Runyan Jay Big Band
+	<OPTION VALUE="tolsk>Toledo Ski Club
+	<OPTION VALUE="tt>Traveling Teachers
+	<OPTION VALUE="Dance>Various Dances
+	<OPTION VALUE="wsc>Windsor Ski Club
+	<OPTION VALUE="wdjaz>Windsor/Detroit Jazz Club
+	<OPTION VALUE=</SELECT>  </td>
+<TD width="195" height="23" >&nbsp;</TD>
+<TD width="195" height="23">	&nbsp;</td>
+
+</TR>
+<TR>
+<TD width="191" height="67">Date From :</TD>
+<TD width="294" height="67">
+	 <SELECT NAME="From_mm" SIZE="1">
+	<OPTION VALUE="01.">January
+	<OPTION VALUE="02.">February
+	<OPTION VALUE="03.">March
+	<OPTION VALUE="04.">April
+	<OPTION VALUE="05.">May
+	<OPTION VALUE="06.">June
+	<OPTION VALUE="07.">July
+	<OPTION VALUE="08.">August
+	<OPTION VALUE="09.">September
+	<OPTION VALUE="10.">October
+	<OPTION VALUE="11.">November
+	<OPTION VALUE="12.">December
+	</SELECT><BR>
+	
+	 <Select NAME = "From_day" Size = "1" >
+	 <Option value= "01">01
+	 <Option value= "02">02
+	 <Option value= "03">03
+	 <Option value= "04">04
+     <Option value= "05">05
+	 <Option value= "06">06
+	 <Option value= "07">07
+	 <Option value= "08">08
+	 <Option value= "09">09
+	 <Option value= "10">10
+     <Option value= "11">11
+	 <Option value= "12">12	
+	 <Option value= "13">13
+     <Option value= "14">14
+	 <Option value= "15">15	
+	 <Option value= "16">16
+     <Option value= "17">17
+	 <Option value= "18">18	
+	 <Option value= "19">19
+     <Option value= "20">20
+	 <Option value= "21">21
+	 <Option value= "22">22
+	 <Option value= "23">23	
+	 <Option value= "24">24
+	 <Option value= "25">25
+	 <Option value= "26">26
+	 <Option value= "27">27
+	 <Option value= "28">28
+	 <Option value= "29">29
+	 <Option value= "30">30
+	 <Option value= "31">31
+	 </Select><BR>
+		
+
+	<SELECT NAME="From_year" SIZE="1" >
+   		<OPTION VALUE="2002.">2002
+         <OPTION VALUE="2003.">2003
+         <OPTION VALUE="2004.">2004
+
+	</select>
+</td>
+<TD width="195" height="67">To Date :</td>
+<td width="195" height="67"> 
+	<SELECT NAME="To_mm" SIZE="1">
+	<OPTION VALUE="   ">N/A
+	<OPTION VALUE="01.">January
+	<OPTION VALUE="02.">February
+	<OPTION VALUE="03.">March
+	<OPTION VALUE="04.">April
+	<OPTION VALUE="05.">May
+	<OPTION VALUE="06.">June
+	<OPTION VALUE="07.">July
+	<OPTION VALUE="08.">August
+	<OPTION VALUE="09.">September
+	<OPTION VALUE="10.">October
+	<OPTION VALUE="11.">November
+	<OPTION VALUE="12.">December
+	</SELECT><BR>
+	<Select NAME = "To_day" Size = "1">
+	<Option Value = "  ">N/A
+	<Option value= "01">01
+	 <Option value= "02">02
+	 <Option value= "03">03
+	 <Option value= "04">04
+     <Option value= "05">05
+	 <Option value= "06">06
+	 <Option value= "07">07
+	 <Option value= "08">08
+	 <Option value= "09">09
+	 <Option value= "10">10
+     <Option value= "11">11
+	 <Option value= "12">12	
+	 <Option value= "13">13
+     <Option value= "14">14
+	 <Option value= "15">15	
+	 <Option value= "16">16
+     <Option value= "17">17
+	 <Option value= "18">18	
+	 <Option value= "19">19
+     <Option value= "20">20
+	 <Option value= "21">21
+	 <Option value= "22">22
+	 <Option value= "23">23	
+	 <Option value= "24">24
+	 <Option value= "25">25
+	 <Option value= "26">26
+	 <Option value= "27">27
+	 <Option value= "28">28
+	 <Option value= "29">29
+	 <Option value= "30">30
+	 <Option value= "31">31
+	 </Select><BR>
+	<SELECT NAME="To_year" SIZE="1" >
+	<OPTION VALUE="   ">N/A
+	<OPTION VALUE="2002.">2002
+	<OPTION VALUE="2003.">2003
+	<OPTION VALUE="2004.">2004
+
+	</select>
+</td>
+</tr>
+<TR>
+<TD width="191" height="67">Reserve By:</TD>
+<TD width="294" height="67">
+	 <SELECT NAME="Reserve_mm" SIZE="1">
+         <OPTION VALUE="   ">N/A
+	<OPTION VALUE="01.">January
+	<OPTION VALUE="02.">February
+	<OPTION VALUE="03.">March
+	<OPTION VALUE="04.">April
+	<OPTION VALUE="05.">May
+	<OPTION VALUE="06.">June
+	<OPTION VALUE="07.">July
+	<OPTION VALUE="08.">August
+	<OPTION VALUE="09.">September
+	<OPTION VALUE="10.">October
+	<OPTION VALUE="11.">November
+	<OPTION VALUE="12.">December
+	</SELECT><BR>
+	
+	 <Select NAME = "Reserve_day" Size = "1" >
+         <OPTION VALUE="   ">N/A
+	 <Option value= "01">01
+	 <Option value= "02">02
+	 <Option value= "03">03
+	 <Option value= "04">04
+     <Option value= "05">05
+	 <Option value= "06">06
+	 <Option value= "07">07
+	 <Option value= "08">08
+	 <Option value= "09">09
+	 <Option value= "10">10
+     <Option value= "11">11
+	 <Option value= "12">12	
+	 <Option value= "13">13
+     <Option value= "14">14
+	 <Option value= "15">15	
+	 <Option value= "16">16
+     <Option value= "17">17
+	 <Option value= "18">18	
+	 <Option value= "19">19
+     <Option value= "20">20
+	 <Option value= "21">21
+	 <Option value= "22">22
+	 <Option value= "23">23	
+	 <Option value= "24">24
+	 <Option value= "25">25
+	 <Option value= "26">26
+	 <Option value= "27">27
+	 <Option value= "28">28
+	 <Option value= "29">29
+	 <Option value= "30">30
+	 <Option value= "31">31
+	 </Select><BR>
+		
+
+	<SELECT NAME="Reserve_year" SIZE="1" >
+	<OPTION VALUE="   ">N/A
+      <OPTION VALUE="2002".>2002
+      <OPTION VALUE="2003.">2003
+	<OPTION VALUE="2004.">2004
+	
+	</select>
+</td>
+<TD  ColSpan = "2" width="396" height="67"> <b>If advance reservations are necessary</B></TD>
+</TR>
+<TR>
+<TD width="191" height="69">Start Time</TD><TD width="294" height="69">
+	<Select NAME = "Start_Time_Hours" SIZE = "1" >
+	<OPTION VALUE = "   ">N/A
+	<OPTION VALUE = "01:">01
+	<OPTION VALUE = "02:">02
+	<OPTION VALUE = "03:">03       
+	<OPTION VALUE = "04:">04
+	<OPTION VALUE = "05:">05
+	<OPTION VALUE = "06:">06
+	<OPTION VALUE = "07:">07
+	<OPTION VALUE = "08:">08
+	<OPTION VALUE = "09:">09
+	<OPTION VALUE = "10:">10
+	<OPTION VALUE = "11:">11
+	<OPTION VALUE = "12:">12
+    </SELECT>Hours<BR>
+	<SELECT Name = "Start_Time_Minutes" SIZE = "1">
+	<OPTION VALUE = "  ">N/A
+	<Option Value = "00">00
+	<OPTION VALUE = "15">15
+	<OPTION VALUE = "30">30
+	<OPTION VALUE = "45">45
+	</SELECT>Min<BR>
+	<SELECT NAME= "Start_AMPM" size= "1">
+	<Option Value = "   ">N/A
+	<Option Value = " PM">PM
+	<Option Value = " AM">AM
+	</Select>
+	
+</td>
+<td width="195" height="69">End Time:</TD><td width="195" height="69">
+	<Select NAME = "To_Time_Hours" SIZE = "1" >
+	<OPTION VALUE = "   ">N/A
+	<OPTION VALUE = "01:">01
+	<OPTION VALUE = "02:">02
+	<OPTION VALUE = "03:">03       
+	<OPTION VALUE = "04:">04
+	<OPTION VALUE = "05:">05
+	<OPTION VALUE = "06:">06
+	<OPTION VALUE = "07:">07
+	<OPTION VALUE = "08:">08
+	<OPTION VALUE = "09:">09
+	<OPTION VALUE = "10:">10
+	<OPTION VALUE = "11:">11
+	<OPTION VALUE = "12:">12
+    </SELECT>Hour <BR>
+	<SELECT Name = "To_Time_Minutes" SIZE = "1">
+	<OPTION VALUE = "  ">N/A
+	<OPTION VALUE = "00">00
+	<OPTION VALUE = "15">15
+	<OPTION VALUE = "30">30
+	<OPTION VALUE = "45">45
+	</SELECT>Min<BR>
+	<SELECT NAME= "To_AMPM" size= "1">
+	<Option Value = "   ">N/A
+	<Option Value = " PM">PM
+	<Option Value = " AM">AM
+	</Select>
+	
+</td>
+</tr>
+<TR><td width="191" height="23">Day of Week :</td><TD width="294" height="23">
+		<SELECT NAME="Dow" SIZE="1">
+	<OPTION VALUE="MON">Monday
+	<OPTION VALUE="TUE">Tuesday
+	<OPTION VALUE="WED">Wednesday
+	<OPTION VALUE="THU">Thursday
+	<OPTION VALUE="FRI">Friday
+	<OPTION VALUE="SAT">Saturday
+	<OPTION VALUE="SUN">Sunday
+	<OPTION VALUE="N/A">Not applicable
+	<OPTION VALUE="WK.">Week
+	<OPTION VALUE="WE.">Week End
+	<OPTION VALUE="MOS">Month
+	</SELECT>
+</td>
+</tr>
+<TR><TD width="191" height="68">Place :</TD>
+  <TD COLSPAN="3" width="696" height="68">
+<textarea rows="3" name="place" cols="60"></textarea></TD>
+</TR>
+<TR><TD width="191" height="68">Event :</TD>
+  <TD COLSPAN ="3" width="696" height="68">
+  <textarea rows="3" name="activity" cols="60"></textarea></TD>
+</tr>
+<TR><td width="191" height="22">Price Members :</td><TD width="294" height="22"><INPUT TYPE="text" NAME="Price_Member" SIZE="20" MAXLENGTH="50" ></TD>
+<TD width="195" height="22">Price Guests</TD><TD width="195" height="22"><INPUT TYPE="text" NAME="Non_Member_Price" SIZE="20" MAXLENGTH="50" ></td>
+</TR>
+<TR>
+<TD width="191" height="90">Type of event, Open to the public or Private</td>
+<TD width="294" height="90"><input type="radio" Name="Event_type" Value="Y" checked>Open<BR>
+<input type="radio" Name="Event_type" Value="N">Private<p>&nbsp;</p>
+<p><BR>
+
+</td>
+<TD width="195" height="90">Publish Priority number of days before reservation 
+date.</td>
+<TD width="195" height="90">
+<INPUT type="radio" Name="Event_priority" Value="7" checked>7
+<input type="radio" Name="Event_priority" Value="14">14
+<input type="radio" Name="Event_priority" Value="21">21
+<input type="radio" NAME="Event_priority" Value="28">28
+<input type="radio" name="Event_priority" value="90">90
+<input type="radio" name="Event_priority" value="120">120
+<input type="radio" name="Event_priority" value="240">240<br>
+</TD></TR>    
+<TR><td COLSPAN = "4" width="893" height="19">
+<CENTER><B><I>Recurring Event Parameters</I></B></CENTER></TR>
+<TR><td width="191" height="69">Generate From Date</td>
+
+
+<TD width="294" height="69">     Month
+	 <SELECT NAME="gen_from_mm" SIZE="1">
+        <OPTION VALUE="01.">January
+	<OPTION VALUE="02.">February
+	<OPTION VALUE="03.">March
+	<OPTION VALUE="04.">April
+	<OPTION VALUE="05.">May
+	<OPTION VALUE="06.">June
+	<OPTION VALUE="07.">July
+	<OPTION VALUE="08.">August
+	<OPTION VALUE="09.">September
+	<OPTION VALUE="10.">October
+	<OPTION VALUE="11.">November
+	<OPTION VALUE="12.">December
+	</SELECT><BR>
+	  Day
+	 <Select NAME = "gen_from_day" Size = "1" >
+         <Option value= "01">01
+	 <Option value= "02">02
+	 <Option value= "03">03
+	 <Option value= "04">04
+     <Option value= "05">05
+	 <Option value= "06">06
+	 <Option value= "07">07
+	 <Option value= "08">08
+	 <Option value= "09">09
+	 <Option value= "10">10
+     <Option value= "11">11
+	 <Option value= "12">12	
+	 <Option value= "13">13
+     <Option value= "14">14
+	 <Option value= "15">15	
+	 <Option value= "16">16
+     <Option value= "17">17
+	 <Option value= "18">18	
+	 <Option value= "19">19
+     <Option value= "20">20
+	 <Option value= "21">21
+	 <Option value= "22">22
+	 <Option value= "23">23	
+	 <Option value= "24">24
+	 <Option value= "25">25
+	 <Option value= "26">26
+	 <Option value= "27">27
+	 <Option value= "28">28
+	 <Option value= "29">29
+	 <Option value= "30">30
+	 <Option value= "31">31
+	 </Select><BR>
+	 Year	
+
+	<SELECT NAME="gen_from_year" SIZE="1" >
+	<OPTION VALUE="2001.">2001
+         <OPTION VALUE="2002".>2002
+	</select>
+</td>
+<td width="195" height="69">Generate To Date</td>
+<TD width="195" height="69">     Month
+	 <SELECT NAME="gen_to_mm" SIZE="1">
+       	<OPTION VALUE="01.">January
+	<OPTION VALUE="02.">February
+	<OPTION VALUE="03.">March
+	<OPTION VALUE="04.">April
+	<OPTION VALUE="05.">May
+	<OPTION VALUE="06.">June
+	<OPTION VALUE="07.">July
+	<OPTION VALUE="08.">August
+	<OPTION VALUE="09.">September
+	<OPTION VALUE="10.">October
+	<OPTION VALUE="11.">November
+	<OPTION VALUE="12.">December
+	</SELECT><BR>
+	 Day
+	 <Select NAME = "gen_to_day" Size = "1" >
+         <Option value= "01">01
+	 <Option value= "02">02
+	 <Option value= "03">03
+	 <Option value= "04">04
+     <Option value= "05">05
+	 <Option value= "06">06
+	 <Option value= "07">07
+	 <Option value= "08">08
+	 <Option value= "09">09
+	 <Option value= "10">10
+     <Option value= "11">11
+	 <Option value= "12">12	
+	 <Option value= "13">13
+     <Option value= "14">14
+	 <Option value= "15">15	
+	 <Option value= "16">16
+     <Option value= "17">17
+	 <Option value= "18">18	
+	 <Option value= "19">19
+     <Option value= "20">20
+	 <Option value= "21">21
+	 <Option value= "22">22
+	 <Option value= "23">23	
+	 <Option value= "24">24
+	 <Option value= "25">25
+	 <Option value= "26">26
+	 <Option value= "27">27
+	 <Option value= "28">28
+	 <Option value= "29">29
+	 <Option value= "30">30
+	 <Option value= "31">31
+	 </Select><BR>
+	  Year	
+
+	<SELECT NAME="gen_to_year" SIZE="1" >
+   	<OPTION VALUE="2001.">2001
+         <OPTION VALUE="2002".>2002
+	</select>
+</td>
+</tr>
+<tr>
+<Td width="191" height="147"> Day of week</td>
+<Td width="294" height="147"><input type="radio" Name="DOWR" Value="Mon">Monday<BR>
+<input type="radio" Name="DOWR" Value="Tue">Tuesday<BR>
+<input type="radio" Name="DOWR" Value="Wed">Wednesday<BR>
+<input type="radio" Name="DOWR" Value="Thu">Thursday<BR>
+<input type="radio" Name="DOWR" Value="Fri">Friday<BR>
+<input type="radio" Name="DOWR" Value="Sat">Saturday<BR>
+<input type="radio" Name="DOWR" Value="Sun">Sunday<BR>
+</Td>
+<td width="195" height="147">Week of the Month</td>
+<td width="195" height="147"><input type="checkbox" Name="week" value="First">First<BR>
+<input type="checkbox" Name="week" value="Second">Second<BR>
+<input type="checkbox" Name="week" value="Third">Third<BR>
+<input type="checkbox" Name="week" value="Fourth">Fourth<BR>
+<input type="checkbox" Name="week" value="Fifth">Fifth<BR>
+<input type="checkbox" Name="week" value="Alternate">Alternate<BR></td>
+</tr>
+
+
+
+
+
+<tr><TD colspan = "4" width="893" height="26">
+<CENTER><input TYPE='button' NAME="Submit" VALUE="Submit Form" onclick ="submit_page(this.form)" ><input TYPE="Button"
+ NAME = "Clear" VALUE = "Reset Form" 
+onclick ="clear_form(this.form)"></CENTER></TD>
+</TR>
+</table>
+
+	
+</FORM>
+</BODY>
+</HTML>

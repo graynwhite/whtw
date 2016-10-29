@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+
+	<title>Search index</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	https://www.googleapis.com/customsearch/v1?key=INSERT-YOUR-KEY&cx=INSERT-YOUR-ENGINE-ID&q=YOUR-SEARCH-TERM&alt=json
+<script type="text/javascript">
+    google.load('search', '1');
+</script>
+<script type="text/javascript">
+var webSearch;
+webSearch = new google.search.WebSearch();
+webSearch.setSearchCompleteCallback(this, webSearchComplete, [webSearch]);
+ 
+function webSearchComplete (searcher, searchNum) {
+	console.log("at webSearchComplete");
+    var contentDiv = document.getElementById('web-content');
+    contentDiv.innerHTML = '';
+    var results = searcher.results;
+ 	console.log("Number of results is " + results.length);
+    var newResultsDiv = document.createElement('div');
+    newResultsDiv.id = 'web-content';
+    for (var i = 0; i < results.length; i++) {
+      var result = results[i];
+ 
+      var resultHTML = '<div>';
+      resultHTML += '<a href="' + result.unescapedUrl + '" target="_blank"><b>' +
+                        result.titleNoFormatting + '</b></a><br/>' +
+                        result.content +
+                        '<div/>';
+      newResultsDiv.innerHTML += resultHTML;
+    }
+    contentDiv.appendChild(newResultsDiv);
+}
+ 
+function search(query) {
+	console.log("At search with this as the search value " + query );
+	
+    webSearch.execute(query);
+}
+</script>
+
+</head> 
+<body>
+<input type="text" id="txtSearchTerm" size="40" />
+<button id="btnSearch" style="display:none;">Start Search</button>
+<noscript>JavaScript is required for this page.
+</noscript>
+<div id="searchResult"></div>
+<div id="output"></div>
+<div><a href="#" id="lnkPrev" title="Display previous result page" style="display:none;">Previous</a>
+ <span id="lblPageNumber" style="display:none;"></span>
+  <a href="#" id="lnkNext" title="Display next result page" style="display:none;">Next</a></div>
+ 
+<div class="data" id="web-content"></div>
+<script type="text/javascript" src="css/jquery.js"></script>
+<script type="text/javascript" src="googlesearch.js"></script>
+
+</body>
+</html>
+
+

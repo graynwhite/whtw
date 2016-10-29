@@ -1,0 +1,39 @@
+// JSON Document
+var publicists = [{
+	"name": "Maggie Mccabe",
+	"email": "mccabemusic@comcast.net",
+	"org":    "McCabe Music",
+	"phone": "248-549-6417"
+},
+{	"name": "Jim South",
+	"email": "jimpoem@yahoo.com",
+	"org":   "Somerset"
+},
+{	"name": " Darrel Ahlgrim",
+	"email": "dahlberg7@comcast.net",
+	"org":    "Gm ski Club"
+},
+{	"name": "Ray Previ",
+	"email": "rprevi@mi.rr.com",
+	"org":  "Catholic Alumni"
+},
+{	"name": "Dennis Slough",
+	"email": "dennis.slough@comcast.net",
+	"org":  "Ann Arbor Ski Club "
+},
+{	"name": "Glen Everitt",
+	"email": "glenn.everitt@gmail.com",
+	"org":  " Mobile Monday"
+},
+{	"name": "Barbara Barefield",
+	"email": "asbarefield@aol.com",
+	"org":  "Palmer Woods"
+},
+{	"name": "Jim Michon",
+	"email": "jjmichon@comcast.net",
+	"org":  "Thunderbird Ski Club",
+	"phone": "313-258-4522"
+}
+]
+
+

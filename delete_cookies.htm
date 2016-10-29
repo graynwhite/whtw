@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+	<TITLE>Delete those cookies</TITLE>
+</HEAD>
+<BODY BGCOLOR="WHITE">
+	<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+		<!-- Hide script from older browsers
+	
+	    if (document.cookie != "") {
+	    	if (confirm("Do you want to delete the cookies?")) {
+	    		thisCookie = document.cookie.split("; ")
+	    	    expireDate = new Date
+	    	    expireDate.setDate(expireDate.getDate()-1)
+	                               
+	    	    for (i=0; i<thisCookie.length; i++) {
+	    	        cookieName = thisCookie[i].split("=")[0]
+	    	        document.cookie = cookieName + "=;expires=" + expireDate.toGMTString()
+	    	    }
+	    	    document.write("<H1>Number of cookies deleted: " + thisCookie.length + "<\/H1>")
+	        }
+	    }
+		// End hiding script -->
+	</SCRIPT>	
+</BODY>
+</HTML>
+

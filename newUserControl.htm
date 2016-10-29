@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+    <link rel="stylesheet" href="mobile.css"/>
+    
+    
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	
+		
+		
+		
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<script src="http://www.graynwhite.com/gwanalytics.js"></script>
+
+
+<title>New User Control</title>
+<script>
+$(document).ready(function(){
+
+
+
+
+$('<div id="loading">loading...</div').insertBefore('#requestData')
+.ajaxStart(function(){
+$(this).show();
+}).ajaxStop(function(){
+$(this).hide();
+console.log("first document ready")
+});
+$("#typeget").click(function(){
+	
+	$.get("getFirstNewUser.php",
+	function(data){
+		console.log(data);
+		$("#newuserinfo").html(data);
+	});
+			
+});
+}); <!-- end of on load function -->
+</script>
+</head>
+
+<body>
+<div id="main" data-role="page">
+<div data-role="header"><h1>New User Control</h1></div>
+<div data-role="page-content">
+<fieldset data-role="controlgroup" data-type="horizontal">
+    <legend>Action:</legend>  
+         <label for= "typeget">Get From list</label>
+        <input name="radioEntryType" id="typeget" type="radio" value="Get Checked" checked="checked" />
+        <label for= "useform">Use Form</label>
+		 <input type="radio" name="radioEntryType"  value="Use Form" id='useform' />
+         <label for= "recommend">Recommend</label>
+        <input type="radio" name="radioEntryType" value="Recommend" id='recommend'  />
+        <label for= "deleteit">Remove from list</label>
+        <input type="radio" name="radioEntryType" value="Delete" id="deleteit" />
+     </fieldset>
+     <legend>Number of users in list</legend>
+     <textarea name="listcount" id="listcount"></textarea>
+     <legend>New user information</legend>
+     <textarea name="newUser" id="newuserinfo"></textarea>
+     <legend>Email that will be sent area</legend>
+     <textarea name="lettertext" id="lettertext"></textarea>
+</div> <!-- end of page content --> 
+<div data-role="footer"><h1>Peggy Jo Studio Newsletter<data/h1></div>
+</div> <!-- end of main page -->
+</body>
+</html>

@@ -1,0 +1,79 @@
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+	function validEmail(email){
+		invalidChars = " /:,;"
+		if (email == "") {
+			return false
+		}
+		for (i=0; i<invalidChars.length; i++) {
+			badChar =invalidChars.charAt(i)
+			if (email.indexOf(badChar,0)> -1){
+				return false
+			}
+		}
+		atPos = email.indexOf("@",1)
+		if (atPos == -1) {
+			return false
+		}
+		if (email.indexOf("@",atPos+1) > -1) {
+			return false
+		}
+		periodPos = email.indexOf(".",atPos)
+		if (periodPos == -1) {
+			return false
+		}
+		return true
+	}
+	
+	function submitIt(carform) {
+		if (!validEmail(carform.emailid.value)) {
+			alert("Invalid email address")
+			carform.emailid.focus()
+			carform.emailid.select()
+			return false
+		}
+		return true
+	}
+function isNum(passedVal) {
+			if (passedVal == "") {
+				return false
+			}
+			for (i=0; i<passedVal.length; i++) {
+				if (passedVal.charAt(i) < "0") {
+					return false
+				}
+				if (passedVal.charAt(i) > "9") {
+					return false
+				}
+			}
+			return true
+		}
+
+		function validZip(inZip) {
+			if (inZip == "") {
+				return true
+			}
+			if (isNum(inZip)) {
+				return true
+			}
+			return false
+		}
+
+		function submitIt(carForm) {
+			if (carForm.zip.value == "" && carForm.dealerList.selectedIndex == -1) {
+				alert("You must either enter a Zip code, or pick the dealer closest to you")
+				carForm.zip.focus()
+				return false
+			}
+	
+			if (!validZip(carForm.zip.value)) {
+				alert("That is an invalid Zip code")
+				carForm.zip.focus()
+				carForm.zip.select()
+				return false
+			}
+	
+			return true
+		}
+
+</SCRIPT>	
+

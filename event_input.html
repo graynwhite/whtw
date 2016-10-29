@@ -1,0 +1,315 @@
+<HTML>
+<HEAD>
+<TITLE> Club event input screen </TITLE>
+<META NAME="generator" CONTENT="Microsoft FrontPage 5.0">
+<Script>
+<!--
+function clear_form(form){
+form.reset();
+}
+function submit_page(form){
+var foundError = false;
+var Radio_state = "   ";
+pass = new MakeArray(15);
+pass[0]= "water";
+pass[1]= "holes";
+pass[2]= "mounds";
+pass[3]= "east";
+pass[4]= "west";
+pass[5]= "hope";
+pass[6]= "good";
+pass[7]= "boats"; 
+pass[8]= "nocars";
+pass[9]= "bird";
+pass[10]="lindy";
+pass[11]= "fjc719";
+pass[12]= "chacha";
+pass[13]= "racing";
+//
+	if(isFieldBlank(form.Password)) {
+		alert("You left the Password field blank.");
+		foundError = true;
+	}
+	if (form.Password.value != pass[form.Org.selectedIndex]){
+	   alert("password not correct");
+	   foundError = true;
+	}
+	
+	if(form.To_mm.selectedIndex == 0){
+	    if (form.To_day.selectedIndex != 0 ||
+	        form.To_year.selectedIndex != 0){
+	       alert("To Date not correct");
+	       foundError = true;
+	    }
+	 } 
+	 if(form.To_mm.selectedIndex != 0){
+	    if (form.To_day.selectedIndex == 0 ||
+	        form.To_year.selectedIndex == 0){
+	       alert("To Date not correct");
+	       foundError = true;
+	    }
+	 }
+		
+	if(form.Start_Time_Hours.selectedIndex == 0){
+	    if (form.Start_Time_Minutes.selectedIndex != 0 ||
+	        form.Start_AMPM.selectedIndex != 0 ){
+	       alert("Start Time not correct");
+	       foundError = true;
+	    }
+	 } 
+	 if(form.Start_Time_Hours.selectedIndex != 0){
+	    if (form.Start_Time_Minutes.selectedIndex == 0 ||
+	        form.Start_AMPM.selectedIndex == 0){
+	       alert("Start time not correct");
+	       foundError = true;
+	    }
+	}
+	if(form.To_Time_Hours.selectedIndex == 0){
+	    if (form.To_Time_Minutes.selectedIndex != 0 ||
+	        form.To_AMPM.selectedIndex != 0 ){
+	       alert("To  Time not correct");
+	       foundError = true;
+	    }
+	 } 
+	 if(form.To_Time_Hours.selectedIndex != 0){
+	    if (form.To_Time_Minutes.selectedIndex == 0 ||
+	        form.To_AMPM.selectedIndex == 0){
+	       alert("To time not correct");
+	       foundError = true;
+	    }
+	}	
+	if (!foundError) {
+		form.submit()
+	}	
+// Check for blank field
+function isFieldBlank(theField) {
+	if (theField.value.length == 0)
+	     return true;
+	else
+	     return false;
+    }	
+// make array
+function MakeArray(n){
+	this.length = n;
+	for (var i = 1;i <=n; i ++){
+	 this[i] = 0}
+	return this
+ }	
+}
+//-->
+
+</script>
+
+
+</HEAD>
+<BODY>
+<H1>Post Club Event Information</H1>
+
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.Generate_reserve_noofdays.value.length > 3)
+  {
+    alert("Please enter at most 3 characters in the \"Generate_reserve_noofdays\" field.");
+    theForm.Generate_reserve_noofdays.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-";
+  var checkStr = theForm.Generate_reserve_noofdays.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Generate_reserve_noofdays\" field.");
+    theForm.Generate_reserve_noofdays.focus();
+    return (false);
+  }
+
+  var chkVal = allNum;
+  var prsVal = parseInt(allNum);
+  if (chkVal != "" && !(prsVal >= 1 && prsVal <= 90))
+  {
+    alert("Please enter a value greater than or equal to \"1\" and less than or equal to \"90\" in the \"Generate_reserve_noofdays\" field.");
+    theForm.Generate_reserve_noofdays.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><Form action =
+"../cgi-bin/_derived/nortbots.htm" method="POST" onSubmit="location.href='../_derived/nortbots.htm';return false;" language="JavaScript" name="FrontPage_Form1" webbot-action="--WEBBOT-SELF--" webbot-onSubmit="return FrontPage_Form1_Validator(this)">
+<!--webbot bot="SaveResults" S-Email-Format="TEXT/PRE" S-Email-Address="cauleyfj@graynwhite.com" B-Email-Label-Fields="TRUE" B-Email-Subject-From-Field="FALSE" S-Email-Subject="Event input" S-Builtin-Fields startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" i-checksum="43374" endspan --><CENTER>
+<input TYPE="button" NAME= "CLEAR1" Value = "Reset Form"
+onclick ="clear_form(this.form)"></CENTER>
+<Table Align = "left" Border= "1" Width = "100%">
+<TR><TD>Action</td>
+<td>Add<INPUT TYPE="radio" NAME="action" VALUE="Add" CHECKED><BR>
+Change<INPUT TYPE="radio" NAME="action" VALUE="Change">
+<BR>Delete<INPUT TYPE="radio" NAME="action" VALUE="Delete">
+<BR>Recurring<INPUT type="radio" NAME="action" Value="Recurring"></td>
+<TR >
+<td>Organization Name: </td>
+<TD>
+ 
+	<SELECT NAME="Org" SIZE="1" >
+	<OPTION VALUE="Sail">Sailing Singles
+	<OPTION VALUE="Somer">Somerset Ski & Golf
+	<OPTION VALUE="Kirk">Kirk Singles
+	<OPTION VALUE="BethE">Bethany East
+	<OPTION VALUE="BethW">Bethany West
+	<OPTION VALUE="Hope">Project Hope League
+	<OPTION VALUE="Selsg">Selective Singles
+	<OPTION Value="ASI">American Sailing Institute
+	<Option Value="GM">GM Ski Club
+	<Option Value= "Skwii">Skiwi Ski Club
+	<Option Value= "msda">Michigan Swing Dance Association
+	<Option Value="Other">Other events
+        <Option Value="Dance">Various Dance Groups
+        <OPTION Value="drya">DRYA </SELECT>
+</td>
+<TD >Password :</TD>
+<TD>	<INPUT TYPE="password" NAME="Password" SIZE="8" MAXLENGTH="8"></td>
+
+</TR>
+<TR>
+<TD>Date From :</TD>
+<TD>
+	 <BR>
+	
+	 <input type="text" name="Event_date_from" size="20"><BR>
+		
+
+	&nbsp;</td>
+<TD>To Date :</td>
+<td> 
+	<input type="text" name="Event_end_date" size="20"></td>
+</tr>
+<TR>
+<TD>Reserve By:<b> (If advance reservations</B><p> <b>&nbsp;are necessary)</B></TD>
+<TD>
+	 <BR>
+	
+	 <input type="text" name="Event_reserve_date" size="20"><BR>
+		
+
+	&nbsp;</td>
+<TD  ColSpan = "2">&nbsp; </TD>
+</TR>
+<TR>
+<TD>Start Time</TD><TD>
+	<input type="text" name="Start_time" size="10"></td>
+<td>End Time:</TD><td>
+	<input type="text" name="End_time" size="10"></td>
+</tr>
+<TR><td>Day of Week :</td><TD>
+		<SELECT NAME="Dow" SIZE="1">
+	<OPTION VALUE="MON">Monday
+	<OPTION VALUE="TUE">Tuesday
+	<OPTION VALUE="WED">Wednesday
+	<OPTION VALUE="THU">Thursday
+	<OPTION VALUE="FRI">Friday
+	<OPTION VALUE="SAT">Saturday
+	<OPTION VALUE="SUN">Sunday
+	<OPTION VALUE="N/A">Not applicable
+	<OPTION VALUE="WK.">Week
+	<OPTION VALUE="WE.">Week End
+	<OPTION VALUE="MOS">Month
+	</SELECT>
+</td>
+</tr>
+<TR><TD>Place :</TD><TD COLSPAN="3">
+<textarea rows="3" name="Event_place" cols="60"></textarea></TD>
+</TR>
+<TR><TD>Event :</TD><TD COLSPAN ="3">
+  <textarea rows="3" name="Event_description" cols="60"></textarea></TD>
+</tr>
+<TR><td>Price Members :</td><TD><INPUT TYPE="text" NAME="Price_Member" SIZE="20" MAXLENGTH="50" ></TD>
+<TD>Price Guests</TD><TD><INPUT TYPE="text" NAME="Non_Member_Price" SIZE="20" MAXLENGTH="50" ></td>
+</TR>
+<TR>
+<TD>Type of event, Open to the public or Private<p>&nbsp;</p>
+<p>Dress and event type (Check all that apply)</td>
+<TD><input type="radio" Name="Event_type" Value="Open" checked>Open<input type="radio" Name="Event_type" Value="Private">Private<hr>
+<p><input type="radio" name="Dress_type" value="Casual" checked>Casual Dress
+<input type="radio" name="Dress_type" value="Dressy">Dressy</p>
+<p><input type="radio" name="Dress_type" value="Black Tie Optional">Black Tie 
+Optional<input type="radio" name="Dress_type" value="Black Tie">Black Time</p>
+<hr>
+<p><input type="checkbox" name="Golf_event" value="Yes">Golf
+<input type="checkbox" name="Skiing_event" value="Yes">Skiing
+<input type="checkbox" name="Sailing_event" value="Yes">Sailing
+<input type="checkbox" name="Dance_event" value="Yes">Dance<BR>
+<input type="checkbox" name="Travel_event" value="ON">Travel
+<input type="checkbox" name="Cultural" value="ON">Cultural
+<input type="checkbox" name="Dining" value="ON"> Dining<BR>
+<BR>
+
+</td>
+<TD>Publish Priority</td>
+<TD><INPUT type="radio" Name="Event_priority" Value="Normal" checked>10 days<br>
+<input type="radio" Name="Event_priority" Value="High">20 days<br>
+<input type="radio" Name="Event_priority" Value="VHigh">30 days<br>
+<input type="radio" NAME="Event_priority" Value="Trip">90 days<br>
+</TD></TR>    
+<TR><td COLSPAN = "4">
+<CENTER><B><I>Recurring Event Parameters</I></B></CENTER></TR>
+<TR><td>Generate From Date</td>
+
+
+<TD>     <input type="text" name="Generate_from_date" size="20"><p>
+<!--webbot bot="Validation" S-Data-Type="Integer" S-Number-Separators="x" I-Maximum-Length="3" S-Validation-Constraint="Greater than or equal to" S-Validation-Value="1" S-Validation-Constraint="Less than or equal to" S-Validation-Value="90" --><input type="text" name="Generate_reserve_noofdays" size="3" maxlength="3"> 
+Number of days before event</p>
+<p>&nbsp;that reservations must be made.</td>
+<td>Generate To Date</td>
+<TD>     <input type="text" name="Generate_to_date" size="20"></td>
+</tr>
+<tr>
+<Td> Day of week</td>
+<Td><input type="radio" Name="DOWR" Value="Mon">Monday<BR>
+<input type="radio" Name="DOWR" Value="Tue">Tuesday<BR>
+<input type="radio" Name="DOWR" Value="Wed">Wednesday<BR>
+<input type="radio" Name="DOWR" Value="Thu">Thursday<BR>
+<input type="radio" Name="DOWR" Value="Fri">Friday<BR>
+<input type="radio" Name="DOWR" Value="Sat">Saturday<BR>
+<input type="radio" Name="DOWR" Value="Sun">Sunday<BR>
+</Td>
+<td>Week of the Month</td>
+<td><input type="checkbox" Name="week" value="First">First<BR>
+<input type="checkbox" Name="week" value="Second">Second<BR>
+<input type="checkbox" Name="week" value="Third">Third<BR>
+<input type="checkbox" Name="week" value="Fourth">Fourth<BR>
+<input type="checkbox" Name="week" value="Fifth">Fifth<BR>
+<input type="checkbox" Name="week" value="Alternate">Alternate<BR></td>
+</tr>
+
+
+
+
+
+<tr><TD colspan = "4">
+<CENTER><input TYPE='button' NAME="Submit" VALUE="Submit Form" onclick ="submit_page(this.form)" ><input TYPE="Button"
+ NAME = "Clear" VALUE = "Reset Form" 
+onclick ="clear_form(this.form)"></CENTER></TD>
+</TR>
+</table>
+
+	
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,23 @@
+RemoteCwd /usr/www/graynwhite
+LocalCwd d:\program files\omni\htdocs
+LocalCwd d:\program files\omni
+LocalCwd d:\program files\omni\cgi-bin
+RemoteCwd /usr/www/graynwhite/htdocs
+RemoteCwd /usr/www/graynwhite/htdocs/cgi-bin
+RemoteCwd /usr/www/graynwhite/htdocs/cgi-bin/Users
+LocalClearSelection
+LocalSelect french.dat
+LocalSelect sailors.dat
+LocalSelect selctive.dat
+LocalSelect somerset.dat
+LocalSelect users.dat
+Upload
+LocalCwd d:\program files\omni
+LocalCwd d:\program files\omni\htdocs
+LocalCwd d:\program files\omni\htdocs\ss
+RemoteCwd /usr/www/graynwhite/htdocs/cgi-bin
+RemoteCwd /usr/www/graynwhite/htdocs
+RemoteCwd /usr/www/graynwhite/htdocs/ss
+LocalClearSelection
+LocalSelect direct.htm
+Upload

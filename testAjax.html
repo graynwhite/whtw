@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>testAjax&lt;form name=&quot;myForm&quot;&gt;</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function ajaxFunction()
+  {
+  var xmlHttp;
+  try
+    {
+    // Firefox, Opera 8.0+, Safari
+    xmlHttp=new XMLHttpRequest();
+    }
+  catch (e)
+    {
+    // Internet Explorer
+    try
+      {
+      xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+      }
+    catch (e)
+      {
+      try
+        {
+        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+      catch (e)
+        {
+        alert("Your browser does not support AJAX!");
+        return false;
+        }
+      }
+    }
+    xmlHttp.onreadystatechange=function()
+      {
+      if(xmlHttp.readyState==4)
+        {
+        document.myForm.time.value=xmlHttp.responseText;
+        }
+      }
+    xmlHttp.open("GET","time.asp",true);
+    xmlHttp.send(null);
+  }
+</script>
+
+<form name="myForm">
+Name: <input type="text"
+onkeyup="ajaxFunction();" name="username" />
+Time: <input type="text" name="time" />
+</form>
+</body>
+</html>

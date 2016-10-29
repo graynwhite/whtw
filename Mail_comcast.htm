@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Mail control</title>
+</head>
+
+<body bgcolor="#FFFF33" text="#000000" alink="#FF0000" vlink="#FF00FF" link="#0000FF">
+
+<h1>Mail control</h1>
+<p>
+<img src="../ss/ss.gif" width="86" height="81" align="top" border="0" alt="ss.gif - 14426 Bytes">
+</p>
+<hr>
+<form METHOD="GET" action="http://www.graynwhite.com/cgi-bin/mail_comcast.cgi">
+  <table ALIGN="center" BORDER="1" WIDTH="100%">
+    <tr>
+      <td>Password:<br>
+      (Only authorized members can use this system.)</td>
+      <td><input TYPE="password" NAME="pswrd" SIZE="8" MAXLENGTH="8"></td>
+    </tr>
+    <tr>
+      <td>Email From:<br>
+      (Your E-mail Address)</td>
+      <td><input TYPE="TEXT" NAME="email_from" SIZE="40"></td>
+    </tr>
+    <tr>
+      <td>Signature:<br>
+      (Your Name and optionally your phone number)</td>
+      <td><input TYPE="text" NAME="signature" SIZE="40" MAXLENGTH="40"></td>
+    </tr>
+    <tr>
+      <td>Subject:</td>
+      <td><input TYPE="TEXT" NAME="subject" SIZE="40"> </td>
+    </tr>
+    <tr>
+      <td>Include:</td>
+      <td><input type="checkbox" name="include_list" value="Sail">Sailing 
+      Singles <input type="checkbox" name="include_list" value="Somerset">Somerset
+      <input TYPE="checkbox" NAME="include_list" VALUE="Press">Press<br>
+      <input TYPE="checkbox" NAME="include_list" VALUE="Golf">Golfers
+      <input TYPE="checkbox" NAME="include_list" VALUE="Cruise">Cruisers
+      <input TYPE="checkbox" NAME="include_list" VALUE="Skiing">Skiers
+      <input TYPE="checkbox" NAME="include_list" VALUE="Dance">Dancers
+      <input TYPE="checkbox" NAME="include_list" VALUE="Travel">Travelers<br>
+      <input TYPE="checkbox" NAME="include_list" VALUE="personal">marked 
+      personal </td>
+    </tr>
+    <tr>
+      <td>Action:</td>
+      <td><input type="radio" name="action" value="test" checked>Test (You will 
+      see how your message will be composed.)<br>
+      <input type="radio" name="action" value="count">Count members selected<br>
+      <input TYPE="radio" NAME="action" VALUE="send"> Send the message<br>
+      <input TYPE="radio" NAME="action" VALUE="analyze">Analyze Database </td>
+    </tr>
+  </table>
+  <p>Message:<br>
+  <textarea cols="100" rows="10" name="messagebody">
+</textarea> </p>
+  <p><input TYPE="SUBMIT" VALUE="Email Message">
+  <input TYPE="RESET" VALUE="Clear Message"> </p>
+  <hr>
+</form>
+
+</body>
+
+</html>

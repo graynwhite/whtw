@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+
+	<title>C & G Selection</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>
+	function setOak(checked){
+	console.log("at setoak");
+	$('#fp').attr('checked', checked);
+	$('#rp').attr('checked', checked);
+	$('#tt').attr('checked', checked);
+	$('#bbe').attr('checked', checked);
+	$('#ror').attr('checked', checked);
+	$('#wt').attr('checked', checked);
+	$('#ss').attr('checked', checked);
+	}
+	function setMacomb(checked){
+	console.log("at setMacomb");
+	$('#ww').attr('checked', checked);
+	$('#mtc').attr('checked', checked);
+	$('#fctc').attr('checked', checked);
+	$('#scss').attr('checked', checked);
+	$('#sun').attr('checked', checked);
+	$('#mpn').attr('checked', checked);
+	$('#shs').attr('checked', checked);
+	}
+	function setWayne(checked){
+	console.log("at setWayne");
+	$('#ess').attr('checked', checked);
+	$('#at').attr('checked', checked);
+	$('#an').attr('checked', checked);
+	$('#es').attr('checked', checked);
+	$('#gpt').attr('checked', checked);
+		}
+	</script>
+	
+	<script>
+	$(document).ready(function(){
+	$('#scopeAll').click(function(){
+	setOak(true);
+	setMacomb(true);
+	setWayne(true);
+	});
+	$('#scopeNone').click(function(){
+	setOak(false);
+	setMacomb(false);
+	setWayne(false);
+	});
+	$('#ctyOakland').click(function(){
+	setOak(true);
+	});
+	$('#ctyWayne').click(function(){
+	setWayne(true);
+	});
+	$('#ctyMacomb').click(function(){
+	setMacomb(true);
+	});
+	
+	});
+	</script>
+</head> 
+<body>
+<div data-role=page id="mainPage" data-theme="b"/> 
+<div data-role="header" class="header"><h1>C&G Newspapers</h1></div>
+<div data-role="content">
+<fieldset legend="Scope Selection"><input name="scope" type="button" id="scopeAll" value="all">
+<input name="scope" type="button" id="scopeNone" value="none">
+</fieldset>
+<fieldset legend="County Selection">
+ <input name="county" type="button" id="ctyWayne" value="Wayne">
+ <input name="county" type="button" id="ctyOakland" value="Oakland">
+ <input name="county" type="button" id="ctyMacomb" value="Macomb">
+</fieldset>
+<fieldset legend="Newspaper Selection">
+Farmington Press <input name="newspaper" type="checkbox" id="fp"  title="Farmington Press" value="fp">Rochester Post <input name="newsletter" type="checkbox" id="rp" title="Rochester Post" value="rp">
+Eastside Shopper <input name="newspaper" type="checkbox"id="ess" title="Eastside Shopper" value="es">Warren Weekly<input name="newspaper" type="checkbox" id="ww" title="Warren Weekly" value="ww">Macomb Township Chronicle<input type="checkbox" name="newspaper" id="mtc" title="Macomb Township Chronicle" value="mtc">Eastsider<input name="newspaper" type="checkbox" id="es" title="Eastsider" value="es">Fraser-Clinton Township Chronicle<input name="newspaper"  title="Fraser-Clinton Township Chronicle" type="checkbox" id="fctc" value="fctc">St. Clair Shores Sentinel<input name="newspaper" title="St Clair Shores Sentinel"type="checkbox" id="scss" value="scss">
+Shelby-Utica News<input name="newspaper" type="checkbox" id="sun" title="Shelby-Utica News" value="sun"> Journal<input name="newsletter" type="checkbox" id="jrn"  title="Journal" value="jrn">Sterling Heights Sentry<input name="newspaper" title="Shelby-Utica News" type="checkbox" id="shs" value="shs">Troy Times<input name="newspaper" type="checkbox" title="Troy Times" id="tt" value="tt">Madison-Park News<input name="newsletter" type="checkbox" title="Madison-Park News"  id="mpn" value="mpn">Birmingham-Bloomfield Eagle <input name="newsletter" type="checkbox" id="bbe" title="Birmingham-Bloomfield Eagle" value="bbe">Advertiser Times<input name="newsletter" type="checkbox" id="at" title="Advertiser Times" value="at">Grosse Pointe Times<input name="newsletter" title="Grosse Pointe Times" type="checkbox" id="gpt" value="gpt">Royal Oak Review<input name="newsletter" title="Royal Oak Review" type="checkbox"  id="ror" value="ror">West Bloomfield Beacon<input name="newspaper" title=West Bloomfield Beacon" type="checkbox" id="wbb" value="wbb">Woodward Talk<input name="newspaper"  title="Woodward Talk" type="checkbox" id="wt" value="wt">Southfield Sun<input  type="checkbox" name="newspaper"  id="ss" title="Southfield Sun" value="ss">
+</fieldset>
+
+
+</div><!--End of content-->
+<div data-role="footer">C&G Newspapers</div>
+</div><!-- End of Page -->
+<!-- ========================== -->
+</body>
+</html>

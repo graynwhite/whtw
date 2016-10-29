@@ -1,0 +1,319 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+
+<title>Gray and white Dashboard</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
+	<script>
+	$(document).ready(function(){
+	 $(".markItUp").markItUp(mySettings);
+	  $("textarea").markItUp(mySettings);
+	console.log("ready to go");
+	
+	
+	$('#controlButton').click(function(){
+	var searchArgval = $('#searchArg').val();
+	var searchType = $('#searchType').val();
+$.get('getTitles.php',{
+	
+	searchArg: searchArgval,
+	searchType: searchType
+	},
+		function(data) {
+		$('#returnArea').html(data);
+		});
+	
+	});
+	
+	$('#eventButton').click(function(){
+	var Event_number = $('#eventNumber').val();
+	
+$.getJSON('getDetails.php',{Event_number: Event_number})
+.done( function(data) {
+ console.log("at done function");
+ console.log(data[0]);
+ $('#dashboardDetails').get(0).reset();	
+ $('#Event_number').val("test");
+  $.each(data[0], function(key, value) {
+  	$("#" + key).val(value);
+    //var $ctrl = $("#"+key )";
+	//var $ctrl = $('[name="' + name + '"]');
+	
+	 
+	type = $("#" + key).attr('type');
+	
+	console.log("type is " + type + " Key is " + key);
+	 
+    /*switch(type)  
+    {  
+        case "text" :   
+        case "hidden":  
+        case "textarea":  
+        $("#" +key).val(value);   
+        break;   
+        case "radio" : case "checkbox":   
+        $("#" + key).each(function(){
+           if($(this).attr('value') == value) {  $(this).attr("checked",value); } });   
+        break;  
+    }*/
+	});  
+  });
+ 
+  
+//});
+	
+	});
+	
+	$('#btnGetOrgs').click(function(){
+	var Event_number = $('#eventNumber').val();
+	
+$.get('getOrgDisplay.php',{
+	
+	Event_number: Event_number,
+	
+	},
+		function(data) {
+		$('#detailData').html(data);
+		});
+	
+	});
+
+	$('#btnUpdateEvent').click(function(){
+	console.log("Update event clicked");
+	$('#resultx').html('<img src="whiteloading.gif" height="50">Processing... Please Wait');	
+	});
+	
+	$('#btnDeleteEvent').click(function(){
+	console.log("Delete event clicked");
+	$('#resultx').html('Record Deleted ');	
+	});
+	$('#btnReplicateEvent').click(function(){
+	console.log("Replicate event clicked");	
+	});
+	$('#btnCopyEvent').click(function(){
+	console.log("Copy event clicked");	
+	});
+	}); <!--end of document ready function-->
+	</script>
+	
+	<!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
+	<link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/style.css" />
+	<link rel="stylesheet" type="text/css" href="../markitup/markitup/skins/markitup/style.css" />	
+    <style type="text/css">
+<!--
+.pageHeader {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	background-color: #00CCFF;
+	height: 30px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+.controlBox {
+	background-color: #00CCFF;
+	height: 210px;
+	width: 25%;
+	border: medium solid #000000;
+	font-family: "Times New Roman", Times, serif;
+	float: left;
+	top: 31px;
+}
+.ReturnArea {
+	background-color: #00CCFF;
+	float: left;
+	width: 25%;
+	top: 350px;
+	overflow: scroll;
+	position: absolute;
+	height: auto;
+	left: 10px;
+	border: medium solid #000000;
+	right: auto;
+}
+.detailsArea {
+	background-color: #00CCFF;
+	width: 70%;
+	position: absolute;
+	left: 27%;
+	border: medium solid #000000;
+	top: 100px;
+}
+#eventButtons {
+	display: none;
+}
+-->
+    </style>
+
+</head> 
+
+
+<body> 
+<div id="mainPage" data-role="page">
+<div data-role="header">Event Dashboard</div>
+<div data-role="content">
+
+<p class="pageHeader">Gray and White Computing Event Dashboard</p>
+<div class="controlBox">
+<h2>Control Box</h2>
+<form name="controlBoxForm">
+<label for "searchArg">Search Argument</label>
+<p>
+  <input type="text" name="searchArg" id="searchArg">
+  <br />
+  <select name="searchType" id="searchType">
+    <option>Date</option>
+    <option>Organization</option>
+    <option>Place</option>
+  </select>
+  <input type="button" name="controlButton" id="controlButton" value="Go">
+  <br />
+  Event#
+  <input type=text name="eventNumber" id="eventNumber">
+  <input type="button" name="eventButton" id="eventButton" value="Get Details"><br />
+  <input type="button" name="btnGetOrgs" id="btnGetOrgs" value="Get Organization List">
+</p>
+<p>
+  
+</p>
+</form>
+</div>
+<div class="ReturnArea">
+<h2 >Titles Returned</h2>
+<div id="returnArea"> </div>
+</div> <!-- End of return area -->
+<div name="detailsArea" id="detailsArea" class="detailsArea">
+
+<h2 id="detailsAreaHeading">Event Details</h2>
+<div id="detailForm">
+<form id="dashboardDetails" name="dashboardDetails"  > 
+<input type="hidden" name="action" id="action" value="addremote" /> 
+<input type="hidden" name="operator" id="operator" value=\"admin" /> 
+<table width="100%" border="1"> 
+<tr>
+      <td width="199">Event Number </td>
+	  <td width="323"><input name="Event_number" type="text" id="Event_number" value="" size="80" /></td>
+    </tr>   	
+	
+
+<tr>
+      <td width="199">Submitted By: </td>
+	  <td width="323"><input name="SUBMITTED_BY" type="text" id="SUBMITTED_BY" value="" size="80" /></td>
+    </tr> 
+    
+    <tr> 
+    <td>Organization:</td>
+    <td><input name="Event_org" type="text" id="Event_org" value="" size="80" /></td>
+    </tr>
+	
+    <tr>
+    <td>Event Title: </td>
+      <td><input name="Event_title" type="text" id="Event_title" value="" size="80" /></td>
+    </tr> 
+    <tr> 
+      <td>Start Date: </td> n ";
+      <td><input name="Date_from" type="text" id="Date_from" value="" size="24" /></td> 
+    </tr> 
+    <tr> 
+      <td>Start Time: </td> 
+      <td><input name="Time_start" id="Time_start" type="text" value="" /></td> 
+    </tr> 
+    <tr> 
+      <td>End Date: </td> 
+      <td><input name="Date_to" id="Date_to" type="text" value="" /> 
+           </td> 
+    </tr> 
+    <tr> 
+      <td>End Time: </td> 
+      <td><input name="Time_end" id="Time_end" type="text" value="" /></td> 
+   </tr> 
+    <tr> 
+      <td>Reserve By Date: </td> 
+      <td><input name="Resby" id="Resby" type="text" value="" /></td>
+    </tr> 
+    <tr> 
+      <td>Day Of Week</td>
+
+      <td><input name="Dow" type="text" id="Dow" value="" /></td> 
+	  	 
+    </tr> 
+    <tr> 
+	
+    <td>Place Full </td> 
+      <td><textarea name="Place"  type="textarea" cols="80" rows="3" id="Place"></textarea></td>
+    </tr> 
+    <tr> 
+      <td>Activity:</td> 
+      <td><textarea name="Activity"  class="markItUP" cols="80" rows="3" id="Activity"></textarea></td>
+      
+      
+    </tr> 
+    <tr> 
+      <td>Media:</td> 
+      <td><textarea name="media"  type="textarea" class="markItUP" cols="80" rows="5" id="media"></textarea> </td>
+      
+    </tr> 
+    <tr> 
+      <td>Price Members </td> 
+      <td><input name="Price_members" id="Price_members" type="text" value="" /></td>
+    </tr> 
+    <tr> 
+      <td>Price Guests </td> 
+      <td><input name="Price_guests" type="text" id="Price_guests" value="" /></td>
+    </tr> 
+    <tr> 
+      <td>Priority </td>
+      <td><input name="Event_priority" type="text" id="Event_priority" value="" size="3" /></td>
+    </tr> 
+    <tr> 
+       <td>Open Event </td>
+       <td><input name="Event_open" type="text" id="Event_open" value="" size="3" /></td>
+    </tr> 
+    <tr> 
+       <td>Confirm Code </td>
+       <td><input name="confirm" type="text" id="confirm" value="" size="3" />
+      G = golf T= Trip R=reunion </td>
+     </tr> 
+	<tr> 
+       <td>Needs Review </td>
+       <td><input name="needsReview" type="text" id="needsReview" value="" size="3" />
+      </td>
+     </tr> 
+	<tr> 
+       <td>Categories </td>
+       <td><input name="categories" type="text" id="categories" value="" size="50" />
+     </td>
+     </tr> 
+	<tr> 
+       <td>Image </td>
+       <td><input name="image" type="text" id="image" value="" size="40" />
+     </td>
+     </tr> 
+
+		  <tr><td>Password</td>
+	  <td><input type="password" name="password">    
+	   </tr>
+	</table>
+
+ 
+<div id="resultx"></div>
+<input type="button" id="btnUpdateEvent" value="Update Event">
+<input type="button" id="btnDeleteEvent" value="Delete Event">
+<input type="button" id="btnReplicateEvent" value="Replicate Event">
+<input type="button" id="btnCopyEvent" value="Copy Event">
+</form> 
+
+</div>
+<div id="detailData"></div>
+</div>
+</div> <!-- End of content -->
+<div data-role="footer">Event Dashboard</div>
+</div> <!--End of main page>

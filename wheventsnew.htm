@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What's Happening This Week</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-size: large;
+	color: #000000;
+}
+body {
+	background-color: #FFFF66;
+}
+.style1 {font-size: medium}
+#Layer1 {
+	position:absolute;
+	width:342px;
+	height:27px;
+	z-index:1;
+	left: 293px;
+	top: 155px;
+}
+-->
+</style></head>
+
+<body>
+<p><img src="whtw.jpg" width="244" height="171"></p>
+<div id="Layer1">
+  <table width="272" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="11" background="http://img.constantcontact.com/ui/images/visitor/bevel_bg_left_yw.gif"></td>
+      <td width="165" bgcolor="#ffe169"><a href="http://ui.constantcontact.com/d.jsp?m=1011148101198&p=oi" target="_blank" style="text-decoration:none; font-weight: bold;  font-family:Arial,Helvetica,sans-serif; font-size:20px; color:#330099;"><img src="http://img.constantcontact.com/ui/images/visitor/arrow1_blue.gif" alt="Email Newsletter icon, E-mail Newsletter icon, Email List icon, E-mail List icon" border="0" align="left">Join Email List</a></td>
+      <td width="73" background="http://img.constantcontact.com/ui/images/visitor/bevel_bg_right_yw.gif"></td>
+    </tr>
+  </table>
+</div>
+ 
+<table width="700" border="0" cellpadding="10" cellspacing="0">
+  <tr>
+    <th width="348" scope="col"><p><a href="http://www.graynwhite.com/whtw/calendar.php"><img src="ftrbtn.gif" width="150" height="45" border="0"></a></p>
+    <p class="style1">Click on this button to see events that are coming up in the future </p></th>
+    <th width="352" scope="col"><p><a href="http://www.grtaynwhite.com/whtw/event_mail.php"><img src="addbtn.gif" width="150" height="45" border="0"></a></p>
+    <p class="style1">Click on this button if you would like to report and event or change some information that is is the database </p></th>
+  </tr>
+</table>
+<p>&lt;font face=&quot;ARIAL, HELVETICA&quot;&gt;<br>
+  &lt;?php</p>
+<p> echo( date(&quot; F dS Y.&quot;) ); <br>
+    <br>
+  update_counter(&quot;../_private/whtw/whevents.htm.cnt&quot;);<br>
+  $this_year = date(Y);<br>
+  $this_day = date(d);<br>
+  $this_month=date(m);<br>
+  $this_very_day = $this_year . &quot;-&quot; . $this_month . &quot;-&quot; . $this_day;<br>
+  $today=$this_very_day;<br>
+  $one_week_hence=mktime(0,0,0,$this_month,$this_day,$this_year);<br>
+  $one_week_hence=$one_week_hence + 7*24*60*60;<br>
+  $this_year = date(Y,$one_week_hence);<br>
+  $this_day = date(d,$one_week_hence);<br>
+  $this_month=date(m,$one_week_hence);<br>
+  $one_week_from_now = $this_year . &quot;-&quot; . $this_month . &quot;-&quot; . $this_day;<br>
+  <br>
+  ?&gt;<br>
+  &lt;/font&gt;</p>
+&lt;B&gt;&lt;CENTER&gt;&lt;A HREF=&quot;comment.htm&quot;&gt; Post your comments and/or questions&lt;/A&gt;&lt;/CENTER&gt;&lt;/B&gt;<br>
+&lt;CENTER&gt; updated
+<CENTER>
+  <font face="ARIAL, HELVETICA"><b><A HREF="comment.htm"> Post your comments and/or questions</A></b></font>
+</CENTER>
+<CENTER>
+  <font face="ARIAL, HELVETICA"> updated</font>
+</center>
+<table width="687" height="63" border="0">
+  <caption>
+    Current Events
+    <br>
+  </caption>
+</table>
+<CENTER>
+  <font color="#FF0000" face="ARIAL, HELVETICA"><I>Events in italics need advance registration or require advance notice.</I></font>
+</CENTER>
+<CENTER>
+  <font color="#FF0000" face="ARIAL, HELVETICA">Events in red have past their advance registration date. Check with the sponsoring organization for availability.</font>
+</CENTER>
+<table width="700" border="0">
+  <tr>
+    <th width="165" scope="col">Organization</th>
+    <th width="314" scope="col">&nbsp;</th>
+    <th width="38" scope="col">&nbsp;</th>
+    <th width="38" scope="col">&nbsp;</th>
+    <th width="38" scope="col">&nbsp;</th>
+    <th width="38" scope="col">&nbsp;</th>
+    <th width="39" scope="col">&nbsp;</th>
+  </tr>
+</table>
+<CENTER>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA"><A HREF="event_mail.php">If you would like to enter information about some event or you would like to change information about an event click here</A></FONT></p>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA"><B>Use the
+  back function to return to Home Page</B></FONT></p>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA">Click on the organization names below to reach their home pages.</FONT></p>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA"><A HREF="http://www.graynwhite.com/ss/"> Sailing Singles</A></FONT></p>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA"><A HREF="http://www.graynwhite.com/sg/">Somerset Singles Ski & Golf Club</A></FONT></p>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA"><A HREF="http://www.gmskiclub.org">GM Ski Club</A><A HREF="http://www.skiwiskiclub.com">Skiwi Ski and Social Club</A></FONT></p>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA"><A HREF="http://www.a2skiclub.org/a2skiclub">Ann Arbor Ski Club</A></FONT></p>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA"><A HREF="http://www.tbirdskiclub.com">Thunderbird Ski Club</A></p>
+  <p><FONT color="#FF0000" FACE="ARIAL, HELVETICA"><A HREF="http://www.msda.org">Michigan Swing Dance Association</A></p>
+  <p> <font color="#FF0000" face="ARIAL, HELVETICA"><a href="http://click.linksynergy.com/fs-bin/stat?id=9aLN0L76PuM&offerid=7660&type=3&subid=0">Click here for Free Stuff</a> <IMG border=0 width=1 height=1 src="http://ad.linksynergy.com/fs-bin/show?id=9aLN0L76PuM&bids=7660&type=3&subid=0"> </font></p>
+  <p>&nbsp;</p>
+  <p></p>
+</CENTER>
+<CENTER>
+  <FONT color="#FF0000" FACE="ARIAL, HELVETICA">to this web
+    site</FONT>
+</CENTER>
+<p align="center">
+  <!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="4" startspan -->
+  <img src="../cgi-bin/_vti_bin/fpcount.exec?page=whtw/whevents.php|Image=0|Digits=4" alt="Hit Counter"></p>
+<p align="center">&nbsp;</p>
+</body>
+</html>

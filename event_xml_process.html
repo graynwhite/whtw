@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<TITLE>Event input processing.</TITLE>
+<META NAME="generator" CONTENT="Microsoft FrontPage 5.0">
+<Script>
+<!--
+function clear_form(form){
+form.reset();
+}
+function submit_page(form){
+var foundError = false;
+var Radio_state = "   ";
+pass = new MakeArray(11);
+pass[0]= "water";
+pass[1]= "holes";
+pass[2]= "mounds";
+pass[3]= "east";
+pass[4]= "west";
+pass[5]= "hope";
+pass[6]= "good";
+pass[7]= "boats"; 
+pass[8]= "nocars";
+pass[9]= "bird";
+pass[10]= "fjc719";
+
+//
+	
+	
+
+	
+	if (!foundError) {
+		form.submit()
+	}	
+// Check for blank field
+function isFieldBlank(theField) {
+	if (theField.value.length == 0)
+	     return true;
+	else
+	     return false;
+    }	
+// make array
+function MakeArray(n){
+	this.length = n;
+	for (var i = 1;i <=n; i ++){
+	 this[i] = 0}
+	return this
+ }	
+}
+//-->
+
+</script>
+
+
+</HEAD>
+<BODY>
+<H1>&nbsp;Event Processing</H1>
+
+<form method=POST action="../mail_xml.php">
+<input type=hidden name="Subject" Value=" WHTW Entry">
+<input type=hidden name="Sender" Value=+Email+>
+<input type=hidden name="recipient" value=
+"webmaster@graynwhite.com">
+<input type=hidden name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT">
+<input type=hidden name="bgcolor" value="#ffffff">
+<input type=hidden name="text_color" value="#000000">
+<input type=hidden name="return_link_url" value="http://graynwhite.com/whtw">
+<input type=hidden name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page">
+<Table Align = "left" Border= "1" Width = "100%" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0" height="509">
+<TR >
+<TD height="22"><b>Organization Name: </b> </TD>
+<TD height="22"><INPUT TYPE="text" NAME="Orgname" size="40"></TD>
+<td height="22"> <b>Name</b></TD><TD height="22"><INPUT Name="yname" size="30"></TD>
+</TR>
+<TR>
+ <TD height="26"><b>E-Mail Address</b></TD>
+<TD height="26"><INPUT Type ="text" Name="EMAILID" size="40"></TD>
+<TD height="26"> <b>Phone Number</b></TD>
+<TD height="26"><INPUT type = "text" Name="Yphone" size="20"></TD>
+</TR>
+<TR>
+<TD height="26"><b>Date From </b>:</TD>
+<TD height="26"><INPUT TYPE="text" NAME="From_date" size="20"></td>
+<TD height="26"><b>To Date </b>:</td><TD height="1"> <INPUT TYPE="text" NAME="To_date" size="20"></td></tr>
+<TR><TD height="22"><b>Start Time</b></TD><TD height="22"><INPUT TYPE="text" NAME="Start_Time" size="20"></td>
+<td height="22"><b>End Time:</b></TD><td height="22"><INPUT TYPE="TEXT" NAME="To_Time" size="20"></td></tr>
+<TR><td height="22"><b>Day of Week</b> :</td><TD height="22"><INPUT TYPE="TEXT" NAME="Day_of_week" size="20"></td>
+<TD height="22"><b>Reserve by Date</b></TD><TD height="22"> <INPUT TYPE="text" NAME="resby" SIZE="12" MAXLENGTH="12" ></TD>
+  <TD height="22"></TD></TR>
+<TR><TD height="68"><b>Comments</b></TD><TD COLSPAN="3" height="68"><Textarea name ="comments" cols ="55" rows ="4"></TEXTAREA></TD></TR>
+<TR><TD height="68"><b><font size="4">Place</font></b> </TD>
+  <TD COLSPAN = "3" height="68"><Textarea name ="Place" cols ="55" rows ="4"></TEXTAREA></TD></TR>
+<TR><TD height="68"><b><font size="4">Event </font></b>:</TD>
+  <TD COLSPAN ="3" height="68"><Textarea name ="Event_name" cols ="55" rows ="4"></TEXTAREA></TD></TR>
+<TR><td height="22"><b>Price Members</b> :</td><TD height="22"><INPUT TYPE="text" NAME="Price_Member" SIZE="20" MAXLENGTH="50" ></TD>
+<TD height="22">Price Guests</TD><TD height="22"><INPUT TYPE="text" NAME="Non_Member_Price" SIZE="20" MAXLENGTH="50" ></td>
+</TR>
+<TR><TD height="19">&nbsp;</TD>
+<TD Colspan ="3" height="19">&nbsp;</TD>
+</tr>
+<tr><td COLSPAN="4" height="168">Recurring Event?<BR> <input type="radio" Name="recurring" Value ="Yes">Yes<BR>
+<input Type="radio" Name="recurring" Value="No" checked>No<BR>
+  <b>Day of week:</b> Mon<input Type="checkbox" Name="Mon" value="ON">
+ Tue <Input Type="checkbox" Name="TUE." value="ON">
+ Wed  <Input Type="checkbox" Name="Wed." value="ON">
+ Thu <Input Type="checkbox" Name="Thu." value="ON">
+ Fri <Input Type="checkbox" Name="Fri" value="ON">
+ Sat <Input Type="checkbox" Name="sat." value="ON">
+ Sun <Input Type="checkbox" Name="Sun." value="ON"><BR>
+  <b>Week of Month</b>: 1st <input Type="checkbox" Name ="first" value="ON">
+ 2nd <Input Type="checkbox" Name="Second." value="ON">
+ 3rd <Input Type="checkbox" Name="Third." value="ON">
+ 4th <Input Type="checkbox" Name="fourth." value="ON">
+ 5th <Input Type="checkbox" Name="Fifth" value="ON"><BR>
+  <b>From DATE </b> <BR>Enter the <b>beginning date</b> of this recurring event (The first time it occurs)<INPUT Type=text name="recurbegin" size="20"> <BR>To Date Enter the date of 
+  <b>the last time</b> this recurring event will occur 
+  <input Type =Text name="recurend" size="20">
+</TD></tr>
+
+<tr><TD colspan = "4" height="26">
+<CENTER><input type = "Button" NAME="Submit" VALUE="Submit Form" onclick ="submit_page(this.form)" ></CENTER></TD>
+</TR>
+</table>
+
+
+	
+</FORM>
+</BODY>
+</HTML>

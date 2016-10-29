@@ -1,0 +1,26 @@
+RemoteCwd /c40/cauleyfj/ss
+LocalCwd d:\program files\omni\htdocs\whtw
+LocalCwd d:\program files\omni\htdocs
+RemoteCwd /c40/cauleyfj
+RemoteCwd /c40/cauleyfj/ss
+LocalCwd d:\program files\omni\htdocs\ss
+LocalClearSelection
+LocalSelect ssevents.htm
+Upload
+LocalCwd d:\program files\omni\htdocs
+LocalCwd d:\program files\omni\htdocs\sg
+RemoteCwd /c40/cauleyfj
+RemoteCwd /c40/cauleyfj/sg
+LocalClearSelection
+LocalSelect sgevents.htm
+Upload
+LocalSelect glfschd.htm
+Upload
+LocalCwd d:\program files\omni\htdocs
+LocalCwd d:\program files\omni\htdocs\whtw
+RemoteCwd /c40/cauleyfj
+RemoteCwd /c40/cauleyfj/whtw
+LocalClearSelection
+LocalSelect whevents.htm
+LocalSelect index.htm
+Upload

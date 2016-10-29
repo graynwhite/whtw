@@ -1,0 +1,37 @@
+A2|Ann Arbor Ski Club
+ASI|American Sailing Institute
+BetSo|Bethany South
+BethE|Bethany East
+BethN|Bethany North Oakland
+BethR|Bethany Rochester
+BethS|Bethany South Oakland
+BethW|Bethany Suburban West
+FSP|Farmington Single Professionals
+GM|GM Ski Club
+Hope|Project Hope League
+Kirk|Kirk Singles
+MSP|Metropolitan Single Professinals
+Other|Other Events
+SC|Singles Coalition
+Sail|Sailing Singles
+Selsg|Selective Singles
+Skwii|Skiwi Ski Club
+Somer|Somerset Ski & Golf Club
+char|Charity Event
+drya|Detroit Regional Yacht-racing Associatio
+gcs|Glass City Singles
+gpsc|Grosse Pointe Ski Club
+liv|Livonia Ski Skule
+msda|Michigan Swing Dance Association
+mtc|Mount Clemens Ski Club
+os|Ohio Singles
+pwpr|PWP- Rochester
+pwpsc|PWP St. Clair Shores
+shs|Sacred Heart Singles
+spm|Single Point Ministries
+stren|St. Rene 35+ Singles
+tbird|Ford Thunderbird Ski Club
+test|Test Org
+tolsk|Toledo Ski Club
+wdjaz|Windsor/Detroit Jazz Club
+

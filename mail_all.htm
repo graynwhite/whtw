@@ -1,0 +1,61 @@
+<HTML>
+<head>
+<TITLE>
+E-Mail All
+</TITLE>
+
+</head>
+<BODY bgcolor="#FFFF33" text="#000000" alink="#FF0000" vlink="#FF00FF" link="#0000FF">
+<h1>Mail control</h1>
+<img src="../cgi-bin/ss/ss.gif" width="86" height="81" align="top" border="0" alt="ss.gif - 14426 Bytes">
+<hr>
+<FORM METHOD= get Action="http://www.graynwhite.com/cgi-bin/mail_all.cgi">
+<TABLE ALIGN="center" BORDER="1" WIDTH="100%" >
+<TR><TD>Password:<br>(Only authorized members can use this system.)</TD><TD><INPUT TYPE="password" NAME="pswrd" SIZE="8" MAXLENGTH="8"></TD></TR>
+<TR><TD>
+Email From:<br>(Your E-mail Address)</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=email_from SIZE="40">&nbsp;&nbsp;&nbsp;
+<input type="checkbox" name="No_club" value="ON">No&nbsp; Club </TD>
+</TR>
+<TR><TD>Signature:<br>(Your Name and optionally your phone number)</TD><TD><INPUT TYPE="text" NAME="signature" SIZE="40" MAXLENGTH="40"></TD></TR>
+
+<TR><TD>Subject:</TD>
+<TD>
+<INPUT TYPE=TEXT NAME=subject SIZE=40>
+</TD>
+</tr>
+<TR><TD>Special Address</TD><TD>
+<input type="text" name="Special_address" size="40"></TD></TR>
+<TR><TD>Include:</TD><TD>
+<input type="checkbox" name="include_list" value="Sail" >Sailing Singles
+<input type="checkbox" name="include_list" value="Somerset" >Somerset
+<INPUT TYPE="checkbox" NAME="include_list" VALUE="Press">Press<br>
+<INPUT TYPE="checkbox" NAME="include_list" VALUE="Golf">Golfers 
+<INPUT TYPE="checkbox" NAME="include_list" VALUE="Cruise">Cruisers
+<INPUT TYPE="checkbox" NAME="include_list" VALUE="Skiing">Skiers
+<INPUT TYPE="checkbox" NAME="include_list" VALUE="Dance">Dancers
+<INPUT TYPE="checkbox" NAME="include_list" VALUE="Travel">Travelers<BR>
+<INPUT TYPE="checkbox" NAME="include_list" VALUE="personal">marked personal
+</TD></TR>
+<TR><TD>Action:</TD><TD>
+<input type="radio" name="action" value="test" checked >Test (You will see how your message will be composed.)<br>
+<input type="radio" name="action" value="count">Count members selected<br>
+<INPUT TYPE="radio" NAME="action" VALUE="send">
+Send the message<br>
+<INPUT TYPE="radio" NAME="action" VALUE="analyze">Analyze Database
+<br><input type="radio" name="action" value="special">Special
+<br>&nbsp;</TD></TR>
+</TABLE>
+
+<p>
+Message:<br>
+<textarea cols=100 rows=10 name=messagebody>
+</textarea>
+<p>
+<INPUT TYPE=SUBMIT VALUE="Email Message">
+<INPUT TYPE=RESET VALUE="Clear Message">
+<hr>
+</FORM>
+</BODY>
+</HTML>

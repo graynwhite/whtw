@@ -1,0 +1,563 @@
+<HTML>
+<HEAD>
+<TITLE>Wordpress Post an Event</TITLE>
+
+<Script language=Javascript>
+<!--
+var monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var monthNumArray = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+element_name = ''
+calPosition = ''
+calDiv = '';
+function SelectDate(selMo, selDay, selYear)
+{
+var dateField = document.getElementById(element_name);
+if (calPosition== 'top')
+	{ calDiv = document.getElementById("calendar");
+	}else{
+	 calDiv = document.getElementById("calendarBottom");
+	}
+
+dateField.value = monthNumArray[selMo] + "/" + selDay + "/" + selYear;
+calDiv.style.display = "none";
+}
+
+function FormatDate(dateValue)
+{
+// At this point all we have is a string like 01/01/2004
+// We must have a date object, so we make one based on the string date
+// and return it to the main function
+var dateValArray = dateValue.split("/");
+var currentDate = new Date(dateValArray[2],dateValArray[0]-1,dateValArray[1]);
+return currentDate;
+}
+
+function FormatRawDate(rawDateValue)
+{
+// The next/previous buttons have date object references. They need to be strings
+// so we can send them to the function when the next/previous links are clicked.
+// the string date is returned and placed into the link.
+var rawMonth = rawDateValue.getMonth()+1;
+var rawDay = rawDateValue.getDate();
+var rawYear = rawDateValue.getFullYear();
+var stringDate = rawMonth + "/" + rawDay + "/" + rawYear;
+return stringDate;
+}
+function prepShowCalendar(form_name_input,element_name_input,calPos){
+	calPosition=calPos;
+	form_name=form_name_input
+	element_name= element_name_input
+    dateValue = ''
+	ShowCalendar('')
+}
+function ShowCalendar(dateValue)
+{
+
+ if (calPosition== 'top')
+	{ calDiv = document.getElementById("calendar");
+	}else{
+	 calDiv = document.getElementById("calendarBottom");
+	}
+
+
+// if there is no date yet, make a new one. Otherwise, use the date in the input box
+// or the date passed by the next/previous buttons.
+var currentDate = (dateValue == null || dateValue == "") ? new Date() : FormatDate(dateValue) ;
+var prevMonth = new Date(currentDate);
+prevMonth.setMonth(currentDate.getMonth()-1);
+var nextMonth = new Date(currentDate);
+nextMonth.setMonth(currentDate.getMonth()+1);
+var currentYear = currentDate.getFullYear();
+var currentMonth = currentDate.getMonth();
+// shift the current day to day 1 to make calendar to build it from day 1.
+var firstDay = new Date(currentDate);
+firstDay.setDate(1);
+var currentDay = new Date(firstDay);
+// clear current calendar (if exists)
+var calHTML = "";
+// show calendar
+calDiv.style.display = "block";
+// write out calendar header
+calHTML += '<table cellpadding="4" cellspacing="0" border="0" width="220"><tr><td>';
+calHTML += '<a href="" onclick="ShowCalendar(\''+FormatRawDate(prevMonth)+'\'); return false;">&lt;&lt;</a>';
+calHTML += '</td><td colspan="5" class="calhead">' + monthArray[currentMonth] + ' ' + currentYear + '</td><td>';
+calHTML += '<a href="" onclick="ShowCalendar(\''+FormatRawDate(nextMonth)+'\'); return false;">&gt;&gt;</a></td></tr>';
+calHTML += '<tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr>';
+var curCell = 1;
+// as long as we are in the current month, write out the calendar days
+while(currentDay.getMonth() == firstDay.getMonth())
+{
+// begin row
+calHTML += '<tr>';
+// iterate through each week
+for (var i=0; i<7; i++)
+{
+calHTML += '<td>';
+// as long as this week is in the same month, write out days
+if(currentDay.getMonth() == firstDay.getMonth())
+{
+// if first day is not reached yet, write a blank
+if(curCell <= firstDay.getDay())
+{
+calHTML += '&nbsp;';
+curCell++
+}
+// otherwise write out the date
+else
+{
+calHTML += '<a href="" title="Click to choose date" onclick="SelectDate(' + currentDay.getMonth() + ',' + currentDay.getDate() + ',' + currentDay.getFullYear() + '); return false;">' + currentDay.getDate() + '</a>';
+curCell++
+currentDay.setDate(currentDay.getDate() + 1);
+}
+}
+calHTML += '</td>';
+}
+calHTML += '</tr>';
+}
+calHTML += '</table>';
+calDiv.innerHTML = calHTML;
+}
+function check_page(form){
+	var Radio_state = "   ";
+	re=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+	
+	if (form.Orgname.value.length == 0){
+		alert('Organization name must be entered.')
+		
+		form.Orgname.focus()
+		return false
+	}
+	if (form.yourName.value.length == 0){
+		alert('You must supply your name.')
+		
+		form.yourName.focus()
+		return false
+	}
+	if (!re.test(form.EMAILID.value)) {
+		alert("Invalid email Address.")
+		form.EMAILID.focus()
+		return false
+	}
+	if (form.From_date.value.length == 0){
+		alert('The beginning , or event, date must be entered use the calendar icon.')
+		form.From_date.focus()
+		return false
+		}
+		var this_date=FormatDate(form.From_date.value)
+		var today = new Date;
+		
+		if (this_date < today ){
+			alert('The beginning date, event date, cannot be less than the current date!')
+			form.From_date.focus()
+			return false
+		}
+		
+	    if (form.reserve_by.value.length > 0) {
+			var reserve_date = FormatDate(form.reserve_by.value)
+			if (reserve_date > this_date){
+			alert('The reserve date should be blank or less that the event date')
+			form.reserve_by.focus()
+			return false
+			}
+		}
+		if (form.to_date.value.length > 0) {
+			var to_date = FormatDate(form.to_date.value)
+			if (to_date < this_date){
+			alert('The ending date should be blank, or greater than or equal to the begin date!')
+			form.to_date.focus()
+			return false
+			}
+		}
+		if (form.place_name.value.length == 0){
+		alert('Place name must be entered.')
+		
+		form.place_name.focus()
+		return false
+		}
+		if (form.activity.value.length == 0){
+		alert('The event information  must be entered.')
+		
+		form.activity.focus()
+		return false
+	}
+
+  }    // end of check page
+   
+function clear_form(form){
+form.reset();
+}
+function submit_page(form){
+var foundError = false;
+var Radio_state = "   ";
+pass = new MakeArray(11);
+pass[0]= "water";
+pass[1]= "holes";
+pass[2]= "mounds";
+pass[3]= "east";
+pass[4]= "west";
+pass[5]= "hope";
+pass[6]= "good";
+pass[7]= "boats"; 
+pass[8]= "nocars";
+pass[9]= "bird";
+pass[10]= "fjc719";
+
+//
+	
+	
+
+	
+	if (!foundError) {
+		form.submit()
+	}
+}		
+// Check for blank field
+function isFieldBlank(theField) {
+	if (theField.value.length == 0)
+	     return true;
+	else
+	     return false;
+    }	
+// make array
+function MakeArray(n){
+	this.length = n;
+	for (var i = 1;i <=n; i ++){
+	 this[i] = 0}
+	return this
+ }	
+
+
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+
+//-->
+</script>
+
+
+<style type="text/css">
+<!--
+.Required {
+	color: #FF0000;
+}
+.fieldName {
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+}
+.explanation {
+	font-size: small;
+	font-style: italic;
+	font-weight: normal;
+}
+#calendar{
+	display: none;
+	position:absolute;
+	top:50px;
+	left:579px;
+	border:1px solid #333;
+	background:#fc3;
+	padding: 10px;
+	font-size:11px;
+	width: 215px;
+	height: 200px;
+}
+#calendarBottom{
+	display: none;
+	position:absolute;
+	top:936px;
+	left:279px;
+	border:1px solid #333;
+	background:#fc3;
+	padding: 10px;
+	font-size:11px;
+	width: 215px;
+	height: 200px;
+}
+-->
+</style>
+</HEAD>
+<BODY>
+<H1>Wordpress Post an Event</H1>
+
+<!-- This is the SitePal Talking head 
+<H1> SceneWizSc1127110Acc61468BodyStart
+<script language='JavaScript' type="text/javascript" src="http://vhost.oddcast.com/vhost_embed_functions.php?acc=61468&js=1"></script><script language="JavaScript" type="text/javascript">AC_VHost_Embed_61468(100, 200, 'FFFFFF', 1, 1, 859241, 1127110, 0, 0, '88e94b1aea0380ee5f543dab526a0577', 6);</script>
+if this is uncommented place the line below inside an html comment
+    SceneWizSc1127110Acc61468BodyEnd
+	nbsp;</H1>
+-->
+
+<form  action="event_handle_xml.php" method="post" name='formInput' id='formInput'  onSubmit="return check_page(this)" >
+  <p>
+    <input type=hidden name="Subject" value=" WHTW Entry">
+	<input type=hidden name="operator" value="wp_post_event">
+    <input type=hidden name="Sender" Value=+Email+>
+    <input type=hidden name="recipient" value="webmaster@graynwhite.com">
+    <input type=hidden name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT">
+    <input type=hidden name="bgcolor" value="#ffffff">
+    <input type=hidden name="text_color" value="#000000">
+    <input type=hidden name="return_link_url" value="http://graynwhite.com/whtw">
+    <input type=hidden name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page">
+    <strong>fields marked with a red asterisk <span class="Required">*</span> are required.</strong> 
+  <table align = "left" border= "1" width = "77%" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+  <tr >
+    <td class="fieldName">Sign me up as an Organizational Publicist. </td>
+    <td><p>
+      <label>
+        <input type="radio" name="Sign_up" value="Yes">
+        Yes</label>
+     
+      <label>
+        <input type="radio" name="Sign_up" value="No">
+        No</label>
+      <br>
+    </p></td>
+    <td colspan="2" class="fieldName"><label>Event Title
+      <input name="eventTitle" type="text" id="eventTitle" size="60" maxlength="120">
+    </label></td>
+    </tr>
+  <tr >
+    <td width="18%" class="fieldName">Organization Name </td>
+    <td width="38%"><input name="Orgname" type="text" class="Required" onBlur= size="40" size="40" maxlength="40">
+      <span class="Required">*</span></td>
+    <td width="6%" class="fieldName"> Your Name:</td>
+    <td width="37%" ><input name="yourName" type="Text" id="yourName" size="40" maxlength="40">
+        <span class="Required">*</span> </td>
+  </tr>
+  <tr>
+    <td class="fieldName">Your E-Mail Address</td>
+    <td><input name="EMAILID" type ="text"  size="45" maxlength="45">
+        <span class="Required">*</span> </td>
+    <td class="fieldName"> Your phone Number</td>
+    <td><input name="Yphone" type = "text" size="20" maxlength="20"></td>
+  </tr>
+  <tr>
+    <td class="fieldName">Date From :</td>
+    <td><span class="explanation">This is the date of the event or the beginning date of a multiple day event  Click on the miniture calendar icon  to access a date calendar to
+	assist the selection.
+      </span><br>
+      <input name="From_date" id="From_date" type="text" size="20" maxlength="20" readonly=""/>
+      <a href="error.html"
+	  onclick="prepShowCalendar('formInput','From_date','top'); return false;">
+	  <img src="calendar.gif" alt="" width="52" height="26" border='0'/></a>
+      <span class="Required">*</span></td>
+    <td class="fieldName">Reserve By: </td>
+    <td><div id="calendar">Content for  id calendar Goes Here</div>      
+      <p class="explanation">This is the reservation date if applicable leave it blank if no advance reservation is required otherwise click on the calenar icon.<br>
+        <input name="reserve_by" type="text" id="reserve_by" size="20" maxlength="20">
+        <a href="error.html"
+	  onclick="prepShowCalendar('formInput','reserve_by','top'); return false;">
+	  <img src="calendar.gif" alt="" width="52" height="26" border='0'/></a>      </td>
+  </tr>
+  <tr>
+    <td class="fieldName">To Date</td>
+    <td><span class="explanation">This is the ending date of a multiple day event in the form </span>mm/dd/yyy 
+      leave blank for single day events
+      <input type="text" name="to_date" id='to_date' size="20">      
+      <a href="error.html"
+	  onclick="prepShowCalendar('formInput','to_date','top'); return false;">
+	  <img src="calendar.gif" alt="" width="52" height="26" border='0'/></a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="111" class="fieldName">Start Time</td>
+    <td><span class="explanation">
+      <p>The start time of the event if applicable. <span class="Required">* </span></p>
+      <p>
+        <Select NAME = "Start_Time_Hours" SIZE = "1" >
+              <OPTION VALUE = "   " selected>N/A
+            <OPTION VALUE = "01:">01
+            <OPTION VALUE = "02:">02
+            <OPTION VALUE = "03:">03       
+            <OPTION VALUE = "04:">04
+            <OPTION VALUE = "05:">05
+            <OPTION VALUE = "06:">06
+            <OPTION VALUE = "07:">07
+            <OPTION VALUE = "08:">08
+            <OPTION VALUE = "09:">09
+            <OPTION VALUE = "10:">10
+            <OPTION VALUE = "11:">11
+            <OPTION VALUE = "12:">12
+          </SELECT>
+        Hour<BR>
+        <SELECT Name = "Start_Time_Minutes" SIZE = "1">
+          <OPTION VALUE = "  " selected>N/A
+            <Option Value = "00">00
+            <OPTION VALUE = "15">15
+            <OPTION VALUE = "30">30
+            <OPTION VALUE = "45">45
+          </SELECT>
+        Minutes<BR>
+        <SELECT NAME= "Start_AMPM" size= "1">
+          <Option Value = "   " selected>N/A
+            <Option Value = " PM">PM
+            <Option Value = " AM">AM
+          </Select>
+      AM or PM</p></td>
+    <td class="fieldName">End Time:</td>
+    <td><p><span class="explanation">Ending time of the event or blank if not applicable. </span>.
+      <p>    
+        <Select NAME = "To_Time_Hours" SIZE = "1" >
+          <OPTION VALUE = "   " selected>N/A
+            <OPTION VALUE = "01:">01
+            <OPTION VALUE = "02:">02
+            <OPTION VALUE = "03:">03       
+            <OPTION VALUE = "04:">04
+            <OPTION VALUE = "05:">05
+            <OPTION VALUE = "06:">06
+            <OPTION VALUE = "07:">07
+            <OPTION VALUE = "08:">08
+            <OPTION VALUE = "09:">09
+            <OPTION VALUE = "10:">10
+            <OPTION VALUE = "11:">11
+            <OPTION VALUE = "12:">12
+          </SELECT>
+        Hour <BR>
+        <SELECT Name = "To_Time_Minutes" SIZE = "1">
+          <OPTION VALUE = "  " selected>N/A
+            <OPTION VALUE = "00">00
+            <OPTION VALUE = "15">15
+            <OPTION VALUE = "30">30
+            <OPTION VALUE = "45">45
+          </SELECT>
+        Minutes<BR>
+        <SELECT NAME= "To_AMPM" size= "1">
+          <Option Value = "   " selected>N/A
+            <Option Value = " PM">PM
+            <Option Value = " AM">AM
+          </Select>
+        AM or PM    
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><span class="fieldName">Day of Week</span> :</td>
+    <td><span class="explanation">Day of the week or Weekend, Week, etc.
+        </span>
+      <input name="Day_of_week" type="TEXT"  size="20">
+        <span class="Required">*</span></td>
+    <td class="fieldName">&nbsp;</td>
+    <td class="explanation">&nbsp;</td>
+    </tr>
+  <tr>
+    <td class="fieldName">Comments: <span class="explanation">These will not appear in Events but may appear in news stories </span></td>
+    <td colspan="3"><textarea name ="comments" cols ="100" rows ="4"></textarea></td>
+  </tr>
+  <tr>
+    <td><b><font size="4">Place</font></b> <span class="explanation">:Enter the place, including address 
+      and phone number  here. (only the first 256 characters will be accepted) </span></td>
+    <td colspan = "3"><p>Place Name<span class="Required">*</span>
+        <input type="text" name="place_name" size="40">
+      Address
+      <input type="text" name="place_address" size="24">  
+      <br/>
+      City
+      <input type="text" name="city" size="24">
+      State
+  <input type="text" name="state" size="3" value ="MI">
+      Postal Code
+  <input name="zip" type="text" size="12" maxlength="12">
+      Phone
+  <input type="text" name="phone" size="14">
+  <br/>
+      URL
+      <input name="url" type="text" size="40" maxlength="40">
+      email
+  <input name="place_email" type="text" id="place_email" size="40" maxlength="40">
+    </p>
+      <p>Additional directions </p>
+      <p>
+        <textarea name ="Directions" cols ="100" rows ="2" id="Directions" ></textarea>
+      </p></td>
+  </tr>
+  <tr>
+    <td><b><font size="4">Event <span class="Required">*</span> </font></b>:<span class="explanation">Describe the event here. Include a 
+      person and phone number to contact if desired (Only the the first 256 characters will be accepted) </span></td>
+    <td colspan ="3"><textarea name ="activity" cols ="100" rows ="8" id="activity"></textarea></td>
+  </tr>
+  <tr>
+    <td>Price Members :</td>
+    <td><input type="text" name="Price_Member" size="20" maxlength="50" ></td>
+    <td>Price Guests</td>
+    <td><input type="text" name="Non_Member_Price" size="20" maxlength="50" ></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan ="3"><div id="calendarBottom"> this is where the calendar is displayed near the bottom of th form</div>  </td>
+  </tr>
+  <tr>
+    <td colspan="4"><span class="fieldName">Recurring Event?</span><br>
+        <input type="radio" name="recurring" value ="Yes">
+      Yes<br>
+        <input type="radio" name="recurring" value="No" checked>
+      No<br>
+      Day of week: Mon
+      <input type="checkbox" name="MON" value="ON">
+      Tue
+      <input type="checkbox" name="TUE" value="ON">
+      Wed
+      <input type="checkbox" name="WED" value="ON">
+      Thu
+      <input type="checkbox" name="THU" value="ON">
+      Fri
+      <input type="checkbox" name="FRI" value="ON">
+      Sat
+      <input type="checkbox" name="SAT" value="ON">
+      Sun
+      <input type="checkbox" name="SUN" value="ON">
+      <br>
+      Week of Month: 1st
+      <input name ="First" type="checkbox" id="First" value="ON">
+      2nd
+      <input type="checkbox" name="Second." value="ON">
+      3rd
+      <input type="checkbox" name="Third." value="ON">
+      4th
+      <input name="Fourth." type="checkbox" id="Fourth." value="ON">
+      5th
+      <input type="checkbox" name="Fifth" value="ON">
+      last of the month
+      <input name="Last" type="checkbox" id="Last" value="On">
+      <br>
+      Enter the beginning date of this recurring event (The first time it occurs)
+      <input type=text name="recurbegin" id ='recurbegin' size="20">
+      <a href="error.html"
+	  onClick="prepShowCalendar('formInput','recurbegin','bottom'); return false;"><img src="calendar.gif" alt="" width="52" height="26" border='0'/></a><br>
+      To Date Enter the date of the last time this recurring event will occur      
+      <input type =Text name="recurend"  id='recurend' size="20">
+	   <a href="error.html"
+	  onclick="prepShowCalendar('formInput','recurend','bottom'); return false;">
+	  <img src="calendar.gif" alt="" width="52" height="26" border='0'/></a></td>
+  </tr>
+  <tr>
+    <td colspan = "4"><center>
+      <input type = "submit" name="Submit" value="Submit Form"  >
+    </center></td>
+  </tr>
+</table>
+</FORM>
+</BODY>
+</HTML>

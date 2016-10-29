@@ -1,0 +1,1263 @@
+
+
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+
+<!--
+
+ the following was added to implement share button but buttons referred to work in process newsletter
+
+<script type="text/javascript">var switchTo5x=true;</script>
+
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+
+-->
+
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+
+<title>Peggy Jo Studio Newsletter July 30, 2012 </title>
+
+<meta name="Keywords" content="Sailing, Skiing, Golf, Dance, Christian, Jewish,Michigan, Single, Married, Bethany, Adultery, Catholic, Trips, Cruises, heath, fitness" />
+
+
+
+
+
+
+
+<meta content="MSHTML 6.00.2900.2180" name="GENERATOR" />
+
+</head>
+
+<body style="MARGIN: 0px; BACKGROUND-COLOR: #ffffff" bgcolor="#ffffff">
+
+
+
+<OpenTracking/>
+
+
+
+  <!--  Do NOT delete previous line if you want to get statistics on the number of opened emails -->
+
+
+
+<p><table width="810" border="2" id="runHeader" cellpadding="2" cellspacing="0"> <tr align="center"><td><strong><font color="#FF0000" size="+3">Draft      Draft Draft     Draft     Draft    Draft    Draft    Draft <br> </font></strong>Status  :  Quotes <input type="checkbox"> Articles <input type="checkbox"> Letters <input type="checkbox"> Banner <input type="checkbox"> Advertising Rotated  <input type="checkbox"> Personal Ads <input type="checkbox"></td></tr></table></p>
+
+<table width= "810" bgcolor="#FFFFFF">
+
+  <tr>
+
+    <td  colspan="2" ><div style="background-color:#0000FF;
+
+font:, Times, serif;
+
+font-weight:bold;
+
+font-size:xx-large;
+
+color:#FFFFFF;
+
+text-align: center " > Peggy Jo Studio Newsletter </div>
+
+        <div style="background-color:#0000FF;
+
+font:, Times, serif;
+
+font-weight:bold;
+
+font-size:small;
+
+color:#FFFFFF;
+
+text-align:center">&quot;A Newsletter to Embrace Life and to Encourage both singles and couples
+
+          Spiritually, Physically, and Mentally to be Active which brings Good Health&quot;</div></td>
+
+  </tr>
+
+</table>
+
+<table width= "810" bgcolor="#FFFFFF">
+
+  <tr>
+
+    <td width="200" >Volume: 10 Issue:  11 </td>
+
+    <td width="603" align="right">July 30, 2012</td>
+
+  </tr>
+
+</table>
+
+
+
+<table width= "810" bgcolor="#FFFFFF">
+
+	  <tr align="right">
+
+	  <td width="585" ><img alt="left Banner Source" src="http://www.peggyjostudio.net/E/blankLeftBanner.jpg"  align="left" /></a></td>
+
+	<td width="213" ><img alt="Peggy Jo Banner"
+
+		src="http://www.peggyjostudio.net/E/pjbanner20120730.png" height="180" align="right"/></td>
+
+	  </tr>
+
+</table>
+
+  
+
+
+
+  <!--Main table-->
+
+<table width="810" border="2" id="main" cellpadding="2" cellspacing="0">
+
+<tr style="background-color: #ffffff">
+
+    <td width="199"  style="width:185; vertical-align:top;" >
+
+	
+
+<!--left column table	-->
+
+	<table 
+
+  width="180px" border="0" align="left" cellpadding="2" cellspacing="0" id="navigation" style=" background-color:#FFFFCC" >
+
+      <tr  style="text-align:center">
+
+	   	<td  style="vertical-align:top" >
+
+		<a  name="topofnewsletter" id="topofnewsletter" />
+
+            <p style="font-weight: bold; color : #003366"> 
+
+               Please Support This Free Newsletter by Patronizing the 
+
+              Sponsors and letting them know that you saw it here.</p>
+
+            <p><a href="http://www.peggyjostudio.net/wordpress">Visit our Blog by clicking here</a></p>
+
+            <p><a href="http://graynwhite.com/whtw/event_mail.php">Enter your organization's event</a></p>
+
+            <p>To change your email address,use the link below. Enter your current addres and then enter the new address in the form that is presented</p>
+
+            <p><a href="http://www.peggyjostudio.net/signup.html">Click here to change your email address</a></p>
+
+            <p><strong>(Click on the date to skip to that day's events. Use the <br />
+
+                  &quot; Back to Top&quot; button to get back here.<br />
+
+                All email programs do not support these links) </strong></p>
+
+				
+
+                <p><a href="http://www.graynwhite.com/TripsAndCruises.php"><strong>Club Sponsored Trips and Cruises</strong></a>  </p>
+
+				
+
+                <p><a style="font-weight: bold; color:  #003366" 
+
+                  href="#monday" >MON. Jul. 30</a> </p>
+
+				  
+
+              <p><a style="font-weight: bold; color : #003366" 
+
+                  href="#tuesday" >TUE. Jul. 31</a> </p>
+
+				  
+
+              <p><a style="font-weight: bold; color: #003366" 
+
+                  href="#wednesday" >WED. Aug. 1</a> </p>
+
+				  
+
+              <p><a style="font-weight: bold; color: #003366" 
+
+                  href="#thursday" >THU. Aug. 2</a> </p>
+
+              <p><a style="font-weight : bold;  color: #003366"
+
+				  href="#friday" >FRI. Aug. 3</a> </p>
+
+              <p><a style="font-weight: bold; color: #003366" 
+
+                  href="#saturday">SAT. Aug. 4</a> </p>
+
+              <p><a style="font-weight: bold; color: #003366" 
+
+                  href="#sunday" >SUN. Aug. 5</a> </p>
+
+              <p><a style="font-weight: bold; color: #003366" 
+
+                  href="#future" >Future events </a> </p>
+
+              <p></p>
+
+              <br />
+
+              <div> <div style="font-weight:bold; font-size:16px; color:#003366; font-style:normal; font-family:'Times New Roman', Times, serif; width:185px" 
+                  >Please Patronize Our Sponsors.
+				  </div>
+                  <div 
+                  style="font-weight: normal; font-size: 12pt; color: #000000; font-style: normal; FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif; width:185px" 
+                  >Please let them know that you saw it in the Peggy Jo 
+                  Studio Newsletter. </div>						<div style="border: 2px solid black; width:185px" >				<img src="http://www.peggyjostudio.net/E/pJEventsAd1.png" alt="PjEvents Ad1"></div>															<a href="mailto:Adv@graynwhite.com">														 <div style="border: 2px solid black; width:185px" >
+
+				   <img alt="This space Available" 
+
+                  src="http://www.peggyjostudio.net/E/pjadForAds.jpg" 
+
+                  width="185px"/>
+
+			      </div></a>												<div <div style="border: 2px solid black; width:185px" >		<img src="http://www.peggyjostudio.net/E/gwmobiadv.png" alt=" " align="center"/>
+
+<h3>Get Smart</h3>
+
+<div style="text-align: center;">
+
+
+
+<a href="http://pjnews.mobi">pjnews.mobi</a>
+
+<a href="http://semichsingles.mobi">semichsingles.mobi</a>
+
+<a href="http://semichnetwork.mobi">semichsingles.mobi</a>
+
+<a href="mailto:webmaster@graynwhite.com?subject=mobile site"><br />email webmaster@graynwhite.com for info</a>
+
+</div>
+
+</div>																																					<div>					<a href="http://www.global-itech.com"><img src="http://www.peggyjostudio.net/E/globalItAdRight.gif"alt="Gw Oracle ad"/></a></div>															<a href="http://www.SuccessChurch.com/" target="_blank">
+
+ <div style="border: 2px solid black; width:185px" >
+
+ <img alt="Christian Success Institute ad" 
+
+  src="http://www.peggyjostudio.net/E/successAdv2.jpg" />
+
+	  See you there Tuesday night! 
+
+                  <p  style="text-align:right">Peggy Jo</p>
+
+			      </div></a>																		<div style="border: 2px solid black; width:185px" >
+
+				<img alt="Peabody Add" 
+
+                  src="http://www.peggyjostudio.net/E/pbdadd" width="185px"/>
+
+				  </div>								 <DIV style="border: 2px solid black; width:185px ">
+
+<a href="http://photographybyamanda.com">
+
+				  <img alt="photography by Amanda" 
+
+                  src="http://www.peggyjostudio.net/E/photographyByAmanda.png"
+
+width="183">
+
+<p>Click anywhere on this ad</p>
+
+</a>
+
+				  </DIV>										<a
+
+                  href="http://www.graynwhite.com/AmericanSedan/" target="_blank">
+
+				 
+
+				  
+
+                   <div style="border: 2px solid black; width:185px" >
+
+				  <img alt="American Sedan Add" 
+
+                  src="http://www.peggyjostudio.net/E/asedanadv.gif" width="185px" />
+
+			      </div>
+
+				  </a></div>
+
+			<div style="width:185px">
+
+                  <p> <a style="font-weight: bold; : #003366" 
+
+		href="http://www.peggyjostudio.biz/emporium">Visit Peggy Jo's Emporium</a></p>
+
+                  <p> <a style="font-weight: bold; : #003366" 
+
+            href="http://www.singinghotdogman.com/" 
+
+            >Link to Charley the Singing Hot Dog 
+
+                    Man </a> </p>
+
+                  <p> <a style="font-weight: bold; : #003366" 
+
+            href="http://www.graynwhite.com/index.php"> Gray and White Computing</a> </p>
+
+                  <table width="100%">
+
+<tr><td>
+
+			<p style="FONT-SIZE: 14pt; color: #003366; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif" >
+
+            Quick Links--- </p>
+
+            <ul>
+
+			 <li><a style="font-weight: bold; color: #003366" 
+
+              href="http://www.peggyjostudio.net/wordpress/" >Newsletter Blog</a>			  </li> 
+
+				
+
+			 <li><a style="font-weight: bold; color: #003366" 
+
+              href="http://www.succesfullysingle.org" >Succesfully Single</a>			  </li> 
+
+			  
+
+              <li><a style="font-weight: bold; color: #003366" 
+
+              href="http://www.skiwiskiclub.com/index.html" >Skiwi Ski and Social Club</a>			  </li> 
+
+			  
+
+              <li><a style="font-weight: bold; color: #003366" href="http://www.graynwhite.com/bethany/bethevents.php" target="_top">Bethany of Southeastern Michigan</a></li>
+
+              <li><a style="font-weight: bold; color: #003366" 
+
+              href="http://www.graynwhite.com/sg/sgevents.php" >Somerset Singles Ski and Golf Club</a>			  </li> 
+
+              <li><a style="font-weight: bold; color: #003366" 
+
+              href="http://www.graynwhite.com/whtw/whevents.php">What's happening This week</a></li> 
+
+              <li><a style="font-weight: bold; color: #003366" 
+
+              href="http://www.southeastmichigan.singlesgolf.com">American Singles Golf Association</a>			  </li> 
+
+              <li><a style="font-weight: bold; color: #003366" 
+
+              href="http://www.msda.org"  >Michigan Swing Dance Association</a>			  </li> 
+
+              <li><a style="font-weight: bold; color: #003366" 
+
+              href="http://www.ToledoSkiClub.org"  >Toledo Ski Club</a>	
+
+			  		  </li>
+
+			  
+
+            </ul>
+
+</td></tr></table>			
+
+			  
+
+			  
+
+            
+			
+
+			      <h3>Back Issues</h3>
+
+                  <p>Past issues of the newsletter are <a href="http://www.peggyjostudio.net/archivenews.php">here</a></p>
+
+                  <p style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px"> &quot; No love of the natural heart is safe unless the 
+
+                    human heart has been satisfied by God first&quot;</p>
+
+                  <p  style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; text-align:right"><i>Oswald Chambers</i></p>
+
+                  <p style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px">&quot;A fool gives full 
+
+                    vent to anger, but a wise person quietly holds back.&quot;</p>
+
+                  <div  style="font-size: 12px; font-style:italic;text-align:right">Proverbs 29-11</div>
+
+              <p align="left" ></p>
+
+                  <p align="left" ><font size="+1" >This newsletter is sent out each Monday morning and 
+
+                    covers events of interest to active people . It attempts to 
+
+                    publicize worthwhile events that do not receive adequate media 
+
+                    attention </font></p>
+
+                  <p >Every Monday morning this newsletter is sent to over 8,830 contacts .</p>
+
+                    <hr />
+
+                    <h3 > Customer service isn't a department, it's a way of life. </h3>
+
+                    <hr />
+
+                </font></div>
+
+				  </div></td>
+
+      </tr>
+
+    </table>
+
+<!--end of left column table-->	</td>
+
+<!--end of left column	-->
+
+<!--Beginning of right column-->
+
+  <td valign="top" width="590"  >
+
+  
+
+ <!-- <a href="http://www.peggyjostudio.net/recommend.php">
+
+  <Forward>
+
+  <img src="http://www.peggyjostudio.net/E/forwardToFriends.jpg" />
+
+  </Forward>
+
+  </a>-->
+
+
+
+	<p style="text-align: center;
+
+font-weight: bold;
+
+font-style: italic;
+
+font-family:'Times New Roman' Times, serif;
+
+font-size: 14pt;
+
+border: 3px solid red;
+
+color:red;
+
+padding:10px;
+
+left:0px;">
+
+"
+For You, Lord, are kind and ready to forgive, abundant in faithful love to all who call on You."<br /> Psalm 86:5
+</p>
+
+   
+
+		
+
+	  <p><a name="top" id="top"/></p>
+
+	  <p><div>
+<h2> Why the Mustache ?</h2>
+The   Detroit Institute of Arts says any visitor who wears a mustache &mdash; real   or fake &mdash; will receive free admission to the museum Aug. 3-5. It&rsquo;s part   of a promotion for the exhibit &ldquo;Five Spanish Masterpieces,&rdquo; currently on   view at the DIA. The exhibit includes the painting &ldquo;Soft Construction   with Boiled Beans&rdquo; by mustached           Spanish painter Salvador Dali. For more, call 313-833-7962 or go to <span title="Click here to go to&nbsp;www.dia.org"> www.dia.org</span>&thinsp;</div>
+<div style="background:#660000;color:#FFFFFF">
+<h1 style="color:#FFFFFF; font-weight:bold">Local Art Shows This Summer</h1>
+<p>We want your additions and or corrections
+ <a href="http://wp.me/PiobO-15S"><span style="color:#FFFF00; text-decoration:underline">Click Here</span></a></p>
+<hr />
+</div>
+<h2>&nbsp;</h2>
+<div style="background:#FFFF00">
+<h1 style="color:purple; font-weight:bold">SUMMER concerts in the Park</h1>
+<p>We want your additions and or corrections
+ <a href="http://wp.me/PiobO-14X">Click Here</a></p>
+<hr />
+</div></p>
+
+	  <p><h2>Top Links</h2><h3> (We add some new links every week)</h3><h3>Some of these links require that Javascript be enabled</h3> <p>There is no danger in enabling javascript for trusted sites (we hope that you trust us)</p> <p> <a href="http://enable-javascript.com" target="_blank"> Here is an excellent explanation<a> and instructions on how to enable/disable javascript in your brower</p><p>Don't be afraid to to click on links that are supplied by someone you know, but be cautious with the unknown. </p><table width="585" border="1"  title="Our most popular links" >
+<tr>
+<td style="background-color: #CCCCFF" width="48%"><h3> Wood Chip Scuptures</h3><p>These fabulous wood chip scuptures are not for sale but looking at them is free.</p><a href="http://www.peggyjostudio.net/wordpress/2012/07/21/wood-chip-scuptures">Click here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="165">
+</td>
+<td style="background-color: #FFFF66" width="48%">       <h3>Check out Where to Get The Best Gas Deals </h3>
+
+    <p>This is a web site that will find the best   prices in your area.<a href="http://www.gasbuddy.com/">Click Here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="3">
+</td>
+</tr>
+<tr>
+<td style="background-color: #00CC00" width="48%"><h3> Soul Searching Music</h3><p>This will get your Scottish blood a-pumpin
+if there's any Scottish blood in you or not----
+ Turn the sound up for this BIG show
+Soul-stirring stuff!
+</p><a href="http://www.peggyjostudio.net/wordpress/2012/07/15/soul-searching-music">Click here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="163">
+</td>
+<td style="background-color: #FFFFFF" width="48%"><h3> Meet Molly</h3><p>Molly's story turns into a parable for life in Post-Katrina Louisiana.</p><a href="http://www.peggyjostudio.net/wordpress/2012/07/26/meet-molly">Click here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="167">
+</td>
+</tr>
+<tr>
+<td style="background-color: #FFFFFF" width="48%"><h3> The Ocean</h3><p>A fantastic video of scuba diving in Fijii</p><a href="http://www.peggyjostudio.net/wordpress/2012/07/21/the-ocean">Click here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="166">
+</td>
+<td style="background-color: #00CC00" width="48%"><h3> What Is Up</h3><p>English is an up and coming language. Find out why.</p><a href="http://www.peggyjostudio.net/wordpress/2012/07/14/what-is-up">Click here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="161">
+</td>
+</tr>
+<tr>
+<td style="background-color: #FFFF66" width="48%"><h3> Moose In The Sprinkler</h3><p></p><a href="http://www.peggyjostudio.net/wordpress/2012/07/15/moose-in-the-sprinkler">Click here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="162">
+</td>
+<td style="background-color: #CCCCFF" width="48%"><h3> Hot Weather Cure</h3><p>This video might put our recent hot weather in perspective.</p><a href="http://www.peggyjostudio.net/wordpress/2012/07/21/hot-weather-cure">Click here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="164">
+</td>
+</tr>
+<tr>
+<td style="background-color: #CCCCFF" width="48%">  <h3> This Weeks Deals</h3><p>Here are some deals from Amazon that might interest you!!</p><a href="http://www.peggyjostudio.net/wordpress/2012/06/15/this-weeks-deals">Click here<img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="148">
+</td>
+<td style="background-color: #FFFF66" width="48%">       <h3>This Week's Pet </h3>
+
+PAAW has many  lovable cats and dogs available, many of whom can be seen every Saturday  from 11--4 and Sunday Noon--4 at Petco in Troy. (on Coolidge  south of Maple). ?To check out all of our available pets, visit our  web site at www.paawarren.org!
+
+      <a href="http://www.paawarren.org/">Click here <img src="http://www.peggyjostudio.net/E/videoIcon.png"  hspace="5" alt="video Icon"  height="40
+" /></a>
+<input = type="hidden" name="id" value="10">
+</td>
+</tr>
+</table> </p>
+
+	  <hr>
+
+	  <p>   </p>
+
+	  <p>	    <h2>&nbsp;</h2> </p>
+
+	  <p   style="text-align: center; font-weight: bold; font-style: italic; font-family:'Times New Roman' Times, serif; font-size: 14pt; border: 3px solid red; color:#FF0000; padding:10px; left:0px;">
+
+	 "
+Lord my God, I cried to You for help, and You healed me
+"<br />
+Psalm 30:2
+</p>
+
+	   <a name="monday" id="monday" />  
+
+        <div style="border: 2px solid black"><h2>MON. Jul. 30 Events</h2>
+
+      </div>
+
+         <h3>Mobile Moves Michigan<br/>  Business and Professional Event</h3>This event spans the period from  2012-07-30 to 2012-07-31 <br />Mobile Technology is Exploding!<br /><br />
+
+
+
+ 
+
+
+
+It's changing the way we live and the way we run our businesses. But mobile technology is much more than the latest 'app' downloaded to your mobile device; mobile is actually many technologies that are impacting every vertical doing business in Michigan. The mobile / wireless industry is one of only four global industries that generate over one trillion dollars in revenue annually, and in Michigan, it's one of our fastest-growing sectors - but yet the best kept secret in the state. Mobile technologies have the ability to transform our state's economy - if we act now!<br /><br />
+
+
+
+ 
+
+
+
+Learn more at<br />
+
+
+
+Mobile Moves Michigan<br />
+
+
+
+ 
+
+
+
+ 
+
+
+
+This ground-breaking statewide event will have something for everyone interested in mobile / wireless technologies!<br />
+
+
+
+ 
+
+
+
+ 
+
+
+
+Who Should Attend?<br /><br />
+
+
+
+    C-level executives from Michigan businesses; all verticals, including but not limited to:  general manufacturing, automotive, healthcare, financial services, legal, non-profit, staffing, business services, consumer services, retail, utilities AND MUCH MORE!<br />
+
+    Those interested in learning about the opportunities mobile technologies provide to increase productivity and profitability for their businesses and  industry verticals<br />
+
+    Those working in any sector of the mobile / wireless industry
+
+    Those interested in learning about the types of mobile / wireless companies currently creating jobs and positive economic impact in Michigan<br />
+
+    Individuals interested in learning how mobile technologies can substantially grow Michigan's economy<br />
+
+    Senior economic development officials<br />
+
+    Local and state government officials (elected and appointed)<br />
+
+    Administrators from Michigan school districts and higher-education institutions<br />
+
+    Senior executives from Michigan-based foundations<br />
+
+    Senior executives from Michigan-based associations/organizations; particularly those focused on Michigan revitalization efforts<br />
+
+    Educators providing mobile development coursework to students<br />
+
+    Educators interested in utilizing mobile technologies within their classrooms<br />
+
+    Mobile software developers<br />
+
+    Students interested in exploring mobile development as a career opportunity<br />
+
+    Corporate and small business marketers, advertising and public relations agencies<br /><br />
+
+
+
+ 
+
+
+
+Join our mailing list to get attendee info as it becomes available by
+
+
+
+texting Keyword GOMOBILEMI to 22828<br /><br />
+
+
+
+ 
+
+
+
+Contact us if interested in Sponsorships or Exhibiting<br /><br />
+
+
+
+at info@GoMobileMichigan.org
+
+
+
+
+
+
+
+<br />..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Motor City Casino, Detroit, Michigan.</span><br /><a href="http://www.graynwhite.com/show_event.php?event=23931"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <span style="font-style:italic; font-size: 9pt ;"> Please let them know that you saw the notice in the Peggy Jo Studio Newsletter</span></p><hr />  <h3>Fern Hill Golf Club<br/>  Bethany East</h3> Reserve by 2012-07-27 for MON 2012-07-30 <br />Summer is flying by, so come and enjoy a friendly game of golf with other singles. Everyone is welcome.
+
+  Contact: Phyllis (586) 286-4700<br /> Starts at 10:00 AM. Price is cost is on your own.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Fern Hill Golf & Counry Club. 17600 Clinton River Rd., Clinton Township, MI. (586) 286-4700 North of Metro Parkway, east of Hayes. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24090"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><br /> Submitted by Connie Rousin This organization has a page on  the PJSN blog which is <a href="http://www.peggyjostudio.net/wordpress/?p=2195"> here </a><br /><a href="http://www.graynwhite.com/bethany/bethevents.php">All Bethany Events can be seen by clicking here</a><hr />  <div style='padding: 9px ; background-color: white; text-align: center; font-weight: bold; font-style: italic;  font-size: 12pt; font-family: Verdana, serif; border: 5px solid blue'>				<a href="http://www.socretail.com/peggyjo">
+
+<img src="http://www.peggyjostudio.net/E/socretail1.jpg" alt="soc add 1" width="510"> or click anywhere in this advertisement</a>						
+
+                   </div>  <h3>Zumba Dancing<br/>  Catholic Alumni Club</h3>MON 2012-07-30 <br />MONDAYS,
+
+JULY 30TH
+
+5:45-6:45 PM
+
+ZUMBA DANCING
+
+Join us for a nice musical workout at Sacred Heart Church basement, Roseville, Gratiot just north of I-696. We'll have fun and get a little exercise under the expert direction of foot-loose Bill Shoemaker. You don't even have to know how to dance to join us. Beginners welcome!!! Call  if you're interested --- $4 a session, first time free.
+
+
+
+586-774-3144<br /> Submitted by: Ray Previ. via Google Calendar<br /> From  5:45pm to 6:45pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Sacred Heart.18430 Utica Rd.,Roseville,Mi. 48066     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24322"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://cacd.hypermart.net/"> Web Site:</a><hr />  <h3>Free Film at Dearborn Library<br/>  Catholic Alumni Club</h3>MON 2012-07-30 <br />MONDAYS,
+
+JULY 30TH
+
+7:00 PM
+
+FYI: BLOCKBUSTER FREE FILM SERIES
+
+Join us for the Blockbuster film series at the Henry Ford Centennial Library on the south side of Michigan Ave. between the Southfield Freeway and Greenfield Rd. in Dearborn. There is no charge. Please RSVP on the Sunday before the movie so Al knows to look for you. This week's feature is:
+
+
+
+July 30th - THE SECRET WORLD OF ARRIETTY (2012) - From the legendary Studio Ghibli comes an animated family adventure based on Mary Norton's acclaimed children's book series "The Borrowers". A tiny family lives peacefully in the floorboards of a suburban garden home, but when their presence is discovered it could drive them from their home and straight into danger! Great fun for all ages. (Rated G, 94 min.)
+
+
+
+313-561-5933<br /> Submitted by: Ray Previ. via Google Calendar<br /> From  7:00pm to 10:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Henry Ford Centennial Library.16301 Michigan Ave,Dearborn,Mi.48126-279     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24321"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://cacd.hypermart.net/"> Web Site:</a><hr />  <h3>Volleyball<br/>  Ann Arbor Ski Club</h3>MON 2012-07-30 <br />All are welcome to drop by and play.  Burns Park is located on the corner of Wells and Baldwin Streets, approx. 1 mile northeast of the intersection of Stadium and Packard Blvds. 
+
+
+
+Questions?  Contact Fred Rhine (734) 429-5024 or fredpr2009@yahoo.com<br /> Submitted by: Google Calendar<br /> From  7:00pm to 9:30pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Burns Park.Wells and Baldwin,Ann Arbor,Mi.     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24318"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.a2skiclub.org"> Click here for more</a><hr />  
+
+		<br />
+
+		<br />
+
+		<a href="#topofnewsletter"><img src="http://www.peggyjostudio.net/E/BackToTop.jpg" width="72" height="52" />Click here to get back to the top</a>
+
+        <hr />
+
+		
+
+        <p   style="text-align: center; font-weight: bold; font-style: italic; font-family:'Times New Roman' Times, serif; font-size: 14pt; border: 3px solid red; color:#FF0000; padding:10px; left:0px;">
+
+	"
+All night long I search for you; earnestly I seek for God. For only when you come to judge the earth will people turn from wickedness and do what is right."<br />
+Isaiah 26:9
+</p>
+
+        <p><a  name="tuesday" id="tuesday" />          
+
+      </p>
+
+       
+
+        <div  style="background-color: #eeeedf">
+
+        <h2>&nbsp;</h2>
+
+        <div style="border: 2px solid black"><h2>TUE. Jul. 31 Events </h2>
+
+       </div>
+
+        <h3>Success Institute</h3>
+
+<p>An evening of powerful revelation and transformation, as we share God's word for your success 
+  Teaching by the well known motivational speakers Doug Firebaugh and his wife Jodi. 
+  Starts at 7:00 PM.</p>
+<p><strong>Location: </strong>Troy Community Center 3179 Livernois Troy, MI 248-524-3181<br />
+<strong><em>Please let them know that you saw the notice in the Peggy Jo Studio Newsletter </em></strong></p>        <hr />
+
+        <p> <h3>S.O.A.R. (Singles Outreach and Renewal) Meetup<br/>  S.O.A.R. (Singles Outreach and Renewal)</h3>TUE 2012-07-31 <br />Food & Fellowship.  Join us at this is Panera Cares location'a non-profit community cafe that accepts payments in the form of donations.  Each item on the menu is listed with a suggested donation amount.  Panera Cares has patio seating, free WiFi and a diverse menu.<br /> Submitted by: Lynn<br /> Starts at 6:00 PM . Price is  free .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Panera Bread. 22208 Michigan Ave,  Dearborn , MI .    313-271-3301  </span><br /><a href="http://www.graynwhite.com/show_event.php?event=23449"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <span style="font-style:italic; font-size: 9pt ;"> Please let them know that you saw the notice in the Peggy Jo Studio Newsletter</span></p><hr />  <h3> Swing and Sway Dance the Night Away<br/>  Various Dances</h3>TUE 2012-07-31 <br /> Single-Couples-Groups
+
+All Ages Welcome
+
+Cash Bar<br /> Submitted by: Norm Golembiewski<br /> Starts at 7:30 PM . Member Price is  $7.00 Admission  and guest price is   .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location:  Century Banquet Center. 33204 Maple Lane (14 & Hoover),  Sterling Heights , MI . 48312   586 264 7990 American-Polishcenturyclub.com </span><br /><a href="http://www.graynwhite.com/show_event.php?event=22947"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <div style='padding: 9px ; background-color: white; text-align: center; font-weight: bold; font-style: italic;  font-size: 12pt; font-family: Verdana, serif; border: 5px solid blue'>				<img alt="spread the word" src="http://www.peggyjostudio.net/E/spreadthewordadv.jpg"/>													</div>  <h3>DCS Volleyball<br/>  Catholic Alumni Club</h3>TUE 2012-07-31 <br />Every Tuesday in July at 6:30 PM - Volleyball - Meet DCS at Butcher Park on Martin
+
+(11� Mile) Rd. between Ryan & Mound in Warren for volleyball. Spectators welcome.
+
+DCS offers events for singles and married couples regardless of faith. For a complete listing of their events or for more information on the following events, call the DCS hotline at 248-988-6421.<br /> Submitted by: Ray Previ. via Google Calendar<br /> From  6:30pm to 9:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Butcher Park.4700 Martin Road,Warren,Mi.48092     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24339"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://cacd.hypermart.net/"> Web Site:</a><hr />       </p>
+
+      </div>
+
+	  
+
+    
+
+	
+
+
+
+	<a href = "#topofnewsletter"><br />
+
+    <img src="http://www.peggyjostudio.net/E/BackToTop.jpg" alt="Back To Top" width="72" height="52" />Click here to get back to the top </a> <a  name="wednesday" id="wednesday" /> 
+
+        <div style="border: 2px solid black"><h2>WED. Aug. 1 Events</h2>
+
+      </div>
+
+      <p> <h3>Wednesday evening dance and social gathering<br/>  Various Dances</h3>WED 2012-08-01 <br />Our Wednesday dance and social activities welcome senior singles and couples. It has been serving the senior population of Rochester and surrounding areas for 15 years and most recently used the ballroom facilities of the Rochester Elks until That organization sold its building. We utilize a four piece orchestra, playing music of the 30's 40's and 50's and provide refreshments during the mid break. A small fee is assessed at the door.<br /> Submitted by: Charlie Eckhout<br /> Starts at 6:30    . Price is  $7.00 per person .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Rochester Eagles. 650 Woodward Street,  Rochester , MI .    586 463 3980  </span><br /><a href="http://www.graynwhite.com/show_event.php?event=23632"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <span style="font-style:italic; font-size: 9pt ;"> Please let them know that you saw the notice in the Peggy Jo Studio Newsletter</span></p><hr />  <h3>Eat Out at Gilbert's Lodge<br/>  Bethany East</h3>WED 2012-08-01 <br />Come and experience a new restaurant with other singles.  Cost is moderate. Everyone is welcome.
+
+  Contact: Kevin (586) 777-0530<br /> Starts at 6:30 PM. Price is cost on your own.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Gilbert's Lodge. 22335 Harper, St. Clair Shores, MI. (586) 772-9720 1/4 mile south of 9 Mile Rd. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24298"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><br /> Submitted by Connie Rousin This organization has a page on  the PJSN blog which is <a href="http://www.peggyjostudio.net/wordpress/?p=2195"> here </a><br /><a href="http://www.graynwhite.com/bethany/bethevents.php">All Bethany Events can be seen by clicking here</a><hr />  <h3>Wednesday's All Star Dance<br/>  All Star Dance Parties</h3>WED 2012-08-01 <br />Complimentary Dance lesson from 7-8.  Arrive before 8 for dance party and pay only $8.00.  After 8PM, pay $12.00.  Various snacks included.  Beverages available at Cash Bar. Dr. Bob plays all types of dance music - Ballroom, Latin, Swing - East and West, Hustle etc.
+
+This facility is very beautiful.  You sit at round tables covered with white linen tablecloths.
+
+Singles & Couples welcome.  <br /> Submitted by: Augusta Richards<br /> Starts at 800:   PM. Member Price is  N/A  and guest price is  $12.00 .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Ukrainian Cultural Center. 26601 Ryan Road,  Warren , MI . 48091   7344255737  augustarae@mi.rr.com</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24139"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <div style='padding: 9px ; background-color: white; text-align: center; font-weight: bold; font-style: italic;  font-size: 12pt; font-family: Verdana, serif; border: 5px solid blue'>		  <img src="http://www.peggyjostudio.net/E/androidWideAd.png" width="510"/>								</div>  <h3>Square Dancing at Metro Beach<br/>  Catholic Alumni Club</h3>WED 2012-08-01 <br />WEDNESDAY,
+
+JULY 25TH
+
+6:00 PM
+
+SQUARE DANCING AT METRO BEACH METROPARK
+
+Come out for some summertime fun and exercise at the Metro Beach Metropark Pavilion overlooking Lake St. Clair. Cool off afterwards by strolling down the beach or sitting on a park bench and taking in the breeze. The park is located on Metropolitan Parkway (16 Mile Rd.) in Harrison. The cost is free. However, there is a $5 entrance fee to the park. An annual pass may be purchased for $25 and it is valid for all thirteen Huron-Clinton Metroparks. Please RSVP by the Tuesday prior to the event so we know to look for you.
+
+313-881-0625
+
+586-415-9284<br /> Submitted by: Ray Previ. via Google Calendar<br /> From  6:00pm to 10:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Metropolitan Beach.,,MI. (586) 463-4581    W BIG BEAVER RD becomes 16 MILE RD / METRO PKWY. take it to the End at Metro Beach Metropark:Coming east or west on I94 get off at Metro Parkway exit 236. Take Metro Parkway east to the end.  </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24338"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://cacd.hypermart.net/"> Web Site:</a><hr /> </p>
+
+      <p> <a href = "#topofnewsletter"><br />
+
+          <img src="http://www.peggyjostudio.net/E/BackToTop.jpg" alt="Back to top" width="72" height="52" />Click here to get back to the top </a>      </p>
+
+      <hr />
+
+         <p   style="text-align: center; font-weight: bold; font-style: italic; font-family:'Times New Roman' Times, serif; font-size: 14pt; border: 3px solid red; color:#FF0000; padding:10px; left:0px;">"
+So I pray that God, who gives you hope, will keep you happy and full of peace as you believe in him. May you overflow with hope through the power of the Holy Spirit."<br /> Romans 15:13
+</p>
+
+	
+
+      <div  style="background-color:#eeeedf"> 
+
+	  <a  name="thursday" id="thursday" />
+
+	  <div style="border: 2px solid black"><h2>THU. Aug. 2 Events</h2>
+
+	   </div>
+
+        <p> <h3>Oakland University Classical Guitar Ensemble and Supper at OPC<br/>  Older Persons' Commission</h3>THU 2012-08-02 <br />Enjoy an entertaining afternoon as the Oakland University Classical Guitar Ensemble makes another appearance at the OPC. Under the direction of Professor Bret Hoag, this talented and diverse group of musicians will amaze you. Light supper served at 3pm while you enjoy the show. This event is open to the public. Cost $10. Pre-purchase tickets at OPC or call 248-608-0251 M-F 8:30am-3:30pm. <br /> Submitted by: Meg Baker<br /> From  3:00 PM  to 4:30 PM . Price is  $10 .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Older Person's Commission. 650 Letica,  Rochester , MI . 48307   2486080251 www.opcseniorcenter.org rhonda_nelson@opcseniorcenter.org</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24147"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <span style="font-style:italic; font-size: 9pt ;"> Please let them know that you saw the notice in the Peggy Jo Studio Newsletter</span></p><hr />  <h3> Fairlane Ballroom Dance Club</h3>THU 2012-08-02 <br />Ballroom dance Fox Trots, Waltz, Swings, all Latin, line dance and we have 2 mixers an evening,   every Thursday to live bands.  We sit at tables of eight so we can socialize as well as dance. We serve snacks with Coffee & Tea during the dance and break at 9:00pm for a variety of desserts.  For information call Jean at 734-516-0500. <br /> Submitted by: Jean M. Orleans<br /> Starts at 7:30 PM . Member Price is  $7.00  and guest price is  $8.00 .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location:  Pvt John Lyskawa VFW Hall. 6840 Waverly,  Dearborn Heights , MI . 48127   734-516-0500  olgertsg@hotmail.com</span><br /><a href="http://www.graynwhite.com/show_event.php?event=22313"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> Submitted by: Jean M. Orleans<hr />  <h3>Golf-The Myth<br/>  Somerset Singles Social, Ski & Golf Club</h3> Reserve by 2012-07-30 for THU 2012-08-02 <br />You will be called only if there is a problem. Call asap if you have to cancel. Please arrive 30 minutes prior to tee time. Foursomes will be selected by a draw.
+
+  Contact: Dan Nixon-810-459-1728  <br /> Starts at 11:00 AM. Price is $25.00 w cart.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: The Myth. 850 Stoney Creek Road, Oakland Twp, MI. 248-693-7170 For further info go to www.sssgc.net Please call by 8PM for Sunday Golf and 3 days prior to weekday golf. Leave your name and phone number. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24262"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><br /> Submitted by Connie Rousin<a href="http://www.graynwhite.com/sg/sgevents.php"> All their events </a><hr />  <div style='padding: 9px ; background-color: white; text-align: center; font-weight: bold; font-style: italic;  font-size: 12pt; font-family: Verdana, serif; border: 5px solid blue'>				 <a href="http://www.peggyjostudio.net/recommend.php">
+
+  <Forward>
+
+  <img src="http://www.peggyjostudio.net/E/forwardToYourFriends.gif" />
+
+  </Forward>
+
+  </a>		</div>  <h3>Sketch Session Short Pose<br/>  Scarab Club</h3>THU 2012-08-02 <br />Popularly know at the club as "sketch classes", these non-instructional opportunities for artists to draw and paint from live models welcome all artists.  Materials:  Bring a pad of drawing paper or stretched canvas and your favorite drawing and/or painting supplies.
+
+
+
+Free to members &
+
+students with current ID.  
+
+Non-members $10
+
+
+
+Must register three weeks in advance for life drawing sessions.  Please call 313-831-1250<br /> Submitted by: Christine Renner Via Google Calendar<br /> From  7:00pm to 10:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Scarab Club. 217 Farnsworth, Detroit, Mi.48202 313-831-1250</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24334"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Foibles<br/>  McCabe Music</h3>THU 2012-08-02 <br />Weekly Acoustic Guitar
+
+  <br /> Starts at 8:00 PM   ..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: St Cece's Pub. 1426 Bagley, Detroit, MI. 48126 . </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24232"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><hr /> </p>
+
+            <p><br />
+
+              <a href="#topofnewsletter"><img src="http://www.peggyjostudio.net/E/BackToTop.jpg" alt="Back to top" width="72" height="52" />Click here to get back to the top</a> </p>
+
+    </div>
+
+		 
+
+      <a  name="friday" id="friday" /></a>  
+
+        <div style="border: 2px solid black"><h2>FRI. Aug. 3 Events</h2>
+
+	  </div>
+
+		
+
+        <p> <h3>First Fridays at the DIA<br/>  Detroit Institute of Arts</h3>FRI 2012-08-03 <br />First Fridays Music from a variety of cultures in the World Music series, artist demonstrations, drawing in the galleries for all ages, museum tours and drop in workshops. 
+
+<br /> Starts at 7:00 PM..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Detroit Institute of Arts. 5200 Woodward Avenue Detroit, MI. 313.833.7900  <a href="http://www.dia.org/calendar/friday_nights/"> More here</a></span><br /><a href="http://www.graynwhite.com/show_event.php?event=21071"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><span style="font-style:italic; font-size: 9pt ;"> Please let them know that you saw the notice in the Peggy Jo Studio Newsletter</span></p><a href="http://www.dia.org/calendar/friday_night"> More Information</a><hr />  <h3>Detroit Tigers At Comerica Park<br/>  Somerset Singles Social, Ski & Golf Club</h3>FRI 2012-08-03 <br />The bus will pick us up at oakland Mall behind Macy's near the service drive that goes around the Mall. This will save gas and parking.
+
+  Contact: Bobbie-586-781-4056  <br /> Starts at 7:00 PM. Price is $40.00.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Comerica Park. 2100 Woodward, Detroit, MI 48201 If you are not interested in going to the game and would like to go downtown on the bus, we will drop you off at Greektown Casino. You can go to the Casino or to the waterfront.www.sssgc.net for further info</span><br /><a href="http://www.graynwhite.com/show_event.php?event=23939"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.graynwhite.com/sg/sgevents.php"> All their events </a><hr />  <h3>Friday Night Milonga-Open Dance (lesson included)<br/>  Argentine Tango Club of Detroit</h3>FRI 2012-08-03 <br />We are a warm, friendly and very enthusiastic community of dancers located in the Detroit Metropolitan area. Whether you are beginning or advanced, we welcome you to come join us. 
+
+
+
+Group classes and milongas are offered each week where you can enjoy the fun and excitement of learning to dance while socializing with new friends. 
+
+<br /> Submitted by: Lori Burton<br /> Starts at 8:   PM . Member Price is  Free with purchase  and guest price is  $15.00 .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Argentine Tango Detroit. 7758 Auburn,  Utica , MI . 48317   586-254-0560 http://www.argentinetangodetroit.com lori@argentinetangodetroit.com</span><br /><a href="http://www.graynwhite.com/show_event.php?event=22085"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.argentinetangodetroit.com/"> Click Here for more</a><hr />  <h3>Dance, Socialize and Meet New Friends<br/>  Metropolitan Detroit Ski Council</h3>FRI 2012-08-03 <br />Meet New Friends, Dance and Socialize, Anytime from 8PM to 1AM
+
+Top 40 D.J. Cash Bar, Hors d'oeuvres (8-9:30) & Door Prize. Attire - Summer Casual / Dressy Casual. Yes, Shorts & Jeans
+
+Arrive Early, Come Late, That's Great. www.mspsc.com<br /> Submitted by: Dave Mspsc<br /> From  8:00 PM  to 1:00 AM . Member Price is  $9  and guest price is  $14 .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Club Venetian Banquet Center. 29310 John R,  Madison Hts , MI . 48071   (248) 544-6445 http://www.mspsc.com/ dave@mspsc.com</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24325"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.mdscski.org/index.htm"> Click here for MDSC</a><hr />  <div style='padding: 9px ; background-color: white; text-align: center; font-weight: bold; font-style: italic;  font-size: 12pt; font-family: Verdana, serif; border: 5px solid blue'>																										
+
+
+
+ <img alt="Tri County Business Exchange" 
+
+ src="http://www.peggyjostudio.net/E/triCountyadv.png"  />
+
+
+
+						</div>  <h3>First Friday Shabbat<br/>  Jewish Cultural Society</h3>FRI 2012-08-03 <br />First Friday Shabbat
+
+Once a month JCS members and other interested members of the community come together to observe Shabbes. After Shabbes is welcomed in with songs, candlelighting, wine, and challah, there is a short thematic program, in which members of the congregation offer their thoughts about the theme. Following Shabbat, we share a meal and schmooze. Children are always welcome.
+
+
+
+The theme for this year's First Friday meals will be Local Ann Arbor. Each month we will be featuring a different place from around town. We will focus on local favorites, locally owned businesses, and locally grown foods.
+
+
+
+First Friday begins at 6:30pm and will be held in all of the lounges at the JCC. The cost of dinner is $10/person or ~$25/family of 4. Your financial contributions make it possible for us to continue our culinary themes.
+
+
+
+Please RSVP online to ensure we order enough food.<br /> Submitted by: Google Calendar<br /> From  6:30pm to 9:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: JCS. 2935 Birch Hollow Drive, Ann Arbor MI. 48108</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24329"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.jewishculturalsociety.org/"> Web Site</a><hr />  <h3>Bowling with DCS<br/>  Catholic Alumni Club</h3>FRI 2012-08-03 <br />Friday, August 3rd at 7:30 PM - Drop-in Bowling at Sterling Lanes - Meet DCS for bowling at 33200 Schoenherr, just north of 14 Mile Rd., in Sterling Heights. Cost is $6 for two games. Dinner/dessert afterward.
+
+DCS offers events for singles and married couples regardless of faith. For a complete listing of their events or for more information on the following events, call the DCS hotline at 248-988-6421.<br /> Submitted by: Ray Previ. via Google Calendar<br /> From  7:30pm to 9:30pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Sterling Lanes.33200 Schoenherr,Sterling Heights,Mi.     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24337"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://cacd.hypermart.net/"> Web Site:</a><hr />  <h3>International Folk Dance<br/>  Old World Dance Cooperative</h3>FRI 2012-08-03 <br />Dances from all over the world. Open to everyone, all ages and levels.No partner necessary Casual dress and comfortable shoes.<br /> submitted by Patricia Loeffler<br /> Starts at 8:30pm. Price is $7.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: St James Catholic Church.241 Pearson Avenue,Ferndale, Michigan. 48220    248-542-8835  E-mail: Genmail@st-james.org  </span><br /><a href="http://www.graynwhite.com/show_event.php?event=22603"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><hr />  </p>
+
+        <p><a href = "#topofnewsletter"><br />
+
+            <img src="http://www.peggyjostudio.net/E/BackToTop.jpg" alt="Back to top" width="72" height="52" />Click here to get back to the top </a>        </p>
+
+        <hr />
+
+		
+
+    <p   style="text-align: center; font-weight: bold; font-style: italic; font-family:'Times New Roman' Times, serif; font-size: 14pt; border: 3px solid red; color:#FF0000; padding:10px; left:0px;">"
+When I do good, I feel good; when I do bad, I feel bad. That?s my religion."<br /> Abraham Lincoln
+</p>
+
+	
+
+	<div  style="background-color:#eeeedf">
+
+	  <a  name="saturday" id="saturday" /></a>      
+
+	  <div style="border: 2px solid black"><h2> SAT. Aug. 4 Events</h2>
+
+	   </div>
+
+          <p> <h3>Moonlight Cruise - Markley Marina<br/>  Sailing Singles</h3>SAT 2012-08-04 <br />Join Sailing Singles for a delicious Pot Luck Picnic followed by a moonlight cruise on Lake St. Clair.  Bring a quality dish to pass for the pot luck and your favorite libation.  Depending on the number of boats participating, not all participants may have the opportunity to board a boat.  Other marinas may be added as possible starting points for the sail.  For additional information visit our website at www.sailingsinglesclub.com.<br /> Submitted by: Pamela A. Rupinski<br /> Starts at 6:00 PM . Price is   .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Markley Marine. 31300 North River Road,  Harrison Township , MI . 48045     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24291"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <span style="font-style:italic; font-size: 9pt ;"> Please let them know that you saw the notice in the Peggy Jo Studio Newsletter</span></p><hr />  <h3>Indoor Summer Beach Party<br/>  Successfully Single Social Club </h3>SAT 2012-08-04 <br />Put on your shades and summer attire, then join us for real fun as we celebrate the final month of summer at Burton Manor Ballroom 6 & 7 - Holds 350 people!
+
+ 
+
+Meet, Mingle, & Dance the night away to Top 40 Music by Professional DJ Christian Hornbeck.  Special Icebreaker from 8:00 pm -- 8:30 pm. Summer appetizer buffet served from 8:30 pm -- 9:30 pm. Open Dancing from 9:00 pm - midnight.
+
+
+
+Pay at the door. Casual summer attire recommended.  
+
+
+
+  <br /> Starts at 8:00 PM. Member Price is 12.00 and guest price is 15.00.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Burton Manor Ballroom #6 & 7. 27777 Schoolcraft, Livonia, MI. 48154 (On the I-96 service drive between Inkster & Middlebelt).  Park in rear and enter through South Lobby entrance.  Extra large ballroom - holds 350!. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24292"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> Submitted by: Janet Blair This organization has a page on  the PJSN blog which is <a href="http://www.peggyjostudio.net/wordpress/?p=2214"> here </a><a href="http://www.successfullysingle.org"> Their Web Site</a><hr />  <h3>Thunder Over Michigan/Day at the Beach<br/>  Ann Arbor Ski Club</h3>SAT 2012-08-04 <br />(Located on the S. I-94 Service Drive between Belleville and Rawsonville
+
+Roads) $4 parking pass. Join us for a fun day at the beach, volleyball, or
+
+hiking the trails and look up to see the planes fly overhead. Bring a picnic
+
+lunch, beer & wine are allowed at the picnic site. Carol Neylon & Diane
+
+Gledhill are the coordinators for this event. For more info contact 734-368-
+
+5237.<br /> Submitted by: Google Calendar<br /> From  10:00am to 3:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Call for Directions</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24317"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.a2skiclub.org"> Click here for more</a><hr />  <h3>Sketch Session<br/>  Scarab Club</h3>SAT 2012-08-04 <br />Popularly known at the club as "sketch classes", these non-instructional, drop-in opportunities for artists to draw and paint from live models welcome all artists.  Drop in and join us!  Materials:  Bring a pad of drawing paper or stretched canvas and your favorite drawing and/or painting supplies.
+
+
+
+Costume Model
+
+Free to members &
+
+students with current ID.  
+
+Non-members $10<br /> Submitted by: Christine Renner Via Google Calendar<br /> From  10:00am to 1:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Scarab Club. 217 Farnsworth, Detroit, Mi.48202 313-831-1250</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24333"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <div style='padding: 9px ; background-color: white; text-align: center; font-weight: bold; font-style: italic;  font-size: 12pt; font-family: Verdana, serif; border: 5px solid blue'>		 <a href="http://loribell.bodybyvi.com">	
+
+
+
+<img src="http://www.peggyjostudio.net/E/loribellad.png" alt="lori bell ad" width="510"><br>Click anyhere on this ad</a></div>  <h3>Thunder Over Michigan Air Show<br/>  GM Ski Club</h3>SAT 2012-08-04 <br />AIRCRAFT 
+
+Many vintage WWII Aircraft including P-51 MUSTANGS, Sea Harrier Jump Jet and more.
+
+EVENTS:
+
+Touch and see all the aircraft * Fly bys of aircraft * Interview pilots * WW II Infantry Battle * Re-enactment  US &Germans * Tail gate party
+
+
+
+See website for more information YANKEEAIRMUSEUM.ORG 
+
+  
+
+TIME: 8am Sat. CAR POOL  From San Marino Hall  Big Beaver near JohnR                                  
+
+TICKETS: $20 before June 17, $25 After June 17, Parking $5
+
+CONTACT:  Tom Scott  586 739 5199  tescott99@yahoo.com<br /> Submitted by: Darrel Ahlberg via Google Calendar<br />..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Call for Directions</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24327"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.gmskiclub.org"> Click here for more</a><hr />  <h3>Skiwi/GMSC Huron River Canoe Trip<br/>  GM Ski Club</h3>SAT 2012-08-04 <br />Huron River and Proud Lake -- Milford to Proud Lake Recreation Area and Back.  we will be paddling upstream for the first part of the trip.  After lunch,  paddle back to the Canoe Rental to your vehicle.  If you have your own canoe or kayak -- the Village Canoe Rental allows you to park your vehicle at their site.
+
+
+
+BYO Everything -- Food (Lunch), Snacks, Drinks, Water Toys, Water Shoes, etc.
+
+Checklist Link:  http://www.freewebs.com/villagecanoe18/equipmentchecklist.htm   
+
+Tips:  http://villagecanoe18.webs.com/tips.htm   
+
+
+
+TIME:  Meet at 9:30 AM  CANOE AT 10:00 AM 
+
+COST: $24 per canoe (Two People per canoe - $12.00 pp) -- Single Kayaks available for $24.  Based on a rental of 12 watercraft -- if we don't get 12 rentals, price will be slightly more.   Pay John Z. when you arrive and sign the Release Form.
+
+CONTACT:  TO RESERVE YOUR SPOT, John Zalewski    586-979-2392  - johnzalewski@wowway.com<br /> Submitted by: Darrel Ahlberg via Google Calendar<br />..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Call for Directions</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24328"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.gmskiclub.org"> Click here for more</a><hr />  </p>
+
+            <p><a href = "#topofnewsletter"><br />
+
+                <img src="http://www.peggyjostudio.net/E/BackToTop.jpg" alt="Back to top" width="72" height="52" />Click here to get back to the top </a>                </p>
+
+            <hr />
+
+    </div>
+
+	  
+
+    <p   style="text-align: center; font-weight: bold; font-style: italic; font-family:'Times New Roman' Times, serif; font-size: 14pt; border: 3px solid red; color:#FF0000; padding:10px; left:0px;"> "
+The probability that we may fall in the struggle ought not to deter us from the support of a cause we believe to be just; it shall not deter me."<br />  Abraham Lincoln 
+</p>
+
+	
+
+      <a  name="sunday" id="sunday"/>
+
+	    
+
+        <div style="border: 2px solid black"><h2>SUN. Aug. 5 Events</h2></div> 
+
+		 
+
+       <h3>Golf-Salem Hills<br/>  Somerset Singles Social, Ski & Golf Club</h3> Reserve by 2012-08-02 for SUN 2012-08-05 <br /> You will be called only if there is a problem. Call asap if you have to cancel. Please arrive 30 minutes prior to tee time. Foursomes will be selected by a draw. Contact: Dan Nixon-810-459-1728
+
+  Contact: Dan Nixon-810-459-1728 <br /> Starts at 1:45 PM. Member Price is $29.00 w/cart and guest price is $29.00 w cart.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Salem Hills. 8810 W. Six Mile Road, Northville, MI. 248-437-2152 For further info go to www.sssgc.net Please call by 8PM for Sunday Golf and 3 days prior to weekday golf. Leave your name and phone number. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24263"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><br /> Submitted by Connie Rousin<span style="font-style:italic; font-size: 9pt ;"> Please let them know that you saw the notice in the Peggy Jo Studio Newsletter</span></p><a href="http://www.graynwhite.com/sg/sgevents.php"> All their events </a><hr />  <h3>Pool Party<br/> </h3>SUN 2012-08-05 <br />Gayle is having a Pool Party. Rain or Shine- leave no one behind. Bring your own drinks and a dish to pass. 
+
+  <br /> Starts at 2:30 PM..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Gayle Shields' House. 2129 Tall Oaks, Troy, Mi.</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24342"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><hr />  <h3>Sunday Ballroom Dance <br/>  All Star Dance Parties</h3>SUN 2012-08-05 <br />This is Ballroom, Latin, West Coast Swing, East Coast Swing, and Hustle dancing to a terrific DJ (Dr. Bob Semak).  Large wood floor. One hour lesson followed by a dance party. First time guest $5 for lesson and party.  Free Soft drinks, water and snacks.  Singles and Couples welcome.  Come and enjoy the dancing and company of friendly people as well as a beautiful location.  Cash bar available.  Further details call Dr. Bob at (248)778-6261 <br /> Submitted by: Augusta Richards<br /> From  3:00 PM  to 7:00 PM. Member Price is    and guest price is  $12 Lesson & Party .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: American Polish Cultural Center. 2975 East Maple Rd.,  Troy , MI . 48083   2487786261  augusta001@sbcglobal.net</span><br /><a href="http://www.graynwhite.com/show_event.php?event=22696"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Willow Run Airshow<br/>  Catholic Alumni Club</h3>SUN 2012-08-05 <br />This air show is unique. Its main focus is WWII aircraft. People come from all over the country to fly their planes. And you also have the opportunity to look inside and go through the planes and talk to the pilots. The Blue Angels also fly around 4:00 or 4:30 PM. In addition to the air show there also is a ground show, a WWII reenactment of a ground battle with actual WWII German and American equipment. Korean and Vietnam war aircraft are also on display. Gates open at 8:00 AM and you can begin seeing all the aircraft and equipment, talking to pilots and reenactment people and of course purchase memorabilia. The air and ground show starts at 12:00 PM. Tickets at the gate are $35 ($25 if purchased in advance) and parking is $10. Contact us for more information and to arrange a time to meet up with him.
+
+586-263-7285<br /> Submitted by: Ray Previ. via Google Calendar<br /> From  8:00am to 5:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Yankee Air Museum. Willow Run Airport, Ypsilanti, MI.</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24336"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://cacd.hypermart.net/"> Web Site:</a><hr />  <div style='padding: 9px ; background-color: white; text-align: center; font-weight: bold; font-style: italic;  font-size: 12pt; font-family: Verdana, serif; border: 5px solid blue'>																										
+
+
+
+ <img alt="Tri County Business Exchange" 
+
+ src="http://www.peggyjostudio.net/E/triCountyadv.png"  />
+
+
+
+						</div>  <h3>CACD Softball<br/>  Catholic Alumni Club</h3>SUN 2012-08-05 <br />CACD SOFTBALL AT INGLENOOK PARK
+
+Grab your sports bag, a lawn chair, and a cooler of your favorite (non-alcoholic) beverages for a pleasant afternoon spent with America's favorite pastime at Inglenook Park in Southfield. It is on 12 Mile between Lahser and Evergreen, at the light, the only light in this stretch. The games are free, "drop-in," non-competitive, and open to all skill levels. You may invite your friends and family; whether married or single, Catholic or non-Catholic, all are welcome! "Batting Practice" starts at 4:00 PM with a "Game Time" of 5:00 PM. We are usually done around 7:00 - 7:30 PM. Then, we'll eat out afterwards. Please RSVP by the Saturday before the game so we can notify you of weather related cancellations.
+
+810-499-4831
+
+yesmarklapointe@gmail.com
+
+248- 547-5884 k1_manion@wowway.com<br /> Submitted by: Ray Previ. via Google Calendar<br /> From  4:00pm to 7:30pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Inglenook Park.21000 Twelve Mile Road,Southfield,MI.     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24335"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://cacd.hypermart.net/"> Web Site:</a><hr />  <h3>Breakfast Sunday:  Jimmy's Coney Grille<br/>  GM Ski Club</h3>SUN 2012-08-05 <br />Join the GM Ski Club and friends for a great breakfast any Sunday.  If you're new, its a great way to meet some of the folks.  Everyone Welcome. Just show up, and we'll make room for you. No RSVP needed.
+
+
+
+TIME: 10:00
+
+CONTACT: Les Skrzycki skiorsail@yahoo.com
+
+COST: Your Breakfast tab<br /> Submitted by: Darrel Ahlberg via Google Calendar<br />..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Jimmy's Coney Grille.37246 Dequindre Rd,Sterling Heights,Mi.     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24326"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.gmskiclub.org"> Click here for more</a><hr /> 	  <hr />
+
+	   <a href = "#topofnewsletter"><br />
+
+       <img src="http://www.peggyjostudio.net/E/BackToTop.jpg" alt="Back to top" width="72" height="52" />Click here to get back to the top </a>
+
+		 <hr />
+
+		
+
+       	
+
+      <div style="background-color: #FFFFCC" >
+
+	   &gt;<a  name="future" id="future"/></a></a> 
+
+          <div style="border: 2px solid black"><h2> Future Events:</h2>
+
+	    </div>
+
+          <p><em>Note:only events that require advance notice or a great deal of planning are listed here. Listing all of the future events would require a great amount of space in this newsletter. Look for next weeks events in the next issue. To see all future events <a href="http://www.graynwhite.com/whtw/calendar.php">click here </a></em></p>
+
+          <hr />
+
+          <p><em> </em></p>
+
+          <p> <h3>Golf at Fern Hill<br/>  Bethany East</h3> Reserve by 2012-08-03 for MON 2012-08-06 <br />Meet other singles for a friendly game of golf.  Please call the Friday before to make reservations.
+
+  Contact: Phyllis (586) 286-1711<br /> Starts at 10:00 AM. Price is cost on your own.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Fern Hill Golf & Country Club. 17600 Clinton River Rd., Clinton Township, MI. (586) 286-4700 North of Metro Parkway and east of Hayes. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24299"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><br /> Submitted by Connie Rousin<span style="font-style:italic; font-size: 9pt ;"> Please let them know that you saw the notice in the Peggy Jo Studio Newsletter</span></p> This organization has a page on  the PJSN blog which is <a href="http://www.peggyjostudio.net/wordpress/?p=2195"> here </a><br /><a href="http://www.graynwhite.com/bethany/bethevents.php">All Bethany Events can be seen by clicking here</a><hr />  <h3>Open Mic Nite - hosted by Maggie McCabe, Madison Heights<br/>  McCabe Music</h3>MON 2012-08-06 <br />7-10pm -Come by our new acoustic open mic -- We'll be meeting the first Monday of the month (if things go well we'll talk them into letting us in more often)!
+
+
+
+This is a great neighborhood club with amazing food� bring the family!
+
+
+
+We have a theme each month - homework assignment will be posted on our <a href="http://openmikes.org/listings/coach" target="_blank">Open Mic Website</a> each month. 
+
+
+
+See you there!
+
+
+
+<a href="http://openmikes.org/listings/coach" target="_blank">Our Open Mic Website</a> with current photos and song assignments
+
+
+
+<a href="http://maps.google.com/maps/place?q=the+coachman+26685+Dequindre+Road,+Madison+Heights,+MI,+48071&hl=en&cid=18436315618946876446" target="_blank">26685 Dequindre Road, Madison Heights, MI, 48071</a> 
+
+
+
+- Coach Phone 248-398-4411  <a href="http://www.thecoachsportsgrille.com/" target="_blank">The Coach Website</a><br /> Submitted by: Maggie McCabe Via Google Calendar<br /> From  7:00pm to 10:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Coachman Lounge & Pizzeria.26685 Dequindre,Madison Heights,Mi.48071     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24332"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>S.O.A.R. (Singles Outreach and Renewal) Meetup<br/>  S.O.A.R. (Singles Outreach and Renewal)</h3>TUE 2012-08-07 <br />Food & Fellowship.  Join us at this is Panera Cares location'a non-profit community cafe that accepts payments in the form of donations.  Each item on the menu is listed with a suggested donation amount.  Panera Cares has patio seating, free WiFi and a diverse menu.<br /> Submitted by: Lynn<br /> Starts at 6:00 PM . Price is  free .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Panera Bread. 22208 Michigan Ave,  Dearborn , MI .    313-271-3301  </span><br /><a href="http://www.graynwhite.com/show_event.php?event=23450"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Hawaiian Luau Party<br/>  Successfully Single Social Club </h3>WED 2012-08-08 <br />Aloha! We're going to have a hulava great time at our Hawaiian Luau at the poolside of the luxurious Regents Park.
+
+
+
+Featuring a Traditional Hawaiian Dinner, Tropical Drinks, Polynesian Music & Entertainment & more! (You may also bring your own adult beverages).
+
+
+
+Reservations required: www.successfullysingle.org or 248-289-6406. Tropical attire recommended. The gate to the right of the entrance will be left open for our guests. If it rains, the party will be moved inside the 10,000 sq ft clubhouse.
+
+<br /> From  7:00 PM to 10:00 PM. Member Price is 20.00 and guest price is 25.00.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Regents Park. 2751 Melcombe Circle, Troy, MI. I block south of Big Beaver and east off Crooks.  Enter south side of complex off Butterfield. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24293"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> Submitted by: Janet Blair This organization has a page on  the PJSN blog which is <a href="http://www.peggyjostudio.net/wordpress/?p=2214"> here </a><a href="http://www.successfullysingle.org"> Their Web Site</a><hr />  <h3>Golf Trip- Bucks Run and Pohlcat<br/>  Somerset Singles Social, Ski & Golf Club</h3> Reserve by 2012-05-01 for This event spans the period from  2012-08-10 to 2012-08-12 <br /> Saturday golf:18 holes Bucks Run Sunday Golf: 18 holes Pohlcat 
+
+  Friday Golf optional 18 holes at Riverwood Resort $39.00 For further info go to www.sssgc.netContact: Frank 248-608-2819 Carol 586-420-0748 <br />. Member Price is $248.00 and guest price is $288.00.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Buks Run and Pohlcat. 1559 Chippewa Rd., Mt Pleasant, MI. 48858 989-773-6830 Price Includes:  2 nights at Mt Pleasant Inn. 2 Continental Breakfasts Saturday and Sunday. 1 Friday night Social event.1 BBQ Dinner at Bucks Run following golf that day. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=23709"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.graynwhite.com/sg/sgevents.php"> All their events </a><hr />  <h3>Rummage and book sale<br/> </h3>SAT 2012-08-11 <br />Fantastic Church Fundraiser, Rummage and book sale.  lots of great items and new books for sale. Books from fifty cents -two dollars,  house hold items and clothes.<br /> Submitted by: Rev. cathey jo Tomilenko<br /> From  10:00 AM  to 3:00 PM . Price is   .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Unity Church of Royal oak. 2550 Crooks Rd.,  Royal Oak , MI . 48073   248-288-3550  han9544@aol.com</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24295"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Maggie McCabe & Billy Farris - Hamtramck<br/>  McCabe Music</h3>SAT 2012-08-11 <br />10pm-2am Sat Aug 11 -- Join us as we bring the blues back the Hamtramck---
+
+<a href="https://maps.google.com/maps?q=celina's+Hamtramck+mi&ll=42.403876,-83.062134&spn=0.01079,0.022724&fb=1&gl=us&hq=celina's&hnear=0x8824d241986dd0c5:0xed01b287f5f42bf6,Hamtramck,+MI&cid=0,0,14926111293562201665&t=m&z=16&iwloc=A" target="_blank">11667 Joseph Campau Street  Hamtramck, MI 48212</a>  (the old Attic Bar)
+
+
+
+- Celina's Phone 313-365-1801 <a href="https://plus.google.com/101716806055713793414/about?gl=us&hl=e" target="_blank">Celina's Website</a><br /> Submitted by: Maggie McCabe Via Google Calendar<br /> From  10:00pm to 0:00am..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location:    </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24330"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>August Business & Social Networking Event<br/>  Tri-County Business Exchange, Inc. </h3> Reserve by 2012-08-13 for TUE 2012-08-14 <br />Need to rev up your business? Then cruise on down to the new Forestre Banquet Center for a hot roddin great time as we celebrate the week of the Woodward Dream Cruise while making valuable business connections.
+
+
+
+6 pm - 8 pm. Complimentary 50s style fare from 6:15-7:15. Door prizes & more.
+
+Make reservations at t.cbe.com or 248-852-8077<br /> From  6:00 PM to 8:00 PM. Member Price is $10 in adv and guest price is $15 at door.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Forestre Banquet Center. 1919 Star-Batt, Rochester Hills, MI. Just north of M-59 and east off Crooks. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24294"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Maggie McCabe Solo, Madison Heights<br/>  McCabe Music</h3>SAT 2012-08-18 <br />8-11pm - join us at this little neighborhood hotspot! Great food! 
+
+<a href="http://maps.google.com/maps/place?q=the+coachman+26685+Dequindre+Road,+Madison+Heights,+MI,+48071&hl=en&cid=18436315618946876446" target="_blank">26685 Dequindre Road, Madison Heights, MI, 48071</a> 
+
+
+
+- Coach Phone 248-398-4411  <a href="http://www.reverbnation.com/venue/thecoachman" target="_blank">The Coach Website</a><br /> Submitted by: Maggie McCabe Via Google Calendar<br /> From  8:00pm to 11:00pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Coachman Lounge & Pizzeria.26685 Dequindre,Madison Heights,Mi.48071     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24244"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Maggie McCabe Solo, Clawson Farmers Market<br/>  McCabe Music</h3>SUN 2012-08-19 <br />10am-1pm Join me for this wonderful new farmers market.
+
+<a href="http://www.mapquest.com/?version=1.0&hk=5-E6IY" target="_blank">1098 N Bywood Ave, Clawson, MI 48017</a> 
+
+
+
+- Market Phone 248-435-6500  <a href="http://www.clawsonfarmersmarket.info/" target="_blank">Market Website</a><br /> Submitted by: Maggie McCabe Via Google Calendar<br /> From  10:15am to 1:30pm..<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Clawson Farmer's MARKET.1098 Bywood,Clawson,Mi.48017     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24243"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Safety First: Home and Personal Security-Lecture and Luncheon at OPC<br/>  Older Persons' Commission</h3>MON 2012-08-20 <br />Enjoy a complimentary luncheon, and special presentation by guest speaker, Deputy Mark Hickson, from the Oakland County Sheriff's Department, will intrigue you with stories and statistics from our community. Some will surprise you! Have you taken the appropriate measures in your home and in your travels to smartly react to these crime statistics?  This is the second event in our popular "Learn More Now" lecture and luncheon series. Limited seating. Pre-registration is a must. To reserve your free luncheon and lecture call:  248-656-1403 Press "0" M-F 8:00am-4:00pm. This program is sponsored by Guardian Angel Cemetery and the Modetz Family Funeral Homes.<br /> Submitted by: Meg Baker<br /> From  12:00 PM  to 2:00 PM . Price is  free .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Older Person's Commission. 650 Letica,  Rochester , MI . 48307   248-656-1403 www.opcseniorcenter.org rhonda_nelson@opcseniorcenter.org</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24146"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Pig Roast<br/>  Somerset Singles Social, Ski & Golf Club</h3> Reserve by 2012-08-10 for SAT 2012-08-25 <br />There will be gam laying,bocce ball,jarts,volleyball,horseshoes etc. If you have a favorite game bring it with you.Contact: Bobbie-586-781-4056  <br /> Starts at 2:30 PM. Member Price is $25.00 and guest price is $30.00.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Ludwik Labaj. 78625 Kidder Road, Romeo, MI. 48065 This Pig Roast replaces our Annual picnic. Come join us for a complete Pig Roast dinner with all the trimmings. Bring your own beverage and lawn chair. for further info go to www.sssgc.net. </span><br /><a href="http://www.graynwhite.com/show_event.php?event=23978"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a><br /> Submitted by Connie Rousin<a href="http://www.graynwhite.com/sg/sgevents.php"> All their events </a><hr />  <h3>Celebrations - A Dance for Singles<br/>  Successfully Single Social Club </h3>SAT 2012-08-25 <br />Please join us for Celebrations - A Dance for Singles with FREE Line Dance Lesson at the beautiful new Forestre Banquet Center.
+
+
+
+Meet, Mingle, & Dance the night away to Top 40 Music by Professional DJ Pam Hornbeck from 8:00 pm - midnight. Complimentary Line Dance Lesson by Connie from 8:00 pm - 8:30 pm. Delicious hors d'oeuvre buffet served from 8:30 pm - 9:30 pm. Open Dancing from 9:00 pm - midnight.
+
+
+
+Pay at the door. Casual summer attire.
+
+<br /> From  8:00 PM to 12:00 AM. Member Price is 12.00 and guest price is 15.00.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Forestre Banquet Center. 1919 Star-Batt Drive, Rochester Hills, MI. Forestre Banquet Center, 1919 Star-Batt Drive, Rochester Hills. (Just north of M-59 and east of Crooks Rd behind the Cancer Center). </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24340"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> Submitted by: Janet Blair This organization has a page on  the PJSN blog which is <a href="http://www.peggyjostudio.net/wordpress/?p=2214"> here </a><a href="http://www.successfullysingle.org"> Their Web Site</a><hr />  <h3>Idle Hour Yacht Club Rendezvous<br/>  Sailing Singles</h3> Reserve by 2012-08-30 for weekend of 2012-09-02 <br />Idle Hour Yacht Club Rendezvous, Harsens Island, September 2-3, 2012 Sunday - Monday.  Sunday, Sept 2 --Arrive by boat or car.  *Activities: Dingy Poker Run in Muscamoot Bay, Outside cash Tiki bar, Horseshoes, Boccie Ball contests.  *Dinner: 6:30 pm catered dinner in the club.  8:30 pm entertainment and dancing. Monday, Sept 3-- Departure.  - Breakfast:  Potluck on the dock.  Details:  Hotel -Idle hour is the last historic hotel existing on the island. Rooms are inexpensive, $35.00.  Restrooms and showers located on each floor are shared. Reserve 810-748-3701 with Barb.  If sailing - Dock reservation required, $35 per night, Saturday arrival OK. Electric service available at dock.  Ice and potable water available at the bar. Sailing Singles Skippers -- For a slip reservation call Jim Wysocki, 586-942-3789 or e-mail him at starcres@hotmail.com.   
+
+----------------------------------------------------------------------------------------------------
+
+Sailing Singles     Sept. 2-3, 2012 Idle Hour     Reservations by Aug 28th  Make checks payable to SAILING SINGLES.  Mail to Cathleen Gallagher, 1689 Valdosta Circle, Pontiac,  MI 48340,            Name(s)_________________________________________ phone/e-mail___________________________________
+
+Members $18.00 includes catered dinner & entertainment.  Member $18 ______ Guest $23 ________Total _______ Check#________.  Sunday   8:30 pm Entertainment and dancing only $8___________.  Early Bird: by Aug. 15th Members $18, Guests $23. Aug 16-Aug 30:  Members $21, Guests $26.   
+
+By car: Take I94 East to 26 Milieux, go east to Palms, then turn right. Palms dead ends at ME.  Turn left at the light and follow to Harsens Island ferry on right, about 7 miles.   $7.00 round trip for the ferry.  Take ferry to Island.  Turn left off the ferry and follow South Channel Rd to
+
+7800 S. Channel Drive and turn left into Idle Hour.  Watch for the sign at the road.  For additional informatin visit our website at www.sailingsinglesclub.com
+
+ 
+
+ 
+
+<br /> Submitted by: Pamela A. Rupinski<br /> Starts at 3:00 PM . Member Price is  $18/$21  and guest price is  $23/$26 .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Idle Hour Yacht Club. 7800 South Channel Drive,  Harsens Island , MI . 48028     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24290"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Pre-Labor Day BBQ Bash & Dancing Under the Stars<br/>  Successfully Single Social Club </h3> Reserve by 2012-09-01 for SUN 2012-09-02 <br />Celebrate the last big day of summer with a day of fun, food, music & dancing. BBQ chicken dinner served from 6 pm-7pm. Dancing to Top 40 music by in our private shelter from 7pm-9:30pm. 
+
+
+
+$12.00 in adv members; $15.00 in adv non-members. 
+
+$20.00 at park members & non-members.  
+
+ 
+
+Visit www.successfullysingle.org or call 248-289-6406 for reservations or more information.
+
+This event takes place rain or shine. Shelter is completely covered.
+
+
+
+You may bring own adult beverage. No hard liquor or glass bottles allowed in park.
+
+
+
+<br /> From  6:00 PM to 10:00 PM. Member Price is 12.00 in adv and guest price is 15.00 in adv.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Stoney Creek Oakgrove A Shelter. 4300 Main Park Dr, Shelby Twp, MI 48316</span><br /><a href="http://www.graynwhite.com/show_event.php?event=24341"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> Submitted by: Janet Blair This organization has a page on  the PJSN blog which is <a href="http://www.peggyjostudio.net/wordpress/?p=2214"> here </a><a href="http://www.successfullysingle.org"> Their Web Site</a><hr />  <h3>Golf Trip- Cincinatti Ohio Area<br/>  Somerset Singles Social, Ski & Golf Club</h3> Reserve by 2012-05-01 for This event spans the period from  2012-09-12 to 2012-09-14 <br />Wed Golf: 18 holes at Heatherwood Golf Course,Thurs Golf: 18 holes at The Grizzly Course,Friday golf: 18 holes at Blue Ash Golf Course.for further info go to www.sssgc.net Contact: Bobbie-586-781-4056 Jim248-229-9390  <br />. Member Price is $325.00 and guest price is $365.00.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Blue Ash Golf Course. 4343 Cooper Rd., Blue Ash, OH 452421 Includes:Round trip on luxury bus with 2 stops for pickup.2 nights lodging at Embassy Suites,Blue Ash,2 Full breakfasts,1Thurs afternoon get together w/appetizers provided by Embassy suites after </span><br /><a href="http://www.graynwhite.com/show_event.php?event=23710"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <a href="http://www.graynwhite.com/sg/sgevents.php"> All their events </a><hr />  <h3>Le. Ste. Clair Shores 25th Annual Art Exhibit<br/>  Art Show</h3>SAT 2012-09-15 <br />Le. Ste. Clair Shores celebrates it\'s 25th Anniversary for this show.  Over 100 artists and crafters will exhibit their work.  Food and entertainment.<br /> Submitted by: Shirl Hathaway<br /> From  10:   AM  to 5:   PM . Price is  Free .<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Memorial Park. Jefferson @ Masonic (13 1/2),  St. Clair Shores , MI . 48080     </span><br /><a href="http://www.graynwhite.com/show_event.php?event=24245"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr />  <h3>Pilgrimage to France<br/> </h3> Reserve by 2012-08-10 for MON 2012-10-15 <br />Join Fr. Larry Webber, OFM Cap, and Barbara Middleton, Holy Trinity Apostolate on pilgrimage. Enjoy a private luncheon with His Eminence Raymond Leo Cardinal Burke. Your pilgrimage will take you to St. Francis Church and St. Joseph Parish where the Venerable Solanus Casey was ordained and celebrated his first Holy Mass. Included in this pilgrimage is a rare visit inside the cloistered halls of the Cistercian nuns of Our Lady of the Valley Monastery. Pray at the Shrine of Our Lady of Good Help, the first approved Marian visitation site in the USA. Stop at St Adalbert Cemetery, Milwaukee, to pay respects at the grave of Fr. Val Rykowski. See the National Shrine of the Pious Union of St. Joseph and pray for the sick and the suffering. Hurry! Space is limited and reservations close June 15th! Call Corporate Travel Service at (313) 565-8888, x. 179, or book on-line at www.ctscentral.net.<br /> Submitted by: Carmen Norkiewicz<br />. Price is  Varies-Call for inf.<span style="padding:10px; text-align: center;  font-style: italic;  ">  Location: Corporate Travel Service. 23420 Ford Road,  Clinton Township , MI . 48127   (313) 565-8888 www.ctscentral.net cnorkiewicz@ctscentral.net</span><br /><a href="http://www.graynwhite.com/show_event.php?event=23983"><img src="http://www.peggyjostudio.net/map_button.png" alt="Get a Map/Print"  /> </a> <hr /> 	    </p>
+
+          <a href = "#topofnewsletter" />
+
+		  <hr />
+
+    </div>	
+
+          <p><a href = "#topofnewsletter"><br />
+
+              <img src="http://www.peggyjostudio.net/E/BackToTop.jpg" alt="Back to Top" width="72" height="52" />Click here to get back to the top </a></p>
+
+		
+
+         
+
+          <!--<p><table width="485" border="2">
+  <caption>
+  <h2>Coupons Available</h2>
+  </caption>
+  <tr>
+  <td>
+  Here are the coupons that are available today. We will be adding more from time to time so check back here on a regular basis. If you have any suggestions for vendors who might like to post their coupons here, contact Peggy Jo at peggyjo@peggyjostudio.net <br>
+
+  Be sure that you see all of the coupons available by scrolling through the coupons down to the notification of the end of available coupons!!
+   <h4> You must allow images to be shown</h4>
+    </td>
+  </tr>
+  
+  
+
+
+  
+  <tr><td><a href="http://www.graynwhite.com/mailCouponRequest.php?cpn=pjsncpon_0007.jpg" ><div><img src="http://www.graynwhite.com/coupons/pjsncpon_0007.jpg" alt="If you do not see a coupon in this box, Make sure that you are allowing images to be displayed" /></div></a></td></tr><tr><td><a href="http://www.graynwhite.com/mailCouponRequest.php?cpn=pjsncpon_0003.jpg" ><div><img src="http://www.graynwhite.com/coupons/pjsncpon_0003.jpg" alt="If you do not see a coupon in this box, Make sure that you are allowing images to be displayed" /></div></a></td></tr><tr><td><a href="http://www.graynwhite.com/mailCouponRequest.php?cpn=pjsncpon_0004.jpg" ><div><img src="http://www.graynwhite.com/coupons/pjsncpon_0004.jpg" alt="If you do not see a coupon in this box, Make sure that you are allowing images to be displayed" /></div></a></td></tr><tr><td><a href="http://www.graynwhite.com/mailCouponRequest.php?cpn=pjsncpon_0002.jpg" ><div><img src="http://www.graynwhite.com/coupons/pjsncpon_0002.jpg" alt="If you do not see a coupon in this box, Make sure that you are allowing images to be displayed" /></div></a></td></tr><tr><td><a href="http://www.graynwhite.com/mailCouponRequest.php?cpn=pjsncpon_0008.jpg" ><div><img src="http://www.graynwhite.com/coupons/pjsncpon_0008.jpg" alt="If you do not see a coupon in this box, Make sure that you are allowing images to be displayed" /></div></a></td></tr><tr><td><a href="http://www.graynwhite.com/mailCouponRequest.php?cpn=pjsncpon_0005.jpg" ><div><img src="http://www.graynwhite.com/coupons/pjsncpon_0005.jpg" alt="If you do not see a coupon in this box, Make sure that you are allowing images to be displayed" /></div></a></td></tr><tr><td><a href="http://www.graynwhite.com/mailCouponRequest.php?cpn=pjsncpon_0001.jpg" ><div><img src="http://www.graynwhite.com/coupons/pjsncpon_0001.jpg" alt="If you do not see a coupon in this box, Make sure that you are allowing images to be displayed" /></div></a></td></tr><tr><td><a href="http://www.graynwhite.com/mailCouponRequest.php?cpn=pjsncpon_0006.jpg" ><div><img src="http://www.graynwhite.com/coupons/pjsncpon_0006.jpg" alt="If you do not see a coupon in this box, Make sure that you are allowing images to be displayed" /></div></a></td></tr>
+
+
+
+<tr><td> This is the end of the available Coupons. We will be adding more  so come back again</td></tr>
+
+</table>
+ </p>-->
+
+          <hr />
+
+     
+
+      <table width="590"  border="2" id="extra" >
+
+        <tr>
+
+          <td align="center">
+
+          Published Weekly and sent to over <font size="+1" > 8,830</font> eMail contacts.		  </td></tr>
+
+	  </table> 
+
+      <!--End of extra table-->
+
+		
+
+		
+
+		  
+									                                               
+												 </table> 
+
+<!--End of main table--> 
+
+
+
+</body>
+
+</html>
+
+

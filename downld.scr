@@ -1,0 +1,8 @@
+RemoteCwd /usr/www/graynwhite/htdocs
+LocalCwd d:\program files\omni\htdocs
+RemoteCwd /usr/www/graynwhite/htdocs/whtw
+LocalCwd d:\program files\omni\htdocs\whtw
+RemoteClearSelection
+RemoteSelect db_event.dat
+Download
+LocalCwd d:\program files\omni\htdocs\whtw

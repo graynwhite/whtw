@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Organization Maintenance Form</title>
+<meta NAME="generator" CONTENT="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+</head>
+
+<body>
+
+<h1>Organization Maintenance Form</h1>
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.Org_num.value == "")
+  {
+    alert("Please enter a value for the \"Org_num\" field.");
+    theForm.Org_num.focus();
+    return (false);
+  }
+
+  if (theForm.Org_num.value.length > 40)
+  {
+    alert("Please enter at most 40 characters in the \"Org_num\" field.");
+    theForm.Org_num.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form ACTION="http://www.graynwhite.com/cgi-bin/org_entry.php" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
+  <table ALIGN="center" BORDER="1">
+    <tr>
+      <td>Action</td>
+      <td><input TYPE="radio" NAME="action" VALUE="Add">Add<br>
+      <input TYPE="radio" NAME="action" VALUE="change" checked>Change<br>
+      <input TYPE="radio" NAME="action" VALUE="searchname">Search by Organization 
+      Name<br>
+      <input type="radio" name="action" value="searcshort">Search by Short 
+      name</td>
+    </tr>
+    <tr>
+      <td>Organization Code</td>
+      <td>
+      <!--webbot bot="Validation" b-value-required="TRUE" i-maximum-length="40" --><input TYPE="text" NAME="Org_num" SIZE="5" MAXLENGTH="40"></td>
+    </tr>
+    <tr>
+      <td>Password</td>
+      <td><input TYPE="password" NAME="password" SIZE="8" MAXLENGTH="8"></td>
+    </tr>
+    <tr>
+      <td>Argument</td>
+      <td><input type="text" name="searchname" size="20" Maxlength="20" </TD>
+      </td>
+    </tr>
+  </table>
+  <center>
+  <p><input TYPE="submit" NAME="submit" VALUE="Submit"></p>
+  </center>
+</form>
+
+</body>
+
+</html>

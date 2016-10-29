@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<TITLE>Member Roster Control</TITLE>
+<META NAME="generator" CONTENT="Microsoft FrontPage 5.0">
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">	
+	function validEmail(email){
+		invalidChars = " /:,;"
+		if (email == "") {
+			return false
+		}
+		for (i=0; i<invalidChars.length; i++) {
+			badChar =invalidChars.charAt(i)
+			if (email.indexOf(badChar,0)> -1){
+				return false
+			}
+		}
+		atPos = email.indexOf("@",1)
+		if (atPos == -1) {
+			return false
+		}
+		if (email.indexOf("@",atPos+1) > -1) {
+			return false
+		}
+		periodPos = email.indexOf(".",atPos)
+		if (periodPos == -1) {
+			return false
+		}
+		return true
+	}
+	
+	function submitIt(carform) {
+		if (!validEmail(carform.emailid.value)) {
+			if(carform.action.value =="Add" || carform.action.value == "change") {
+				alert("The Email address is invalid")
+				carform.emailid.focus()
+				return false
+			}
+			if (carform.action.value =="changemail"){	
+				if (!confirm("The original E_mail address is invalid do you wish to use it?")) {
+					carform.emailid.focus()
+					return false
+				}	
+			}			
+		}
+		if (!validEmail(carform.newmailid.value)){
+			if(carform.action.value =="chngemail") {
+				alert("The new email is invalid")
+				carform.newemailid.focus()
+				return false
+			}
+		}	
+	}
+</SCRIPT>	
+</HEAD>
+<BODY>
+<H1>Member Roster Input Form</H1>
+<FORM onSubmit="return submitIt(this)" ACTION="http://www.graynwhite.com/cgi-bin/memb_entry_dbi.cgi" NAME="myForm" method="POST" >
+<TABLE ALIGN="center" BORDER="1">
+<TR>
+	<TD>Action</TD>
+	<TD><INPUT TYPE="radio" NAME="action" VALUE="Add">Add<BR>
+<INPUT TYPE="radio" NAME="action" VALUE="change" checked>Change<BR>
+<INPUT TYPE="radio" NAME="action" VALUE="delete">Delete<br>
+<INPUT TYPE="radio" NAME="action" VALUE="invalid">Flag as invalid<br>
+<INPUT TYPE="radio" NAME="action" VALUE="chgemail">Change E-Mail Id.<br>
+<INPUT TYPE="radio" NAME="action" VALUE="mkpvt">Make Private<br>
+<INPUT Type="radio" name="action" Value="search">Search by last name<br>
+    <input type="radio" name="action" value="search_email">Search by email 
+    provider<br>
+    <input type="radio" name="action" value="search_first">Search by 
+    first name<br><input type="radio" name="action" value="comcast">Duplicate for 
+    comcast</TD>
+</TR>
+<TR>
+	<TD>E-MAIL ID of Member</TD>
+	<TD><INPUT TYPE="text" NAME="emailid" SIZE="40" MAXLENGTH="40"></TD>
+</TR>
+<TR>
+	<TD>New E-MAIL ID of Member</TD>
+	<TD><INPUT TYPE="text" NAME="newmailid" SIZE="40" MAXLENGTH="40"></TD>
+</TR>
+<TR>
+	<TD>Your E-Mail ID</TD>
+	<TD><INPUT TYPE="text" NAME="youremailid" SIZE="40" MAXLENGTH="40"></TD>
+</TR>
+<TR>
+	<TD>Password</TD>
+	<TD><INPUT TYPE="password" NAME="password" SIZE="8" MAXLENGTH="8"></TD>
+</TR>
+<TR>
+	<TD>Argument</TD>
+	<TD><input type="text" name="searchname" size="20" Maxlength="20"</TD>
+</TR>
+</TABLE>
+<CENTER><INPUT TYPE="submit" NAME="submit" VALUE="Submit"></CENTER>
+</BODY>
+</HTML>
