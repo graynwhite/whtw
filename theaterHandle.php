@@ -1,15 +1,16 @@
 
 <?php
-/*print "Post values \n";
-var_dump($_POST);
+<!-- print "Post values \n";
+var_dump($_POST);-->
 
 if(trim($_POST['passwrd']) !='/FJ6r1n11M'){
 	print "password submitted was " . $_POST['passwrd'] . "\n";
 	print "production name is " . $_POST['prodname'] . "\n";
 	print "date start was " . $_POST['dateStart'] . "\n";
-	print "Password not valid";
+	print  "Password not valid";
 	exit;
-}*/
+	
+}
 	
 require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/Class_Ire.php");
 require_once($_SERVER['DOCUMENT_ROOT']."/cgi-bin/connect.inc");
