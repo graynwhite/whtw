@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/Class_Ire.php");
+require_once("../../phpClasses/Class_Ire.php");
 $ire = new IREclass;
 $ire->setHeader('Art Fairs,Festivals, Community Events and Google Calendar');
 $header = $ire->getHeader();
@@ -351,7 +351,7 @@ window.addEventListener("load", assignDate);
 <?php 
 /*$orgRadio = $ire->bldOrgRadio("artFestivalOrgs.xml",80);
 echo $orgRadio;*/
-include_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/orgSelect.inc');
+include_once("../../phpClasses/orgSelect.inc");
 $venueRadio = $ire->bldVenueRadio("theaterVenues.xml",80);
 echo $venueRadio;
 $original_date=$ire->bldDateEntryShort();

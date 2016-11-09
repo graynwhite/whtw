@@ -56,13 +56,8 @@ $listbox="<div data-role=\"fieldcontain\">
 		<script src="http://www.graynwhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
 		<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
 		<script src="http://www.graynwhite.com/dough/Dough/dough.min.js"></script>
-		
-	<script>
+<script>		
 	$(document).ready(function(){
-	
-	 
-	   
-
   jQuery("#formInput").validationEngine(
   { 'custom_error_messages':
   {'#Orgname' :{
@@ -74,16 +69,15 @@ $listbox="<div data-role=\"fieldcontain\">
 				}
   );
 });
-
-
 </script>
+
 </head>
 <body>
 
 <div id="page1" data-role='page'>
-<div data-role='header'>
-<h1>Theater/Trip Event Information Input<br /> 
-<img src="graynwhitebannereventMaint.jpg" width="100%"  /></h1>
+<div data-role="header">
+<h1>Theater/Trip Event Information Input</h1>
+<img src="graynwhitebannereventMaint.jpg" width="100%"  />
 </div>
 
 <div id="pgcontent" data-role='content'>
@@ -92,7 +86,7 @@ $listbox="<div data-role=\"fieldcontain\">
 <form  action="theaterHandle.php" method="post" name='formInput' id='formInput'   >
    
   <?php echo $listbox ?>
-         	
+  	
 	 <fieldset data-role="controlgroup" data-type="horizontal">
     <legend>Entry Type:</legend>  
         <label for= "typeTheater">Theater</label>  
@@ -104,7 +98,7 @@ $listbox="<div data-role=\"fieldcontain\">
      </fieldset>  
 	   
     <legend>Theater Production name  or Trip Site Name</legend>
-    <input name="prodname" type="text" value="" class="validate[required]"
+    <input name="prodname" type="text" value="   " class="validate[required]"
     data-prompt-position="bottomLeft:140,5" >  		
 		
       <legend>Date of Event or Date Start of multi day event: <span style="color:#FF0000;">*</span></legend>
@@ -121,7 +115,9 @@ $listbox="<div data-role=\"fieldcontain\">
 	 <fieldset data-role="controlgroup" data-type="horizontal">
     <legend>Entry Duration:</legend>  
         <label for= "durSpan">Span</label>  
-        <input name="radioEntryDur" id="durSpan" type="radio" value="mull" checked="checked" />
+        <input name="radioEntryDur" id="durSpan" type="radio" value="mul" checked="checked" />
+
+        
 		           
        <label for='durSingle'>Single</label>
         <input type="radio" name="radioEntryDur"  value="Single" id='durSingle' />
@@ -135,7 +131,7 @@ $listbox="<div data-role=\"fieldcontain\">
      </fieldset>    
     	
 
-    Password: <input name="passwrd" id="passwrd" type="password" value=""
+    Password: <input name="passwrd" id="passwrd" type="password" 
       class="validate[required]" data-prompt-position="bottomLeft:140,5" /> 
          
 	 

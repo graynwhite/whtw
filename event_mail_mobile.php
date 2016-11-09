@@ -426,7 +426,7 @@ function setCookie(cname, cvalue, exdays) {
 		<legend>Price Guests</legend>
         <input type="text" name="Non_Member_Price" val=""" />
 		</fieldset>
-   <fiedset>
+   <fieldset>
       <legend>Recurring Event</legend>
 	   <p>If  this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the webmaster@graynwhite.com in order to delete those specific events.</p>
   <p>If you have an event that occurs regularly, but there will be program additions and/or changes, do not classify it as a recurring event</p>    

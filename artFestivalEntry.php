@@ -10,7 +10,7 @@
 	Last change: FJC 11/14/2004 1:18:36 PM
 */
 include("../cgi-bin//connect.inc");
-require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/Class_Ire.php");
+require_once("../../phpClasses/Class_Ire.php");
 $ire = new IREclass;
 
 $header = 'Art Fairs,Festivals and Comunity Events';

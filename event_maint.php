@@ -12,7 +12,7 @@
 $action=$_GET['action'];
 $Event_number=$_GET['Event_number'];
   include("../cgi-bin/connect.inc");
-  require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/dateClass.php');
+  require_once("../../phpClasses/dateClass.php");
 /*=================================================================================================*/
   if ($action == "byitem"){
         $sql = " Select * from events where Event_number = \"$Event_number\"";
