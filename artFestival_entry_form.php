@@ -7,8 +7,7 @@ $header = $ire->getHeader();
 ?>
 
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
 
 <meta http-equiv="Content-Language" content="en-us">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,9 +22,10 @@ $header = $ire->getHeader();
 
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
-<<script type="text/javascript" src="../markitup/markitup/jquery.js"></script>
-<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
-<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
+<
+<!--<script type="text/javascript" src="../markitup/jquery.js"></script>
+--><script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../markitup/sets/html/set.js"></script>
 
 
 <script type="text/javascript">
@@ -82,6 +82,8 @@ document.entry_form.date_to.value= document.entry_form.date_from.value;
 document.entry_form.resby.value = document.entry_form.date_from.value;	
 }
 </script>
+
+
 <script type="text/javascript" >
    $(document).ready(function() {
       $(".markItUp").markItUp(mySettings);
@@ -164,24 +166,31 @@ document.entry_form.resby.value = document.entry_form.date_from.value;
 		var mediawork = $('#media').val();
 		var res;
 		console.log("media is " + mediawork);
+		
+		mediawork=mediawork.replace("Where?","");
 		mediawork=mediawork.replace("Where","");
+		mediawork=mediawork.replace("When?","");
+		mediawork=mediawork.replace("When","");
 		mediawork=mediawork.replace("map","");
 		mediawork=mediawork.replace("Description","");
 		mediawork=mediawork.replace("Calendar","");
 		mediawork=mediawork.replace("My Meetups","");
-		mediawork=mediawork.replace(/^\s*[\r\n]/gm, "");
-		
+		mediawork=mediawork.replace(/^\s*[\r\n]/gm, "<br>");
+		console.log("media after replace " + mediawork);
 		
 		$("#media").val(mediawork);
 		
 		
 	});
-	
+	function nl2br(value) {
+  		return value.replace(/\n/g, "<br />");
+}
+		
 	$("#breakbutton").click(function(){
-		 console.log("At media click");
-		 var mediawork=nl2br($('#media').val(),'is_xhtml');
-		 console.log("value of mediawork " + mediawork);
-		 $("#media").val(mediawork);
+		 console.log("At break button click");
+		var mediawork=$('#media').val();
+		var mediaworkbr=nl2br(mediawork)
+		  $("#media").val(mediaworkbr);
 	});
 	
 	});
@@ -220,43 +229,10 @@ document.entry_form.other_site_text.value = place_work;
 }
 
 </script>
-<script type="text/javascript">
-function cleanmedia(str){
-	console.log("at cleanmedia");
-	console.log("Value of str is " + str);
-}
 
-function nl2br(str, is_xhtml) {
-  //  discuss at: http://phpjs.org/functions/nl2br/
-  // original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // improved by: Philip Peterson
-  // improved by: Onno Marsman
-  // improved by: Atli Þór
-  // improved by: Brett Zamir (http://brett-zamir.me)
-  // improved by: Maximusya
-  // bugfixed by: Onno Marsman
-  // bugfixed by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  //    input by: Brett Zamir (http://brett-zamir.me)
-  //   example 1: nl2br('Kevin\nvan\nZonneveld');
-  //   returns 1: 'Kevin<br />\nvan<br />\nZonneveld'
-  //   example 2: nl2br("\nOne\nTwo\n\nThree\n", false);
-  //   returns 2: '<br>\nOne<br>\nTwo<br>\n<br>\nThree<br>\n'
-  //   example 3: nl2br("\nOne\nTwo\n\nThree\n", true);
-  //   returns 3: '<br />\nOne<br />\nTwo<br />\n<br />\nThree<br />\n'
-console.log("At nl2br");
-console.log("value of string " + str);
-  var breakTag = (is_xhtml || typeof is_xhtml === 'undefined') ? '<br ' + '/>' : '<br>'; // Adjust comment to avoid issue on phpjs.org display
-  
-console.log("value of breaktag " + breakTag);
-  
-   var res=str.replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
-   console.log("value of res after replace " + res);
-	return (res + '');
-}
-</script>
 
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/skins/markitup/style.css" />
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/style.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/skins/markitup/style.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/sets/html/style.css" />
 <style type="text/css">
 <!--
 .entryHeader {
@@ -319,8 +295,7 @@ Read more about web engineering on web-engineering.info.
 
 <script>
 function scrollUp(){
-	console.log("at scrollup");
-	//document.getElementById("topOfForm").focus();
+		//document.getElementById("topOfForm").focus();
 	scrollTo(0,0);
 	}
 function assignDate() {
@@ -334,7 +309,7 @@ window.addEventListener("load", assignDate);
 </head>
 
 <body>
-
+<div data-role="page" theme="b">
 
 <div data-role = "header" >
 
@@ -358,7 +333,7 @@ $original_date=$ire->bldDateEntryShort();
 ?>
 
 <p>Media Input:
-  <textarea name="media" id="media" class="markItUp" cols="100%"  rows="10"></textarea>
+  <textarea name="media" id="media" class="markItUp" cols="100%"  rows="10"></textarea><br/>
   <input type="button" id="breakbutton" value="Break lines"/>
   <input type="button" id="cleanupbutton" value="Clean up Calendar"/>
   
@@ -474,6 +449,7 @@ Source of input: <input name="eventSource" id="eventSource"/><br />
 </div>
 <div data-role="footer"><p align="center"><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="468" height="60"  align="middle"/></p>
 </div>
+	</div> //end of page
 </body>
 
 </html>
