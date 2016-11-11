@@ -22,9 +22,10 @@ $header = $ire->getHeader();
 
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
-<
+
 <!--<script type="text/javascript" src="../markitup/jquery.js"></script>
---><script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
+-->
+<script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
 <script type="text/javascript" src="../markitup/sets/html/set.js"></script>
 
 
@@ -175,7 +176,7 @@ document.entry_form.resby.value = document.entry_form.date_from.value;
 		mediawork=mediawork.replace("Description","");
 		mediawork=mediawork.replace("Calendar","");
 		mediawork=mediawork.replace("My Meetups","");
-		mediawork=mediawork.replace(/^\s*[\r\n]/gm, "<br>");
+		//mediawork=mediawork.replace(/^\s*[\r\n]/gm, "<br>");
 		console.log("media after replace " + mediawork);
 		
 		$("#media").val(mediawork);
@@ -233,8 +234,9 @@ document.entry_form.other_site_text.value = place_work;
 
 <link rel="stylesheet" type="text/css" href="../markitup/skins/markitup/style.css" />
 <link rel="stylesheet" type="text/css" href="../markitup/sets/html/style.css" />
-<style type="text/css">
 <!--
+<style type="text/css">
+
 .entryHeader {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 16px;
@@ -246,8 +248,9 @@ document.entry_form.other_site_text.value = place_work;
 body {
 	background-color: #999999;
 }
--->
 </style>
+-->
+
 <!-- 
 Using the HTML5 <time> element allows to express a human-readable date or a timestamp in a web page, and annotate it with a machine-readable date/time value that can be extracted and processed by applications.
 While date/time information items have to be formated as strings in a human-readable form on web pages, preferably in localized form based on the settings of the user's browser, it's not a good idea to store date/time values in this form. Rather, we use instances of the pre-defined JavaScript class Date for representing and storing date/time values. In this form, the pre-defined functions toISOString() and toLocaleDateString() can be used for turning Date values into ISO standard date/time strings (of the form "2015-01-27") or to localized date/time strings (like "27.1.2015"). Notice that, for simplicity, we have omitted the time part of the date/time strings.
@@ -356,9 +359,9 @@ $original_date=$ire->bldDateEntryShort();
   <input name="checkMailToBlog" type="checkbox" id="checkMailToBlog" value="True" /> 
   Blog Post Address: 
   <input name="blogNumber" type="text" id="blogNumber" size="60" />
-  <label>URL
+  <label>URL</label>
   <input name="URL" type="text" id="URL" size="40" />
-  </label>
+  
 </p>
 <!--<p>Site:&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="radio" name="site" value="1"> 
@@ -385,25 +388,25 @@ Farmington Hills Manor <br>
 <input type="radio" name="site" value="99">Other Site</p>-->
 
 <p>Generate: 
-  <label>
+  <label>Single Event or Spanned date</label>
 <input name="Generate" type="radio" value="single" checked="checked" /> 
-Single Event or Spanned date</label>
+
   
-  <label>
+  <label>Intervening </label>
 <input type="radio" name="Generate" value="intervening" /> 
-Intervening </label>
-<label>
+
+<label>Multi Day Event </label>
 <input type="radio" name="Generate" value="multiDay" /> 
-Multi Day Event </label>
-    <label>
+
+    <label>Recurring</label>
   <input type="radio" name="Generate" value="recurring" />
-Recurring</label>
+
 </p>
 <p>Price:
   <input name="price" type="text" id="price" />
-  <label>Priority
+  <label>Priority</label>
   <input name="priority" type="text" value="7" />
-  </label>
+  
   Confirm Y=Confirmed,T=Confirmed Trip,G=Confirmed Golf 
   <input type="text" name="confirm"  width="5" value="Y">
 </p>
@@ -446,10 +449,10 @@ Source of input: <input name="eventSource" id="eventSource"/><br />
 <input type="button" value="Send Acknowledge Letter" onClick="acknowledge()" >
 <!--<input type="button" value="acknowledge" name="acknowledge" id="acknowledgebutton" onClick="testit()"/> -->
 </form>
-</div>
+</div> <!-- End of content -->
 <div data-role="footer"><p align="center"><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="468" height="60"  align="middle"/></p>
 </div>
-	</div> //end of page
+	</div> <!-- end of page -->
 </body>
 
 </html>
