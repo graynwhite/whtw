@@ -72,11 +72,9 @@ require_once("../cgi-bin/connect.inc");
     <p align="center">From Date</p></th>
     <th width="12%"> 
     <p align="center">To Date</p></th>
-    <th width="64%">
+    <th width="76%">
     <p align="center">Place/Activity</p></th>
-    
-    <th width="12%">
-    <p align="center">Action</p></th>
+  
   </tr>
  
   <?       while ($row = mysql_fetch_array($result)){
@@ -95,7 +93,8 @@ require_once("../cgi-bin/connect.inc");
     <?print$row['Time_end']?>&nbsp;&nbsp;
     <?print$row['Dow']?><br />MP&nbsp;
 	<?print$row['Price_members']?>&nbsp;GP&nbsp;
-	<?print$row['Price_guests']?>&nbsp;</td>
+	<?print$row['Price_guests']?>&nbsp;
+    </td>
      <td>
 	 Id = <?print$row['Event_number']?><br>
 	 To=<?print $row['Date_to']?>&nbsp;
@@ -106,13 +105,12 @@ require_once("../cgi-bin/connect.inc");
 	  Place =<?print $dispPlace ?>&nbsp;
 	  
       <br />Activity=<?print $dispActivity ?>&nbsp;<br />Media= <?print $dispMedia ?> <br />
-		
-        
 		<a href="http://www.graynwhite.com/whtw/event_maint.php?action=byitem&Event_number=<?print$row['Event_number']?>" target="_blank"><input type="button" value="Select"></a>
 
  </tr>
 
  <?php } ?>
+ 
 </table>
 </div><!-- end of content -->
 </div><!-- end of Main Page -->

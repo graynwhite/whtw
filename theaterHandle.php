@@ -1,7 +1,6 @@
-
 <?php
-<!-- print "Post values \n";
-var_dump($_POST);-->
+// print "Post values \n";
+//var_dump($_POST);
 
 if(trim($_POST['passwrd']) !='/FJ6r1n11M'){
 	print "password submitted was " . $_POST['passwrd'] . "\n";
@@ -27,7 +26,7 @@ $event_activity = $ire->getSiteInfo("theaterVenues.xml",$groupName);
 $event_media = $event_activity;
 $event_place = $ire->getSiteVenue("theaterVenues.xml",$groupName);
 if($confirm=="T"){
-	$event_place=$event_title . ". " .$event_title;
+	$event_place=$event_title . ". " .$event_place;
 }
 $event_org = $ire->getSiteOrg("theaterVenues.xml",$groupName);
 $dow='mul';
