@@ -61,23 +61,18 @@ javascript"></script>
 		<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
 		<script src="http://www.graynwhite.com/dough/Dough/dough.min.js"></script>
 		
-	<script>
-	$(document).ready(function(){
-	
-	 
-	   
-
-  jQuery("#formInput").validationEngine(
-  { 'custom_error_messages':
-  {'#Orgname' :{
-  			'required': {
-  				'message': "This field must contain the name of the organization that you are representing for this event"
+<script>
+	$( document ).ready( function () {
+		jQuery( "#formInput" ).validationEngine( {
+			'custom_error_messages': {
+				'#Orgname': {
+					'required': {
+						'message': "This field must contain the name of the organization that you are representing for this event"
+					}
 				}
-				}
-				}
-				}
-  );
-});
+			}
+		} );
+	} );
 </script>
 
 <script>
@@ -315,39 +310,29 @@ function setCookie(cname, cvalue, exdays) {
   		
 		
       <legend>Date of Event:  Use the downarrow on the right to get a dropdown calendar or enter the
-       date in the form mm/dd/yyy ( the system will convert it to yyyy-mm-dd )</legend>
+       date in the form mm/dd/yyy ( the system will convert it to yyyy-mm-dd ) Apple Users enter date in the form yyyy-mm-dd </legend>
 	 
      <input name="dateStart" id="dateStart" type="date"  class="validate[required,checkStartDate()] text-input datepicker"
 	 data-prompt-position="bottomLeft:140,5" 
-	 title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date.
-      Enter the entire date including the year in the form of mm/dd/yyyy  if you see a  down arrow on the right, click, for a  pop up calendar."> 
+	 title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of mm/dd/yyyy  if you see a  down arrow on the right, click, for a  pop up calendar. Apple users enter the date in the form yyyy-mm-dd"> 
 	    
-     <legend>Reserve By: If different than begin date.  Use the downarrow on the right
-      to get a dropdown calendar or enter the date in the form mm/dd/yyyy </legend>
+     <legend>Reserve By: If different than begin date otherwise leave it blank.  Use the downarrow on the right
+      to get a dropdown calendar or enter the date in the form mm/dd/yyyy Apple users yyyy-mm-dd  </legend>
 	 <input name="dateRes" id="reserve_date" type="date" class="validate[custom[date] text-input datepicker"
 	 data-prompt-position="bottomLeft:140,5" title="Reserve By is the date
       that reservations are required.
        Leave blank if not applicable" onBlur="checkReserveDate()" /> 
 	  
    
-     <legend>End Date: If different than begin date . Use the downarrow on the right
-      to get a dropdown calendar or directly in the form mm/dd/yyy </legend>
+     <legend>End Date: If different than begin date otherwise leave it blank. Use the downarrow on the right
+      to get a dropdown calendar or directly in the form mm/dd/yyy Apple users yyyy-mm-dd</legend>
 	 
 	<input name="dateEnd" id="dateEnd" type="date"  class="validate[custom[date], text-input datepicker"
 	  data-prompt-position="bottomLeft:140,5"
 	  title="The End Date is for events that span multiple days.
       Leave blank if not applicable.
-      This is not to be used to describe recurring events.
-      This is the ending date of a multiple day event, such as a weekend, 
-      leave as is  for single day events. 
-      It is not the end date of a recurring 
-      event such as every monday from a date
-       to another date. Use the box at 
-       the bottom of the form to
-       let the webmaster know that this is a 
-       recurring event so that it can be
-        replicated.
-        "  onBlur="checkEndDate()" />    
+      This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events. 
+      It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."  onBlur="checkEndDate()" />    
 
 	  
 		
@@ -435,22 +420,20 @@ function setCookie(cname, cvalue, exdays) {
    <fieldset>
       <legend>Recurring Event</legend>
 	   <p>If  this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the webmaster@graynwhite.com in order to delete those specific events.</p>
-  <p>If you have an event that occurs regularly, but there will be program additions and/or changes, do not classify it as a recurring event</p>    
-		
-				
-        <legend>Description of Recurring Event</legend>
-		 <textarea name ="recurComments" id="recurComments"
-         title="If this event occurs on a regular basis
-          and does not require updates to the description,
-          use this box to let the webmaster know  what the schedule pattern is."
-          </textarea>       
+ 		<p>If you have an event that occurs regularly, but there will be program additions and/or changes, do not classify it as a recurring event and leave tjis box blank</p>    
+		     
+	   <textarea name ="recurComments" id="recurComments"
+	   	Title+"something"
+	   ></textarea>
+             </fieldset>
+              
    		</fieldset>
       
-      <center>
+     
           <input type = "submit" name="Submit" value="Submit Form"
           title="If you do not get a confirmation message  after submitting this form,
             scroll up to find the error and submit again." />
-      </center>
+     
    
  </form>
 </div> <!-- end of content -->
