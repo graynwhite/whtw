@@ -50,9 +50,12 @@ $eventPhone=isset($_COOKIE["eventPhone"]) ? $_COOKIE["eventPhone"] : '';
     
 	
 		
-		
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/
+javascript"></script>
+		<script src="js/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>-->
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 		<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
 		<script src="http://www.graynwhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
 		<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
@@ -418,14 +421,17 @@ function setCookie(cname, cvalue, exdays) {
       <textarea name ="activity"  id="activity" class="validate[required,maxSize[235]]"
 	  data-prompt-position="bottomLeft:140,5">  </textarea>
 	  </fieldset>
+	  
 	  <fieldset>
 	  <legend>How much does it cost?</legend>
 	  <legend>Price for members</legend>
       <input type="text" name="Price_Member" id="Price_Member" val="" />
-	 
+	</fieldset>
+	<fieldset>
 		<legend>Price Guests</legend>
-        <input type="text" name="Non_Member_Price" val=""" />
+        <input type="text" name="Non_Member_Price" val='' />
 		</fieldset>
+		
    <fieldset>
       <legend>Recurring Event</legend>
 	   <p>If  this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the webmaster@graynwhite.com in order to delete those specific events.</p>
@@ -435,19 +441,15 @@ function setCookie(cname, cvalue, exdays) {
         <legend>Description of Recurring Event</legend>
 		 <textarea name ="recurComments" id="recurComments"
          title="If this event occurs on a regular basis
-          and does not
-         require updates to the description,
-          use this box to let the webmaster know
-           what the schedule pattern is."
-          > </textarea>       
+          and does not require updates to the description,
+          use this box to let the webmaster know  what the schedule pattern is."
+          </textarea>       
    		</fieldset>
       
       <center>
           <input type = "submit" name="Submit" value="Submit Form"
-          title="If you do not get a confirmation message
-           after submitting this form,
-            scroll up to find the error 
-            and submit again." />
+          title="If you do not get a confirmation message  after submitting this form,
+            scroll up to find the error and submit again." />
       </center>
    
  </form>
