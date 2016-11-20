@@ -63,6 +63,18 @@ javascript"></script>
 
 	<script>
 		$( document ).ready( function () {
+			var someDate = new Date();
+			var numberOfDaysToAdd = 3;
+			someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+			var dd = someDate.getDate();
+			var mm = someDate.getMonth() + 1;
+			var y = someDate.getFullYear();
+
+			var minDate = y + '-'+ mm + '-'+ dd;
+			var mindate=someDate
+			console.log("Minimum start date is " + minDate);
+			$("#minStartDate").val(minDate);
+			
 			jQuery( "#formInput" ).validationEngine( {
 				'custom_error_messages': {
 					'#Orgname': {
@@ -241,6 +253,7 @@ javascript"></script>
 				<input type="hidden" name="text_color" value="#000000"/>
 				<input type="hidden" name="refferSrc" value="<?echo $sourceg?>">
 				<input type="hidden" name="return_link_url" value="http://graynwhite.com/whtw"/>
+				<input type="hidden" id="minStartDate" name="minStartDate">
 				<input type="hidden" name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page"/>
 				<span class="Required">fields marked with a red asterisk * are required. </span>
 				</p>
@@ -301,14 +314,14 @@ javascript"></script>
 						<input name="EventTitle" type="text" id="EventTitle" class="validate[required]" data-prompt-position="bottomLeft:140,5"/>
 
 
-						<legend>Date of Event: Use your browser's datepicker or in the form mm/dd/yyy ( the system will convert it to yyyy-mm-dd ) don't be confused by the error message stating that the format is yyyy-mm-dd. The system will convert the date. It must be greater than todays date.</legend>
-						<input name="dateStart" id="dateStart" type="date" class="validate[required,custom[date],future[now]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of mm/dd/yyyy  if you see a  down arrow on the right, click, for a  pop up calendar. Apple users enter the date in the form yyyy-mm-dd or use the up and down arrows on the right">
+						<legend>Date of Event: Use your browser's datepicker or in the form yyyy-mm-dd ( the  It must be greater than todays date plus 3.</legend>
+						<input name="dateStart" id="dateStart" type="date" class="validate[required,custom[date],future[#minStartDate]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of yyyy-mm-dd see a  down arrow on the right, click, for a  pop up calendar.  yyyy-mm-dd or use the up and down arrows on the right">
 
-						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use the downarrow on the right to get a <dropdo></dropdo>wn calendar or enter the date in the form mm/dd/yyyy it will be converted </legend>
+						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use the downarrow on the right to get a <dropdo></dropdo>wn calendar or enter the date in the form yyyy-mm-dd  </legend>
 						<input name="dateRes" id="reserve_date" type="date" class="validate[custom[date],past(#dateStart) text-input datepicker" data-prompt-position="bottomLeft:140,5" title="Reserve By is the date that reservations are required. Leave blank if not applicable" />
 
 
-						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use the downarrow on the right to get a dropdown calendar or directly in the form mm/dd/yyy </legend>
+						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use the downarrow on the right to get a dropdown calendar or directly in the form yyyy-mm-dd </legend>
 
 						<input name="dateEnd" id="dateEnd" type="date" class="validate[custom[date],future[#dateStart] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
 						
