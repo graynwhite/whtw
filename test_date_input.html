@@ -3,24 +3,34 @@
 <head>
 <meta charset="utf-8">
 <title>test date</title>
- <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>  
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>  
-   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
-
-  <script type="text/javascript">
-       $(function() {
-               $("#startdate").datepicker({ dateFormat: "yy-mm-dd" }).val()
-			   $("#reservedate").datepicker({ dateFormat: "yy-mm-dd" }).val()
-               $("#enddate").datepicker({ dateFormat: "yy-mm-dd" }).val()
-       });
-
-   </script>  
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/
+javascript"></script> -->
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>s
+<script src="../jqvaleng/js/languages/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
+<link rel="stylesheet" href="../jqvaleng/css/validationEngine.jquery.css" type="text/css"/>
+ 
+<script>
+$(document).ready(function(){
+	    jQuery("#forminput").validationEngine()
+   });
+</script>
 </head>
 
 <body>
- <input type="text" hidden id="datepicker" size="30"/>    
-Start Date: <input type="text" id="startdate" size="30"/><br />
-     Reserve Date:<input type="text" id="reservedate" size="30"/><br />    
-      End Date: <input type="text" id="enddate" size="30"/>
+
+	<h2>Test of input dates</h2>
+<form id="forminput">
+<br />
+	
+ Start Date:<input name="dateStart" id="dateStart" type="text" class="validate[required,custom[date],future[NOW]] text-input datepicker" placeHolder="yyyy-mm-dd"> <br />
+<br />
+     Reserve Date:<input type="text" name ="dateRes" id="reserve_date" class="validate[custom[date],past[#dateStart]] text-input datepicker" placeHolder="yyyy-mm-dd" size="30" height="20"/><br />
+     <br />    
+     <br />    
+      End Date: <input type="text" name="dateEnd" id="dateEnd"  class="validate[custom[date],future[#dateStart]] text-input datepicker" placeHolder="yyyy-mm-dd" size="30"/><br />
+      <input type="submit" value="submit"/>
+	</form>
 </body>
 </html>
