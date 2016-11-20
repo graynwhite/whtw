@@ -21,7 +21,15 @@ $(document).ready(function(){
 <body>
 
 	<h2>Test of input dates</h2>
-<form id="forminput">
+		<h4>Requirements for datepicker</h4>
+		<ul>
+			<li>Start date must be greater than today</li>
+			<li>Reservation date should be less than start date or blank</li>
+			<li>End date should be greater than start date or blank</li>
+	</ul>
+	<p>Chrome, Firefox, Microsoft Edge and Safari each have their own datepickers</p>
+			
+			<form id="forminput">
 <br />
 	
  Start Date:<input name="dateStart" id="dateStart" type="date" class="validate[required,future[now]]text-input datepicker" placeHolder="yyyy-mm-dd" value="">
