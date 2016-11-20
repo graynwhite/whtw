@@ -301,22 +301,17 @@ javascript"></script>
 						<input name="EventTitle" type="text" id="EventTitle" class="validate[required]" data-prompt-position="bottomLeft:140,5"/>
 
 
-						<legend>Date of Event: Use the downarrow on the right to get a dropdown calendar or enter the date in the form mm/dd/yyy ( the system will convert it to yyyy-mm-dd ) Apple Users enter date in the form yyyy-mm-dd </legend>
+						<legend>Date of Event: Use your browser's datepicker or in the form mm/dd/yyy ( the system will convert it to yyyy-mm-dd ) don't be confused by the error message stating that the format is yyyy-mm-dd. The system will convert the date. It must be greater than todays date.</legend>
+						<input name="dateStart" id="dateStart" type="date" class="validate[required,custom[date],future[now]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of mm/dd/yyyy  if you see a  down arrow on the right, click, for a  pop up calendar. Apple users enter the date in the form yyyy-mm-dd or use the up and down arrows on the right">
 
-						<input name="dateStart" id="dateStart" type="date" class="validate[required,checkStartDate()] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of mm/dd/yyyy  if you see a  down arrow on the right, click, for a  pop up calendar. Apple users enter the date in the form yyyy-mm-dd">
-
-						<legend>Reserve By: If different than begin date otherwise leave it blank. Use the downarrow on the right to get a dropdown calendar or enter the date in the form mm/dd/yyyy Apple users yyyy-mm-dd </legend>
-						<input name="dateRes" id="reserve_date" type="date" class="validate[custom[date] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="Reserve By is the date
-      that reservations are required.
-       Leave blank if not applicable" onBlur="checkReserveDate()"/>
+						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use the downarrow on the right to get a <dropdo></dropdo>wn calendar or enter the date in the form mm/dd/yyyy it will be converted </legend>
+						<input name="dateRes" id="reserve_date" type="date" class="validate[custom[date],past(#dateStart) text-input datepicker" data-prompt-position="bottomLeft:140,5" title="Reserve By is the date that reservations are required. Leave blank if not applicable" />
 
 
-						<legend>End Date: If different than begin date otherwise leave it blank. Use the downarrow on the right to get a dropdown calendar or directly in the form mm/dd/yyy Apple users yyyy-mm-dd</legend>
+						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use the downarrow on the right to get a dropdown calendar or directly in the form mm/dd/yyy </legend>
 
-						<input name="dateEnd" id="dateEnd" type="date" class="validate[custom[date], text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The End Date is for events that span multiple days.
-      Leave blank if not applicable.
-      This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events. 
-      It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date." onBlur="checkEndDate()"/>
+						<input name="dateEnd" id="dateEnd" type="date" class="validate[custom[date],future[#dateStart] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
+						
 
 
 
