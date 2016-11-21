@@ -303,7 +303,7 @@ javascript"></script>
 					<input name="Email" id="Email" type="email" class="validate[required]" data-prompt-position="bottomLeft:140,5" value="<?php echo $eventEmail ?>" onBlur='setCookie("eventEmail",this.value,90)'/>
 
 
-					<legend> Your phone Number</legend>
+					<legend> Your Phone Number</legend>
 					<input name="Yphone" id="Yphone" type="tel" value="<?php echo $eventPhone ?>" onBlur='setCookie("eventPhone",this.value,90)'/>
 				</fieldset>
 
@@ -317,12 +317,12 @@ javascript"></script>
 						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>
 						<input name="dateStart" id="dateStart" type="date" value="" class="validate[required,custom[date],future[#minStartDate]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of yyyy-mm-dd see a  down arrow on the right, click, for a  pop up calendar.  yyyy-mm-dd or use the up and down arrows on the right">
 
-						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use the downarrow on the right to get a calendar or enter the date.  </legend>
+						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use your browsers datepicker or enter the date.  </legend>
 						<input name="dateRes" id="reserve_date" type="date" onBlur=checkReserveDate() class="validate[custom[date],past(#dateStart) text-input datepicker" data-prompt-position="bottomLeft:140,5" title="Reserve By is the date that reservations are required. Leave blank if not applicable"
 							   />
 
 
-						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use the downarrow on the right to get a dropdown calendar or directly.</legend>
+						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use your browser's datepicker or enter the date.</legend>
 
 						<input name="dateEnd" id="dateEnd" type="date" onBlur="checkEndDate()" class="validate[custom[date],future[#dateStart] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
 						
