@@ -57,7 +57,7 @@ javascript"></script>
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
-	<script src="http://www.graynwhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
+	<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine-en-gw.js"></script>
 	<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
 	<script src="http://www.graynwhite.com/dough/Dough/dough.min.js"></script>
 
@@ -71,10 +71,9 @@ javascript"></script>
 			var y = someDate.getFullYear();
 
 			var minDate = y + '-'+ mm + '-'+ dd;
-			var mindate=someDate
 			console.log("Minimum start date is " + minDate);
 			$("#minStartDate").val(minDate);
-			
+			//$("#dateStart").datePicker({format: "yyyy-mm-dd"});	
 			jQuery( "#formInput" ).validationEngine( {
 				'custom_error_messages': {
 					'#Orgname': {
@@ -196,10 +195,11 @@ javascript"></script>
 			var datestring = document.formInput.dateRes.value + " 00:00:00 ";
 			var ResbyDate = new Date( datestring );
 			var answer = dates.compare( startDate, ResbyDate );
+			//console.log("Checking reserve date answer is " + answer);
 			if ( answer != '-1' ) {
 
 			} else {
-				alert( "The reserve by date  must be a valid date and less than the start date or blank." )
+				alert( "The reservation date  must be a valid date and less than the start date or blank." )
 			}
 		}
 
@@ -314,16 +314,17 @@ javascript"></script>
 						<input name="EventTitle" type="text" id="EventTitle" class="validate[required]" data-prompt-position="bottomLeft:140,5"/>
 
 
-						<legend>Date of Event: Use your browser's datepicker or in the form yyyy-mm-dd ( the  It must be greater than todays date plus 3.</legend>
-						<input name="dateStart" id="dateStart" type="date" class="validate[required,custom[date],future[#minStartDate]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of yyyy-mm-dd see a  down arrow on the right, click, for a  pop up calendar.  yyyy-mm-dd or use the up and down arrows on the right">
+						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>
+						<input name="dateStart" id="dateStart" type="date" value="" class="validate[required,custom[date],future[#minStartDate]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of yyyy-mm-dd see a  down arrow on the right, click, for a  pop up calendar.  yyyy-mm-dd or use the up and down arrows on the right">
 
-						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use the downarrow on the right to get a <dropdo></dropdo>wn calendar or enter the date in the form yyyy-mm-dd  </legend>
-						<input name="dateRes" id="reserve_date" type="date" class="validate[custom[date],past(#dateStart) text-input datepicker" data-prompt-position="bottomLeft:140,5" title="Reserve By is the date that reservations are required. Leave blank if not applicable" />
+						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use the downarrow on the right to get a calendar or enter the date.  </legend>
+						<input name="dateRes" id="reserve_date" type="date" onBlur=checkReserveDate() class="validate[custom[date],past(#dateStart) text-input datepicker" data-prompt-position="bottomLeft:140,5" title="Reserve By is the date that reservations are required. Leave blank if not applicable"
+							   />
 
 
-						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use the downarrow on the right to get a dropdown calendar or directly in the form yyyy-mm-dd </legend>
+						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use the downarrow on the right to get a dropdown calendar or directly.</legend>
 
-						<input name="dateEnd" id="dateEnd" type="date" class="validate[custom[date],future[#dateStart] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
+						<input name="dateEnd" id="dateEnd" type="date" onBlur="checkEndDate()" class="validate[custom[date],future[#dateStart] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
 						
 
 
