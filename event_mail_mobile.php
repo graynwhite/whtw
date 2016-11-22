@@ -315,7 +315,7 @@ javascript"></script>
 
 
 						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>
-						<input name="dateStart" id="dateStart" type="date" value="" class="validate[required,custom[date],future[#minStartDate]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date. Enter the entire date including the year in the form of yyyy-mm-dd see a  down arrow on the right, click, for a  pop up calendar.  yyyy-mm-dd or use the up and down arrows on the right">
+						<input name="dateStart" id="dateStart" type="date" value="" class="validate[required,custom[date],future[#minStartDate]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." >
 
 						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use your browsers datepicker or enter the date.  </legend>
 						<input name="dateRes" id="reserve_date" type="date" onBlur=checkReserveDate() class="validate[custom[date],past(#dateStart) text-input datepicker" data-prompt-position="bottomLeft:140,5" title="Reserve By is the date that reservations are required. Leave blank if not applicable"
@@ -327,16 +327,12 @@ javascript"></script>
 						<input name="dateEnd" id="dateEnd" type="date" onBlur="checkEndDate()" class="validate[custom[date],future[#dateStart] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
 						
 
-
-
-
 						<legend>Start Time (required but will be ignored for multi-day events). You can enter the start time directly in the form hh:mm (AM or PM). If you use the form timepicker, scroll the hour, minutes and AM or PM so that they are between the paralell horizontal blue lines.</legend>
 
 						<input name="timeStart" id="timeStart" type="time" placeholder="7:00 PM" class="validate[required]" data-prompt-position="bottomLeft:140,5" title="Enter time in twelve hour format include am or pm."/>
 
 						<legend>End Time: if applicable</legend>
-						<input name="timeEnd" id="timeEnd" type="time" val=" " title="Day of week so the system can verify that the date and day of week agree
-      		Day of the week or Weekend, Week, etc."/>
+						<input name="timeEnd" id="timeEnd" type="time" val=" " title="Day of week so the system can verify that the date and day of week agree 	Day of the week or Weekend, Week, etc."/>
 
 						<legend>Day of Week </legend>
 
@@ -351,21 +347,29 @@ javascript"></script>
 					<p>The separate fields allow Google to generate a map. Believe it or not everything does have a postal address.
 
 					</p>
-					<legend>Place Name </legend>
+					<legend>Place Name (required)</legend>
 					<input type="text" name="place_name" val=" " class="validate[required]" title="Such as Boyne Mountain or Emagine Theater. Not a parking lot where you will gather to board busses or a restaurant prior to the event." data-prompt-position="bottomLeft:140,5"/>
+					
 					<legend>Place address (optional)</legend>
 					<input type="text" name="place_address" id="place_address" val " "/>
-					<legend>City </legend>
+					
+					<legend>City (required)</legend>
 					<input type="text" name="city" val=" " class="validate[required]" data-prompt-position="bottomLeft:140,5"/>
+					
 					<legend>State</legend>
 					<input type="text" name="state" value="MI"/>
+					
 					<legend>Postal Code (optional)</legend>
 					<input name="zip" type="text" val=" "/>
+					
 					<legend>Place Phone (optional)</legend><input type="tel" name="phone" val=""/>
+					
 					<legend>Web site URL (optional leave blank if you do not have a website)</legend>
 					<input name="url" id="url" type="text" val=""/>
+					
 					<legend>Place email (optional)</legend>
 					<input name="place_email" type="email" id="place_email" class="validate[custom[email]]" data-prompt-position="bottomLeft:140,5"/>
+					
 					<legend>Additional directions</legend>
 					<textarea name="PlaceDirections" val=" " id="PlaceDirections"></textarea>
 				</fieldset>
@@ -376,7 +380,7 @@ javascript"></script>
 					<legend>Long description</legend>
 					<textarea name="comments" id="comments"></textarea>
 
-					<legend>Event Activity or Short Version </legend>
+					<legend>Event Activity or Short Version (required)</legend>
 					<P>Describe the event here. Include a person and phone number to contact if desired . This is a shortened version of the media input only the first 235 characters will be accepted. Do not repeat the Date, time or place. </p>
 
 					<textarea name="activity" id="activity" class="validate[required,maxSize[235]]" data-prompt-position="bottomLeft:140,5">  </textarea>
