@@ -123,7 +123,7 @@ if ( $action == "browse" ){
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="nl2br.js"></script>
-//	<script type="text/javascript" src="http://www.graynwhite.com/markitup/markitup/jquery.js"></script>
+	<script type="text/javascript" src="http://www.graynwhite.com/markitup/markitup/jquery.js"></script>
 	<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
 	<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
 	
@@ -148,26 +148,24 @@ if ( $action == "browse" ){
 		
 	});
 		
-	$("#insertAvatar").click(function(){
-		var org = $("#Event_org").val();
-		if(org != "mcabe"){
-			alert("org is " + org + " should be mcabe");
+	$( "#insertAvatar" ) . click( function () {
+		var org = $( "#Event_org" ) . val();
+		if ( org != "mcabe" ) {
+			alert( "org is " + org + " should be mcabe" );
 			return;
 		}
 		var imagename = getAvatar();
-		console.log("imagename is " + imagename);
-		var avatarTxt="%60img src=\"http://www.peggyjostudio.net/E/" + imagename + "\"" + "align=\"left\" width=\"28%\"alt=\"Maggie McCabe Photo\" hspace=\"5\"/%62";
-		
-		console.log(avatarTxt);
-		console.log("at insert Avatar");
-		$("#media").prepend(avatarTxt);
-		workarea=$("#media").val();
-		console.log("work is " + workarea);
-		var corr = regxAvatar(workarea);
-		
-		
-		
-	});
+		console . log( "imagename is " + imagename );
+		var avatarTxt = "%60img src=\"http://www.peggyjostudio.net/E/" + imagename + "\"" + "align=\"left\" width=\"28%\"alt=\"Maggie McCabe Photo\" hspace=\"5\"/%62";
+
+		console . log( avatarTxt );
+		console . log( "at insert Avatar" );
+		$( "#media" ) . prepend( avatarTxt );
+		workarea = $( "#media" ) . val();
+		console . log( "work is " + workarea );
+		var corr = regxAvatar( workarea );
+
+	} );
 	function getSelectionText() {
 		alert("at getSelectionText");
     var text = "";
@@ -429,8 +427,8 @@ echo("Priority  <input type = \"text\" name = \"event_priority\" size = \"5\" va
 echo("Submitted by  <input type = \"text\" name = \"submitted_by\" id = \"submitted_by\" size = \"40 \" value =\"$row[SUBMITTED_BY]\"><br>\n");
 echo("Confirm <input type = \"text\" name=\"confirm\" size = \"1\" value = \"$row[confirm]\"><br />\n");
 echo("Needs Review <input type = \"text\" name=\"needsReview\" size = \"5\" value = \"$row[needsReview]\"><br />\n");
-}
-?>
+}   //end of  while loop -->
+?> <!-- end of php -->
 <legend>Action</legend>
   <fieldset data-role="controlgroup" >
     	
