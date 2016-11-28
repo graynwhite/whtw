@@ -1,10 +1,10 @@
 
 <?php
-//require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/class.phpmailer.php');
+//require_once($_SERVER['DOCUMENT_ROOT'].'/class.phpmailer.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/class_events.php');
-require_once("../../phpClasses/Class_writeRSS.php");
-require_once("../../phpClasses/class_date_utility.php");
-require_once("../../cgi-bin/connect.inc");
+require_once('../../phpClasses/Class_writeRSS.php');
+require_once('../../phpClasses/class_date_utility.php');
+require_once($_SERVER['DOCUMENT_ROOT']. '/cgi-bin/connect.inc');
 //require_once($_SERVER['DOCUMENT_ROOT']. '/phpClasses/convertPhp4GetPost.php');
 $password= $_POST['password'];
 if(trim($password) !="/FJ6r1n11M" and $_POST['operator'] != 'publicist'){
@@ -50,9 +50,11 @@ if ($_POST[dow]!=$comDow){
 	print ( "\n  Change the selected day of week or change the date.");
 	
 	}
+	
+	
+	
 }
 }// end of class
-
 class insertMultipleRecords
 {
 	public $begining_date; 
@@ -188,8 +190,7 @@ function add_end($in,$endChar)
 	return $work;
 	
 }
-function printhtml()
-{
+
 print "<html>";
 
 print "<head>";
@@ -207,12 +208,11 @@ require_once("../../phpClasses/dateClass.php");
 /*print "<br>loaded dateClass";*/
 require_once("../../phpClasses/Class_orgs.php");
 /*print "<br>loaded class_orgs";*/
-}
 /*===============================================================================================*/ 
 if($_POST['operator'] == "Admin")
 {
-require_once("../../cron.php");
-print "<br>loaded cron ";
+//require_once("../../cron.php");
+//print "<br>loaded cron ";
 $bodyText = " Beginning of Bodytext<br>";
 /*print_r($_POST);*/
 $action = $_POST['action'];
