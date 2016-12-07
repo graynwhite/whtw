@@ -1,9 +1,10 @@
 <?
+
 DEFINE ("INCLUDED", "yes");
 //connect to the database server
 // Require_once('../cgi-bin/pdoconnect.php');
 include ("../cgi-bin/connect.inc");
- include("../cgi-bin/parse.inc");
+include("../cgi-bin/parse.inc");
  echo( date(" F dS Y.") );  
            
        //update_counter("../_private/whtw/whevents.htm.cnt");
@@ -44,7 +45,7 @@ include ("../cgi-bin/connect.inc");
             and pertains_to = \"All\" ";
 
 			// Step 3: Send the query
-				$result_announce = $db->query($query_announce);
+				$result_announce = mysql_query($query_announce);
  			
 
  			if (!$result_announce){
@@ -53,9 +54,10 @@ include ("../cgi-bin/connect.inc");
 	}
 	 # echo("<p> " . $sql_announce . "</p>");
 	// Step 4: Iterate over the results
-while($row_announce = $result_announce->fetch(PDO::FETCH_ASSOC))
+
      
     if (mysql_num_rows($result_announce) > 0){
+		while($row_announce = $result_announce->fetch(PDO::FETCH_ASSOC))
 	echo("<p><center> <a href='../announce.php'><strong>Click here for announcements</strong></center></a></p>");
 	}         
     
@@ -135,7 +137,7 @@ Do the following if you're using your customized build of modernizr (http://www.
   
 <?php
 // Step 4: Iterate over the results
-while($row = $result->fetch(PDO::FETCH_ASSOC))
+while($row = mysql_fetch_array($result))
  {
 		   $even_odd = ('fluid odd' != $even_odd) ? 'fluid odd' : 'fluid even';
 		   $row_class="$even_odd";
@@ -235,5 +237,8 @@ while($row = $result->fetch(PDO::FETCH_ASSOC))
 
 <div id="footer" class="fluid"><span style="text-align:center">&copy; 2003-2014 Peggy Jo Studio Newsletter</span></div>
   
+  <script>
+document.location.href="http://pjnews.mobi/weeklyNewsletter.html";
+</script>
 </body>
 </html>
