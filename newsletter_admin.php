@@ -11,17 +11,19 @@
 */
 ?>
 <?php
-include("../cgi-bin//connect.inc");
+require_once("../../cgi-bin/connect.inc");
 
 ?>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
 
 <head>
-<meta http-equiv="Content-Language" content="en-us">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
 <title>Newsletter Maintenance Form</title>
-<meta NAME="generator" CONTENT="Microsoft FrontPage 5.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
+
+
 </head>
 
 <body>
@@ -30,7 +32,7 @@ include("../cgi-bin//connect.inc");
 
 <?php
 
-    $sql = "select * from newsletters  order by campaign";
+    $sql = "select * from newsletters  order by campaign ";
     $result = @mysql_query($sql);
     if (!$result) {
 	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
@@ -40,35 +42,34 @@ include("../cgi-bin//connect.inc");
 
 
 ?>
-<h1> List of Newsletters
- 
-</h1>
-<form action="newsletter_add.php"  >
-<Table border="1" cellpadding="2" cellspacing="2">
+<h1> List of Newsletters</h1>
 
+<form method=post action="my_newsletter_form_head.php">
+  <input type="submit" value="Add New" name="submit">
+  </form>
+
+
+
+<table border="1" cellpadding="2" cellspacing="2">
 <tr>
         <th align="center">Newsletter link</th>
-        <th align="center">Url </th>
-        <th align="center">Action </th>
+        <th align=center>Url </th>
+        <th align=center>Action </th>
 </tr>
-<tr> <td colspan="3" align="center"><input type="submit" value="Add New" name="addorg"></td></tr>
  <?       while ($row = mysql_fetch_array($result)){
 
     ?>
  <tr>
         <td><?=$row['campaign']?>&nbsp;</td>
         <td><?=$row['url']?>&nbsp;</td>
-        <td><A href="Newsletter_change.php?campaign=<?=$row['campaign']?>&Submit=no>">Change</a>
-          |   <A href="newsletter_add.php?campaign=<?=$row['campaign']?>&action=delete">Delete</a>"
-            </TD>
-
+        <td><a href="newsletter_change.php?campaign=".<?=$row['campaign']?> | &submit=\"no\" >Change</a>
+            <a href="newsletter_add.php?campaign=\"" . <?=$row['campaign']?>. "&action=Delete>Delete</a>
+            </td>
+<?php } ?>
  </tr>
-<?
-        }
-?>
+
 </table>
-<center>
-</center>
-</form>
-<p>
-<center><a HREF="<?=$return_path?>">Click here to go back to the control Page</a></center>
+</body>
+</html>
+
+

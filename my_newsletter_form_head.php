@@ -1,30 +1,24 @@
-<?php
-/** @package 
-
-        my_newsletter_form_head
-        
-        Copyright()Gray and White Computing 2004
-        
-        Author: FRANK J CAULEY
-        Created: FJC 1/4/2005 12:51:52 AM
-	Last change: FJC 1/4/2005 12:51:59 AM
-*/
-?>
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Language" content="en-us">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Add New Event</title>
 </head>
-<body link="#FFFFFF" vlink="#FF0000" alink="#FFFF00" bgcolor="#008080">
 
-<h1><font size="7" color="#FFFFFF">Gray and White Computing Newsletter Add</font></h1>
-<p><font size="7" color="#FFFFFF">&nbsp;&nbsp;&nbsp; </font></p>
-<form method="POST" action="../whtw/newsletter_add.php?submit=submit">
-	<p><font color="#FFFFFF" size="6">Add newsletter Date: </font>
-	<input type="text" name="new_date" size="12"></p>
+<body style="background-color:#0000FF; color:#FFFFFF">
+<h1 style=>Gray and White Computing Newsletter Add</h1>
+<p>&nbsp;&nbsp;&nbsp; </p>
+<form method="POST" action="newsletter_add2.php?action=newevent">
+	<p >Add newsletter Date: 
+	<input type="text" name="new_date" size="12">In the form yyyy-mm-dd</p>
 	<p align="center"><input type="submit" value="Submit" name="submit"></p>
 </form>
+</body>
+</html>
+
+
+
+
+
+
 
