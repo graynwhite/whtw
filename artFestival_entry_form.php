@@ -15,16 +15,16 @@ $header = $ire->getHeader();
 <title>Art,Festivals and Community Input</title>
 
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
 
 <script src="publicist.json"></script>
 
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
 
-<!--<script type="text/javascript" src="../markitup/jquery.js"></script>
--->
+<script type="text/javascript" src="../markitup/jquery.js"></script>
+
 <script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
 <script type="text/javascript" src="../markitup/sets/html/set.js"></script>
 
@@ -234,7 +234,7 @@ document.entry_form.other_site_text.value = place_work;
 
 <link rel="stylesheet" type="text/css" href="../markitup/skins/markitup/style.css" />
 <link rel="stylesheet" type="text/css" href="../markitup/sets/html/style.css" />
-<!--
+
 <style type="text/css">
 
 .entryHeader {
@@ -243,13 +243,17 @@ document.entry_form.other_site_text.value = place_work;
 	font-style: italic;
 	font-weight: bold;
 	color: #0000FF;
+	width: 0%;
 }
-.style1 {font-size: 24px}
+.style1 {
+	font-size: 24px;
+	width: 80%;
+}
 body {
 	background-color: #999999;
 }
 </style>
--->
+
 
 <!-- 
 Using the HTML5 <time> element allows to express a human-readable date or a timestamp in a web page, and annotate it with a machine-readable date/time value that can be extracted and processed by applications.
@@ -298,16 +302,16 @@ Read more about web engineering on web-engineering.info.
 
 <script>
 function scrollUp(){
-		//document.getElementById("topOfForm").focus();
 	scrollTo(0,0);
 	}
-function assignDate() {
+	
+/*function assignDate() {
   var dateEl = document.getElementById("today");
   var today = new Date();
   dateEl.textContent = today.toLocaleDateString();
   dateEl.setAttribute("datetime", today.toISOString());
 }
-window.addEventListener("load", assignDate);
+window.addEventListener("load", assignDate);*/
  </script>
 </head>
 
@@ -316,11 +320,12 @@ window.addEventListener("load", assignDate);
 
 <div data-role = "header" >
 
-<p align="center" ><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="468" height="60"  align="middle"/></p>
+<p align="center" ><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="80%"  align="middle"/></p>
 <p align="center"><span class="entryHeader style1"><? echo $header ?> -EVENT ENTRY:</p>
 </div>
 
 <div data-role="content" width="100%">
+
 <form method="POST"  action="artFestivalEntry.php"
 	name="entry_form">
     <a id="topOfPage" ></a>
@@ -450,7 +455,7 @@ Source of input: <input name="eventSource" id="eventSource"/><br />
 <!--<input type="button" value="acknowledge" name="acknowledge" id="acknowledgebutton" onClick="testit()"/> -->
 </form>
 </div> <!-- End of content -->
-<div data-role="footer"><p align="center"><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="468" height="60"  align="middle"/></p>
+<div data-role="footer"><p align="center"><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="80%" align="middle"/></p>
 </div>
 	</div> <!-- end of page -->
 </body>
