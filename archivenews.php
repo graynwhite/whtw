@@ -14,7 +14,7 @@
       $page_top_text = "Peggy Jo Studio Archived Newsletters";
 define('WP_MEMORY_LIMIT', '96M');	  
 	  
-//include_once("./cgi-bin/connect.inc");
+include_once("../cgi-bin/connect.inc");
 
 $newslettersql = "select * from newsletters order by campaign Desc";
 $newsresult = @mysql_query($newslettersql);
@@ -25,7 +25,7 @@ if ( !$newsresult ){
 }
 ?>
 <html>
-<?php include_once("http://www.peggyjostudio.net/pjtop.inc"); ?>
+<?php //include_once("http://www.peggyjostudio.net/pjtop.inc"); ?>
 <style>
 #otherleftstuff{
 	visibility:hidden;

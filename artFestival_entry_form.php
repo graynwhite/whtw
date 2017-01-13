@@ -245,13 +245,15 @@ document.entry_form.other_site_text.value = place_work;
 	color: #0000FF;
 	width: 0%;
 }
+	
 .style1 {
 	font-size: 24px;
 	width: 80%;
 }
 body {
 	background-color: #999999;
-}
+	}
+
 </style>
 
 
