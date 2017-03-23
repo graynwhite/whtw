@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Created on Jan 10, 2006
  *
@@ -8,11 +9,11 @@
 ?>
 <?php
 include("../cgi-bin//connect.inc");
-   $sql="select* from events where needsReview = \"1\"  
-   order by Date_from limit 300";
+   $sql="select * from events where (Event_org = \"HOL\") or (Event_org=\"hol\")  
+   order by Date_from ";
    $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 
       		}
@@ -23,46 +24,56 @@ include("../cgi-bin//connect.inc");
 
 <head>
 <meta http-equiv="Content-Language" content="en-us">
-<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>Need Attention Events</title>
-</head>
+<title>Events that need attention</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="-1">
+	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	</head>
 
 <body>
-
-<p align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></p>
-<p align="center"><b><font size="5">Event list Need Attention </font></b></p>
-<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#000000" width="101%" id="AutoNumber1">
+<div data-role=header>
+	<p align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></p>
+	<h1 align="center">Events that need attention</h1>
+	</div>
+	<div data-role=content>
+<table border="1" cellpadding="0" cellspacing="0"  >
   <tr>
     <td width="12%">
-    <p align="center">From Date</td>
-    <td width="9%"><font color="#000000">function 
-&nbsp;</font>
-    <p align="center">To Date</td>
-    <td width="28%">
-    <p align="center">Place</td>
-    <td width="36%">
-    <p align="center">Activity</td>
-    <td width="66%">
-    <p align="center">Action</td>
+		<p align="center">From Date</p></td>
+    <td width="12%">
+		<p align="center">To Date</p></td>
+    <td width="32%=">
+		<p align="center">Place</p></td>
+    <td width="32%">
+		<p align="center">Activity</p></td>
+    <td width="12%">
+		<p align="center">Action</p></td>
   </tr>
   <tr>
   <?       while ($row = mysql_fetch_array($result)){
 
     ?>
-    <td><?print$row['Event_org']?>&nbsp;&nbsp;&nbsp;<?print $row['Date_from']?>
-    
-    <?print$row['Time_start']?>&nbsp;
-    <?print$row['Time_end']?>&nbsp;&nbsp;
-    <?print$row['Dow']?></td>
-     <td>Id = <?print$row['Event_number']?><br><?print $row['Date_to']?>&nbsp;</td>
-      <td><?print$row['Place']?>&nbsp;</td>
-       <td><?print$row['Activity']?>&nbsp;</td>
-
-        <td><A href="event_maint.php?emailid=cauleyfj@graynwhite.com&yourpswd=6r1n11&Org=++++&From_mm=01-&From_day=01&From_year=2003-&action=byitem&Event_number=<?print$row['Event_number']?>&Submit=no">Select</a>    </TD>
- </TR>
- <?php } ?>
-</table>
+	  <td><?php echo $row['Event_org']?>
+	  <?php echo $row['Date_from']?>&nbsp;
+	  <?php echo $row['Time_start']?>&nbsp;
+    <?php echo $row['Time_end']?>&nbsp;&nbsp;
+    <?php echo $row['Dow']?>&nbsp;
+	<?php echo $row['Event_number']?>&nbsp;</td>
+     <td><?php echo $row['Date_to']?>&nbsp;</td>
+      <td><?php echo $row['Place']?>&nbsp;</td>
+       <td><?php echo $row['Activity']?>&nbsp;</td>
+	  <td><a href="event_maint.php?action=byitem&Event_number=<?php echo['Event_number']?>">select</a></td>
+	</tr>
+ </table>
+ 
+ 	<div data-role="footer">
+			<h1 align="center">Gray and white computing</h1>
+	</div>
+		
 
 </body>
 

@@ -32,7 +32,7 @@ function bump(number)
 	font-size: 24px;
 }
    </style>
-   <script src="http://www.graynwhite.com/gwanalytics.js"></script>
+   <script src="http://www.graypluswhite.com/gwanalytics.js"></script>
 </HEAD>
 <BODY>
 <div id="main" data-role="page">
@@ -59,9 +59,7 @@ $PageTitle ="What's Happening This Month Calendar";
 if ( $affil =="arch" ){
 $PageTitle ="Archdiocese of Detroit Singles Calendar";
 }
- include_once('php_select_year.php');
-
-if ((!$Month) && (!$Year)) {
+ if ((!$Month) && (!$Year)) {
            $Month = date("m");
            $Year = date("Y"). '-';
 }
@@ -150,7 +148,7 @@ print ("<input type=\"hidden\" id=\"calYear\" value=\"$Year\">");
         // request items from the events table
            $result = @mysql_query($sql);
            if (!$result) {
-                    echo("<p>Error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+                    echo("<p>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
       
             exit();
            }

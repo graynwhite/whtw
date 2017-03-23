@@ -54,7 +54,7 @@
                 ";
             $result = @mysql_query($sql);    
             if (!$result) {
-                    echo("<p>Error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+                    echo("<p>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
       
            
                        }else{

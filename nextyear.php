@@ -13,7 +13,7 @@ include("../cgi-bin//connect.inc");
    order by Date_from limit 300";
    $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 
       		}
@@ -31,7 +31,7 @@ include("../cgi-bin//connect.inc");
 
 <body>
 
-<p align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></p>
+<p align="center"><img src="graypluswhitebannereventMaint.jpg" width="468" height="60"></p>
 <p align="center"><b><font size="5">Event list next year  events</font></b></p>
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#000000" width="101%" id="AutoNumber1">
   <tr>
@@ -60,7 +60,7 @@ include("../cgi-bin//connect.inc");
       <td><?print$row['Place']?>&nbsp;</td>
        <td><?print$row['Activity']?>&nbsp;</td>
 
-        <td><A href="event_maint.php?emailid=cauleyfj@graynwhite.com&yourpswd=6r1n11&Org=++++&From_mm=01-&From_day=01&From_year=2003-&action=byitem&Event_number=<?print$row['Event_number']?>&Submit=no">Select</a>    </TD>
+        <td><A href="event_maint.php?emailid=cauleyfj@graypluswhite.com&yourpswd=6r1n11&Org=++++&From_mm=01-&From_day=01&From_year=2003-&action=byitem&Event_number=<?print$row['Event_number']?>&Submit=no">Select</a>    </TD>
  </TR>
  <?php } ?>
 </table>

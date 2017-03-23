@@ -29,7 +29,7 @@ $DayQ=$_GET['DayQ'];
 }
 -->
    </style>
-   <script src="http://www.graynwhite.com/gwanalytics.js"></script>
+   <script src="http://www.graypluswhite.com/gwanalytics.js"></script>
 </HEAD>
 <body>   
 </div>
@@ -59,7 +59,7 @@ $DayQ=$_GET['DayQ'];
         // request items from the events table
            $result = @mysql_query($sql);
            if (!$result) {
-                    echo("<p>Error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+                    echo("<p>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
       
             exit();
  }

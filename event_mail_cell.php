@@ -8,7 +8,7 @@ $genVercode = rand(10000,99999);
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="../javascript/typeAhead.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/css/common.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/css/common.css" />
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<link rel="stylesheet" href="http://pjnews.mobi/peggyjo4.css"/>
 	<script src="../javascript/ajaxBasics.js" type="text/javascript"></script>
@@ -16,7 +16,7 @@ $genVercode = rand(10000,99999);
 	
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-	<script src= "http://www.graynwhite.com/javascript/calendarDisplay.inc" language="javascript" type="text/javascript"></script>
+	<script src= "http://www.graypluswhite.com/javascript/calendarDisplay.inc" language="javascript" type="text/javascript"></script>
 	
 	
 <?php
@@ -227,7 +227,7 @@ body {
 
 <div data-role="page" id="page">
 <div data-role="header" class="header"><h1>Event input</h1>
-<img src="http://www.graynwhite.com/pjsn/pjbanner20130128.jpg" height="150px" align="right" hspace="3"/>
+<img src="http://www.graypluswhite.com/pjsn/pjbanner20130128.jpg" height="150px" align="right" hspace="3"/>
 <p>Complete this form then an email will be sent to the Gray and White Webmaster requesting that this event be placed in the Gray and White Event Database.</p>
 <p>The webmaster will review the information and  process it within a short time.</p>
 <p>One can verify the insertion, after a few days, by referring to the monthly calendar.</p>
@@ -239,12 +239,12 @@ body {
   	<input type="hidden" name="cell_input" value="yes" />
     <input type="hidden" name="Subject" value=" WHTW Entry" />
     <input type="hidden" name="Sender" value="+Email+" />
-    <input type="hidden" name="recipient" value="webmaster@graynwhite.com" />
+    <input type="hidden" name="recipient" value="cauleyfrank@gmail.com" />
     <input type="hidden" name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT" />
     <input type="hidden" name="bgcolor" value="#ffffff" />
     <input type="hidden" name="text_color" value="#000000" />
 	<input type="hidden" name="refferSrc"  value="<?echo $sourceg?>">
-    <input type="hidden" name="return_link_url" value="http://graynwhite.com/whtw" />
+    <input type="hidden" name="return_link_url" value="http://graypluswhite.com/whtw" />
     <input type="hidden" name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page" />
   
   

@@ -108,8 +108,8 @@
 <CENTER><B><FONT FACE="ARIAL, HELVETICA"><FONT COLOR="#FF0000">Use the
 back function to return to Home Page</FONT></FONT></B></CENTER>
 <CENTER><Font COLOR="#FF0000">Click on the organization names below to reach their home pages.</FONT></CENTER>
-<CENTER><A HREF="http://www.graynwhite.com/ss/"> Sailing Singles</A></CENTER>
-<CENTER><A HREF="http://www.graynwhite.com/sg/">Somerset Singles Ski & Golf Club</A></CENTER>
+<CENTER><A HREF="http://www.graypluswhite.com/ss/"> Sailing Singles</A></CENTER>
+<CENTER><A HREF="http://www.graypluswhite.com/sg/">Somerset Singles Ski & Golf Club</A></CENTER>
 <CENTER><A HREF="http://www.gmskiclub.org">GM Ski Club</A></CENTER>
 <CENTER><A HREF="http://www.skiwiskiclub.com">Skiwi Ski and Social Club</A></CENTER>
 

@@ -59,7 +59,7 @@ Spiritually, Physically, and Mentally to be Active which brings Good Health"</di
                 <p><strong>(Click on the date to skip to that day's events. Use the <br />
                   &quot; Back to Top&quot; button to get back here.<br />
                 All email programs do not support these links) </strong></p>
-                <p><a href="http://www.graynwhite.com/TripsAndCruises.php"><strong>Club Sponsored Trips and Cruises</strong></a>  </p>
+                <p><a href="http://www.graypluswhite.com/TripsAndCruises.php"><strong>Club Sponsored Trips and Cruises</strong></a>  </p>
                 <p><a style="font-weight: bold; color:  #003366" 
                   href="#monday" >{$mondate}</a> </p>
               <p><a style="font-weight: bold; color : #003366" 
@@ -87,7 +87,7 @@ Spiritually, Physically, and Mentally to be Active which brings Good Health"</di
             >Link to Charley the singing hot dog 
                     Man </a> </p>
                   <p> <a style="font-weight: bold; : #003366" 
-            href="http://www.graynwhite.com/index.php"> Gray and White Computing</a> </p>
+            href="http://www.graypluswhite.com/index.php"> Gray and White Computing</a> </p>
                   {include file="links.tpl"}
 			
 			<h3>Back Issues</h3>

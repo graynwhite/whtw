@@ -8,7 +8,7 @@
 ?>
 <?php
 /** @package
-
+``
         connect.inc
         
         Copyright(c) Gray and White Computing 2002
@@ -19,23 +19,24 @@
 */    
 
             
-
 	//connect to the database server
 class connect_to_database
 {	
 public static function connect()
 {
-	$dbcnx = @mysql_connect("localhost","graynwhi_admin", "/PJ7t85e");
+	$dbcnx = mysql_connect("localhost","graynwhi", "Pj^0626#!");
    
 	if (!$dbcnx) {  
-                      echo("<h1>Unable to connect to the database server at this time.</h1></p>");
-		      echo("<P>For help, please send mail to the webmaster (webmaster@graynwhite.com), giving this error message and the time and date of the error.</p>"); 	
+                      echo("<h1>Unable to connect to the Database server at this time.</h1>");
+		echo("<p> Error message is " .mysql_error() . "</p");
+		      echo("<p>For help, please send mail to the webmaster (cauleyfrank@gmail.com), giving this error message and the time and date of the error.</p>"); 	
 	           exit();
                       }
        //	 Select the cauleyfj  database
-      	if (! @mysql_select_db("graynwhi_cauleyfj") ) {
-      		echo("<p> <h1>Unable to locate   database at this time. Try again later.</h1></p>");
-		echo("<P>For help, please send mail to the webmaster (webmaster@graynwhite.com), giving this error message and the time and date of the error.</p>"); 
+      	if (! mysql_select_db("graynwhi_cauleyfj") ) {
+      		echo("<p> <h1>Unable to locate the  Database at this time. Try again later.</h1></p>");
+			echo("<p> Error message is " . mysql_error() . "</p");
+		echo("<P>For help, please send mail to the webmaster (cauleyfrank@gmail.com), giving this error message and the time and date of the error.</p>"); 
       		
 		exit();
 		}  

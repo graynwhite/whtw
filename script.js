@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	var config = {
-		siteURL		: 'www.graynwhite.com',	// Change this to your site
+		siteURL		: 'www.graypluswhite.com',	// Change this to your site
 		searchSite	: true,
 		type		: 'web',
 		append		: false,

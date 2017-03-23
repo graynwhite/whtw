@@ -139,7 +139,7 @@ ALINK="#FF0000"  onUnload="doPopup()">
 <P><FONT FACE="ARIAL, HELVETICA">
 
 <CENTER>
-  <font face="ARIAL, HELVETICA"><a href="http://www.graynwhite.com/whtw/calendar.php"><img src="../cgi-bin/whtw/ftrbtn.gif" width="100" height="30"></a></font><A HREF="event_mail.php"><IMG SRC="../cgi-bin/whtw/addbtn.gif" width="100" height="30"></A>
+  <font face="ARIAL, HELVETICA"><a href="http://www.graypluswhite.com/whtw/calendar.php"><img src="../cgi-bin/whtw/ftrbtn.gif" width="100" height="30"></a></font><A HREF="event_mail.php"><IMG SRC="../cgi-bin/whtw/addbtn.gif" width="100" height="30"></A>
 </CENTER>
 
 
@@ -292,7 +292,7 @@ $dbend =  $yrend .  "-" . date("m",$TimestampEnd) . "-" . date("d",$TimestampEnd
         // request items from the events table
            $result = @mysql_query($sql);
            if (!$result) {
-                    echo("<p>Error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+                    echo("<p>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
       
             exit();
            }

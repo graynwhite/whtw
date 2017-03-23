@@ -61,7 +61,7 @@ $sourceg = $_SERVER['REMOTE_ADDR'];
  //   print("<br /> " . $sql);
     $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . " " . $sql . " " . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . " " . $sql . " " . mysql_error() . " </p>");
 	 		exit;
      		}
 ?>
@@ -109,7 +109,7 @@ for (var i=0; i < document.formInput.action.length; i++)
 			document.formInput,actiom.focus();
 			}else
 			{
-			document.location.href="http://www.graynwhite.com/whtw/eventMaintenanceC.php?select_org=" + document.formInput.Org.value;	
+			document.location.href="http://www.graypluswhite.com/whtw/eventMaintenanceC.php?select_org=" + document.formInput.Org.value;	
 			}
 	}
  
@@ -194,7 +194,7 @@ function check_page(form){
         if ( form.allow_recurring.value == "N" && form.action[1].checked ){
             alert("Recurring events will not be generated. \n"
 			+ "If this is a recurring event, enter the first event in the series \n"
-			+ " then send a separate email to webmaster\@graynwhite.com and explain \n"
+			+ " then send a separate email to webmaster\@graypluswhite.com and explain \n"
 			+ " the frequency and start and end date.");
             form.action[0].focus()
             return false
@@ -595,7 +595,7 @@ function MakeArray(n){
 </head>
 
 <noscript>
-<meta HTTP-EQUIV="REFRESH" content="0; url=http://www.graynwhite.com/testForJavascript.php?prgName=Event Input.php&alt=../whtw/event_mail.php&prg=../whtw/event_input_javax_place.php?select_org=<?echo $select_org?>&operator=publicist">
+<meta HTTP-EQUIV="REFRESH" content="0; url=http://www.graypluswhite.com/testForJavascript.php?prgName=Event Input.php&alt=../whtw/event_mail.php&prg=../whtw/event_input_javax_place.php?select_org=<?echo $select_org?>&operator=publicist">
 </noscript>
 
 <BODY  onload="checkJavaScriptValidity()">
@@ -612,7 +612,7 @@ JavaScript is disabled
 
 </div>
 
-<h1 align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></h1>
+<h1 align="center"><img src="graypluswhitebannereventMaint.jpg" width="468" height="60"></h1>
 <h1>  <?=$page_title?></h1>
 <h1 class="important">Do not use all caps words anywhere-Press releases will not accept them!!<br /> 
 Use Capital letters only where appropriate </h1>
@@ -620,11 +620,11 @@ Use Capital letters only where appropriate </h1>
 if ($_GET['testRun'] == "yes")
 {
 ?>
- <Form  action ="http://graynwhite.com/whtw/event_handle_test.php"  name="formInput" method="post">
+ <Form  action ="http://graypluswhite.com/whtw/event_handle_test.php"  name="formInput" method="post">
 <?php
 }else{
 ?>
-<Form onSubmit="return check_page(this)" action ="http://graynwhite.com/whtw/event_handle.php"  name="formInput" method="post">
+<Form onSubmit="return check_page(this)" action ="http://graypluswhite.com/whtw/event_handle.php"  name="formInput" method="post">
 <?php
 }
 ?>

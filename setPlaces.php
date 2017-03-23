@@ -46,7 +46,7 @@ $mode= ($data_input[9] == '00') ? "add" : "change";
 		
 		
            if (!$result){ 
-              echo("<p>error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+              echo("<p>error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
            exit();
            }
 		echo $result_description;

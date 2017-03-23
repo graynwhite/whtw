@@ -3,7 +3,7 @@ $filePrefix = isset($_GET['prefix']) ? $_GET['prefix'] : '';
 $fileName =  $_GET['prefix'] == 'g' ? 'geven' : 'event';
 
 //Open images directory
-$dir = dir("../_private");
+$dir = dir("../newsletter");
 $file_array = array();
 //List xml files in _private directory
 while (($file = $dir->read()) !== false)

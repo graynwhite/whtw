@@ -130,7 +130,7 @@ $ev = new events;
 			
              $result = mysql_query($sql);
   if (!$result) {
-                    trigger_error("<p>Error performing query Email this information to webmaster@graynwhite.com" . $sql .  mysql_error() . "</p> ");
+                    trigger_error("<p>Error performing query Email this information to cauleyfrank@gmail.com" . $sql .  mysql_error() . "</p> ");
                    
            }
   if ( mysql_num_rows($result) < 1 ){
@@ -205,7 +205,7 @@ while ($row =	mysql_fetch_assoc($result))
 	$event_text .= "<span style=\"padding:10px; text-align: center; font-weight: bold; font-style: italic; font-size: 13pt ; font-family: Verdana, serif; >\" ";
 	$event_text .= " <b>Location:</b> " . clearquotes($row['Place']) . "</span><br>";
 	$submit_text= "";
-	if ($row['SUBMITTED_BY'] != 'cauleyfj@graynwhite.com' && strlen($row['SUBMITTED_BY'])>0)
+	if ($row['SUBMITTED_BY'] != 'cauleyfj@graypluswhite.com' && strlen($row['SUBMITTED_BY'])>0)
 		{
 		/*print ("<p> submitted by is : " . $row['SUBMITTED_BY'] );*/
 		$argument = $row['SUBMITTED_BY'];

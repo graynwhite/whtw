@@ -40,7 +40,7 @@ $sourceg = $_SERVER['REMOTE_ADDR'];
 	
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-<!--<link href="http://www.graynwhite.com/whtw/event_input.css" rel="stylesheet" type="text/css" />-->
+<!--<link href="http://www.graypluswhite.com/whtw/event_input.css" rel="stylesheet" type="text/css" />-->
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
@@ -254,7 +254,7 @@ body {
  instructions how to enable JavaScript in your web browser</a>.</h2>
 </noscript>
 <br /> 
-  <img src="graynwhitebannereventMaint.jpg" width="100%" height="60" /></h1>
+  <img src="graypluswhitebannereventMaint.jpg" width="100%" height="60" /></h1>
 <p class="explanation">The Gray and White Event Database is used to create multiple web site pages including the Peggy Jo Studio and the PJSN Press Release System. </p>
 <!-- SitePal
 <H1> SceneWizSc1127110Acc61468BodyStart
@@ -275,18 +275,18 @@ if(isset($_GET['prg']))
   <p>
     <input type="hidden" name="Subject" value=" WHTW Entry" />
     <input type="hidden" name="Sender" value="+Email+" />
-    <input type="hidden" name="recipient" value="webmaster@graynwhite.com" />
+    <input type="hidden" name="recipient" value="cauleyfrank@gmail.com" />
     <input type="hidden" name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT" />
     <input type="hidden" name="bgcolor" value="#ffffff" />
     <input type="hidden" name="text_color" value="#000000" />
 	<input type="hidden" name="refferSrc"  value="<?echo $sourceg?>">
-    <input type="hidden" name="return_link_url" value="http://graynwhite.com/whtw" />
+    <input type="hidden" name="return_link_url" value="http://graypluswhite.com/whtw" />
     <input type="hidden" name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page" />
     <span class="Required">fields marked with a red asterisk * are required. </span></p>
   <p class="explanation">
   This form will be eMailed to the webmaster for review and editing and will be placed in the Gray and White Event database as soon as possible.  </p>
   <p class="formNote">To  
-  check the status of an event one can access the calendar of events at <a href="http://www.graynwhite.com/whtw/calendar.php">http://www.graynwhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form.  </p>
+  check the status of an event one can access the calendar of events at <a href="http://www.graypluswhite.com/whtw/calendar.php">http://www.graypluswhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form.  </p>
   <p class="formNote">This form uses javascript to help with the data entry. If you do not have javascript enabled go to <a href="https://www.google.com/adsense/support/bin/answer.py?hl=en&amp;answer=12654 ">https://www.google.com/adsense/support/bin/answer.py?hl=en&amp;answer=12654 </a>. You can disable it after using the form.  </p>
   <h1 class="important">Do not use all caps words anywhere, only capitilize where appropriate- press releases will not accept them!!! Enabling javascript will make this form work better!!! The left column of the form describes what information should be entered in the text boxes in the right column. </h1>
   <p class="explanation">&nbsp;</p>
@@ -308,9 +308,9 @@ if(isset($_GET['prg']))
 	   <input name="radioEntryType" type="radio" id="tpeNew" checked="checked" />
 	   <span class="explanation">New</span><br />
        <input type="radio" name="radioEntryType" id="typechange" />
-	   <span class="explanation">Change/overide(Send an email to webmaster@graynwhite.com to explain change)</span><br />
+	   <span class="explanation">Change/overide(Send an email to cauleyfrank@gmail.com to explain change)</span><br />
        <input type="radio" name="radioEntryType" id="typedelete"value="delete" />
-		<span class="explanation"> Delete  (send an email to webmaster@graynwhite.com)</span>  
+		<span class="explanation"> Delete  (send an email to cauleyfrank@gmail.com)</span>  
           </td>
     </tr>
     <tr >
@@ -441,7 +441,7 @@ if(isset($_GET['prg']))
     </tr>
    
     <tr>
-      <td><span class="explanation"><span class="fieldName">Recurring Event?</span> If  this event takes place on a regular basis, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the webmaster@graynwhite.com in order to delete those iterations. </span></td>
+      <td><span class="explanation"><span class="fieldName">Recurring Event?</span> If  this event takes place on a regular basis, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the cauleyfrank@gmail.com in order to delete those iterations. </span></td>
       <td> 
 		
 		Recurring Event 

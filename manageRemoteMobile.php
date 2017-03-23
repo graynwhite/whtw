@@ -28,17 +28,17 @@ rsort($file_array);
 	
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	
-	<link rel="stylesheet" href="http://www.graynwhite.com/valeng/css/template.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/valeng/css/validationEngine.jquery.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/valeng/css/template.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/valeng/css/validationEngine.jquery.css" />
 	<link rel="stylesheet" href="../whtw/mobile.css"/>
 	
 		
 		
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-		<script src="http://www.graynwhite.com/valeng/js/jquery-1.6.min.js"></script>
-		<script src="http://www.graynwhite.com/valeng/js/languages/jquery.validationEngine-en.js"></script>
-		<script src="http://www.graynwhite.com/valeng/js/jquery.validationEngine.js"></script>
+		<script src="http://www.graypluswhite.com/valeng/js/jquery-1.6.min.js"></script>
+		<script src="http://www.graypluswhite.com/valeng/js/languages/jquery.validationEngine-en.js"></script>
+		<script src="http://www.graypluswhite.com/valeng/js/jquery.validationEngine.js"></script>
 		
 </head>
 

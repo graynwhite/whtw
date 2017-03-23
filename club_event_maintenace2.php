@@ -16,7 +16,7 @@ require('../PHP-OAuth2/GrantType/AuthorizationCode.php');
 const CLIENT_ID     = '148436498524338';
 const CLIENT_SECRET = '17514882bf2caa40177950f7d5ca9145';
 
-const REDIRECT_URI           = 'http://www.graynwhite.com/whtw/club_event_maintenace2.php';
+const REDIRECT_URI           = 'http://www.graypluswhite.com/whtw/club_event_maintenace2.php';
 const AUTHORIZATION_ENDPOINT = 'https://graph.facebook.com/oauth/authorize';
 const TOKEN_ENDPOINT         = 'https://graph.facebook.com/oauth/access_token';
 
@@ -78,7 +78,7 @@ function get_page_title($select_org){
 
     $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 
       		}
@@ -99,7 +99,7 @@ function get_page_title($select_org){
 <body>
 <div id="mainPage" data-role="page">
 <div data-role="header">
-<p align="center"><img src="graynwhitebannereventMaint.jpg" width="100%" height="60"></p>
+<p align="center"><img src="graypluswhitebannereventMaint.jpg" width="100%" height="60"></p>
 <p align="center"><b><font size="6"><?print $page_title?></font></b></p>
 </div><!--end of header -->
 <div data-role="content">

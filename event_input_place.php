@@ -14,7 +14,7 @@ include("../cgi-bin//connect.inc");
  $sql = "select * from orgs order by Org_name";
     $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your org inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your org inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 
       		}
@@ -22,7 +22,7 @@ include("../cgi-bin//connect.inc");
  $sql_place = "select * from places order by Place_code";
  $place_result = @mysql_query($sql_place);
      if ( (!$place_result) ){
-        echo("<p> Your Place inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+        echo("<p> Your Place inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
     }
 
@@ -348,7 +348,7 @@ function fillplace(place_code_text){
 <BODY>
 <H1>&nbsp;Post Club Event Information</H1>
 
-<Form onSubmit="return check_page(this)" action ="http://graynwhite.com/cgi-bin/club_entry_dbi_test.cgi"  name="FrontPage_Form1">
+<Form onSubmit="return check_page(this)" action ="http://graypluswhite.com/cgi-bin/club_entry_dbi_test.cgi"  name="FrontPage_Form1">
 <Table Align = "left" Border= "1" Width = "903" height="954">
 <TR><TD width="191" height="84">Action</td>
 <td width="294" height="84">Add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT TYPE="radio" NAME="action" VALUE="Add" CHECKED><BR>

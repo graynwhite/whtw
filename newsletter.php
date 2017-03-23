@@ -125,7 +125,7 @@ function clearquotes($textin)
 }
 function get_map($event)
 {
-	$map_text="<a href=\"http://www.graynwhite.com/show_event.php?event=" .$event . "\">";
+	$map_text="<a href=\"http://www.graypluswhite.com/show_event.php?event=" .$event . "\">";
 	$map_text .= "<img src=\"http://www.peggyjostudio.net/map_button.png\" alt=\"Get a Map\" /> </a>";
 	return $map_text;
 }
@@ -152,7 +152,7 @@ $ev = new events;
 			
              $result = mysql_query($sql);
   if (!$result) {
-                    trigger_error("<p>Error performing query Email this information to webmaster@graynwhite.com" . $sql .  mysql_error() . "</p> ");
+                    trigger_error("<p>Error performing query Email this information to cauleyfrank@gmail.com" . $sql .  mysql_error() . "</p> ");
                    
            }
   if ( mysql_num_rows($result) < 1 ){
@@ -234,7 +234,7 @@ while ($row =	mysql_fetch_assoc($result))
 	$event_text .= " <b>Location:</b> " . clearquotes($row['Place']) . "</span><br>";
 	$event_text .= get_map($row['Event_number']);
 	$submit_text= "";
-	if ($row['SUBMITTED_BY'] != 'cauleyfj@graynwhite.com' && strlen($row['SUBMITTED_BY'])>0)
+	if ($row['SUBMITTED_BY'] != 'cauleyfj@graypluswhite.com' && strlen($row['SUBMITTED_BY'])>0)
 		{
 		/*print ("<p> submitted by is : " . $row['SUBMITTED_BY'] );*/
 		$argument = $row['SUBMITTED_BY'];

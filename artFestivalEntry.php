@@ -9,8 +9,8 @@
         Created: FJC 9/5/2003 2:10:29 PM
 	Last change: FJC 11/14/2004 1:18:36 PM
 */
-include("../cgi-bin//connect.inc");
-require_once("../../phpClasses/Class_Ire.php");
+//require_once("../phpClasses/connect.php");
+require_once("../phpClasses/Class_Ire.php");
 $ire = new IREclass;
 
 $header = 'Art Fairs,Festivals and Comunity Events';

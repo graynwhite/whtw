@@ -22,7 +22,7 @@
                    />
 			      </div></a>"} 
 
- {"id":"8","addName" :"Trips and Cruises","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-12-01","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"								<a href="http://www.graynwhite.com/TripsAndCruises.php" target="_blank">
+ {"id":"8","addName" :"Trips and Cruises","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-12-01","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"								<a href="http://www.graypluswhite.com/TripsAndCruises.php" target="_blank">
                    <div style="border: 2px solid black; width:185px" >
 				  <img alt="club sponsored trips" 
                   src="http://www.peggyjostudio.net/E/clubTripsAdd.jpg" 
@@ -103,7 +103,7 @@ src="http://www.peggyjostudio.net/E/rocca.jpg" width="185px"/>
 				  </div>"} 
 
  {"id":"21","addName" :"American Sedan odd","priority":"3","payStatus":"G","date_begin":"2007-12-01","date_end": "2012-12-31","week_1":"1","week_2":"0","week_3":"1","week_4":"1","week_5":"1,""text":"								<a
-                  href="http://www.graynwhite.com/AmericanSedan/" target="_blank">
+                  href="http://www.graypluswhite.com/AmericanSedan/" target="_blank">
 				 
 				  
                    <div style="border: 2px solid black; width:185px" >
@@ -151,7 +151,7 @@ src="http://www.peggyjostudio.net/E/rocca.jpg" width="185px"/>
 				  </div>"} 
 
  {"id":"32","addName" :"UML","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-12-01","week_1":"0","week_2":"0","week_3":"0","week_4":"0","week_5":"1,""text":"				 </a>
-				  <A href="Mailto:uml@graynwhite.com?Subject=UML">
+				  <A href="Mailto:uml@graypluswhite.com?Subject=UML">
 
 					<DIV  style="border: 2px solid black; width:185px">
 					<IMG alt="UML Query"
@@ -171,7 +171,7 @@ src="http://www.peggyjostudio.net/E/spreadYourWingsAdv.jpg">
 </a>"} 
 
  {"id":"35","addName" :"American Sedan Even","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2012-12-31","week_1":"0","week_2":"1","week_3":"0","week_4":"1","week_5":"0,""text":"												<a
-                  href="http://www.graynwhite.com/AmericanSedan/" target="_blank">
+                  href="http://www.graypluswhite.com/AmericanSedan/" target="_blank">
 				 
 				  
                    <div style="border: 2px solid black; width:185px" >
@@ -298,7 +298,7 @@ Send Out Cards <strong> Link has been Updated</strong>(click here)
 
  {"id":"51","addName" :"Personal UML","priority":"4","payStatus":"I","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"1,""text":"												If you are an IT Professional and are interested in organizing a UML study group call 248-514-1937"} 
 
- {"id":"52","addName" :"Personal Auction","priority":"4","payStatus":"I","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"1","week_3":"0","week_4":"1","week_5":"0,""text":"						Spring is here!! Clean out your garage and/or basement and sell it on Graybay! <a href="http://www.graynwhite.com/phpauction">find it here</a>"} 
+ {"id":"52","addName" :"Personal Auction","priority":"4","payStatus":"I","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"1","week_3":"0","week_4":"1","week_5":"0,""text":"						Spring is here!! Clean out your garage and/or basement and sell it on Graybay! <a href="http://www.graypluswhite.com/phpauction">find it here</a>"} 
 
  {"id":"53","addName" :" Personal Archives","priority":"4","payStatus":"I","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"								<a href="http://www.peggyjostudio.net/archivenews.php">Look at back issues of this newsletter by clicking here!!</a>"} 
 
@@ -306,7 +306,7 @@ Send Out Cards <strong> Link has been Updated</strong>(click here)
 
  {"id":"55","addName" :" Personal Intro to Computers","priority":"4","payStatus":"I","date_begin":"2009-01-01","date_end": "2009-02-01","week_1":"1","week_2":"1","week_3":"1","week_4":"0","week_5":"1,""text":"										Introduction to Computers Class Global Information Technology call 248-557-2480"} 
 
- {"id":"56","addName" :" Personal Enter Events","priority":"4","payStatus":"I","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"0","week_3":"1","week_4":"0","week_5":"0,""text":"										Does your club have an upcoming event that should be listed in this newsletter? <a href="http://www.graynwhite.com/whtw/event_mail.html">click here if yes</a>"} 
+ {"id":"56","addName" :" Personal Enter Events","priority":"4","payStatus":"I","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"0","week_3":"1","week_4":"0","week_5":"0,""text":"										Does your club have an upcoming event that should be listed in this newsletter? <a href="http://www.graypluswhite.com/whtw/event_mail.html">click here if yes</a>"} 
 
  {"id":"57","addName" :" Personal Microsoft Word Basic","priority":"4","payStatus":"I","date_begin":"2009-06-02","date_end": "2009-07-01","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"0,""text":"																		Microsoft Word Basic Class. Global Information Technology call 248-557-2480"} 
 
@@ -316,7 +316,7 @@ Send Out Cards <strong> Link has been Updated</strong>(click here)
 
  {"id":"60","addName" :" Personal Microsoft Access","priority":"4","payStatus":"I","date_begin":"2009-02-02","date_end": "2009-03-01","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"																				Microsoft Access Basic Class. Global Information Technology call 248-557-2480"} 
 
- {"id":"61","addName" :" Personal Gray and White","priority":"4","payStatus":"I","date_begin":"2009-03-02","date_end": "2009-04-01","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"												Need a surge protector? <a href="http://graynwhite.ispeedway.com/">click here</a>				"} 
+ {"id":"61","addName" :" Personal Gray and White","priority":"4","payStatus":"I","date_begin":"2009-03-02","date_end": "2009-04-01","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"												Need a surge protector? <a href="http://graypluswhite.ispeedway.com/">click here</a>				"} 
 
  {"id":"62","addName" :"NAG Advertisement","priority":"1","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"																
 <div style="border: 2px solid black; width:185px" >
@@ -325,7 +325,7 @@ Send Out Cards <strong> Link has been Updated</strong>(click here)
 </div>
 "} 
 
- {"id":"63","addName" :"Reunions","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-12-01","week_1":"0","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"													<a href="http://www.graynwhite.com/reunions.php" target="_blank">
+ {"id":"63","addName" :"Reunions","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-12-01","week_1":"0","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"													<a href="http://www.graypluswhite.com/reunions.php" target="_blank">
                   <div style="border: 2px solid black; width:185px" >
 				  <img alt="Reunions Advertisement" 
                   src="http://www.peggyjostudio.net/E/reunionsAdd.jpg" 
@@ -341,14 +341,14 @@ Send Out Cards <strong> Link has been Updated</strong>(click here)
 "} 
 
  {"id":"65","addName" :"Free Website","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-12-01","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"												 
-			  <A href="http://www.graynwhite.com/freeWebsite.php">
+			  <A href="http://www.graypluswhite.com/freeWebsite.php">
 
 					<DIV  style="border: 2px solid black; width:185px">
 					<IMG alt="Free Website"
 					
 				src="http://www.peggyjostudio.net/E/gwonlineliveAd.jpg"> </DIV></A>"} 
 
- {"id":"66","addName" :"This Space Available","priority":"1","payStatus":"G","date_begin":"2010-03-01","date_end": "2012-03-11","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"										<a href="mailto:Adv@graynwhite.com">														 <div style="border: 2px solid black; width:185px" >
+ {"id":"66","addName" :"This Space Available","priority":"1","payStatus":"G","date_begin":"2010-03-01","date_end": "2012-03-11","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"										<a href="mailto:Adv@graypluswhite.com">														 <div style="border: 2px solid black; width:185px" >
 				   <img alt="This space Available" 
                   src="http://www.peggyjostudio.net/E/pjadForAds.jpg" 
                   width="185px"/>
@@ -361,13 +361,13 @@ Send Out Cards <strong> Link has been Updated</strong>(click here)
  {"id":"68","addName" :"McLean Ad","priority":"4","payStatus":"P","date_begin":"2007-12-01","date_end": "2010-12-01","week_1":"0","week_2":"1","week_3":"0","week_4":"1","week_5":"0,""text":"											<img alt="McLean Advertisement" src="http://peggyjostudio.net/E/HughMcleanAd.jpg"
 width="480" align="center" />									 <"} 
 
- {"id":"69","addName" :"This Space Available 2","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2011-05-01","week_1":"1","week_2":"0","week_3":"1","week_4":"1","week_5":"1,""text":"				<a href="mailto:Adv@graynwhite.com">																		 <div style="border: 2px solid black; width:185px" >
+ {"id":"69","addName" :"This Space Available 2","priority":"2","payStatus":"G","date_begin":"2007-12-01","date_end": "2011-05-01","week_1":"1","week_2":"0","week_3":"1","week_4":"1","week_5":"1,""text":"				<a href="mailto:Adv@graypluswhite.com">																		 <div style="border: 2px solid black; width:185px" >
 				   <img alt="This space Available" 
                   src="http://www.peggyjostudio.net/E/pjadForAdslevel2.jpg" 
                   width="185px"/>
 			      </div></a>"} 
 
- {"id":"70","addName" :"This Space Available 3","priority":"3","payStatus":"G","date_begin":"2007-12-01","date_end": "2012-05-01","week_1":"1","week_2":"0","week_3":"1","week_4":"0","week_5":"0,""text":"				<a href="mailto:Adv@graynwhite.com">																		 <div style="border: 2px solid black; width:185px" >
+ {"id":"70","addName" :"This Space Available 3","priority":"3","payStatus":"G","date_begin":"2007-12-01","date_end": "2012-05-01","week_1":"1","week_2":"0","week_3":"1","week_4":"0","week_5":"0,""text":"				<a href="mailto:Adv@graypluswhite.com">																		 <div style="border: 2px solid black; width:185px" >
 				   <img alt="This space Available" 
                   src="http://www.peggyjostudio.net/E/pjadForAdslevel3.jpg" 
                   width="185px"/>
@@ -375,7 +375,7 @@ width="480" align="center" />									 <"}
 
  {"id":"71","addName" :" Personal spread the word","priority":"4","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"1","week_3":"0","week_4":"1","week_5":"1,""text":"		<img alt="spread the word" src="http://www.peggyjostudio.net/E/spreadthewordadv.jpg"/>													"} 
 
- {"id":"72","addName" :" Susan's Ad","priority":"4","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"				Lady looking for a residence in Southern Oakland County. Is willing to share an apartment or house. Non-Smoker. contact personal@graynwhite.com										"} 
+ {"id":"72","addName" :" Susan's Ad","priority":"4","payStatus":"G","date_begin":"2007-12-01","date_end": "2010-01-31","week_1":"0","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"				Lady looking for a residence in Southern Oakland County. Is willing to share an apartment or house. Non-Smoker. contact personal@graypluswhite.com										"} 
 
  {"id":"73","addName" :" Personal Anita's Ad","priority":"4","payStatus":"G","date_begin":"2009-05-01","date_end": "2009-08-31","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"0,""text":"				<a href="http://www.vacationrental.org/rentals/Canadian-Summer-Retreat.html">Cottage for rent</a>. <a href="http://www.escapenow.ca/194"> Additional information here</a>You can get there on one tank of gas or less."} 
 
@@ -526,24 +526,24 @@ Call 248 641-0287"}
  {"id":"141","addName" :"Boutique Fluer Ad","priority":"1","payStatus":"G","date_begin":"2010-04-17","date_end": "2011-04-17","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"																														<a href="http://boutiquelafleur.com/index.php"><div style="border: 2px solid black; width:185px" >				<img src="http://www.peggyjostudio.net/E/boutiqueFluerAd.jpg" alt="Boutiqe Fluer"></div></a>						
                    						"} 
 
- {"id":"142","addName" :"G&W Hosting","priority":"2","payStatus":"G","date_begin":"2010-09-06","date_end": "2010-12-31","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"0,""text":"<div>												<a href="http://www.graynwhite.com/hosting.php"><img src=http://www.peggyjostudio.net/E/gwHostAdv1.jpg /></a></div>		"} 
+ {"id":"142","addName" :"G&W Hosting","priority":"2","payStatus":"G","date_begin":"2010-09-06","date_end": "2010-12-31","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"0,""text":"<div>												<a href="http://www.graypluswhite.com/hosting.php"><img src=http://www.peggyjostudio.net/E/gwHostAdv1.jpg /></a></div>		"} 
 
- {"id":"143","addName" :"G & W Constant Contact","priority":"2","payStatus":"G","date_begin":"2010-09-06","date_end": "2010-12-31","week_1":"0","week_2":"0","week_3":"1","week_4":"0","week_5":"0,""text":"													<div>					<a href="http://www.graynwhite.com/constantContact.php"><img src=http://www.peggyjostudio.net/E/gwConstantContact.jpg /></a></div>			"} 
+ {"id":"143","addName" :"G & W Constant Contact","priority":"2","payStatus":"G","date_begin":"2010-09-06","date_end": "2010-12-31","week_1":"0","week_2":"0","week_3":"1","week_4":"0","week_5":"0,""text":"													<div>					<a href="http://www.graypluswhite.com/constantContact.php"><img src=http://www.peggyjostudio.net/E/gwConstantContact.jpg /></a></div>			"} 
 
- {"id":"144","addName" :"G & W Publicity","priority":"2","payStatus":"G","date_begin":"2010-09-11","date_end": "2011-09-11","week_1":"0","week_2":"0","week_3":"1","week_4":"1","week_5":"0,""text":"																			<div>					<a href="http://www.graynwhite.com/publicity.php"><img src="http://www.peggyjostudio.net/E/GWPublicity.jpg"/></a></div>					"} 
+ {"id":"144","addName" :"G & W Publicity","priority":"2","payStatus":"G","date_begin":"2010-09-11","date_end": "2011-09-11","week_1":"0","week_2":"0","week_3":"1","week_4":"1","week_5":"0,""text":"																			<div>					<a href="http://www.graypluswhite.com/publicity.php"><img src="http://www.peggyjostudio.net/E/GWPublicity.jpg"/></a></div>					"} 
 
- {"id":"145","addName" :"G & W Press Release","priority":"2","payStatus":"G","date_begin":"2011-09-11","date_end": "2011-09-11","week_1":"1","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"																			<div>					<a href="http://www.graynwhite.com/pressRelease.php"><img src=http://www.peggyjostudio.net/E/GWPressRelease2.jpg/></a></div>					"} 
+ {"id":"145","addName" :"G & W Press Release","priority":"2","payStatus":"G","date_begin":"2011-09-11","date_end": "2011-09-11","week_1":"1","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"																			<div>					<a href="http://www.graypluswhite.com/pressRelease.php"><img src=http://www.peggyjostudio.net/E/GWPressRelease2.jpg/></a></div>					"} 
 
  {"id":"146","addName" :"G & W OraCLE","priority":"1","payStatus":"G","date_begin":"2011-09-01","date_end": "2012-09-11","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"																																	<div>					<a href="http://www.global-itech.com"><img src="http://www.peggyjostudio.net/E/globalItAdRight.gif"alt="Gw Oracle ad"/></a></div>					"} 
 
- {"id":"147","addName" :"G & W Word","priority":"3","payStatus":"G","date_begin":"2010-09-11","date_end": "2011-09-11","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"0,""text":"						<div>	<a href="http://www.graynwhite.com/classes.php"><img src="http://www.peggyjostudio.net/E/GWMsWord.jpg"/></a></div>		"} 
+ {"id":"147","addName" :"G & W Word","priority":"3","payStatus":"G","date_begin":"2010-09-11","date_end": "2011-09-11","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"0,""text":"						<div>	<a href="http://www.graypluswhite.com/classes.php"><img src="http://www.peggyjostudio.net/E/GWMsWord.jpg"/></a></div>		"} 
 
  {"id":"148","addName" :"MHHC Add","priority":"4","payStatus":"G","date_begin":"2007-12-01","date_end": "2011-12-31","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"									<a href="http://www.MetroHomeHealthCare.com"><div style="border: 2px solid black; width:185px" >				<img src="http://www.peggyjostudio.net/E/MHHCAdd.jpg" alt="Home Care Add"></div></a>					
                    "} 
 
- {"id":"149","addName" :"G & W Excel","priority":"3","payStatus":"G","date_begin":"2010-09-11","date_end": "2011-09-11","week_1":"0","week_2":"0","week_3":"1","week_4":"0","week_5":"0,""text":"						<div>					<a href="http://www.graynwhite.com/classes.php"><img src="http://www.peggyjostudio.net/E/GWExcel.jpg"></a></div>		"} 
+ {"id":"149","addName" :"G & W Excel","priority":"3","payStatus":"G","date_begin":"2010-09-11","date_end": "2011-09-11","week_1":"0","week_2":"0","week_3":"1","week_4":"0","week_5":"0,""text":"						<div>					<a href="http://www.graypluswhite.com/classes.php"><img src="http://www.peggyjostudio.net/E/GWExcel.jpg"></a></div>		"} 
 
- {"id":"150","addName" :"G & W Javascript","priority":"3","payStatus":"G","date_begin":"2010-09-11","date_end": "2011-09-11","week_1":"0","week_2":"0","week_3":"0","week_4":"1","week_5":"0,""text":"						<div>					<a href="http://www.graynwhite.com/classes.php"><img src="http://www.peggyjostudio.net/E/GWJavascript.jpg"/></a></div>		"} 
+ {"id":"150","addName" :"G & W Javascript","priority":"3","payStatus":"G","date_begin":"2010-09-11","date_end": "2011-09-11","week_1":"0","week_2":"0","week_3":"0","week_4":"1","week_5":"0,""text":"						<div>					<a href="http://www.graypluswhite.com/classes.php"><img src="http://www.peggyjostudio.net/E/GWJavascript.jpg"/></a></div>		"} 
 
  {"id":"151","addName" :"Peggy Walcott Ad","priority":"1","payStatus":"G","date_begin":"2010-09-14","date_end": "2010-10-10","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"				<div>												<a href="http://www.healinghearts.org/walk/sponsorship_page.php?idg=473"><img src="http://www.peggyjostudio.net/E/peggyWalcott.jpg" /></a></div>						"} 
 
@@ -563,9 +563,9 @@ Click anywhere in this box to take the survey</a>		"}
 
  {"id":"155","addName" :"Gretchen Hocking Ad","priority":"1","payStatus":"G","date_begin":"2011-06-01","date_end": "2011-07-13","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"										<img src="http://www.peggyjostudio.net/E/HockingAd.gif" alt="Hocking Ad"/>		"} 
 
- {"id":"156","addName" :"Charley's Hanukkah 2011","priority":"4","payStatus":"T","date_begin":"2011-11-26","date_end": "2011-12-28","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"				<a href="http://www.graynwhite.com/admin/fndMkts.php"><div><img src="http://www.peggyjostudio.net/E/charleysHanukkah2011.png"/></div></a>		"} 
+ {"id":"156","addName" :"Charley's Hanukkah 2011","priority":"4","payStatus":"T","date_begin":"2011-11-26","date_end": "2011-12-28","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"				<a href="http://www.graypluswhite.com/admin/fndMkts.php"><div><img src="http://www.peggyjostudio.net/E/charleysHanukkah2011.png"/></div></a>		"} 
 
- {"id":"157","addName" :"Charley's Stocking Stuffer","priority":"4","payStatus":"T","date_begin":"2011-11-26","date_end": "2011-12-25","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"										<a href="http://www.graynwhite.com/admin/fndMkts.php"><div><img src="http://www.peggyjostudio.net/E/charleysStockingStuffer2011.png"/></div></a>		"} 
+ {"id":"157","addName" :"Charley's Stocking Stuffer","priority":"4","payStatus":"T","date_begin":"2011-11-26","date_end": "2011-12-25","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"										<a href="http://www.graypluswhite.com/admin/fndMkts.php"><div><img src="http://www.peggyjostudio.net/E/charleysStockingStuffer2011.png"/></div></a>		"} 
 
  {"id":"158","addName" :"Migun Table ad","priority":"1","payStatus":"P","date_begin":"2011-11-05","date_end": "2012-01-05","week_1":"1","week_2":"1","week_3":"1","week_4":"1","week_5":"1,""text":"				<div style= "border: 2px solid black; width:185px"><img src="http://www.peggyjostudio.net/E/migunTableAd.png"/></div>		"} 
 

@@ -28,7 +28,7 @@ $SQL = "update events set Activity = decode_entities(Activity) where Event_numbe
 		   
              $result = @mysql_query($SQL);
           if (!$result) {
-          echo("<p> Error in insert  Email this information to webmaster@graynwhite.com" . mysql_error() . "</p><p>" . $SQL . "</php>");
+          echo("<p> Error in insert  Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p><p>" . $SQL . "</php>");
           }else{
             Print("Event changed<p>");
         }

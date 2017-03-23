@@ -35,7 +35,7 @@ require_once("../../cgi-bin/connect.inc");
     $sql = "select * from newsletters  order by campaign ";
     $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 
       		}

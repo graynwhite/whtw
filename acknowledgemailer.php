@@ -8,7 +8,7 @@
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
 		$recipient = isset($_POST[recipient]) ? $_POST[recipient] : "cauleyfrank@gmail.com";
-        $recipient .=  ",webmaster@graynwhite.com";
+        $recipient .=  ",cauleyfrank@gmail.com";
 		if($testrun == 'yes'){
 			$recipient ="cauleyfrank@gmail.com";
 		}
@@ -29,15 +29,15 @@
         $email_content .= "\nIt will appear in the  \"Peggy Jo Studio Newsletter\" in the appropriate weekly edition. ";
 		}
         $email_content .= "\n\nYou can see how your entry will be presented by going to ";
-		$email_content .= "http://www.graynwhite.com/whtw/calendar.php and selecting the date of the event.";
+		$email_content .= "http://www.graypluswhite.com/whtw/calendar.php and selecting the date of the event.";
 		$email_content .= "\n\nThe \"Peggy Jo Studio Newsletter\" is published every Monday and sent to over 8,000 email subscribers. Past issues of the newsletter can be seen at http://www.peggyjostudio.net/archivenews.php";
 		$email_content .= "\n\nPlease inform your members about http://pjnews.mobi which can be accessed on most smartphones, tablets, laptops and desktops.";
 		$email_content .= "  An annoucement at an event or an entry in a newsletter would be greatly appreciated.";
-		$email_content .= "\n\n\t\t From: \n\t\t webmaster@graynwhite.com";
+		$email_content .= "\n\n\t\t From: \n\t\t cauleyfrank@gmail.com";
 		 
 
         // Build the email headers.
-        $email_headers = "From: webmaster@Graynwhite.com";
+        $email_headers = "From: cauleyfrank@gmail.com";
 			
 		
         if (mail($recipient, $subject, $email_content, $email_headers)) {

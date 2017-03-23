@@ -92,7 +92,7 @@ if ( $action=='Recurring' ){
                                 SUBMITTED_BY   = \"$Submitted_by\" ";
                      $result = @mysql_query($sql);
                         if (!$result) {
-	 		echo("<p> Your  event inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your  event inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 	 		}
                         if ( $week == 'Alternate' ){

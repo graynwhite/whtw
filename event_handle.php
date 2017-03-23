@@ -1,10 +1,11 @@
 
 <?php
+echo("");
 //require_once($_SERVER['DOCUMENT_ROOT'].'/class.phpmailer.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/class_events.php');
-require_once('../../phpClasses/Class_writeRSS.php');
-require_once('../../phpClasses/class_date_utility.php');
-require_once($_SERVER['DOCUMENT_ROOT']. '/cgi-bin/connect.inc');
+require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/Class_writeRSS.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/class_date_utility.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/cgi-bin/connect.inc');
 //require_once($_SERVER['DOCUMENT_ROOT']. '/phpClasses/convertPhp4GetPost.php');
 $password= $_POST['password'];
 if(trim($password) !="/FJ6r1n11M" and $_POST['operator'] != 'publicist'){
@@ -14,7 +15,7 @@ exit;
 //print_r($_POST);
 $action = $_POST['action'];
 $a=new writeRSS("peggy Jo event RSS", // title
-'http://www.graynwhite.com/show_event.php', // link
+'http://www.graypluswhite.com/show_event.php', // link
 'Rss feed of events from gray and white database',  // description
 'en_us', // language
  '', // image title
@@ -162,12 +163,12 @@ function insertRecord($place,$date_from,$time_start,$time_end,$date_to,$resby,$c
           $result = mysql_query($SQL);
 		  
           if (!$result) {
-          echo("<p> Error in Insert a record    Email this information to webmaster@graynwhite.com" . mysql_error() . "\n" . $SQL  ."</p>");
+          echo("<p> Error in Insert a record    Email this information to cauleyfrank@gmail.com" . mysql_error() . "\n" . $SQL  ."</p>");
 		  //exit;
           }
 		  if(mysql_affected_rows() < 1)
 		  {
-		  echo("no record added  " . $SQL  . mysql_error() . " Email this information to webmaster@graynwhite.com");
+		  echo("no record added  " . $SQL  . mysql_error() . " Email this information to cauleyfrank@gmail.com");
 		  //exit;
 		  }
 }
@@ -411,12 +412,12 @@ If ($dowCorrect){
 	print("<br>This event will be sent to the blog<br>");
 	print ("<br> $trow[0] <br><br>");
 	$mail->Subject = $trow[3];
-	$mail->From='webmaster@graynwhite.com';
+	$mail->From='cauleyfrank@gmail.com';
 	$mail->FromName = 'Webmaster';
 	$mail->Body = $message_text;
 	$mail->ClearAddresses();
-	$mail->AddAddress('cppgejm7@graynwhite.com');
-	$mail->AddAddress('cauleyfj@graynwhite.com');
+	$mail->AddAddress('cppgejm7@graypluswhite.com');
+	$mail->AddAddress('cauleyfj@graypluswhite.com');
 	 //set the subject of the message
 	//print ("<br> " .$message_text );
 	
@@ -572,7 +573,7 @@ If ($dowCorrect){
            ";  
 		    $result = mysql_query($sql);
           if (!$result) {
-          echo("<p> Error in update  Email this information to webmaster@graynwhite.com"  . $sql . mysql_error() . "</p>");
+          echo("<p> Error in update  Email this information to cauleyfrank@gmail.com"  . $sql . mysql_error() . "</p>");
           }  
  $bodyText  .= "<br> Rows affected = " . mysql_affected_rows(); 	  
 	print $bodyText;
@@ -611,7 +612,7 @@ If ($dowCorrect){
            ";  
 		    $result = mysql_query($sql);
           if (!$result) {
-          echo("<p> Error in update  Email this information to webmaster@graynwhite.com"  . $sql . mysql_error() . "</p>");
+          echo("<p> Error in update  Email this information to cauleyfrank@gmail.com"  . $sql . mysql_error() . "</p>");
           }  
  $bodyText  .= "<br> Rows affected = " . mysql_affected_rows(); 	  
 	print $bodyText;
@@ -650,7 +651,7 @@ If ($dowCorrect){
             ";   
           $result = mysql_query($SQL);
           if (!$result) {
-          echo("<p> Error in update  Email this information to webmaster@graynwhite.com" . "<br>" . $SQL . mysql_error() . "</p>");
+          echo("<p> Error in update  Email this information to cauleyfrank@gmail.com" . "<br>" . $SQL . mysql_error() . "</p>");
 		  exit;
           }
  }
@@ -683,7 +684,7 @@ If ($dowCorrect){
 //print ("<br>$SQL");
           $result = mysql_query($SQL);
           if (!$result) {
-          echo("<p> Error in copy   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+          echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
 }		  
 		
@@ -716,7 +717,7 @@ If ($dowCorrect){
 //print ("<br>$SQL");
           $result = mysql_query($SQL);
           if (!$result) {
-          echo("<p> Error in copy   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+          echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
 }		  
 		
@@ -728,7 +729,7 @@ If ($dowCorrect){
 
          $result = @mysql_query($SQL);
           if (!$result) {
-          echo("<p> Error in copy   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+          echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
 
 }
@@ -741,7 +742,7 @@ If ($dowCorrect){
 
          $result = @mysql_query($SQL);
           if (!$result) {
-          echo("<p> Error in copy   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+          echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
 
 }
@@ -754,7 +755,7 @@ If ($dowCorrect){
 
          $result = @mysql_query($SQL);
           if (!$result) {
-          echo("<p> Error in copy   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+          echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
 
 }
@@ -769,7 +770,7 @@ If ($dowCorrect){
 	print "<br> " . $sql;
 	$result = mysql_query($sql);
 	 if (!$result) {
-          echo("<p> Error in select   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>"
+          echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
@@ -790,7 +791,7 @@ If ($dowCorrect){
 	$sql .= " && confirm = \"Y\" ";
 	$result = mysql_query($sql);
 	if (!$result) {
-          echo("<p> Error in Delete   Email this information to webmaster@graynwhite.com" . mysql_error() . "<br>");
+          echo("<p> Error in Delete   Email this information to cauleyfrank@gmail.com" . mysql_error() . "<br>");
 	 exit;
 	 }
 	$bodyText  .= "<br> Rows affected = " . mysql_affected_rows(); 	  
@@ -807,7 +808,7 @@ If ($dowCorrect){
 	print "<br> " . $sql;
 	$result = mysql_query($sql);
 	 if (!$result) {
-          echo("<p> Error in select   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>"
+          echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
@@ -829,7 +830,7 @@ If ($dowCorrect){
 	print "<br> " . $sql;
 	$result = mysql_query($sql);
 	 if (!$result) {
-          echo("<p> Error in select   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>"
+          echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 		  }
@@ -853,7 +854,7 @@ If ($dowCorrect){
 	print "<br> " . $sql;
 	$result = mysql_query($sql);
 	 if (!$result) {
-          echo("<p> Error in select   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>"
+          echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
@@ -882,7 +883,7 @@ If ($dowCorrect){
 	print "<br> " . $sql;
 	$result = mysql_query($sql);
 	 if (!$result) {
-          echo("<p> Error in select   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>"
+          echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
@@ -911,7 +912,7 @@ If ($dowCorrect){
 	print "<br> " . $sql;
 	$result = mysql_query($sql);
 	 if (!$result) {
-          echo("<p> Error in select   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>"
+          echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
@@ -940,7 +941,7 @@ If ($dowCorrect){
 	print "<br> " . $sql;
 	$result = mysql_query($sql);
 	 if (!$result) {
-          echo("<p> Error in select   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>"
+          echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
@@ -983,7 +984,7 @@ If ($dowCorrect){
 	print "<br> " . $sql;
 	$result = mysql_query($sql);
 	 if (!$result) {
-          echo("<p> Error in select   Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>"
+          echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
@@ -1081,7 +1082,7 @@ If ($dowCorrect){
 						  
                        $result = mysql_query($sql);
                         if (!$result) {
-						echo("<p> Error in generation  Email this information to webmaster@graynwhite.com" . mysql_error() . $sql ."</p>");
+						echo("<p> Error in generation  Email this information to cauleyfrank@gmail.com" . mysql_error() . $sql ."</p>");
           }
                      #end of post
 					$insertcount ++;

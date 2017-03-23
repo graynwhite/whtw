@@ -7,7 +7,7 @@ include("../cgi-bin/connect.inc");
            $sql=(" select * from places where place_num= \"$place_num\" ");
            $result = (@mysql_query($sql));
            if (!$result){ 
-              echo("<p>error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+              echo("<p>error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
            exit();
            }
 		   $row=mysql_fetch_array($result);
@@ -67,7 +67,7 @@ function parse_it(){
 }
 </script>
 
-<H1 align="center"><img src="./whtw/graynwhitebannereventMaint.jpg" width="468" height="60"></H1>
+<H1 align="center"><img src="./whtw/graypluswhitebannereventMaint.jpg" width="468" height="60"></H1>
 <H1>Place <?php echo($mode_description);?></H1>
 <form id="form_place" name="form_place" method="post" action="place_update.php">
   <table width="107%" border="1">

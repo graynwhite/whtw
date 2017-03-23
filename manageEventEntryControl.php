@@ -14,7 +14,7 @@ $pub = new publicist;
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-<link rel="stylesheet" href="http://www.graynwhite.com/taxi/_css/taxi1.css">
+<link rel="stylesheet" href="http://www.graypluswhite.com/taxi/_css/taxi1.css">
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
 <script src="../dough/Dough/dough.js"></script>	
@@ -28,7 +28,7 @@ $pub = new publicist;
   <div data-role="header" class="header">
   <h1>Manage Event Entry Control </h1>
   <center>
-  <img src="http://www.graynwhite.com/whtw/graynwhitebannereventMaint.jpg" alt="banner"/>
+  <img src="http://www.graypluswhite.com/whtw/graypluswhitebannereventMaint.jpg" alt="banner"/>
   </center>
   </div>
   
@@ -117,7 +117,7 @@ $pub = new publicist;
 	$("#wrkID").dblclick(function(){
 		console.log("Work Id double clicked");
 		var so=$("#wrkID").val();
-		var urlx="http://www.graynwhite.com/whtw/getEventEntryControlData.php?select_org=" + so;
+		var urlx="http://www.graypluswhite.com/whtw/getEventEntryControlData.php?select_org=" + so;
 		console.log("looking for " + urlx);
 		$.post(urlx,function(data){
 			alert("data loaded" + data);

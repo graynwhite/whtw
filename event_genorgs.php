@@ -15,7 +15,7 @@
            $sql=(" select Org_name, Org_num from orgs order by Org_name");
            $result = (@mysql_query($sql));
            if (!$result){ 
-              echo("<p>error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+              echo("<p>error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
            exit();
            }
            $orgselect = fopen($event_maint_file,"w");

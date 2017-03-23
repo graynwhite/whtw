@@ -18,7 +18,7 @@ $Event_number=$_GET['Event_number'];
         $sql = " Select * from events where Event_number = \"$Event_number\"";
         $result = @mysql_query($sql);
          if(!$result){
-                echo("<p>Could not execute query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+                echo("<p>Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
         exit();
          }
   }# end select by item number
@@ -32,7 +32,7 @@ $Event_number=$_GET['Event_number'];
            Date_from = \"$from_date\"";
     $result =  @mysql_query($sql);
     if (!$result) {
-     echo("<p> Could not execute query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+     echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
      exit();
     }
 }# end of select by org and date
@@ -45,7 +45,7 @@ if ( $action=="copy" ) {
            Date_from = \"$from_date\"";
     $result =  @mysql_query($sql);
     if (!$result) {
-     echo("<p> Could not execute query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+     echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
      exit();
     }
     $row=mysql_fetch_array($result);
@@ -69,19 +69,19 @@ if ( $action=="copy" ) {
     print("<p>$SQL</>");
     $result =  @mysql_query($SQL);
     if (!$result) {
-     echo("<p> Could not execute query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+     echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
      exit();
     }
     $sql= "select Max(Event_number) from events";
 	 	$result = @mysql_query($sql);
                 if (!$result) {
-	 		echo("<p> The maximum event number was not found Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> The maximum event number was not found Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 	 		}
     $sql = "Select * from events where Event_number = \"$event_number\"";
     $result = @mysql_query($sql);
         if (!$result) {
-	 		echo("<p> Event number not found Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Event number not found Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 	 		}
  }# end of copy operation
@@ -91,7 +91,7 @@ if ( $action == "browse" ){
              order by Date_from,  Time_start";
     $result = @mysql_query($sql);
     if ( !$result ){
-        echo("<p> Could not execute query Email this information to webmaster@graynwhite.com". mysql_error() . "</p>");
+        echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com". mysql_error() . "</p>");
         exit();
     }
     while ( $row= mysql_fetch_array($result) ){
@@ -123,7 +123,7 @@ if ( $action == "browse" ){
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="nl2br.js"></script>
-	<script type="text/javascript" src="http://www.graynwhite.com/markitup/markitup/jquery.js"></script>
+	<script type="text/javascript" src="http://www.graypluswhite.com/markitup/markitup/jquery.js"></script>
 	<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
 	<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
 	
@@ -185,8 +185,8 @@ if ( $action == "browse" ){
 	
 	$("#wrapimage").click(function(){
 		var imagename=prompt("Enter Image name ","notfound");
-		var workarea="%60img src=\"http://www.peggyjostudio.net/E/" + imagename + "\"" +
-		 " align=\"left\" width=\"28%\" alt=\"image Photo\" hspace=\"5\"%62";
+		var workarea="<img src=\"http://www.peggyjostudio.net/E/" + imagename + "\"" +
+		 " align=\"left\" width=\"28%\" alt=\"image Photo\" hspace=\"5\">";
 		 alert("work area is " + workarea);
 		$("#media").prepend(workarea);
 		alert("media is " + $("#media").val());
@@ -380,7 +380,7 @@ function UCWords(str){
 <body>
 <p><font size="7"><b>Event Maintenance</b></font></p>
 <hr>
-<form action="http://www.graynwhite.com/whtw/event_handle.php" method="post" name="inputForm" id="inputForm">
+<form action="http://www.graypluswhite.com/whtw/event_handle.php" method="post" name="inputForm" id="inputForm">
 <input type="hidden" name="operator" id="operator" value="Admin">
 
   <p>
@@ -419,7 +419,7 @@ echo("<input type=\"button\" id=\"insertAvatar\" value=\"Insert Avatar\">");
 echo("<input type=\"button\" id=\"wraptable\" value=\"Wrap in Table\">");
 echo("<input type=\"button\" id=\"insertAdvertisement\" value=\"Insert Advertisement\">");
 echo("<input type=\"button\" id=\"makesingle\" value=\"Make single spaced\">");
-echo("<input type=\"button\" id=\"wrapimage\" value=\"Insert image\">");
+echo("<input type=\"button\" id=\"wrapimage\" value=\"Wrap image\">");
 echo("<br /><hr />");
 echo("Price Members  <input type = \"text\" name = \"price_members\" size = \"20 \" value =\"$row[Price_members]\"><br>\n");
 echo("Price Guests  <input type = \"text\" name = \"price_guests\" size = \"20\" value = \"$row[Price_guests]\"><br>");

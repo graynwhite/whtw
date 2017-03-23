@@ -267,11 +267,11 @@ border: 2px solid black;
 			
              $result = mysql_query($sql);
   if (!$result) {
-                    trigger_error("<p>Error performing query Email this information to webmaster@graynwhite.com" . $sql .  mysql_error() . "</p> ");
+                    trigger_error("<p>Error performing query Email this information to cauleyfrank@gmail.com" . $sql .  mysql_error() . "</p> ");
                    
            }
   if ( mysql_num_rows($result) < 1 ){
-     echo("<p> No rows found in query Email this information to webmaster@graynwhite.com </p> ");
+     echo("<p> No rows found in query Email this information to cauleyfrank@gmail.com </p> ");
                     echo("<p> $sql </p>");
             exit();
            }

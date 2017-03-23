@@ -94,10 +94,10 @@ return (true);
 </head>
 
 <body>
-<p align="center"><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="468" height="60"  align="middle"/></p>
+<p align="center"><img src="graypluswhitebannereventMaint.jpg" alt="Gray and white logo" width="468" height="60"  align="middle"/></p>
 <p class="entryHeader style1"><? echo $header ?> -EVENT ENTRY:</p>
 <p>&nbsp;</p>
-<form method="POST" action="http://www.graynwhite.com/whtw/theater_entry.php"
+<form method="POST" action="http://www.graypluswhite.com/whtw/theater_entry.php"
 	onSubmit="return check_page(this)" name="theater">
   <p>Event or Performance
     <textarea name="activity" cols="120" rows="3" id="activity"></textarea>

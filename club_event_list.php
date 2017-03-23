@@ -34,7 +34,7 @@ require_once("../cgi-bin/connect.inc");
    
    $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected. Please email this information to webmaster@graynwhite.com" . mysql_error() . "<br />" . $sql . " </p>");
+	 		echo("<p> Your inquiry  was rejected. Please email this information to cauleyfrank@gmail.com" . mysql_error() . "<br />" . $sql . " </p>");
 	 		exit;
 
       		}

@@ -39,7 +39,7 @@
 				                    	
 				  
 				  
-				  <a href="http://www.graynwhite.com/TripsAndCruises.php" target="_blank">
+				  <a href="http://www.graypluswhite.com/TripsAndCruises.php" target="_blank">
                    <div style="border: 2px solid black; width:185px" >
 				  <img alt="club sponsored trips" 
                   src="http://www.peggyjostudio.net/E/clubTripsAdd.gif" 
@@ -141,7 +141,7 @@
                 
 				   
 				 <a
-                  href="http://www.graynwhite.com/AmericanSedan/" target="_blank">
+                  href="http://www.graypluswhite.com/AmericanSedan/" target="_blank">
 				 
 				  
                    <div style="border: 2px solid black; width:185px" >

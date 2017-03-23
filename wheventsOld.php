@@ -365,19 +365,19 @@ google_ad_channel = "5573910896";
     <Font COLOR="#FF0000">Click on the organization names below to reach their home pages</FONT></p>
     <p align="center"><Font COLOR="#FF0000">.</FONT>
       
-      <A HREF="http://www.graynwhite.com/ss/"> Sailing Singles</A><br>
+      <A HREF="http://www.graypluswhite.com/ss/"> Sailing Singles</A><br>
       
-      <A HREF="http://www.graynwhite.com/sg/">Somerset Singles Ski &amp; Golf Club</A><br>
+      <A HREF="http://www.graypluswhite.com/sg/">Somerset Singles Ski &amp; Golf Club</A><br>
       
       <A HREF="http://www.gmskiclub.org">GM Ski Club</A><br>
       
       
   <A HREF="http://www.skiwiskiclub.com">Skiwi Ski and Social Club</A></br>
- <a href="http://www.graynwhite.com/bethany/bethevents.php">Bethany</a><br>
+ <a href="http://www.graypluswhite.com/bethany/bethevents.php">Bethany</a><br>
      <A HREF="http://www.a2skiclub.org/a2skiclub">Ann Arbor Ski Club</A><br>
 	     <A HREF="http://www.tbirdskiclub.com">Ford Thunderbird Ski Club</A><br>
   <A HREF="http://www.msda.org">Michigan Swing Dance Association</A><br>    
-    <a href="http://www.graynwhite.com/bethany/bethevents.php">Bethany</a><br>
+    <a href="http://www.graypluswhite.com/bethany/bethevents.php">Bethany</a><br>
       <a href="http://click.linksynergy.com/fs-bin/stat?id=9aLN0L76PuM&offerid=7660&type=3&subid=0">Click here for Free Stuff</a>
       <IMG border=0 width=1 height=1 src="http://ad.linksynergy.com/fs-bin/show?id=9aLN0L76PuM&bids=7660&type=3&subid=0">
   <p>
@@ -393,7 +393,7 @@ google_ad_channel = "5573910896";
 </CENTER>
 </font></font>
 <p align="center">
-<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="4" startspan --><img src="../_vti_bin/fpcount.exe/C:/graynwhite/?Page=whtw/whevents.php|Image=0|Digits=4" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="56795" endspan --></p>
+<!--webbot bot="HitCounter" u-custom i-image="0" i-resetvalue="0" PREVIEW="&lt;strong&gt;[Hit Counter]&lt;/strong&gt;" i-digits="4" startspan --><img src="../_vti_bin/fpcount.exe/C:/graypluswhite/?Page=whtw/whevents.php|Image=0|Digits=4" alt="Hit Counter"><!--webbot bot="HitCounter" i-checksum="56795" endspan --></p>
 
 
 </BODY>

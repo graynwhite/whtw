@@ -23,12 +23,12 @@ if ( $nojs ) {
 
 $genVercode = rand( 10000, 99999 );
 
-require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . "/_private/gonetopress.php" );
-//include_once($_SERVER['DOCUMENT_ROOT']. "/javascript/dateHandling.js");
-//require_once($_SERVER['DOCUMENT_ROOT'] ."/stylesheets/Forms.css");
+//require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . "/newsletter/gonetopress.php" );
+include_once($_SERVER['DOCUMENT_ROOT']. "/javascript/dateHandling.js");
+require_once($_SERVER['DOCUMENT_ROOT'] ."/stylesheets/Forms.css");
 $sourceg = $_SERVER[ 'REMOTE_ADDR' ];
-//echo "the source is " . $sourceg;
-//exit;
+echo "the source is " . $sourceg;
+exit;
 $eventOrg = isset( $_COOKIE[ "eventOrg" ] ) ? $_COOKIE[ "eventOrg" ] : '';
 $eventName = isset( $_COOKIE[ "eventName" ] ) ? $_COOKIE[ "eventName" ] : '';
 $eventEmail = isset( $_COOKIE[ "eventEmail" ] ) ? $_COOKIE[ "eventEmail" ] : '';
@@ -42,25 +42,14 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 	<title>Organization Event Input Mobile</title>
 	<meta name="viewport" content="width=device-width, user-scalable=yes"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link rel="icon" type="image/vnd.microsoft.icon" href="../gwlogo.gif"/>
-	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css"/>
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/template.css"/>
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/validationEngine.jquery.css"/>
-	<link rel="stylesheet" href="mobile.css"/>
-
-
-
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/
-javascript"></script>
-		<script src="js/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>-->
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-	<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
-	<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine-en-gw.js"></script>
-	<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
-	<script src="http://www.graynwhite.com/dough/Dough/dough.min.js"></script>
-
+	<!--<link rel="icon" type="image/vnd.microsoft.icon" href="../gwlogo.gif"/> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css"/>
+	
+	
+	
 	<script>
 		$( document ).ready( function () {
 			var someDate = new Date();
@@ -227,7 +216,7 @@ javascript"></script>
 	</script>
 
 
-	<script src="http://www.graynwhite.com/gwanalytics.js"></script>
+	<script src="http://www.graypluswhite.com/gwanalytics.js"></script>
 </head>
 
 <body>
@@ -235,31 +224,32 @@ javascript"></script>
 	<div id="page1" data-role='page'>
 		<div data-role='header'>
 			<h1>Organization Event Information Input<br /> 
-<img src="graynwhitebannereventMaint.jpg" width="100%"  /></h1>
+			<img src="graynwhitebannereventMaint.jpg" width="50%" style="align-content: center"  /></h1>
+			<p>&nbsp;</p>
 		</div>
 
 		<div id="pgcontent" data-role='content'>
 			<p>The Gray and White Event Database is used to create multiple web site pages including the Peggy Jo Studio Newsletter </p>
 			<p style="color:red; text-decoration:underline" ;>
-				<? echo $presstime ?>
+				<!--<? echo $presstime ?>-->
 			</p>
 			<form action="../../emailControl/fakeMailToWebmaster.php?org=eventinput" method="post" name='formInput' id='formInput'>
 
 				<input type="hidden" name="Subject" value=" WHTW Entry"/>
 				<input type="hidden" name="Sender" value="+Email+"/>
-				<input type="hidden" name="recipient" value="webmaster@graynwhite.com"/>
+				<input type="hidden" name="recipient" value="cauleyfrank@gmail.com"/>
 				<input type="hidden" name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT"/>
 				<input type="hidden" name="bgcolor" value="#ffffff"/>
 				<input type="hidden" name="text_color" value="#000000"/>
 				<input type="hidden" name="refferSrc" value="<?echo $sourceg?>">
-				<input type="hidden" name="return_link_url" value="http://graynwhite.com/whtw"/>
+				<input type="hidden" name="return_link_url" value="http://graypluswhite.com/whtw"/>
 				<input type="hidden" id="minStartDate" name="minStartDate">
 				<input type="hidden" name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page"/>
 				<span class="Required">fields marked with a red asterisk * are required. </span>
 				</p>
 				<p>
 					This form will be eMailed to the webmaster for review and editing and will be placed in the Gray and White Event database as soon as possible. </p>
-				<p>To check the status of an event one can access the calendar of events at <a href="http://www.graynwhite.com/whtw/calendar.php">http://www.graynwhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form. </p>
+				<p>To check the status of an event one can access the calendar of events at <a href="http://www.graypluswhite.com/whtw/calendar.php">http://www.graypluswhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form. </p>
 
 				<h3 class="important">Do not use all caps words anywhere, only capitilize where appropriate- press releases will not accept them!!! Enabling javascript is required to use this form </h3>
 
@@ -281,7 +271,7 @@ javascript"></script>
 						<input type="radio" name="radioEntryType" value="Delete" id='typedelete'/>
 					</fieldset>
 
-					<p>Change/Delete (Send an email to webmaster@graynwhite.com to explain change or delete)
+					<p>Change/Delete (Send an email to cauleyfrank@gmail.com to explain change or delete)
 					</p>
 
 				</div>
@@ -398,7 +388,7 @@ javascript"></script>
 
 				<fieldset>
 					<legend>Recurring Event</legend>
-					<p>If this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the webmaster@graynwhite.com in order to delete those specific events.</p>
+					<p>If this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the cauleyfrank@gmail.com in order to delete those specific events.</p>
 					<p>If you have an event that occurs regularly, but there will be program additions and/or changes, do not classify it as a recurring event and leave tjis box blank</p>
 
 					<textarea name="recurComments" id="recurComments" Title+ "something"></textarea>
@@ -417,8 +407,7 @@ javascript"></script>
 		<div data-role="footer">
 			<h1>Organization input</h1>
 		</div>
-	</div>
-	<!-- End of page -->
+	</div>	<!-- End of page -->
 </body>
 
 </html>

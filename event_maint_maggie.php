@@ -18,7 +18,7 @@ $Event_number=$_GET['Event_number'];
         $sql = " Select * from events where Event_number = \"$Event_number\"";
         $result = @mysql_query($sql);
          if(!$result){
-                echo("<p>Could not execute query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+                echo("<p>Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
         exit();
          }
   }# end select by item number
@@ -32,7 +32,7 @@ $Event_number=$_GET['Event_number'];
            Date_from = \"$from_date\"";
     $result =  @mysql_query($sql);
     if (!$result) {
-     echo("<p> Could not execute query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+     echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
      exit();
     }
 }# end of select by org and date
@@ -45,7 +45,7 @@ if ( $action=="copy" ) {
            Date_from = \"$from_date\"";
     $result =  @mysql_query($sql);
     if (!$result) {
-     echo("<p> Could not execute query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+     echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
      exit();
     }
     $row=mysql_fetch_array($result);
@@ -69,19 +69,19 @@ if ( $action=="copy" ) {
     print("<p>$SQL</>");
     $result =  @mysql_query($SQL);
     if (!$result) {
-     echo("<p> Could not execute query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+     echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
      exit();
     }
     $sql= "select Max(Event_number) from events";
 	 	$result = @mysql_query($sql);
                 if (!$result) {
-	 		echo("<p> The maximum event number was not found Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> The maximum event number was not found Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 	 		}
     $sql = "Select * from events where Event_number = \"$event_number\"";
     $result = @mysql_query($sql);
         if (!$result) {
-	 		echo("<p> Event number not found Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Event number not found Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 	 		}
  }# end of copy operation
@@ -91,7 +91,7 @@ if ( $action == "browse" ){
              order by Date_from,  Time_start";
     $result = @mysql_query($sql);
     if ( !$result ){
-        echo("<p> Could not execute query Email this information to webmaster@graynwhite.com". mysql_error() . "</p>");
+        echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com". mysql_error() . "</p>");
         exit();
     }
     while ( $row= mysql_fetch_array($result) ){
@@ -260,7 +260,7 @@ function UCWords(str){
 <body>
 <p><font size="7"><b>Event Maintenance</b></font></p>
 <hr>
-<form action="http://www.graynwhite.com/whtw/event_handle.php" method="post" name="inputForm" id="inputForm">
+<form action="http://www.graypluswhite.com/whtw/event_handle.php" method="post" name="inputForm" id="inputForm">
 <input type="hidden" name="operator" id="operator" value="Admin">
 
   <p>

@@ -67,14 +67,14 @@ $place_full = $xml->place_name . '. ' . $xml->place_address . ', ' . $xml->city 
 
 function clearLast()
 {
-var fileToClear = 'http://www.graynwhite.com' + document.getElementById('fileToRead').value
+var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('fileToRead').value
 	
 	alert('file to clear is ' + fileToClear)
 	unlink(fileToClear)
 }		
  function RemoveFile()
    {
-     var fileToClear = 'http://www.graynwhite.com' + document.getElementById('fileToRead').value
+     var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('fileToRead').value
 	 IntraLaunch.DeleteFile (fileToClear);
     
      // Check if gone
@@ -95,10 +95,10 @@ var fileToClear = 'http://www.graynwhite.com' + document.getElementById('fileToR
 
 <body>
 <h2>Process Recomendation </h2>
-<form action="http://www.graynwhite.com/emailControl/mailToWebmaster.php?org=recommend2" method="post" name="reccommend" id="reccommend" title="Recommend a Friend Form">
+<form action="http://www.graypluswhite.com/emailControl/mailToWebmaster.php?org=recommend2" method="post" name="reccommend" id="reccommend" title="Recommend a Friend Form">
 
 	
-   <input name="Email" type="hidden" value="cauleyfj@graynwhite.com">
+   <input name="Email" type="hidden" value="cauleyfj@graypluswhite.com">
 	
      <table width="927" border="1" >
 	  	<tr>

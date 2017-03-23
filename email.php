@@ -6,7 +6,7 @@
                 $sql="select distinct email from core";
                 $result = @mysql_query($sql);
                 if(!$result){
-                        echo("<php> Query error Email this information to webmaster@graynwhite.com" . mysql_error() .
+                        echo("<php> Query error Email this information to cauleyfrank@gmail.com" . mysql_error() .
                         "</P>");
                         exit();
                 }

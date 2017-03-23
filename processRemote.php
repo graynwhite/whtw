@@ -334,14 +334,14 @@ return true;
 }
 function clearLast()
 {
-var fileToClear = 'http://www.graynwhite.com' + document.getElementById('fileToRead').value
+var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('fileToRead').value
 
 	alert('file to clear is ' + fileToClear)
 	unlink(fileToClear)
 }
  function RemoveFile()
    {
-     var fileToClear = 'http://www.graynwhite.com' + document.getElementById('fileToRead').value
+     var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('fileToRead').value
 	 IntraLaunch.DeleteFile (fileToClear);
 
      // Check if gone

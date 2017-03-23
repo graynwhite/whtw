@@ -33,7 +33,7 @@
    echo("<p> Looking for $changeorg </p>");
    $result = @mysql_query(" SELECT * FROM orgs where Org_num =  \"$changeorg\"  " );
 		if (!$result){
-		  echo("<P>Error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p>");
+		  echo("<P>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
                      	exit;
 			}
 	     if   ($row = mysql_fetch_array($result)){

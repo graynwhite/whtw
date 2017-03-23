@@ -5,7 +5,7 @@
 <title>Event Input Handler</title>
 </head>
 <body>
-<p align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></p>
+<p align="center"><img src="graypluswhitebannereventMaint.jpg" width="468" height="60"></p>
 <p><font size="7"><b>Event Maintenance</b></font></p>
 <hr>
 <?PHP

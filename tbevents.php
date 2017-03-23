@@ -54,7 +54,7 @@ google_ad_channel = "tbevents";
 </div>
 <H1 align="center">
 <FONT FACE="ARIAL,HELVETICA"><FONT COLOR="#FF0000">Thunderbirds Ski Club</FONT></FONT></H1>
-<P><A HREF="http://www.graynwhite.com/whtw/whevents.php">Click here to find out what's happening this week</A>
+<P><A HREF="http://www.graypluswhite.com/whtw/whevents.php">Click here to find out what's happening this week</A>
 
 <div align="center">
     <table border="0" cellpadding="0" cellspacing="0" >
@@ -99,7 +99,7 @@ google_ad_channel = "tbevents";
 			$result = mysql_query($mysql_query);
            if (!$result)
 		   { 
-                echo("<p>Error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . $mysql_query . "</p> ");
+                echo("<p>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . $mysql_query . "</p> ");
       
             exit();
                        }
@@ -189,7 +189,7 @@ google_ad_channel ="tbirdevents";
   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </div>
-<CENTER><FONT FACE="ARIAL, HELVETICA"><FONT COLOR="#FF0000"><A HREF="mailto:webmaster@graynwhite.com">or
+<CENTER><FONT FACE="ARIAL, HELVETICA"><FONT COLOR="#FF0000"><A HREF="mailto:cauleyfrank@gmail.com">or
 request information via E-Mail</A></FONT></FONT></CENTER>
 
 <CENTER>
@@ -199,7 +199,7 @@ request information via E-Mail</A></FONT></FONT></CENTER>
 </CENTER>
 
 
-<CENTER><A HREF="http://www.graynwhite.com/whtw/whevents.php"><FONT SIZE="+2"><B><I>Click here to find out what's happening this week.</I></B></FONT></A></CENTER>
+<CENTER><A HREF="http://www.graypluswhite.com/whtw/whevents.php"><FONT SIZE="+2"><B><I>Click here to find out what's happening this week.</I></B></FONT></A></CENTER>
 <CENTER>
 </CENTER>
 

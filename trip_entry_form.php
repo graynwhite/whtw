@@ -144,7 +144,7 @@ body {
 </head>
 
 <body>
-<p align="center"><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="468" height="60"  align="middle"/></p>
+<p align="center"><img src="graypluswhitebannereventMaint.jpg" alt="Gray and white logo" width="468" height="60"  align="middle"/></p>
 <p align="center"><span class="entryHeader style1"><? echo $header ?> -EVENT ENTRY:</span></p>
 <form method="POST" onSubmit="return check_page(this)"  action="tripEntry.php"
 	name="entry_form">
@@ -241,7 +241,7 @@ Recurring</label>
   </label>
 </p>
 <p>
-    Password
+  ï¿½ Password
  
   
    <input type="password" name="yourpswd" size="20"> 

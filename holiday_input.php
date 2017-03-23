@@ -1,17 +1,19 @@
-<?php
-/** @package 
+<?php>
 
-        holiday_input
-        
-        Copyright()Gray and White Computing 2004
-        
-        Author: FRANK J CAULEY
-        Created: FJC 11/22/2004 8:05:05 PM
-	Last change: FJC 11/22/2004 8:13:09 PM
-*/
-?>
+	print_r($_POST);
+echo("array printed");
+printArray($_POST);
+	function printArray($array){
+     foreach ($array as $key => $value){
+        echo "$key => $value";
+        if(is_array($value)){ //If $value is an array, print it as well!
+            printArray($value);
+        }  
+    } 
+	}
+	exit();
 
-<?php
+
 $return_message='';
 $break="\<br \/>";
 $break="\n";
@@ -22,6 +24,7 @@ $return_message="Pass is " . $_POST["passx"];
 
  if (trim($_POST['pasx']) != "/FJ6r1n11M" ){
 	 $return_message.="<br />Your are not authorized to use this syastem";
+	 exit;
 	}else{
 	$return_message="Starting insert process";
 
@@ -87,7 +90,7 @@ $media=$activity;
 }
 
 ?>
-<!doctype html>
+<!--<!doctype html>
 <html>
 
 <head>
@@ -96,8 +99,8 @@ $media=$activity;
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>Holiday or special event input</title>
 <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/template.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/validationEngine.jquery.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/template.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/validationEngine.jquery.css" />
 	<link rel="stylesheet" href="mobile.css"/>
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
@@ -109,3 +112,4 @@ $media=$activity;
 The return message is <?php echo $return_message ?> 
 </body>
 </html>
+-->

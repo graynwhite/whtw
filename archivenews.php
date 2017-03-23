@@ -37,7 +37,7 @@ if ( !$newsresult ){
 
  echo("<div id=\"center\">");
  
-echo "<h2> These archived newsletters contain the events and details as of the publication date and any changes are not included. If you are interested in seeing the current events for the next week that contain any changes after the publication please <a href=\"http://www.graynwhite.com/tweener.php\"> click here</a></h2>";
+echo "<h2> These archived newsletters contain the events and details as of the publication date and any changes are not included. If you are interested in seeing the current events for the next week that contain any changes after the publication please <a href=\"http://www.graypluswhite.com/tweener.php\"> click here</a></h2>";
 
  echo("<table border=\"1\" ");
  echo("<tr><td colspan=\"5\"  align=\"center\">Archived Newsletters (Most recent is  first)</td></tr>");

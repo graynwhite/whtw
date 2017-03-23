@@ -24,18 +24,18 @@ $listbox="<div data-role=\"fieldcontain\">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/template.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/validationEngine.jquery.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/template.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/validationEngine.jquery.css" />
 	<link rel="stylesheet" href="mobile.css"/>
 	
 		
 		
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-		<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
-		<script src="http://www.graynwhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
-		<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
-		<script src="http://www.graynwhite.com/dough/Dough/dough.min.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
+		<script src="http://www.graypluswhite.com/dough/Dough/dough.min.js"></script>
 <link rel="stylesheet" href="wide.css"/>		
 	<script>
 	$(document).ready(function(){
@@ -60,14 +60,14 @@ $listbox="<div data-role=\"fieldcontain\">
 <meta name="viewport" content="width=device-width, user-scalable=yes" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
-<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/template.css" />
-<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/validationEngine.jquery.css" />
+<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/template.css" />
+<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/validationEngine.jquery.css" />
 <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-<!--<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>-->
-<script src="http://www.graynwhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>	
-<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
-<script src="http://www.graynwhite.com/dough/Dough/dough.min.js"></script>
+<!--<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>-->
+<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>	
+<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
+<script src="http://www.graypluswhite.com/dough/Dough/dough.min.js"></script>
 <link rel="stylesheet" href="wide.css"/>
 
 <title>Theater Event Entry</title>
@@ -87,7 +87,7 @@ $listbox="<div data-role=\"fieldcontain\">
 <div data-role="page" id="page">
   <div data-role='header'>
 <h1>Theater Event Information Input<br /> 
-<img src="graynwhitebannereventMaint.jpg" width="100%"  /></h1>
+<img src="graypluswhitebannereventMaint.jpg" width="100%"  /></h1>
 </div>
 
   

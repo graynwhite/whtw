@@ -1,5 +1,5 @@
 <?php
-require_once("../../phpClasses/Class_Ire.php");
+require_once("../phpClasses/Class_Ire.php");
 $ire = new IREclass;
 $ire->setHeader('Art Fairs,Festivals, Community Events and Google Calendar');
 $header = $ire->getHeader();
@@ -7,7 +7,8 @@ $header = $ire->getHeader();
 ?>
 
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
 
 <meta http-equiv="Content-Language" content="en-us">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -15,11 +16,11 @@ $header = $ire->getHeader();
 <title>Art,Festivals and Community Input</title>
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
-<script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
-
-<script src="publicist.json"></script>
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> src="markitup.json"></script>
+		
+<link rel="stylesheet" type="text/css" href="markitup.css" />
+<link rel="stylesheet" type="text/css" href="html.css" />
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
 
@@ -28,8 +29,16 @@ $header = $ire->getHeader();
 <script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
 <script type="text/javascript" src="../markitup/sets/html/set.js"></script>
 
+<script language="javascript">
+$(document).ready(function()	{
+   $('#html').markItUp(myHtmlSettings);
+});
+</script>
+
+
 
 <script type="text/javascript">
+	
 
 function testit(){
 alert("attest");
@@ -232,8 +241,8 @@ document.entry_form.other_site_text.value = place_work;
 </script>
 
 
-<link rel="stylesheet" type="text/css" href="../markitup/skins/markitup/style.css" />
-<link rel="stylesheet" type="text/css" href="../markitup/sets/html/style.css" />
+<link rel="stylesheet" type="text/css" href="markitup/style.css" />
+<link rel="stylesheet" type="text/css" href="html/style.css" />
 
 <style type="text/css">
 
@@ -307,8 +316,8 @@ function scrollUp(){
 	scrollTo(0,0);
 	}
 	
-/*function assignDate() {
-  var dateEl = document.getElementById("today");
+function assignDate() {
+  var dateEl = document.getElementById("date_from");
   var today = new Date();
   dateEl.textContent = today.toLocaleDateString();
   dateEl.setAttribute("datetime", today.toISOString());
@@ -318,11 +327,12 @@ window.addEventListener("load", assignDate);*/
 </head>
 
 <body>
+
 <div data-role="page" theme="b">
 
 <div data-role = "header" >
 
-<p align="center" ><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="80%"  align="middle"/></p>
+<p align="center" ><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="30%"  align="middle"/></p>
 <p align="center"><span class="entryHeader style1"><? echo $header ?> -EVENT ENTRY:</p>
 </div>
 
@@ -333,17 +343,22 @@ window.addEventListener("load", assignDate);*/
     <a id="topOfPage" ></a>
 
 	<input type="hidden" name="website"/>
-<?php 
-/*$orgRadio = $ire->bldOrgRadio("artFestivalOrgs.xml",80);
-echo $orgRadio;*/
-include_once("../../phpClasses/orgSelect.inc");
-$venueRadio = $ire->bldVenueRadio("theaterVenues.xml",80);
-echo $venueRadio;
+<?php
+$orglist="";	
+include_once("../phpClasses/orgSelect.php");	
+//$orgRadio = $ire->bldOrgRadio();
+
+
+	echo $orglist;
+//$orgRadio=	
+
+//$venueRadio = $ire->bldVenueRadio("theaterVenues.xml",80);
+//echo $venueRadio;
 $original_date=$ire->bldDateEntryShort();
 ?>
 
 <p>Media Input:
-  <textarea name="media" id="media" class="markItUp" cols="100%"  rows="10"></textarea><br/>
+  <textarea name="media" id="html" class="markItUp" cols="100%"  rows="10"></textarea><br/>
   <input type="button" id="breakbutton" value="Break lines"/>
   <input type="button" id="cleanupbutton" value="Clean up Calendar"/>
   
@@ -457,7 +472,7 @@ Source of input: <input name="eventSource" id="eventSource"/><br />
 <!--<input type="button" value="acknowledge" name="acknowledge" id="acknowledgebutton" onClick="testit()"/> -->
 </form>
 </div> <!-- End of content -->
-<div data-role="footer"><p align="center"><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="80%" align="middle"/></p>
+<div data-role="footer"><p align="center"><img src="graynwhitebannereventMaint.jpg" alt="Gray and white logo" width="30%" align="middle"/></p>
 </div>
 	</div> <!-- end of page -->
 </body>

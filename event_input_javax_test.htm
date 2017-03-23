@@ -133,7 +133,7 @@ function get_credit($select_org){
  //   print("<br /> " . $sql);
     $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
      		}
 ?>
@@ -228,7 +228,7 @@ function check_page(form){
         if ( form.allow_recurring.value == "N" && form.action[1].checked ){
             alert("Recurring events will not be generated. \n"
 			+ "If this is a recurring event, enter the first event in the series \n"
-			+ " then send a separate email to events\@graynwhite.com and explain \n"
+			+ " then send a separate email to events\@graypluswhite.com and explain \n"
 			+ " the frequency and start and end date.");
             form.action[0].focus()
             return false
@@ -567,11 +567,11 @@ function MakeArray(n){
 </HEAD>
 
 <BODY>
-<H1 align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></H1>
+<H1 align="center"><img src="graypluswhitebannereventMaint.jpg" width="468" height="60"></H1>
 <H1>
   <?=$page_title?>
 </H1>
-<Form onSubmit="return check_page(this)" action ="http://graynwhite.com/cgi-bin/club_entry_dbi_test.cgi"  name="form">
+<Form onSubmit="return check_page(this)" action ="http://graypluswhite.com/cgi-bin/club_entry_dbi_test.cgi"  name="form">
 <Table Align = "left" Border= "1" Width = "903" height="954">
 <input type="hidden" name="confirm" id="confirm" value="<?=$confirm?>">
 <input type="hidden" name="select_org" id="select_org" value="<?=$select_org?>">

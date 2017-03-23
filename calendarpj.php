@@ -97,7 +97,7 @@ print ("<p> from $dbbegin to $dbend </P>");
         // request items from the events table
            $result = @mysql_query($sql);
            if (!$result) {
-                    echo("<p>Error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+                    echo("<p>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
       
             exit();
            }

@@ -13,7 +13,7 @@ include("../cgi-bin//connect.inc");
            $sql=(" select Org_name, Org_num from orgs order by Org_name");
            $result = (@mysql_query($sql));
            if (!$result){ 
-              echo("<p>error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+              echo("<p>error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
            exit();
            }
 ?>
@@ -41,7 +41,7 @@ var foundError = false;
 
 </HEAD>
 <BODY>
-<H1 align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></H1>
+<H1 align="center"><img src="graypluswhitebannereventMaint.jpg" width="468" height="60"></H1>
 <H1>Club Event Maintenance</H1>
 <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
 function FrontPage_Form1_Validator(theForm)
@@ -76,7 +76,7 @@ function FrontPage_Form1_Validator(theForm)
   }
   return (true);
 }
-//--></script><!--webbot BOT="GeneratedScript" endspan --><Form action ="http://graynwhite.com/whtw/event_maint.php" onSubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
+//--></script><!--webbot BOT="GeneratedScript" endspan --><Form action ="http://graypluswhite.com/whtw/event_maint.php" onSubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
 <Table Align = "left" Border= "1" Width = "903" height="133">
 <td width="186" height="1">Your Identification: (email)</td>
 <TD width="309" height="1">

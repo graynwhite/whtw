@@ -53,7 +53,7 @@
 		$result = @mysql_query(" SELECT * FROM core order by
                 email");
 		if (!$result){
-			echo("<P>Error performing query Email this information to webmaster@graynwhite.com: " . mysql_error() . "</p>");
+			echo("<P>Error performing query Email this information to cauleyfrank@gmail.com: " . mysql_error() . "</p>");
 			exit;
 			}
 		while ($row = mysql_fetch_array($result)){

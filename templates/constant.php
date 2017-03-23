@@ -162,7 +162,7 @@ bgColor=#003366>
                   as needed to curb cravings or for energy.<BR><BR>Click 
                   anywhere in this Advertisement or send Peggy Jo an email to 
                   get more information. </CENTER></DIV></A><A 
-                  href="http://rs6.net/tn.jsp?t=yi77lecab.0.qrp5xdcab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graynwhite.com%2FTripsAndCruises.php">
+                  href="http://rs6.net/tn.jsp?t=yi77lecab.0.qrp5xdcab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graypluswhite.com%2FTripsAndCruises.php">
                   <DIV id=pjadd><IMG alt="club sponsored trips" 
                   src="http://www.peggyjostudio.net/E/clubTripsAdd.gif" 
                   width=185> </DIV></A>
@@ -185,7 +185,7 @@ bgColor=#003366>
                   </DIV>
                   <DIV id=pjadd align=center><IMG alt="Lilly add" 
                   src="http://www.peggyjostudio.net/E/lillysAdd.jpg"> </DIV><A 
-                  href="http://rs6.net/tn.jsp?t=yi77lecab.0.f7ropbcab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graynwhite.com%2Fphpauction%2Fitem.php%3Fid%3D352%2F">
+                  href="http://rs6.net/tn.jsp?t=yi77lecab.0.f7ropbcab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graypluswhite.com%2Fphpauction%2Fitem.php%3Fid%3D352%2F">
 
                   <DIV id=pjadd><IMG alt="northern StarAdvertisement" 
                   src="http://www.peggyjostudio.net/E/nsadv.jpg" align=center> 
@@ -227,7 +227,7 @@ bgColor=#003366>
                   <DIV id=pjadd align=center><IMG 
                   src="http://www.peggyjostudio.net/E/tcca.jpg" Add? Center 
                   Community ='alt="Troy'> </DIV><A 
-                  href="http://rs6.net/tn.jsp?t=yi77lecab.0.4jalq9bab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graynwhite.com%2FAmericanSedan%2F">
+                  href="http://rs6.net/tn.jsp?t=yi77lecab.0.4jalq9bab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graypluswhite.com%2FAmericanSedan%2F">
 
                   <DIV id=pjadd align=center><IMG alt="American Sedan Add" 
                   src="http://www.peggyjostudio.net/E/asedanadv.gif" width=185 
@@ -289,7 +289,7 @@ bgColor=#003366>
             <P></P>
             <P>
             <DIV><A style="FONT-WEIGHT: bold; COLOR: #003366" 
-            href="http://rs6.net/tn.jsp?t=yi77lecab.0.abmwdqbab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graynwhite.com%2Findex.php" 
+            href="http://rs6.net/tn.jsp?t=yi77lecab.0.abmwdqbab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graypluswhite.com%2Findex.php" 
             shape=rect color="#003366">Gray and White Computing</A> </DIV><BR>
             <DIV><A style="FONT-WEIGHT: bold; COLOR: #003366" 
             href="http://rs6.net/tn.jsp?t=yi77lecab.0.dwjuh7bab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.peggyjostudio.net%2FAdvertisingRates.html" 
@@ -307,13 +307,13 @@ bgColor=#003366>
             size=4>&nbsp;Quick Links... </FONT>
             <UL>
               <LI><A style="FONT-WEIGHT: bold; COLOR: #003366" 
-              href="http://rs6.net/tn.jsp?t=yi77lecab.0.w44nn9n6.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graynwhite.com%2Fss%2Fssevents.php" 
+              href="http://rs6.net/tn.jsp?t=yi77lecab.0.w44nn9n6.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graypluswhite.com%2Fss%2Fssevents.php" 
               shape=rect color="#003366">Sailing Singles</A> 
               <LI><A style="FONT-WEIGHT: bold; COLOR: #003366" 
-              href="http://rs6.net/tn.jsp?t=yi77lecab.0.y44nn9n6.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graynwhite.com%2Fsg%2Fsgevents.php" 
+              href="http://rs6.net/tn.jsp?t=yi77lecab.0.y44nn9n6.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graypluswhite.com%2Fsg%2Fsgevents.php" 
               shape=rect color="#003366">Somerset Singles Ski and Golf Club</A> 
               <LI><A style="FONT-WEIGHT: bold; COLOR: #003366" 
-              href="http://rs6.net/tn.jsp?t=yi77lecab.0.x44nn9n6.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graynwhite.com%2Fwhtw%2Fwhevents.php" 
+              href="http://rs6.net/tn.jsp?t=yi77lecab.0.x44nn9n6.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graypluswhite.com%2Fwhtw%2Fwhevents.php" 
               shape=rect color="#003366">What's happening This week</A> 
               <LI><A style="FONT-WEIGHT: bold; COLOR: #003366" 
               href="http://rs6.net/tn.jsp?t=yi77lecab.0.944nn9n6.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fkirksingles.org" 
@@ -340,7 +340,7 @@ bgColor=#003366>
                   style="FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Verdana,Geneva,Arial,Helvetica,sans-serif" 
                   face=Verdana,Geneva,Arial,Helvetica,sans-serif color=#000000 
                   size=2><A 
-                  href="http://ui.constantcontact.com/sa/fwtf.jsp?m=1011148101198&amp;ea=cauleyfj%40graynwhite.com&amp;a=1101805809944" 
+                  href="http://ui.constantcontact.com/sa/fwtf.jsp?m=1011148101198&amp;ea=cauleyfj%40graypluswhite.com&amp;a=1101805809944" 
                   target=_blank>Forward email</A> <FONT 
                   style="FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif" 
                   face="Verdana, Geneva, Arial, Helvetica, sans-serif" 
@@ -1622,7 +1622,7 @@ border: 2px solid black;
 
                         <DIV></DIV>
                         <P><A style="FONT-WEIGHT: bold; COLOR: #003366" 
-                        href="http://rs6.net/tn.jsp?t=yi77lecab.0.vzy7sccab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graynwhite.com%2Fphpauction%2Fitem.php%3Fid%3D322" 
+                        href="http://rs6.net/tn.jsp?t=yi77lecab.0.vzy7sccab.osf4rwn6.3096&amp;ts=S0274&amp;p=http%3A%2F%2Fwww.graypluswhite.com%2Fphpauction%2Fitem.php%3Fid%3D322" 
                         shape=rect color="#003366">Visit the auction site</A> 
                         </P></FONT></TD></TR></TBODY></TABLE></TD></TR>
               <TR>
@@ -1682,7 +1682,7 @@ border: 2px solid black;
         <TR>
           <TD colSpan=2><FONT face=verdana,arial size=1><B><A 
             style="COLOR: #0000ff" 
-            href="http://ui.constantcontact.com/sa/fwtf.jsp?m=1011148101198&amp;ea=cauleyfj%40graynwhite.com&amp;a=1101805809944" 
+            href="http://ui.constantcontact.com/sa/fwtf.jsp?m=1011148101198&amp;ea=cauleyfj%40graypluswhite.com&amp;a=1101805809944" 
             target=_blank>Forward email</A></B></FONT><BR><BR></TD></TR>
         <TR>
           <TD><FONT face=verdana,arial size=1><FOOTERCONTENT><DIV>.</DIV>

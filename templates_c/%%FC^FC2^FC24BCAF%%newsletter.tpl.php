@@ -67,7 +67,7 @@ Spiritually, Physically, and Mentally to be Active which brings Good Health"</di
                 <p><strong>(Click on the date to skip to that day's events. Use the <br />
                   &quot; Back to Top&quot; button to get back here.<br />
                 All email programs do not support these links) </strong></p>
-                <p><a href="http://www.graynwhite.com/TripsAndCruises.php"><strong>Club Sponsored Trips and Cruises</strong></a>  </p>
+                <p><a href="http://www.graypluswhite.com/TripsAndCruises.php"><strong>Club Sponsored Trips and Cruises</strong></a>  </p>
                 <p><a style="font-weight: bold; color:  #003366" 
                   href="#monday" ><?php echo $this->_tpl_vars['mondate']; ?>
 </a> </p>
@@ -107,7 +107,7 @@ unset($_smarty_tpl_vars);
             >Link to Charley the singing hot dog 
                     Man </a> </p>
                   <p> <a style="font-weight: bold; : #003366" 
-            href="http://www.graynwhite.com/index.php"> Gray and White Computing</a> </p>
+            href="http://www.graypluswhite.com/index.php"> Gray and White Computing</a> </p>
                   <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "links.tpl", 'smarty_include_vars' => array()));
 $this->_tpl_vars = $_smarty_tpl_vars;

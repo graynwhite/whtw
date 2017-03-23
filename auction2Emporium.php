@@ -33,14 +33,14 @@ while($row = mysql_fetch_array($result))
 			$pic_directory_source = "http://www.peggyjostudio.net/emporium/Images/";
 			$pic_array = explode('/',$row['pict_url']);
 			$ptr = count($pic_array) ;
-			$pic_main_sm = "http://www.graynwhite.com/phpauction/uploaded/thumbs/" . $pic_array[$ptr-1];
+			$pic_main_sm = "http://www.graypluswhite.com/phpauction/uploaded/thumbs/" . $pic_array[$ptr-1];
 			$pic_image_source = $pic_array[$ptr-1];
 			}
 				else
 				{
-					$pic_directory_source = "http://www.graynwhite.com/phpauction/uploaded/";
-					$pic_main = "http://www.graynwhite.com/phpauction/uploaded/" . $row['pict_url'] ;
-					$pic_main_sm = "http://www.graynwhite.com/phpauction/uploaded/thumbs/" .$row['pict_url'];
+					$pic_directory_source = "http://www.graypluswhite.com/phpauction/uploaded/";
+					$pic_main = "http://www.graypluswhite.com/phpauction/uploaded/" . $row['pict_url'] ;
+					$pic_main_sm = "http://www.graypluswhite.com/phpauction/uploaded/thumbs/" .$row['pict_url'];
 					
 					$pic_image_source = $row['pict_url'];
 					}

@@ -100,8 +100,8 @@ $place_full = $xml->place_name . '. ' . $xml->place_address . ', ' . $xml->city 
 	
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	
-	<!--<link rel="stylesheet" href="http://www.graynwhite.com/valeng/css/template.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/valeng/css/validationEngine.jquery.css" />-->
+	<!--<link rel="stylesheet" href="http://www.graypluswhite.com/valeng/css/template.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/valeng/css/validationEngine.jquery.css" />-->
 	<link rel="stylesheet" href="../whtw/mobile.css"/>
 	
 		
@@ -260,14 +260,14 @@ return true;
 }
 function clearLast()
 {
-var fileToClear = 'http://www.graynwhite.com' + document.getElementById('fileToRead').value
+var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('fileToRead').value
 
 	alert('file to clear is ' + fileToClear)
 	unlink(fileToClear)
 }
  function RemoveFile()
    {
-     var fileToClear = 'http://www.graynwhite.com' + document.getElementById('fileToRead').value
+     var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('fileToRead').value
 	 IntraLaunch.DeleteFile (fileToClear);
 
      // Check if gone

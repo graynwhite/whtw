@@ -12,7 +12,7 @@ $sql = "select * from events where Event_org = \"$searchArg\" and Date_from >= \
 }
 $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected. Please email this information to webmaster@graynwhite.com " . mysql_error() . "<br />" . $sql . " </p>");
+	 		echo("<p> Your inquiry  was rejected. Please email this information to cauleyfrank@gmail.com " . mysql_error() . "<br />" . $sql . " </p>");
 	 		exit;
 
       		}

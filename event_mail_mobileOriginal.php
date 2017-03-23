@@ -28,8 +28,8 @@ $eventPhone=isset($_COOKIE["eventPhone"]) ? $_COOKIE["eventPhone"] : '';
  	type="image/vnd.microsoft.icon"
  	href="../gwlogo.gif" />
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/template.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/validationEngine.jquery.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/template.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/validationEngine.jquery.css" />
 	<link rel="stylesheet" href="mobile.css"/>
     
 	
@@ -37,10 +37,10 @@ $eventPhone=isset($_COOKIE["eventPhone"]) ? $_COOKIE["eventPhone"] : '';
 		
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-		<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
-		<script src="http://www.graynwhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
-		<script src="http://www.graynwhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
-		<script src="http://www.graynwhite.com/dough/Dough/dough.min.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
+		<script src="http://www.graypluswhite.com/dough/Dough/dough.min.js"></script>
 		
 	<script>
 	$(document).ready(function(){
@@ -203,14 +203,14 @@ function setCookie(cname, cvalue, exdays) {
 </script>
  
 
-<script src="http://www.graynwhite.com/gwanalytics.js"></script>
+<script src="http://www.graypluswhite.com/gwanalytics.js"></script>
 </head>
 <body>
 
 <div id="page1" data-role='page'>
 <div data-role='header'>
 <h1>Organization Event Information Input<br /> 
-<img src="graynwhitebannereventMaint.jpg" width="100%"  /></h1>
+<img src="graypluswhitebannereventMaint.jpg" width="100%"  /></h1>
 </div>
 
 <div id="pgcontent" data-role='content'>
@@ -220,18 +220,18 @@ function setCookie(cname, cvalue, exdays) {
   
     <input type="hidden" name="Subject" value=" WHTW Entry" />
     <input type="hidden" name="Sender" value="+Email+" />
-    <input type="hidden" name="recipient" value="webmaster@graynwhite.com" />
+    <input type="hidden" name="recipient" value="cauleyfrank@gmail.com" />
     <input type="hidden" name="env_report" value="REMOTE_HOST,HTTP_USER_AGENT" />
     <input type="hidden" name="bgcolor" value="#ffffff" />
     <input type="hidden" name="text_color" value="#000000" />
 	<input type="hidden" name="refferSrc"  value="<?echo $sourceg?>">
-    <input type="hidden" name="return_link_url" value="http://graynwhite.com/whtw" />
+    <input type="hidden" name="return_link_url" value="http://graypluswhite.com/whtw" />
     <input type="hidden" name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page" />
     <span class="Required">fields marked with a red asterisk * are required. </span></p>
   <p>
   This form will be eMailed to the webmaster for review and editing and will be placed in the Gray and White Event database as soon as possible.  </p>
   <p>To  
-  check the status of an event one can access the calendar of events at <a href="http://www.graynwhite.com/whtw/calendar.php">http://www.graynwhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form.  </p>
+  check the status of an event one can access the calendar of events at <a href="http://www.graypluswhite.com/whtw/calendar.php">http://www.graypluswhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form.  </p>
   
   <h3 class="important">Do not use all caps words anywhere, only capitilize where appropriate- press releases will not accept them!!! Enabling javascript is required to use this form </h3>
  
@@ -254,7 +254,7 @@ function setCookie(cname, cvalue, exdays) {
      </fieldset>
 	
 	<p>Change/Delete 
-        (Send an email to webmaster@graynwhite.com to explain change or delete)
+        (Send an email to cauleyfrank@gmail.com to explain change or delete)
 	</p>
 	
 	</div> <!-- field contain -->
@@ -412,7 +412,7 @@ function setCookie(cname, cvalue, exdays) {
 		</fieldset>
    <fiedset>
       <legend>Recurring Event</legend>
-	   <p>If  this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the webmaster@graynwhite.com in order to delete those specific events.</p>
+	   <p>If  this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the cauleyfrank@gmail.com in order to delete those specific events.</p>
   <p>If you have an event that occurs regularly, but there will be program additions and/or changes, do not classify it as a recurring event</p>    
 		
 				

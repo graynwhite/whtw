@@ -187,7 +187,7 @@ DEFINE ("INCLUDED", "yes");
   <tr>
    <td width="25%"></td>
     
-    <td width="25%"><div align="center"><a href="http://www.graynwhite.com/ss/"></a>
+    <td width="25%"><div align="center"><a href="http://www.graypluswhite.com/ss/"></a>
       <div align="center"><a href="http://www.peggyjostudio.net/archivenews.php">Peggy Jo Studio Newsletter</a> </div>
     </div></td>
 	  <td width="25%"><div align="center"><a href="http://sssgc.net">Somerset Singles Ski & Golf</a></div></td>
@@ -195,7 +195,7 @@ DEFINE ("INCLUDED", "yes");
 	  <td width="25%"><div align="center"><a href="http://www.skiwiskiclub.com">Skiwi Ski and Social Club </a></div></td>
     </tr>
   <tr>
-    <td><div align="center"><a href="http://www.graynwhite.com/bethany/bethevents.php">Bethany</a></div></td>
+    <td><div align="center"><a href="http://www.graypluswhite.com/bethany/bethevents.php">Bethany</a></div></td>
     <td><div align="center"><a href="http://www.a2skiclub.org/">Ann Arbor Ski Club</a></div></td>
     <td><div align="center"><a href="http://www.tbirdskiclub.com"> Thunderbird Ski Club</a></div></td>
     <td><div align="center"><a href="http://www.msda.org">Michigan Swing Dance Association</a></div></td>

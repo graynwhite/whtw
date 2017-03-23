@@ -2,13 +2,13 @@
             Quick Links--- </p>
             <ul>
               <li><a style="font-weight: bold; color: #003366" 
-              href="http://www.graynwhite.com/ss/ssevents.php" target="_blank">Sailing Singles</a>			  </li> 
+              href="http://www.graypluswhite.com/ss/ssevents.php" target="_blank">Sailing Singles</a>			  </li> 
 			  
-              <li><a style="font-weight: bold; color: #003366" href="http://www.graynwhite.com/bethany/bethevents.php" target="_top">Bethany of Southeastern Michigan</a></li>
+              <li><a style="font-weight: bold; color: #003366" href="http://www.graypluswhite.com/bethany/bethevents.php" target="_top">Bethany of Southeastern Michigan</a></li>
               <li><a style="font-weight: bold; color: #003366" 
-              href="http://www.graynwhite.com/sg/sgevents.php" target="_blank">Somerset Singles Ski and Golf Club</a>			  </li> 
+              href="http://www.graypluswhite.com/sg/sgevents.php" target="_blank">Somerset Singles Ski and Golf Club</a>			  </li> 
               <li><a style="font-weight: bold; color: #003366" 
-              href="http://www.graynwhite.com/whtw/whevents.php" target="_blank">What's happening This week</a>			  </li> 
+              href="http://www.graypluswhite.com/whtw/whevents.php" target="_blank">What's happening This week</a>			  </li> 
               <li><a style="font-weight: bold; color: #003366" 
               href="http://kirksingles.org/" target="_blank" >Kirk Singles</a>			  </li> 
               <li><a style="font-weight: bold; color: #003366" 

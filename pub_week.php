@@ -78,12 +78,12 @@ $dateend =$Year . "-" . $Month . "-" . $Day;
             order by Resby  ";
              $result = @mysql_query($sql);
   if (!$result) {
-                    echo("<p>Error performing query Email this information to webmaster@graynwhite.com" . mysql_error() . "</p> ");
+                    echo("<p>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
                     echo("<p> $sql </p>");
             exit();
            }
   if ( mysql_num_rows($result) < 1 ){
-     echo("<p> No rows found in query Email this information to webmaster@graynwhite.com </p> ");
+     echo("<p> No rows found in query Email this information to cauleyfrank@gmail.com </p> ");
                     echo("<p> $sql </p>");
             exit();
            }

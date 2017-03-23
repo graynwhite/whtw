@@ -300,7 +300,7 @@ if ($pswd != "6r1n11"){
                echo("<p>assigned organizations  </p>");
                echo("<p>" . mysql_error() . " </p>");
                echo("<p>Use the back fucntion to return to the
-               previous page Email this information to webmaster@graynwhite.com </p>");
+               previous page Email this information to cauleyfrank@gmail.com </p>");
                exit();
         }
         if(mysql_num_rows($result) < 1){
@@ -314,7 +314,7 @@ if ($pswd != "6r1n11"){
         }
 
 ?>
-<Form onSubmit="return check_page(this)" action ="http://graynwhite.com/cgi-bin/club_entry_dbi.cgi"  name="FrontPage_Form1">
+<Form onSubmit="return check_page(this)" action ="http://graypluswhite.com/cgi-bin/club_entry_dbi.cgi"  name="FrontPage_Form1">
 <Table Align = "left" Border= "1" Width = "100%" height="954">
 <TR><TD width="25%" height="84">Action</td>
 <td width="75%"  colspan="3" height="84">Add&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <INPUT TYPE="radio" NAME="action" VALUE="Add" CHECKED><BR>

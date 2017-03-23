@@ -9,7 +9,7 @@ require_once("../cgi-bin/connect.inc");
 $sql = "select * from events where Event_number = \"$Event_number\" and Event_open= \"Y\" order by Date_from, Time_start";
 $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected. Please email this information to webmaster@graynwhite.com" . mysql_error() . "<br />" . $sql . " </p>");
+	 		echo("<p> Your inquiry  was rejected. Please email this information to cauleyfrank@gmail.com" . mysql_error() . "<br />" . $sql . " </p>");
 	 		exit;
 
       		}

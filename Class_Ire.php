@@ -46,7 +46,7 @@ $SQL = "  insert into events
 		   //print ("<br />" . $SQL);
              $result = @mysql_query($SQL);
           if (!$result) {
-          echo("<p> Error in insert  Email this information to webmaster@graynwhite.com" . mysql_error() ."<br>". $SQL . "</p>");
+          echo("<p> Error in insert  Email this information to cauleyfrank@gmail.com" . mysql_error() ."<br>". $SQL . "</p>");
           }else{
             Print("Event posted<p>");
         }

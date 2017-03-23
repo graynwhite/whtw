@@ -391,13 +391,13 @@ google_ad_channel = "5573910896";
   <tr>
    <td width="25%"></td>
     
-    <td width="25%"><div align="center"><a href="http://www.graynwhite.com/ss/">Sailing Singles</a></div></td>
-	  <td width="25%"><div align="center"><a href="http://www.graynwhite.com/sg/index.php">Somerset Singles Ski & Golf</a></div></td>
+    <td width="25%"><div align="center"><a href="http://www.graypluswhite.com/ss/">Sailing Singles</a></div></td>
+	  <td width="25%"><div align="center"><a href="http://www.graypluswhite.com/sg/index.php">Somerset Singles Ski & Golf</a></div></td>
 	  <td width="25%"><div align="center"><a href="http://www.gmskiclub.org"">GM Ski club </a></div></td>
 	  <td width="25%"><div align="center"><a href="http://www.skiwiskiclub.com">Skiwi Ski and Social Club </a></div></td>
     </tr>
   <tr>
-    <td><div align="center"><a href="http://www.graynwhite.com/bethany/bethevents.php">Bethany</a></div></td>
+    <td><div align="center"><a href="http://www.graypluswhite.com/bethany/bethevents.php">Bethany</a></div></td>
     <td><div align="center"><a href="http://www.a2skiclub.org/">Ann Arbor Ski Club</a></div></td>
     <td><div align="center"><a href="http://www.tbirdskiclub.com"> Thunderbird Ski Club</a></div></td>
     <td><div align="center"><a href="http://www.msda.org">Michigan Swing Dance Association</a></div></td>

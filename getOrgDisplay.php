@@ -3,7 +3,7 @@ require_once("../cgi-bin/connect.inc");
 $sql="select * from orgs order by Org_name";
 $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected. Please email this information to webmaster@graynwhite.com" . mysql_error() . "<br />" . $sql . " </p>");
+	 		echo("<p> Your inquiry  was rejected. Please email this information to cauleyfrank@gmail.com" . mysql_error() . "<br />" . $sql . " </p>");
 	 		exit;
 
       		}

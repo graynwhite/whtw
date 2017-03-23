@@ -42,7 +42,7 @@ $sql = "insert into newsletters set campaign = \"$campaign\",url=\"$url\" ";
  $result = mysql_query($sql);
  	if (!$result) {
 	        echo("
-<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . $sql . mysql_error() ." </p>
+<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . $sql . mysql_error() ." </p>
 <p>");
   exit;
   }

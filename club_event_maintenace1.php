@@ -48,7 +48,7 @@ function get_page_title($select_org){
 
     $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
 
       		}
@@ -60,21 +60,21 @@ function get_page_title($select_org){
 	<title>Club Event Maint.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/template.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/validationEngine.jquery.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/template.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/validationEngine.jquery.css" />
 	<link rel="stylesheet" href="mobile.css"/>
 	<link rel="icon"  	type="image/vnd.microsoft.icon" 	href="../gwlogo.gif" />
 		
 		
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-	<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
+	<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
 </head>
 
 <body>
 <div id="mainPage" data-role="page">
 <div data-role="header">
-<p align="center"><img src="graynwhitebannereventMaint.jpg" width="100%"></p>
+<p align="center"><img src="graypluswhitebannereventMaint.jpg" width="100%"></p>
 <p align="center"><b><font size="6"><?print $page_title?></font></b></p>
 </div><!--end of header -->
 <div data-role="content">

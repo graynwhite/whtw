@@ -23,7 +23,7 @@ echo $today. " to " . $ninety_days;
    
    $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected. Please email this information to webmaster@graynwhite.com" . mysql_error() . "<br />" . $sql . " </p>");
+	 		echo("<p> Your inquiry  was rejected. Please email this information to cauleyfrank@gmail.com" . mysql_error() . "<br />" . $sql . " </p>");
 	 		exit;
 
       		}
@@ -42,7 +42,7 @@ echo $today. " to " . $ninety_days;
 
 <body>
 
-<p align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></p>
+<p align="center"><img src="graypluswhitebannereventMaint.jpg" width="468" height="60"></p>
 <p align="center"><b><font size="5">Event list for Coalition</font></b></p>
 <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#000000" width="89%" id="AutoNumber1">
   <tr>
@@ -74,7 +74,7 @@ echo $today. " to " . $ninety_days;
 	  <?print$row['Place']?>&nbsp;</td>
        <td><?print$row['Activity']?>&nbsp;</td>
 
-        <td><A href="event_maint.php?emailid=cauleyfj@graynwhite.com&Org=++++&From_mm=01-&From_day=01&From_year=2003-&action=byitem&Event_number=<?print$row['Event_number']?>&Submit=no">Select</a> <a href="../show_event.php?event=<? print $row['Event_number']?>">Map</a></TD>
+        <td><A href="event_maint.php?emailid=cauleyfj@graypluswhite.com&Org=++++&From_mm=01-&From_day=01&From_year=2003-&action=byitem&Event_number=<?print$row['Event_number']?>&Submit=no">Select</a> <a href="../show_event.php?event=<? print $row['Event_number']?>">Map</a></TD>
  </TR>
  <?php } ?>
 </table>

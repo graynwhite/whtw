@@ -133,7 +133,7 @@ function get_credit($select_org){
  //   print("<br /> " . $sql);
     $result = @mysql_query($sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to webmaster@graynwhite.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
      		}
 ?>
@@ -236,7 +236,7 @@ function check_page(form){
 //        if ( form.allow_recurring.value == "N" && form.action[1].checked ){
 //            alert("Recurring events will not be generated. \n"
 //			+ "If this is a recurring event, enter the first event in the series \n"
-//			+ " then send a separate email to events\@graynwhite.com and explain \n"
+//			+ " then send a separate email to events\@graypluswhite.com and explain \n"
 //			+ " the frequency and start and end date.");
 //            form.action[0].focus()
 //            return false
@@ -510,12 +510,12 @@ function MakeArray(n){
 </HEAD>
 
 <BODY>
-<H1 align="center"><img src="whtw/graynwhitebannereventMaint.jpg" width="468" height="60"></H1>
+<H1 align="center"><img src="whtw/graypluswhitebannereventMaint.jpg" width="468" height="60"></H1>
 
   <?=$page_title?>
 
 
-<Form onSubmit="return check_page(this)" action ="http://www.graynwhite.com/whtw/event_handle.php"  name="form" method="post">
+<Form onSubmit="return check_page(this)" action ="http://www.graypluswhite.com/whtw/event_handle.php"  name="form" method="post">
 <input type="hidden" name="action" id="action" value="add">
 <Table Align = "left" Border= "1" Width = "731" height="1717">
 <input type="hidden" name="confirm" id="confirm" value="<?=$confirm?>">
@@ -885,7 +885,7 @@ date.</td>
 <input type="radio" name="Event_priority" value="240">240<br></td></tr>  
 <tr><td colspan = "4" height="19">
 <center>
-  <span class="style1">If this a recurring event, just enter it once and contact the webmaster at webmaster@graynwhite.com to specify the recurring options.  </span>
+  <span class="style1">If this a recurring event, just enter it once and contact the webmaster at cauleyfrank@gmail.com to specify the recurring options.  </span>
 </center></tr>
 
 
