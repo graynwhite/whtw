@@ -124,8 +124,7 @@ if ($MonthStart == 0) {
 $LastDay = date("d",mktime(0,0,0,$Month+1,0,substr($Year,0,4)));
 $dbbegin= $Year  ."-". $Month .'-01';
 $dbend =  $Year  ."-". $Month . "-" . $LastDay;
-$dbbegin="2017-03-01";
-$dbend="2017-03-31";									 
+									 
 print ("<input type=\"hidden\" id=\"calMonth\" value=\"$Month\">");
 print ("<input type=\"hidden\" id=\"calYear\" value=\"$Year\">");
                    
