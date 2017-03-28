@@ -9,25 +9,21 @@ $header = $ire->getHeader();
 <!DOCTYPE html>
 <html>
 <head>
-
-<meta http-equiv="Content-Language" content="en-us">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>Art,Festivals and Community Input</title>
 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script> src="markitup.json"></script>
+<script> src="../markitup/package.json"></script>
 		
-<link rel="stylesheet" type="text/css" href="markitup.css" />
-<link rel="stylesheet" type="text/css" href="html.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/markitup/markitup.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/markitup/html.css" />
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
 
-<script type="text/javascript" src="../markitup/jquery.js"></script>
 
-<script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
-<script type="text/javascript" src="../markitup/sets/html/set.js"></script>
+<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
 
 <script language="javascript">
 $(document).ready(function()	{
