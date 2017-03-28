@@ -1,6 +1,9 @@
+<?php
+$affil=isset($_REQUEST['affil']) ? $_REQUEST['affil'] : "Gray";
+?>
 <HTML>
 <HEAD>
- <meta name="viewport" content="width=device-width; initial-scale=1; user-scaleable=1;">
+ <meta name="viewport" content="width=device-width", initial-scale=1; user-scaleable=1;">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
@@ -39,8 +42,10 @@ function bump(number)
 <div id="top" data_role="header"><h1>Gray and White Computing Event Calendar</h1></div>
 <div id="content" data-role="content">
 <?php
-$Month = $_REQUEST['Month'];
-$Year = $_REQUEST['Year'] . '-';
+$currentMonth=date('m');
+$currentYear=date('Y');									 
+$Month = isset($_REQUEST['Month'])? $_REQUEST['Month'] : $currentMonth;
+$Year = isset($_REQUEST['Year']) ? $_REQUEST['Year'] : $currentYear;;
 if(strlen($Month)==0)
 {
 $Month = date("m");
@@ -54,7 +59,7 @@ if(strlen($Year)==1)
   $Year = date("Y"). '-';
 }
 
-$submit= $_REQUEST['Submit'];
+$submit= isset($_REQUEST['Submit'])? $_REQUEST['Submit']: 'yes';
 $PageTitle ="What's Happening This Month Calendar";
 if ( $affil =="arch" ){
 $PageTitle ="Archdiocese of Detroit Singles Calendar";
@@ -114,17 +119,20 @@ print ("<table border=\"1\" cellpadding=\"3\" cellspacing=\"0\" width=\"100%\" a
 $MonthStart = date ("w", $Timestamp);
 
 if ($MonthStart == 0) {
-   $MonthStart = 7;
+   $MonthStart = 1;
 }
 $LastDay = date("d",mktime(0,0,0,$Month+1,0,substr($Year,0,4)));
-$dbbegin= $Year  . $Month . "-01";
-$dbend =  $Year  . $Month . "-" . $LastDay;
+$dbbegin= $Year  ."-". $Month .'-01';
+$dbend =  $Year  ."-". $Month . "-" . $LastDay;
+$dbbegin="2017-03-01";
+$dbend="2017-03-31";									 
 print ("<input type=\"hidden\" id=\"calMonth\" value=\"$Month\">");
 print ("<input type=\"hidden\" id=\"calYear\" value=\"$Year\">");
                    
 	//connect to the database server
-            include("../cgi-bin//connect.inc");
-        if ( !$affil ){
+            include("../phpClasses/connect.php");
+            
+        if ( $affil=="Gray" ){
         $sql = "SELECT T1.*, T2.Short_name FROM events as T1,
                 orgs as T2 
         WHERE
@@ -146,7 +154,7 @@ print ("<input type=\"hidden\" id=\"calYear\" value=\"$Year\">");
         }
         // print("<br>$sql");
         // request items from the events table
-           $result = @mysql_query($sql);
+           $result = mysqli_query($conn,$sql);
            if (!$result) {
                     echo("<p>Error performing query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p> ");
       
@@ -158,14 +166,14 @@ print ("<input type=\"hidden\" id=\"calYear\" value=\"$Year\">");
 			$array_date=array();
 			$array_insert=array();
           $n=0;
-          while ($row = mysql_fetch_array($result)){
+          while ($row = mysqli_fetch_assoc($result)){
 		  //echo('<br /> date' . substr($row['Date_from'],8,2));
 		  $array_date[]=substr($row['Date_from'],8,2);
 		  $array_insert[]=$row['Short_name'];
 		   }
 
   $howmany =count($array_date);
-//  print("<p>There are $howmany  events to display.</p>");
+ print("<p>There are $howmany  events to display.</p>");
 $StartDate = -$MonthStart;
 //echo("<br /> start date is " . $StartDate); 
 for ($k =1; $k <= 6; $k++ ) {
@@ -178,7 +186,7 @@ for ($k =1; $k <= 6; $k++ ) {
      if (($StartDate <= 0) || ($StartDate  > $LastDay)) {
                print("<td BGCOLOR=GREEN>&nbsp</td>");
             } elseif (($StartDate >= 1) && ($StartDate <= $LastDay   )) {
-                       $this_date = $Year  . $Month . "-" . $this_day;
+                       $this_date = $Year . "-". $Month . "-" . $this_day;
                      //  print("<br> $this_date");
                if ( !$affil ){
                print("<td ALIGN=LEFT VALIGN=TOP ><A HREF=\"../pjsn/dailyNews.php?eventDate=$this_date target='_blank'\">$StartDate</a>");
@@ -216,7 +224,7 @@ print ("<SELECT name = Month>
            <OPTION VALUE=11>November</OPTION>\n
            <OPTION VALUE=12>December</OPTION>\n
            </SELECT>\n");
-            php_functions_gen_years('Year',True);
+           // php_functions_gen_years('Year',True);
 //print ("<SELECT Name=Year>
 //
 //           <OPTION VALUE=2003>2003</OPTION>\n
