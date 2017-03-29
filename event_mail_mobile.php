@@ -23,7 +23,7 @@ if ( $nojs ) {
 
 $genVercode = rand( 10000, 99999 );
 
-//require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . "/newsletter/gonetopress.php" );
+require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . "/newsletter/gonetopress.php" );
 
 
 require_once($_SERVER['DOCUMENT_ROOT']. "/javascript/dateHandling.js");
@@ -52,10 +52,13 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 	<link rel="stylesheet" href="http://www.graypluswhite.com/whtw/mobile.css"/>
 	
 	<link rel="icon" type="image/vnd.microsoft.icon" href="../gwlogo.gif"/>
-	 
-	
-		
-		<script>
+	<style type="text/css">
+.allcaps
+{
+	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black, sans-serif;
+}
+    </style>
+	<script>
 		function myTrim(x){
 			return x.replace(/^\s+|\s+$/gm,'');
 		}
@@ -265,8 +268,8 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 		<div id="pgcontent" data-role='content'>
 			<p>The Gray and White Event Database is used to create multiple web site pages including the Peggy Jo Studio Newsletter </p>
-			<p style="color:red; text-decoration:underline" ;>
-				<!--<? echo $presstime ?>-->
+			<p class="veryimportant" >
+				<? echo $presstime ?>
 			</p>
 			<form  name='formInput' id='formInput'>
 
@@ -280,13 +283,12 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				<input type="hidden" name="return_link_url" value="http://graypluswhite.com/whtw"/>
 				<input type="hidden" id="minStartDate" name="minStartDate">
 				<input type="hidden" name="return_link_title" value="If you want to make corrections or enter more events use the back button on your browser or click here to go back to the home page"/>
-				<span class="Required">fields marked with a red asterisk * are required. </span>
 				</p>
 				<p>
 					This form will be eMailed to the webmaster for review and editing and will be placed in the Gray and White Event database as soon as possible. </p>
 				<p>To check the status of an event one can access the calendar of events at <a href="http://www.graypluswhite.com/whtw/calendar.php">http://www.graypluswhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form. </p>
 
-				<h3 class="important">Do not use all caps words anywhere, only capitilize where appropriate- press releases will not accept them!!! Enabling javascript is required to use this form </h3>
+				<h3 class="important"><span class="allcaps"><u>Do not use all caps words anywhere,</u></span> only capitilize where appropriate- press releases will not accept them!!! Enabling javascript is required to use this form </h3>
 
 
 
@@ -316,7 +318,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<legend>Your information</legend>
 
 					<legend>Organization Name </legend>
-					<input name="Orgname" type="text" id="Orgname" vlue="<?php echo $eventOrg ?>" onBlur='setCookie("eventOrg",this.value,90)' ;/>
+					<input name="Orgname" type="text" id="Orgname" value="<?php echo $eventOrg ?>" onBlur='setCookie("eventOrg",this.value,90)' ;/>
 
 
 
@@ -401,24 +403,24 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<legend>What the event is about</legend>
 					<legend>Media Input or Long version:</legend>
 					<p> This is where you can give a full lengthy description of the event or trip. 
-					Include a person and phone number to contact if desired .Do not repeat the time and place of the event.<strong> Do not use all caps. </strong> If there is a preliminary meeting place and you think it is neccessary to inform everyone, then place that information here. The text box will expand to accept your input.</p>
-					<legend>Long description</legend>
+					Include a person and phone number to contact if desired .<strong>Do not use all caps. </strong> If there is a preliminary meeting place and you think it is neccessary to inform everyone, then place that information here. The text box will expand to accept your input Do not repeat the time and place of the event because they will be kinserted from the the fields you were required to enter.</p>
+					<legend>Long description:</legend>
 					<textarea name="comments" id="comments"></textarea>
 				</fieldset>
-				<fieldset	
+				<fieldset>	
 					<legend>Event Activity or Short Version (required)</legend>
-					<P>Describe the event here.The two description fields are not merged. Include a person and phone number to contact if desired . This is a shortened version of the media input only the first 235 characters will be accepted. Do not repeat the Date, time or place. </p>
-
+					<P>Describe the event here.The two description fields are not merged. Include a person and phone number to contact if desired . This is a shortened version of the media input only the first 235 characters will be accepted. Do not repeat the Date, time or place because they will be inserted from the fields you were requied to enter.</p>
+					<legend>Short Description:</legend>
 					<textarea name="activity" id="activity" class="textbox"></textarea>
-				</fieldset>
+			  </p></fieldset>
 
 				<fieldset>
 					<legend>How much does it cost?</legend>
-					<legend>Price for members</legend>
+					<legend>Price for members.</legend>
 					<input type="text" name="Price_Member" id="Price_Member" val=""/>
 				</fieldset>
 				<fieldset>
-					<legend>Price Guests</legend>
+					<legend>Price for Guests.</legend>
 					<input type="text" name="Non_Member_Price" val=''/>
 				</fieldset>
 
