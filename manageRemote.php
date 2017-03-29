@@ -1,6 +1,6 @@
 <?PHP
-$filePrefix = isset($_GET['prefix']) ? $_GET['prefix'] : '';
-$fileName =  $_GET['prefix'] == 'g' ? 'geven' : 'event';
+$filePrefix = isset($_GET['prefix']) ? $_GET['prefix'] : ' ';
+$fileName =  $filePrefix== 'g' ? 'geven' : 'event';
 
 //Open images directory
 $dir = dir("../newsletter");
