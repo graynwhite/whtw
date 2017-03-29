@@ -1,7 +1,7 @@
 <?PHP
 
-require_once("../../phpClasses/Class_evententry.php");
-require_once("../../phpClasses/Class_publicist.php");
+require_once("../phpClasses/Class_evententry.php");
+require_once("../phpClasses/Class_publicist.php");
 $pub = new publicist;
 $ee = new eventEntry;
 
@@ -21,7 +21,7 @@ while (($file = $dir->read()) !== false)
 $dir->close();
 rsort($file_array);*/
 
-$file_to_read = "../_private/" . $_GET['file'];
+$file_to_read = "../newsletter/" . $_GET['file'];
 //print_r($file_array);
 //$file_to_read = './_private/' .$file_array[0];
 //$file_to_read = './_private/event20100311232948.xml';
@@ -32,12 +32,18 @@ $xml =  simplexml_load_file($file_to_read) or die("Unable to load file");
 
 // access XML data
 $subName= $xml->subName;
+echo("<br>Subname is ". $subName);
 $entryType=$xml->entryType;
-$recurring=$xml->recurring;
+$recurring=$xml->recurdesc;
 $refferSrc = $xml->refferSrc;
+$From_date=$xml->From_date;
+echo("<br>From Date is ". $From_date ." on line 40");
+//echo('<br>entry type is'.$entryType);
 $date_work = explode('/',$xml->From_date);
+echo("<br>Date work is ".$date_work[0].'-'.$date_work[1]. '-'. date_work[2]."  on line 41");
 if(strlen($date_work[0])>2){
 $From_date =$xml->From_date;
+
 }else{
 $From_date = $date_work[2] . "-" .  $date_work[0] . "-" . $date_work[1];
 }
@@ -54,6 +60,7 @@ else{
 	$date_to=$date_work2[2]. "-" . $date_work2[0]. "-" . $date_work2[1];
 	}
 }
+echo("<br />Date to is ").$date_to ." on line 48";
 if($xml->reserve_by == ''){
 	$reserve_by = $From_date;
 }
@@ -419,7 +426,7 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
       <td><input name="orgName" type="text" id="orgName" value="<? echo $xml->orgName?>" size="80" /></td>
     </tr>
 	<tr>
-	<?PHP require_once($_SERVER['DOCUMENT_ROOT'] . "/_private/orgList.inc")?>
+	<?PHP require_once($_SERVER['DOCUMENT_ROOT'] . "/newsletter/orgList.inc")?>
 	</tr>
 
     <tr>
