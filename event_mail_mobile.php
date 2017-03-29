@@ -44,23 +44,18 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 	<title>Organization Event Input Mobile</title>
 	<meta name="viewport" content="width=device-width, user-scalable=yes"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<link rel="stylesheet" href="jquery-ui.min.css">
-	<script src="external/jquery/jquery.js"></script>
-	<script src="jquery-ui.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/javascript"></script>
 	
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js" type="text/javascript"></script>
-	
+			
 	<link rel="stylesheet" href="http://www.graypluswhite.com/whtw/mobile.css"/>
 	
 	<link rel="icon" type="image/vnd.microsoft.icon" href="../gwlogo.gif"/>
 	 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/javascript"></script>
-	<script src="../jqvaleng/js/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
 	
-	<script src="../jqvaleng/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
-	
-	<link rel="stylesheet" href="../jqvaleng/css/validationEngine.jquery.css" type="text/css"/>
-	<script>
+		
+		<script>
 		function myTrim(x){
 			return x.replace(/^\s+|\s+$/gm,'');
 		}
@@ -68,7 +63,9 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 	
 	
 	<script>
-		$( document ).ready( function () {
+		$( document ).ready( function ()
+		{
+			console.log("Starting document ready function");
 			var someDate = new Date();
 			var numberOfDaysToAdd = 3;
 			someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
@@ -81,14 +78,12 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 			var minDate = y + '-'+ mm + '-'+ dd;
 			console.log("The minimum start date is " + minDate);
 			$("#minStartDate").val(minDate);
-			$("#dateStart").datePicker({format: "yyyy-mm-dd"});
-			$("#reserve_date").datePicker({format: "yyyy-mm-dd"});
-			$("#dateEnd").datePicker({format: "yyyy-mm-dd"});
+			//$("#dateStart").datePicker();
+//			$("#reserve_date").datePicker();
+//			$("#dateEnd").datePicker();
+			console.log("Got past datepicker errors");
 			
-			console.log("About to validate");
-			$("#formInput").validationEngine(); 
-			console.log("Should be validated");
-			
+					
 			$('#submitbutton').click(function(){
 				var formvalues='';
 				formvalues=$('#formInput').serialize();
@@ -239,7 +234,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 			if ( answer == '-1' ) {
 
 			} else {
-				alert( "The event date or event start date must be a valid date and greater than todays date."); 
+				alert( "The event date or event start date must be a valid date and greater than todays date plus three days."); 
 				document.getElementById("dateStart").focus();
 			}
 		}
@@ -261,10 +256,11 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 <body>
 
 	<div id="page1" data-role='page'>
-		<div data-role='header'>
-			<h1>Organization Event Information Input<br /> 
-			<img src="graynwhitebannereventMaint.jpg" width="50%" style="align-content: center"  /></h1>
-			<p>&nbsp;</p>
+		<div data-role='header'> 
+			 <h1>Organization Event Information Input<h1>
+			 <center><img src="graynwhitebannereventMaint.jpg" width="50%"/></center>
+		<p>&nbsp;</p>
+		
 		</div>
 
 		<div id="pgcontent" data-role='content'>
@@ -316,20 +312,19 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				</div>
 				<!-- field contain -->
 
-
 				<fieldset>
 					<legend>Your information</legend>
 
 					<legend>Organization Name </legend>
-					<input name="Orgname" type="text" id="Orgname" class="validate[required]" value="<?php echo $eventOrg ?>" data-prompt-position="bottomLeft:140,5" onBlur='setCookie("eventOrg",this.value,90)' ;/>
+					<input name="Orgname" type="text" id="Orgname" vlue="<?php echo $eventOrg ?>" onBlur='setCookie("eventOrg",this.value,90)' ;/>
 
 
 
 					<legend>Your Name: </legend>
-					<input name="yourName" type="text" id="yourName" class="validate[required]" data-prompt-position="bottomLeft:140,5" value="<?php echo $eventName ?>" onBlur='setCookie("eventName",this.value,90)'/>
+					<input name="yourName" type="text" id="yourName"  value="<?php echo $eventName ?>" onBlur='setCookie("eventName",this.value,90)'/>
 
 					<legend>Your E-Mail Address</legend>
-					<input name="Email" id="Email" type="email" class="validate[required]" data-prompt-position="bottomLeft:140,5" value="<?php echo $eventEmail ?>" onBlur='setCookie("eventEmail",this.value,90)'/>
+					<input name="Email" id="Email" type="email"  value="<?php echo $eventEmail ?>" onBlur='setCookie("eventEmail",this.value,90)'/>
 
 
 					<legend> Your Phone Number</legend>
@@ -340,32 +335,32 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<fieldset>
 
 						<legend>Title of Event(keep it short do not use all caps) </legend>
-						<input name="EventTitle" type="text" id="EventTitle" class="validate[required]" data-prompt-position="bottomLeft:140,5"/>
+						<input name="EventTitle" type="text" id="EventTitle" />
 
 
 						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>
-						<input name="dateStart" id="dateStart" type="date" placeholder="01/01/2017" class="validate[required,custom[date],future[#minStartDate]] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." >
+						
+						<input name="dateStart" id="dateStart" type="date" placeholder="01/01/2017"  title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." onBlur="checkStartDate()">
 
 						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use your browsers datepicker or enter the date.  </legend>
-						<input name="dateRes" id="reserve_date" type="date" onBlur=checkReserveDate() class="validate[custom[date],past(#dateStart) text-input datepicker" data-prompt-position="bottomLeft:140,5" title="Reserve By is the date that reservations are required. Leave blank if not applicable"
-							   />
+						<input name="dateRes" id="reserve_date" type="date" onBlur=checkReserveDate() title="Reserve By is the date that reservations are required. Leave blank if not applicable"/>
 
 
 						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use your browser's datepicker or enter the date.</legend>
 
-						<input name="dateEnd" id="dateEnd" type="date" onBlur="checkEndDate()" class="validate[custom[date],future[#dateStart] text-input datepicker" data-prompt-position="bottomLeft:140,5" title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
+						<input name="dateEnd" id="dateEnd" type="date" onBlur="checkEndDate()"  title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
 						
 
 						<legend>Start Time (required but will be ignored for multi-day events). You can enter the start time directly in the form hh:mm (AM or PM). If you use the form timepicker, scroll the hour, minutes and AM or PM so that they are between the paralell horizontal blue lines.</legend>
 
-						<input name="timeStart" id="timeStart" type="time" value="7:00 PM" class="validate[required]timepicker" data-prompt-position="bottomLeft:140,5" title="Enter time in twelve hour format include am or pm."/>
+						<input name="timeStart" id="timeStart" type="time" value="07:00:00"  title="Enter time in twelve hour format include am or pm."/>
 
 						<legend>End Time: if applicable</legend>
 						<input name="timeEnd" id="timeEnd" type="time" val=" " title="Day of week so the system can verify that the date and day of week agree 	Day of the week or Weekend, Week, etc."/>
 
 						<legend>Day of Week </legend>
 
-						<input name="Day_of_week" type="text" val=" " class=validate[required] data-prompt-position="bottomLeft:140,5"/>
+						<input name="Day_of_week" type="text" val=" " >
 
 					</fieldset>
 				</div>
@@ -377,13 +372,13 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 					</p>
 					<legend>Place Name (required)</legend>
-					<input type="text" name="place_name" val=" " class="validate[required]" title="Such as Boyne Mountain or Emagine Theater. Not a parking lot where you will gather to board busses or a restaurant prior to the event." data-prompt-position="bottomLeft:140,5"/>
+					<input type="text" name="place_name" val=" " title="Such as Boyne Mountain or Emagine Theater. Not a parking lot where you will gather to board busses or a restaurant prior to the event." />
 					
 					<legend>Place address (optional)</legend>
 					<input type="text" name="place_address" id="place_address" val " "/>
 					
 					<legend>City (required)</legend>
-					<input type="text" name="city" val=" " class="validate[required]" data-prompt-position="bottomLeft:140,5"/>
+					<input type="text" name="city" val=" " />
 					
 					<legend>State</legend>
 					<input type="text" name="state" value="MI"/>
@@ -397,7 +392,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<input name="url" id="url" type="text" val=""/>
 					
 					<legend>Place email (optional)</legend>
-					<input name="place_email" type="email" id="place_email" class="validate[custom[email]]" data-prompt-position="bottomLeft:140,5"/>
+					<input name="place_email" type="email" id="place_email" />
 					
 					<legend>Additional directions</legend>
 					<textarea name="PlaceDirections" val=" " id="PlaceDirections"></textarea>
@@ -409,11 +404,12 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					Include a person and phone number to contact if desired .Do not repeat the time and place of the event.<strong> Do not use all caps. </strong> If there is a preliminary meeting place and you think it is neccessary to inform everyone, then place that information here. The text box will expand to accept your input.</p>
 					<legend>Long description</legend>
 					<textarea name="comments" id="comments"></textarea>
-
+				</fieldset>
+				<fieldset	
 					<legend>Event Activity or Short Version (required)</legend>
 					<P>Describe the event here.The two description fields are not merged. Include a person and phone number to contact if desired . This is a shortened version of the media input only the first 235 characters will be accepted. Do not repeat the Date, time or place. </p>
 
-					<textarea name="activity" id="activity" class="validate[required,maxSize[235]]" data-prompt-position="bottomLeft:140,5">  </textarea>
+					<textarea name="activity" id="activity" class="textbox"></textarea>
 				</fieldset>
 
 				<fieldset>
@@ -428,14 +424,15 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 				<fieldset>
 					<legend>Recurring Event</legend>
+					<textarea class="textbox"></textarea>
 					<p>If this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the cauleyfrank@gmail.com in order to delete those specific events.</p>
 					<p>If you have an event that occurs regularly, but there will be program additions and/or changes, do not classify it as a recurring event and leave this box blank. You will have to enter each event individually.</p>
 					<legend>Describe the recurring pattern</legend>
 					<textarea name="recurdesc" id="recurdesc" Title="Describe the occurance pattern .eg. First and third Tuesdays."></textarea>
 					<legend>Event will start recurring on</legend>
-					<input type="date" name="recurbegin" placeholder="2017-01-01"/>
+					<input type="date" name="recurbegin" placeholder="01/01/2017"/>
 					<legend> and will end on </legend>
-					<input type="date" name="recurend" placeholder="2017-12-31"/>
+					<input type="date" name="recurend" placeholder="12/31/2017"/>
 				</fieldset>
 
 				</fieldset>
