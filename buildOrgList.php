@@ -8,13 +8,13 @@
 <body>
 <?PHP
 
-require_once($_SERVER['DOCUMENT_ROOT']. "/cgi-bin/connect.inc");
+require_once($_SERVER['DOCUMENT_ROOT']. "/phpClasses/connect.php");
 
-$orglist-"";
+$orglist="";
 
 
  $sql = "select * from orgs order by Org_name ";
-$result = @mysql_query($sql);
+$result = mysqli_query($conn,$sql);
     if (!$result) {
 	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . " " . $sql . " " . mysql_error() . " </p>");
 	 		exit;
@@ -24,12 +24,12 @@ $orglist="<td width=\"191\" height=\"23\">Organization Name: </td>\n";
 $orglist.="<td width=\"294\" height=\"23\" ><select name=\"Org\"  size=\"1\"  >";
 $orglist.="<option value= \"    \" selected> Select an organization";
   
-while ($row=mysql_fetch_array($result)){
+while ($row=mysqli_fetch_assoc($result)){
 $orglist.="<option value= " .$row['Org_num']. ">" .$row['Org_name'] ."</opton>\n";
   }
   
 $orglist.="</select></td >";
-$fileToWrite=$_SERVER['DOCUMENT_ROOT'] ."/_private/orgList.inc";
+$fileToWrite=$_SERVER['DOCUMENT_ROOT'] ."/newsletter/orgList.inc";
 $newfile=fopen($fileToWrite,"w");
 fwrite($newfile,$orglist);
 fclose($newfile);
