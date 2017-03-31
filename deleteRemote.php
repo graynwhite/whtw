@@ -3,7 +3,7 @@ $fileToClear =  $_GET['file'];
 echo 'Trying to delete this file ' .$fileToClear . "<br />";
 $old = getcwd(); // Save the current directory
 echo 'old path is ' . $old . "<br />";
-chdir('../_private');
+chdir('../newsletter');
 $new = getcwd();
     echo ' directory changed to ' . $new  . "<br />";
 	
