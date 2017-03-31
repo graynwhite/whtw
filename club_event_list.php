@@ -23,23 +23,23 @@ if(!isset($_GET['org']) && !isset($_GET['affil']) && !isset($_GET['dateSearch'])
 } 
 function decode_entities($text) {
     $text= html_entity_decode($text,ENT_QUOTES,"ISO-8859-1"); #NOTE: UTF-8 does not work!
-    $text= preg_replace('/&#(\d+);/me',"chr(\\1)",$text); #decimal notation
-    $text= preg_replace('/&#x([a-f0-9]+);/mei',"chr(0x\\1)",$text);  #hex notation
+    $text= preg_replace_callback('/&#(\d+);/',"chr(\\1)",$text); #decimal notation
+    $text= preg_replace_callback('/&#x([a-f0-9]+);/mei',"chr(0x\\1)",matches);  #hex notation
     return $text;
 }
-require_once("../cgi-bin/connect.inc");
+require_once("../phpClasses/connect.php");
 	$sql = "select * from events where ";
 	$sql .= $select_parameter;
 	$sql .= "order by Date_from, Time_start";
    
-   $result = @mysql_query($sql);
+   $result = mysqli_query($conn,$sql);
     if (!$result) {
 	 		echo("<p> Your inquiry  was rejected. Please email this information to cauleyfrank@gmail.com" . mysql_error() . "<br />" . $sql . " </p>");
 	 		exit;
 
       		}
 
-
+preg_replace_
 ?>
 <html>
 
@@ -47,15 +47,15 @@ require_once("../cgi-bin/connect.inc");
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/template.css" />
-	<link rel="stylesheet" href="http://www.graynwhite.com/jqvaleng/css/validationEngine.jquery.css" />
+	<link rel="stylesheet" href="http://www.grayplusswhite.com/jqvaleng/css/template.css" />
+	<link rel="stylesheet" href="http://www.grayplusswhite.com/jqvaleng/css/validationEngine.jquery.css" />
 	<link rel="stylesheet" href="mobile.css"/>
 	
 		
 		
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-		<script src="http://www.graynwhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
 <title>Club Event List</title>
 </head>
 
@@ -77,7 +77,7 @@ require_once("../cgi-bin/connect.inc");
   
   </tr>
  
-  <?       while ($row = mysql_fetch_array($result)){
+  <?       while ($row = mysqli_fetch_assoc($result)){
   			//if($row['Event_org']=='HOL'){
 			$dispActivity= decode_entities($row['Activity']);
 			$dispMedia=decode_entities($row['media']);
