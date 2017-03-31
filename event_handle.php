@@ -1,38 +1,19 @@
 
 <?php
-echo("");
 //require_once($_SERVER['DOCUMENT_ROOT'].'/class.phpmailer.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/class_events.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/Class_writeRSS.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/class_date_utility.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/cgi-bin/connect.inc');
 //require_once($_SERVER['DOCUMENT_ROOT']. '/phpClasses/convertPhp4GetPost.php');
 $password= $_POST['password'];
 if(trim($password) !="/FJ6r1n11M" and $_POST['operator'] != 'publicist'){
 print("<html><body><h1> You are not authorized to use this function.</h1> </body></html>");
-exit;
+exit();
  }
 //print_r($_POST);
 $action = $_POST['action'];
-$a=new writeRSS("peggy Jo event RSS", // title
-'http://www.graypluswhite.com/show_event.php', // link
-'Rss feed of events from gray and white database',  // description
-'en_us', // language
- '', // image title
- '', // image url
- '', // imagelink
- '',  // imagewidth
- ''  //imageheight
-  );
+
 /** @package
 
-        event_handle.php
-        
-        Copyright(c) Gray and White Computing 2002
-        
-        Author: FRANK J CAULEY
-        Created: FJC 9/11/2003 1:37:51 AM
-	Last change: FJC 6/9/2005 4:51:16 PM
 */
 class validate_event
 {
@@ -41,10 +22,10 @@ public	$Radio_state = "   ";
 public	$re="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$";
 
 function check_dow(){
-$fromDayWork = explode('-',$_POST['from_date']);
-$fromDayTimestamp=mktime(0,0,0,$fromDayWork[1],$fromDayWork[2],$fromDayWork[0]);
+$fromDayWork = explode('/',$_POST['from_date']);
+$fromDayTimestamp=mktime(0,0,0,$fromDayWork[0],$fromDayWork[1],$fromDayWork[2]);
 $comDow = date('D',fromDayTimestamp);
-if ($_POST[dow]!=$comDow){
+if ($_POST['dow']!=$comDow){
 	print("The day of week that you selected does not agree with the computed day of week.");
 	print ( "\n you selected  "  .$_POST[dow]); 
 	print ("\n  however, the computed day of week is " . $comDow);
@@ -137,17 +118,16 @@ class insertMultipleRecords
 
 function insertRecord($place,$date_from,$time_start,$time_end,$date_to,$resby,$confirm,$activity,$media)
 {
-
- $SQL= "
+require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/connect.php");//print "SQL is " . $SQL;
+ $sql= "
          insert into events
          SET Place = \"$place\",
-         Event_org= \"" . $_POST[Org] . "\",
+         Event_org= \"" . $_POST['Org'] . "\",
 		 Date_from =\"$date_from\",
          Time_start = \"$time_start\",
          Time_end = \"$time_end\",
         Date_to =\"$date_to\",
         Resby = \"$resby\",
-        Dow = \""  . $_POST[Dow] ."\",
         Activity = \"$activity\",
 		media = \"$media\",
         Price_members = \"" . $_POST['Price_Member'] ."\",
@@ -158,19 +138,15 @@ function insertRecord($place,$date_from,$time_start,$time_end,$date_to,$resby,$c
 		SUBMITTED_BY=  \"" . $_POST['emailid'] .  "\",
 		confirm= \"$confirm\" ";
 		
-		//print "SQL is " . $SQL;
+		
 
-          $result = mysql_query($SQL);
+          $result = mysqli_query($conn,$sql);
 		  
           if (!$result) {
-          echo("<p> Error in Insert a record    Email this information to cauleyfrank@gmail.com" . mysql_error() . "\n" . $SQL  ."</p>");
-		  //exit;
+          echo("<p> Error in Insert a record    Email this information to cauleyfrank@gmail.com<br>" . mysqli_error($result) . "\n" . $sql  ."</p>");
+		  exit();
           }
-		  if(mysql_affected_rows() < 1)
-		  {
-		  echo("no record added  " . $SQL  . mysql_error() . " Email this information to cauleyfrank@gmail.com");
-		  //exit;
-		  }
+		  
 }
 
 function add_end($in,$endChar)
@@ -203,11 +179,11 @@ print "<body>";
 print "<p><font size=\"7\"><b>Event Maintenance</b></font></p>";
 print"<hr>";
 /*print "operator is " . $operator;*/
-require_once($_SERVER['DOCUMENT_ROOT']."/cgi-bin/connect.inc");
+//require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/connect.php");
 /*print "<br>loaded connect";*/
-require_once("../../phpClasses/dateClass.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/dateClass.php");
 /*print "<br>loaded dateClass";*/
-require_once("../../phpClasses/Class_orgs.php");
+require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/Class_orgs.php");
 /*print "<br>loaded class_orgs";*/
 /*===============================================================================================*/ 
 if($_POST['operator'] == "Admin")
@@ -237,11 +213,11 @@ if (strtolower($_POST['action']) == 'addremote')
 	
 			
 		print ("<br> place is " . $place);
-		$activity = htmlentities($_POST['Activity']) ;
-		if(strlen($_POST['activity_contact'])>0)
-			{
-			$activity .= "Contact: " . $_POST['activity_contact'];
-			}
+		$activity = htmlentities($_POST['activity']) ;
+		//if(strlen($_POST['activity_contact'])>0)
+//			{
+//			$activity .= "Contact: " . $_POST['activity_contact'];
+//			}
 		$media = htmlentities($_POST['media']);
 		$media .= "<br /> Submitted by: " . $_POST['subName'];
 		
@@ -517,7 +493,7 @@ If ($dowCorrect){
 	$unit_price = $price_members * $discount_percent;
 	if ($unit_price < 1.00){
 		trigger_error("unit price is incorect" . $unit_price);
-		break;
+		exit();
 		}
 	print "<br> unit price " . $unit_price;
 	print "<br> inventory is " . $inventory;
