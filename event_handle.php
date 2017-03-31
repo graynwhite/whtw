@@ -701,9 +701,9 @@ If ($dowCorrect){
 /*===============================================================================================*/		  
   if ( $_POST['action'] == "delete" ){
         print("<p> Record will be deleted </p>");
-        $SQL = " delete from events where Event_number = \"" . $_POST['event_id'] . "\" ";
+        $sql = " delete from events where Event_number = \"" . $_POST['event_id'] . "\" ";
 
-         $result = @mysql_query($SQL);
+         $result = @mysqli_query($conn,$sql);
           if (!$result) {
           echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
@@ -714,9 +714,9 @@ If ($dowCorrect){
         print("<p> Old Records will be deleted </p>");
 		$now_date = date("Y") . "-" . date("m") . "-" . date("d");
 		
-        $SQL = " delete from events where Event_org  = \"" . $_POST['Event_org'] . "\" && Date_from < \"$now_date\" && Date_to < \"$now_date\" ";
-
-         $result = @mysql_query($SQL);
+        $sql = " delete from events where Event_org  = \"" . $_POST['Event_org'] . "\" && Date_from < \"$now_date\" && Date_to < \"$now_date\" ";
+	 		
+         $result = @mysqli_query($conn,$sql);
           if (!$result) {
           echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
@@ -727,9 +727,9 @@ If ($dowCorrect){
         print("<p> All records except unconfirmed records will be cleared. </p>");
 		
 		
-        $SQL = " delete from events where Event_org  = \"" . $_POST['Event_org'] . "\" && confirm = \"Y\" ";
+        $sql = " delete from events where Event_org  = \"" . $_POST['Event_org'] . "\" && confirm = \"Y\" ";
 
-         $result = @mysql_query($SQL);
+         $result = @mysqli_query($sql);
           if (!$result) {
           echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
@@ -744,13 +744,13 @@ If ($dowCorrect){
 	$sql .= " && confirm = \"Y\" ";
 	$sql .= " order by Date_from ";
 	print "<br> " . $sql;
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	 if (!$result) {
           echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
-	While ($row=mysql_fetch_array($result)){
+	while ($row=mysql_fetch_assoc($result)){
 	$bodyText .= "<br><br> " . $row['Date_from'] . " " . $row['Place'] . "<br> " . $row['Activity'] ;
 	}
 	
@@ -765,12 +765,12 @@ If ($dowCorrect){
 	$sql = "delete from events  Where Event_org = \"" .$_POST['Event_org'] . "\"";
 	$sql .= " && " . $_POST['phraseLocation'] . " like \"%" . $_POST['actionPhrase'] . "%\"";
 	$sql .= " && confirm = \"Y\" ";
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	if (!$result) {
           echo("<p> Error in Delete   Email this information to cauleyfrank@gmail.com" . mysql_error() . "<br>");
 	 exit;
 	 }
-	$bodyText  .= "<br> Rows affected = " . mysql_affected_rows(); 	  
+	$bodyText  .= "<br> Rows affected = " . mysqli_affected_rows(); 	  
 	print $bodyText;
     print "<br>End of processing";
     exit;
@@ -782,13 +782,13 @@ If ($dowCorrect){
 	$sql .= " && " . $_POST['phraseLocation'] . " like \"%" . $_POST['actionPhrase'] . "%\"";
 	$sql .= " order by Date_from ";
 	print "<br> " . $sql;
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	 if (!$result) {
           echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
 		  exit;
 	}
-	While ($row=mysql_fetch_array($result)){
+	while ($row=mysqli_fetch_assoc($result)){
 	$bodyText .= "<br><br> " . $row['Date_from'] . " " . $row['Place'] . "<br> " . $row['Activity'] ;
 	}
 	
@@ -804,7 +804,7 @@ If ($dowCorrect){
 	$sql .= " Where Event_org = \"" . $_POST['Event_org'] . "\"";
 	$sql .= " && Dow = \"" . $_POST['oldDOW'] . "\"";
 	print "<br> " . $sql;
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	 if (!$result) {
           echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
@@ -828,7 +828,7 @@ If ($dowCorrect){
 	$sql .= " Where Event_org = \"" . $_POST['Event_org'] . "\"";
 	$sql .= " && " . $_POST['phraseLocation'] . " like \"%" . $_POST['actionPhrase'] . "%\"";
 	print "<br> " . $sql;
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	 if (!$result) {
           echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
@@ -857,7 +857,7 @@ If ($dowCorrect){
 	$sql .= " Where Event_org = \"" .$_POST['Event_org'] ."\"";
 	$sql .= " && " . $_POST['phraseLocation'] . " like \"%" . $_POST['actionPhrase'] . "%\"";
 	print "<br> " . $sql;
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	 if (!$result) {
           echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
@@ -886,7 +886,7 @@ If ($dowCorrect){
 	$sql .= " Where Event_org = \"" . $_POST['Event_org']. "\"";
 	$sql .= " && " . $_POST['phraseLocation'] . " like \"%" . $_POST['actionPhrase'] . "%\"";
 	print "<br> " . $sql;
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	 if (!$result) {
           echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
@@ -915,7 +915,7 @@ If ($dowCorrect){
 	$sql .= " Where Event_org = \"" . $_POST['Event_org'] . "\"";
 	$sql .= " && " . $_POST['phraseLocation'] . " like \"%" . $_POST['actionPhrase'] . "%\"";
 	print "<br> " . $sql;
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	 if (!$result) {
           echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
@@ -958,7 +958,7 @@ If ($dowCorrect){
 	$sql .= " Where Event_org = \"" . $_POST['Event_org'] . "\"";
 	$sql .= " && " . $_POST['phraseLocation'] . " like \"%" . $_POST['actionPhrase'] . "%\"";
 	print "<br> " . $sql;
-	$result = mysql_query($sql);
+	$result = mysqli_query($conn,$sql);
 	 if (!$result) {
           echo("<p> Error in select   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>"
 		  );
@@ -1056,7 +1056,7 @@ If ($dowCorrect){
 						confirm = \"Y\",
 						Event_priority= \"" . $_POST['event_priority'] . "\" " ;
 						  
-                       $result = mysql_query($sql);
+                       $result = mysqli_query($conn,$sql);
                         if (!$result) {
 						echo("<p> Error in generation  Email this information to cauleyfrank@gmail.com" . mysql_error() . $sql ."</p>");
           }
