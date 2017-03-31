@@ -100,11 +100,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					 function(data){
 					var testReturn = myTrim(data);
 					   console.log('return from fakeMailToWebmaster ' +testReturn);
-						if(testReturn=='Request entered'){
-							$('#returnmessage').html("<h1>Your event was posted</h1")
-						}else{
-							$['#returnmessage'].html("<h1>Request denied</h1>".data)
-						}	
+						$("#returnmessage").html(data);
 				})// end of ajax 
 									 
 			}); // end of submit button
@@ -243,7 +239,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 			} else {
 				alert( "The event date or event start date must be a valid date and greater than todays date plus three days."); 
-				document.getElementById("dateStart").focus();
+				document.getElementById("EventTitle").focus();
 			}
 		}
 
@@ -450,7 +446,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 
 			</form>
-	<div id="returnmessage"></div>
+	<div id="returnmessage">Results will be shown here.</div>
 		</div>
 		<!-- end of content -->
 		<div data-role="footer">
