@@ -32,15 +32,14 @@ $xml =  simplexml_load_file($file_to_read) or die("Unable to load file");
 
 // access XML data
 $subName= $xml->subName;
-echo("<br>Subname is ". $subName);
+//echo("<br>Subname is ". $subName);
 $entryType=$xml->entryType;
 $recurring=$xml->recurdesc;
 $refferSrc = $xml->refferSrc;
 $From_date=$xml->From_date;
-echo("<br>From Date is ". $From_date ." on line 40");
 //echo('<br>entry type is'.$entryType);
-$date_work = explode('/',$xml->From_date);
-echo("<br>Date work is ".$date_work[0].'-'.$date_work[1]. '-'. date_work[2]."  on line 41");
+$date_work = explode('/',$From_date);
+//echo("<br>Date work is ".$date_work[0].'-'.$date_work[1]. '-'. $date_work[2]. " on line 42");
 if(strlen($date_work[0])>2){
 $From_date =$xml->From_date;
 
@@ -60,7 +59,7 @@ else{
 	$date_to=$date_work2[2]. "-" . $date_work2[0]. "-" . $date_work2[1];
 	}
 }
-echo("<br />Date to is ").$date_to ." on line 48";
+//echo("<br />Date to is ").$date_to ." on line 48";
 if($xml->reserve_by == ''){
 	$reserve_by = $From_date;
 }
@@ -134,7 +133,7 @@ if($timeEndWork!=" "){
 var testString = '';
 
 
-
+//===================================================================================================
 function acknowledge(){
 	var recipientName = document.getElementById("subName");
 	var recipientEmail = document.getElementById("emailid");
@@ -173,7 +172,7 @@ function acknowledge(){
 			}
 		});
 }
-
+//==============================================================================
 function saveIsp(){
 var thisIsp=document.getElementById('sourceg');
 alert("Isp to save is " + thisIsp.value);
@@ -182,7 +181,7 @@ alert("Isp to save is " + thisIsp.value);
 
 
  
-
+//===========================================================================================
 function regxMicrosoft(obj)
 {
 
@@ -220,19 +219,21 @@ if (obj=='media')
  document.formInput.media.value = testString;
 }
 }
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++	
 function copyTitle(){
 //alert("at copyTitle");
 document.formInput.activity.value= document.formInput.event_title.value;
 }
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function UseDefault()
 {
 document.formInput.place.value = document.formInput.defaultLocation.value;
-}
+}//===================================================================================================
 function UseSubmitted()
 {
 document.formInput.place.value = document.formInput.submittedLocation.value;
 }
+//====================================================================================================	
 function UseFound()
 {
 var str=document.formInput.geocomplete.value;
@@ -255,11 +256,12 @@ place_work += " website is " + website;
 }
 document.formInput.place.value = place_work;
 }
-
+//==============================================================================
 function CallForDirections()
 {
  document.formInput.place.value="Call for Directions";
 }
+//==========================================================================================	
 function CopyStart()
 {
 document.formInput.date_to.value = document.formInput.From_date.value;
@@ -269,6 +271,7 @@ if(str.charAt(0)=='A')
 document.formInput.reserve_by.value = document.formInput.From_date.value;
 }
 }
+//================================================================================================	
 function UCWords(str){
   var arrStr = str.split(" ");
   var strOut = "";
@@ -284,6 +287,7 @@ function UCWords(str){
   return strOut.substr(0,strOut.length - 1);
 }
 
+//========================================================================================================	
 function processCAC()
 {
 var titleWork = document.formInput.event_title.value.toLowerCase();
@@ -292,7 +296,7 @@ document.formInput.event_title.value= UCWords(titleWork);
 document.formInput.date_to.value = document.formInput.From_date.value;
 
 }
-
+//=============================================================================================
 function processWheelhouse()
 {
 	//alert("Default location is  " + document.formInput.defaultLocation.value);
@@ -315,6 +319,7 @@ function processWheelhouse()
 
 	document.formInput.date_to.value = document.formInput.From_date.value;
 }
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++	
 function checkForm(form)
 {
 //alert('at checkform');
@@ -339,6 +344,7 @@ if(document.formInput.place.value.charAt(0) == ".")
 	}
 return true;
 }
+//===================================================================================	
 function clearLast()
 {
 var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('fileToRead').value
@@ -346,6 +352,7 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
 	alert('file to clear is ' + fileToClear)
 	unlink(fileToClear)
 }
+//===========================================================================================	
  function RemoveFile()
    {
      var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('fileToRead').value
@@ -364,6 +371,7 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
 
 
 </script>
+
 <script type="text/javascript" >
    $(document).ready(function() {
       $(".markItUp").markItUp(mySettings);
@@ -381,6 +389,7 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
         });
       });
 </script>
+
 <link rel="stylesheet" type="text/css" href="../markitup/markitup/skins/markitup/style.css" />
 <link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/style.css" />
  <style type="text/css" media="screen">
@@ -458,7 +467,7 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
       <td>Day Of Week</td>
 
       <td><input name="Day_of_week" type="text" id="Day_of_week" value="<? echo  $thisDayOfWeek?>" />
-	  Edited Day of Week <input name="Dow" type="text" id="Dow" size="4" />	  </td>
+	  Edited Day of Week <input name="dow" type="text" id="dow" size="4" />	  </td>
     </tr>
 	  <tr>
     <td>Place Name: </td>
@@ -483,7 +492,7 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
     </tr>
     <tr>
       <td>Place Zip </td>
-      <td><input name="zip" id="orgName" type="zip" value="<? echo $xml->zip?>" /></td>
+      <td><input name="zip" id="zip" type="zip" value="<? echo $xml->zip?>" /></td>
     </tr>
     <tr>
       <td>Place URL: </td>
