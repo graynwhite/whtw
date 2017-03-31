@@ -11,14 +11,15 @@
 */
 $action=$_GET['action'];
 $Event_number=$_GET['Event_number'];
-  include("../cgi-bin/connect.inc");
-  require_once("../../phpClasses/dateClass.php");
+require_once "../phpClasses/connect.php";  
+require_once("../phpClasses/dateClass.php");
 /*=================================================================================================*/
   if ($action == "byitem"){
         $sql = " Select * from events where Event_number = \"$Event_number\"";
-        $result = @mysql_query($sql);
+        $result = @mysqli_query($conn,$sql);
          if(!$result){
-                echo("<p>Could not execute query Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
+                echo("<p>Could not execute query Email this information to cauleyfrank@gmail.com" . mysqli_error() . "</p>");
+			 mysqli_close($conn);
         exit();
          }
   }# end select by item number
@@ -89,18 +90,18 @@ if ( $action=="copy" ) {
 if ( $action == "browse" ){
     $sql = " SELECT * from events  where Event_org = \"$Org\"
              order by Date_from,  Time_start";
-    $result = @mysql_query($sql);
+    $result = @mysqli_query($conn,$sql);
     if ( !$result ){
         echo("<p> Could not execute query Email this information to cauleyfrank@gmail.com". mysql_error() . "</p>");
         exit();
     }
-    while ( $row= mysql_fetch_array($result) ){
+    while ( $row= mysqli_fetch_array(assoc) ){
     echo("$row[Event_number]  $row[Date_from] $row[Place] $row[Activity]<p>\n");
     }
       exit();
     }# end of browse by organization
 
-    if(mysql_num_rows($result) < 1){
+    if(mysqli_num_rows($result) < 1){
         echo("<p> No events found for $Org on $from_date " . mysql_error() . "</p>");
      exit();
     }
@@ -385,7 +386,7 @@ function UCWords(str){
 
   <p>
     <?PHP
- while ($row = mysql_fetch_array($result)){
+ while ($row = mysqli_fetch_assoc($result)){
  echo ("<input type=\"hidden\" name=\"event\" id=\"event\" value= \"$row[Event_number]\"><br>");
  echo("Organization Code <input type=\"text\" id=\"Event_org\" name=\"Event_org\" size = \"5\" value= \"$row[Event_org]\"><br>\n");
  echo("Event Title <input type=\"text\" name=\"event_title\" size = \"50\" value= \"$row[Event_title]\"><br>\n");
