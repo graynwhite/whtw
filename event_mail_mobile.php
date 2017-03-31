@@ -42,20 +42,25 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 <head>
 
 	<title>Organization Event Input Mobile</title>
-	<meta name="viewport" content="width=device-width, user-scalable=yes"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/javascript"></script>
-	
-			
-	<link rel="stylesheet" href="http://www.graypluswhite.com/whtw/mobile.css"/>
-	
-	<link rel="icon" type="image/vnd.microsoft.icon" href="../gwlogo.gif"/>
+	<meta charset="utf-8">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">	
+	<meta name="Keywords" content="Sailing, Skiing, Golf, Dance, Christian, Jewish,Michigan, Single, Married, Bethany, Adultery, Catholic, Trips, Cruises, heath, fitness" />
+	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="//pjnews.mobi/peggyjo4.css"/>
+	<style type="text/css">
+	</style>
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	<style type="text/css">
 .allcaps
 {
-	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black, sans-serif;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #F30D11;
 }
     </style>
 	<script>
@@ -268,7 +273,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 		<div id="pgcontent" data-role='content'>
 			<p>The Gray and White Event Database is used to create multiple web site pages including the Peggy Jo Studio Newsletter </p>
-			<p class="veryimportant" >
+			<p class="allcaps" >
 				<? echo $presstime ?>
 			</p>
 			<form  name='formInput' id='formInput'>
@@ -360,7 +365,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 						<legend>End Time: if applicable</legend>
 						<input name="timeEnd" id="timeEnd" type="time" val=" " title="Day of week so the system can verify that the date and day of week agree 	Day of the week or Weekend, Week, etc."/>
 
-						<legend>Day of Week </legend>
+						<legend>Day of Week (Required) </legend>
 
 						<input name="Day_of_week" type="text" val=" " >
 
