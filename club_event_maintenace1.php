@@ -9,28 +9,28 @@
         Created: FJC 9/12/2003 3:52:08 PM
 	Last change: FJC 6/13/2005 11:21:27 PM
 */
- include("../cgi-bin/connect.inc");
+ include("../phpClasses/connect.php");
  function get_select_org($select_org){
-    $get_sql = "select * from entryControl where select_org =\"$select_org\" ";
-    $get_result = mysql_query($get_sql);
-    if ( !$get_result ){
-        print("<br /> invalid search organization " . $get_sql );
+    $sql = "select * from entryControl where select_org =\"$select_org\" ";
+    $result = mysqli_query($conn,$sql);
+    if ( !$result ){
+        print("<br /> invalid search organization " . $sql );
         exit;
         }
-        $row = mysql_fetch_array($get_result);
+        $row = mysqli_fetch_assoc($result);
         $resultx = $row['select_phrase'];
         $resultx = html_entity_decode($resultx);
         return  $resultx;
 
 }// end of get select_org function
 function get_page_title($select_org){
-    $get_sql = "select * from entryControl where select_org =\"$select_org\" ";
-    $get_result = mysql_query($get_sql);
-    if ( !$get_result ){
-        print("<br /> invalid search organization " . $get_sql );
+    $sql = "select * from entryControl where select_org =\"$select_org\" ";
+    $result = mysqli_query($conn,$sql);
+    if ( !$result ){
+        print("<br /> invalid search organization " . $sql );
         exit;
         }
-        $row = mysql_fetch_array($get_result);
+        $row = mysqli_fetch_array($result);
         $resultx = $row['heading_text'];
         $resultx = html_entity_decode($resultx);
 
@@ -46,7 +46,7 @@ function get_page_title($select_org){
     }
     $sql .= " order by Org_name ";
 
-    $result = @mysql_query($sql);
+    $result = mysqli_query($conn,$sql);
     if (!$result) {
 	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
 	 		exit;
@@ -84,7 +84,7 @@ function get_page_title($select_org){
         <th>Organization name</th>
         <th>Action </th>
 </tr>
- <?       while ($row = mysql_fetch_array($result)){
+ <?       while ($row = mysqli_fetch_assoc($result)){
 
     ?>
  <tr>

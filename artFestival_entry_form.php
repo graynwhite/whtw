@@ -5,19 +5,17 @@ $ire->setHeader('Art Fairs,Festivals, Community Events and Google Calendar');
 $header = $ire->getHeader();
 //echo "The header is " . $header;
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>Art,Festivals and Community Input</title>
-
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script> src="../markitup/package.json"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script  src="markitup.json"></script>
+	
 		
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/markitup.css" />
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/html.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/markitup.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/html.css" />
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
 
@@ -236,9 +234,8 @@ document.entry_form.other_site_text.value = place_work;
 
 </script>
 
-
-<link rel="stylesheet" type="text/css" href="markitup/style.css" />
-<link rel="stylesheet" type="text/css" href="html/style.css" />
+<!--<link rel="stylesheet" type="text/css" href=$_SERVER['document_home']."./markitup/markitup/default/style.css" /> -->
+<!--<link rel="stylesheet" type="text/css" href="./MarkItUp/skins/style.css" />-->
 
 <style type="text/css">
 
@@ -309,7 +306,7 @@ Read more about web engineering on web-engineering.info.
 
 <script>
 function scrollUp(){
-	scrollTo(0,0);
+	scrollTo(0,0)
 	}
 	
 function assignDate() {
@@ -317,8 +314,9 @@ function assignDate() {
   var today = new Date();
   dateEl.textContent = today.toLocaleDateString();
   dateEl.setAttribute("datetime", today.toISOString());
+
+window.addEventListener("load", assignDate);
 }
-window.addEventListener("load", assignDate);*/
  </script>
 </head>
 
@@ -354,7 +352,7 @@ $original_date=$ire->bldDateEntryShort();
 ?>
 
 <p>Media Input:
-  <textarea name="media" id="html" class="markItUp" cols="100%"  rows="10"></textarea><br/>
+  <textarea name="media" id="media" cols="100%"  rows="10"></textarea><br/>
   <input type="button" id="breakbutton" value="Break lines"/>
   <input type="button" id="cleanupbutton" value="Clean up Calendar"/>
   
@@ -364,7 +362,7 @@ $original_date=$ire->bldDateEntryShort();
   <input name="title" type="text" id="event_title" size="60" maxlength="60" />
 </p>
 <p>Event Description:
-  <textarea rows="3" name="event_text" id="event_text" class="markItUp" cols="100%"></textarea></p>
+  <textarea rows="3" name="event_text" id="event_text"  cols="100%"></textarea></p>
   <p>
   Place Name:<input name="geocomplete"; type="text" id="geocomplete" value="" size="80" />
 	  <input id="find" type="button" value="find" /><input name="useFound" type="button" id="useFound" value="Use Found" onClick="UseFound()"/></p>

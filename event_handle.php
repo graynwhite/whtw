@@ -705,7 +705,7 @@ If ($dowCorrect){
 
          $result = @mysqli_query($conn,$sql);
           if (!$result) {
-          echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
+          echo("<p> Error in delete   Email this information to cauleyfrank@gmail.com" . mysqli_error() . "</p>");
           }
 
 }
