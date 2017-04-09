@@ -37,6 +37,7 @@ $entryType=$xml->entryType;
 $recurring=$xml->recurdesc;
 $refferSrc = $xml->refferSrc;
 $From_date=$xml->From_date;
+$From_date=str_replace($From_date,"-","/");
 //echo('<br>entry type is'.$entryType);
 $date_work = explode('/',$From_date);
 //echo("<br>Date work is ".$date_work[0].'-'.$date_work[1]. '-'. $date_work[2]. " on line 42");
@@ -50,8 +51,9 @@ if($xml->to_date == ''){
 	$date_to = $From_date;
 }
 else{
-
-	$date_work2 = explode('/',$xml->to_date);
+	$date_work2=$xml->to_date;
+	$date_work2=str_replace(date_work2,"-","/");
+	$date_work2 = explode('/',date_work2);
 	if(strlen($date_work2[0])>2){
 	$date_to=$xml->to_date;
 
@@ -63,16 +65,19 @@ else{
 if($xml->reserve_by == ''){
 	$reserve_by = $From_date;
 }
-else{
-	$date_work3 = explode('/',$xml->reserve_by);
-	if(strlen($date_work3[0])>2){
+else
+	$date_work3=$xml->reserve_by;
+	$date_work3=str_replace(date_work3,"-","/");
+	$date_work3 = explode('/',$date_work3);
+	if(strlen($date_work3[0])>2)
+	{
 	$reserve_by=$xml->reserve_by;
 
 	}else{
 	$reserve_by=$date_work3[2] . "-" .$date_work3[0]. "-".$date_work3[1];
 
 	}
-}
+
 
 //print_r($xml);
 $firstDay = $ee->get_dow($From_date,$From_date);
@@ -172,7 +177,7 @@ function acknowledge(){
 			}
 		});
 }
-//==============================================================================
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 function saveIsp(){
 var thisIsp=document.getElementById('sourceg');
 alert("Isp to save is " + thisIsp.value);
@@ -587,7 +592,7 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
     </tr>
 	<tr>
 	  <td>Recurring</td>
-	  <td><input name="recurring" type="text" value="<? echo $recurring ?>" /></td>
+	  <td><input name="recurring" type="text" value="<? echo $xml->recurring ?>" /></td>
     </tr>
 	<tr>
 	  <td>Recur Begin</td>
@@ -599,7 +604,11 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
     </tr>
 	<tr>
       <td>Recurring Comments:</td>
-      <td><textarea name="recurComments" cols="80" rows="3" id="recurComments"><? echo $xml->recurComments?></textarea>
+      <?php
+		$recurComments = $xml->recurring . "<br> Starting on ". $xml->recurbegin . " and ending on ". $xml->recurend;
+		?>
+	
+      <td><textarea name="recurComments" cols="80" class="markItUp" rows="3" id="recurComments"><? $recurComments?></textarea>
       <input name="Edit" type="button" id="Edit" value="Edit" onClick="regxMicrosoft('recurComments')" />    </tr>
 	<tr>
 	  <td>Password</td>

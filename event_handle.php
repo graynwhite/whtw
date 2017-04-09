@@ -22,7 +22,7 @@ public	$Radio_state = "   ";
 public	$re="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$";
 
 function check_dow(){
-$fromDayWork = explode('/',$_POST['from_date']);
+$fromDayWork = explode('-',$_POST['from_date']);
 $fromDayTimestamp=mktime(0,0,0,$fromDayWork[0],$fromDayWork[1],$fromDayWork[2]);
 $comDow = date('D',fromDayTimestamp);
 if ($_POST['dow']!=$comDow){
@@ -30,7 +30,7 @@ if ($_POST['dow']!=$comDow){
 	print ( "\n you selected  "  .$_POST[dow]); 
 	print ("\n  however, the computed day of week is " . $comDow);
 	print ( "\n  Change the selected day of week or change the date.");
-	
+	exit();
 	}
 	
 	
@@ -130,6 +130,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/connect.php");//print "SQL i
         Resby = \"$resby\",
         Activity = \"$activity\",
 		media = \"$media\",
+		Dow = \"" . $_POST['dow'] ."\",
         Price_members = \"" . $_POST['Price_Member'] ."\",
         Price_guests = \"" . $_POST['Non_Member_Price'] ."\",
         Event_open= \"" . $_POST['Event_type'] ."\",
