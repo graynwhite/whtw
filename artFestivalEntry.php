@@ -9,7 +9,7 @@
         Created: FJC 9/5/2003 2:10:29 PM
 	Last change: FJC 11/14/2004 1:18:36 PM
 */
-//require_once("../phpClasses/connect.php");
+require_once("../phpClasses/connect.php");
 require_once("../phpClasses/Class_Ire.php");
 $ire = new IREclass;
 
@@ -50,6 +50,7 @@ $event_end = $_POST['date_to'] ;
 $event_resby = $_POST['resby'] ;
 $ts = $_POST['timeStart'];
 $te = $_POST['timeEnd'];
+$confirm=$_POST['confirm'];
 $price_members=$price_guests=$_POST['price'];
 if(isset($_POST['blogNumber'])&& strlen($_POST['blogNumber'])>0)
 {
@@ -92,7 +93,7 @@ break;
 case 'intervening':
 $hold_date=$event_end;
 $event_end=$event_date;
-$ire->postEvent($place,$event_date,$event_end,$event_resby,$event_org,$ts,$te,$dow,$activity,$media,$price_members,$price_guests,$priority,$title);
+$ire->postEvent($place,$event_date,$event_end,$event_resby,$event_org,$ts,$te,$dow,$activity,$media,$price_members,$price_guests,$priority,$title,$confirm);
 while($event_date < $hold_date)
 {
 	$bump_return = $ire->bumpSqlDate($event_date,1);

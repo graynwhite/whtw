@@ -23,8 +23,8 @@ if(!isset($_GET['org']) && !isset($_GET['affil']) && !isset($_GET['dateSearch'])
 } 
 function decode_entities($text) {
     $text= html_entity_decode($text,ENT_QUOTES,"ISO-8859-1"); #NOTE: UTF-8 does not work!
-    $text= preg_replace_callback('/&#(\d+);/',"chr(\\1)",$text); #decimal notation
-    $text= preg_replace_callback('/&#x([a-f0-9]+);/mei',"chr(0x\\1)",matches);  #hex notation
+    //$text= preg_replace_callback('/&#(\d+);/',"chr(\\1)",$text); #decimal notation
+    //$text= preg_replace_callback('/&#x([a-f0-9]+);/mei',"chr(0x\\1)",matches);  #hex notation
     return $text;
 }
 require_once("../phpClasses/connect.php");
@@ -105,7 +105,7 @@ preg_replace_
 	  Place =<?print $dispPlace ?>&nbsp;
 	  
       <br />Activity=<?print $dispActivity ?>&nbsp;<br />Media= <?print $dispMedia ?> <br />
-		<a href="http://www.graynwhite.com/whtw/event_maint.php?action=byitem&Event_number=<?print$row['Event_number']?>" target="_blank"><input type="button" value="Select"></a>
+		<a href="http://www.graypluswhite.com/whtw/event_maint.php?action=byitem&Event_number=<?print$row['Event_number']?>" target="_blank"><input type="button" value="Select"></a>
 
  </tr>
 

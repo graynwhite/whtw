@@ -392,8 +392,8 @@ function UCWords(str){
  echo("Event Title <input type=\"text\" name=\"event_title\" size = \"50\" value= \"$row[Event_title]\"><br>\n");
  echo("Event Identification <input type=\"text\" name=\"event_id\" size=\"3\" value = \"$row[Event_number]\"><br>\n");
  echo("Start date  <input type =\"text\" name = \"date_from\" size = \"12\" value = \"$row[Date_from]\" onDblClick=\"copyDateFrom()\">To copy double click<br>\n");
- $recurbeginval=$row[Date_from];
- $copyToDateVal = $row[Date_from];
+ $recurbeginval=$row['Date_from'];
+ $copyToDateVal = $row['Date_to'];
  $dchange = new entryControlDate;
  $recurbegincalc = $dchange->bumpDate($recurbeginval);
  $recurbeginval = $recurbegincalc[0];

@@ -1,6 +1,6 @@
 
 <?php
-//require_once($_SERVER['DOCUMENT_ROOT'].'/class.phpmailer.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/connect.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/class_events.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/phpClasses/class_date_utility.php');
 //require_once($_SERVER['DOCUMENT_ROOT']. '/phpClasses/convertPhp4GetPost.php');
@@ -598,13 +598,13 @@ If ($dowCorrect){
  }
  /*===============================================================================================*/
  if ($_POST['action'] == "change" || $_POST['action'] == 'makeLower' ) {
- 	
+ 	global $conn;
  	/*if($_POST['Event_org']=='HOL'){
 		$_POST['activity']=htmlentities($_POST['activity']);
 	}*/
   /*print "<br>at change routine";*/
   print "<br> Record will be changed ";
-  $SQL= "  update events
+  $sql= "  update events
      SET Place = \"" . htmlentities($_POST['place']) ."\",
 	 	 media = \"" . htmlentities($_POST['media']) . "\",	
          Event_org =\"" . $_POST['Event_org'] . "\", 
@@ -626,9 +626,9 @@ If ($dowCorrect){
         confirm = \"" . $_POST['confirm'] . "\"
         where Event_number = \""  . $_POST['event_id'] . "\"
             ";   
-          $result = mysql_query($SQL);
+          $result = mysqli_query($GLOBALS["conn"],$sql);
           if (!$result) {
-          echo("<p> Error in update  Email this information to cauleyfrank@gmail.com" . "<br>" . $SQL . mysql_error() . "</p>");
+          echo("<p> Error in update  Email this information to cauleyfrank@gmail.com" . "<br>" . $sql . mysqli_error() . "</p>");
 		  exit;
           }
  }
