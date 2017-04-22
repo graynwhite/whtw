@@ -571,7 +571,7 @@ If ($dowCorrect){
          Date_from =\"$next_years_date[0]\",
          Time_start = \"" .$_POST['time_start']. "\",
          Time_end= \"" . $_POST['end_time']. "\",
-        Event_open = \"" . $_POST['event_type'] . "\", 
+        Event_open =\"1\", 
         Date_to =\"$next_years_date[0]\",
         Resby= \"$next_years_date[0]\",
         Dow = \"$next_years_date[1]\",
@@ -583,15 +583,15 @@ If ($dowCorrect){
         Event_priority=\"" . $_POST['event_priority'] . "\",
 		needsReview = 1 ,
 		Event_title = \"" . $_POST['event_title'] . "\",
-		SUBMITTED_BY= \"" . $_POST[submitted_by] . "\",
+		SUBMITTED_BY= \"" . $_POST['submitted_by'] . "\",
         confirm = \"Y\"
         where Event_number = \"" . $_POST['event_id'] . "\"
            ";  
-		    $result = mysql_query($sql);
+		    $result = mysqli_query($GLOBALS['conn'],$sql);
           if (!$result) {
-          echo("<p> Error in update  Email this information to cauleyfrank@gmail.com"  . $sql . mysql_error() . "</p>");
+          echo("<p> Error in update  Email this information to cauleyfrank@gmail.com"  . $sql . mysqli_error($GLOBALS['conn']) . "</p>");
           }  
- $bodyText  .= "<br> Rows affected = " . mysql_affected_rows(); 	  
+ $bodyText  .= "<br> Rows affected = " . mysqli_affected_rows($GLOBALS['conn']); 	  
 	print $bodyText;
     print "<br>End of processing";
     exit;
@@ -611,7 +611,7 @@ If ($dowCorrect){
          Date_from =\"" . $_POST['date_from'] . "\",
          Time_start = \"" . $_POST['time_start'] . "\",
          Time_end= \"" . $_POST['end_time'] ."\",
-        Event_open = \"" . $_POST['event_type']. "\", 
+        Event_open = \"1\", 
         Date_to =\"" . $_POST['date_to'] . "\",
         Resby= \"" . $_POST['resby'] . "\",
         Dow = \"" . $_POST['dow'] . "\",

@@ -124,7 +124,7 @@ if ( $action == "browse" ){
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="nl2br.js"></script>
-	<script type="text/javascript" src="http://www.graypluswhite.com/markitup/markitup/jquery.js"></script>
+	<!--<script type="text/javascript" src="http://www.graypluswhite.com/markitup/markitup/jquery.js"></script>-->
 	<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
 	<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
 	
@@ -186,11 +186,13 @@ if ( $action == "browse" ){
 	
 	$("#wrapimage").click(function(){
 		var imagename=prompt("Enter Image name ","notfound");
-		var workarea="<img src=\"http://www.peggyjostudio.net/E/" + imagename + "\"" +
+		var workarea="<table><tr><td><img src=\"http://www.graypluswhite.com/pjsnimages/" + imagename + "\"" +
 		 " align=\"left\" width=\"28%\" alt=\"image Photo\" hspace=\"5\">";
-		 alert("work area is " + workarea);
-		$("#media").prepend(workarea);
-		alert("media is " + $("#media").val());
+		alert("work area is " + workarea);
+		
+		var workarea2= $("#media").val() + "</td></tr></table>";
+		$("#media").html(workarea + workarea2);
+		alert("media is " + $("#media").html());
 		
 		
 		
@@ -420,7 +422,7 @@ echo("<input type=\"button\" id=\"insertAvatar\" value=\"Insert Avatar\">");
 echo("<input type=\"button\" id=\"wraptable\" value=\"Wrap in Table\">");
 echo("<input type=\"button\" id=\"insertAdvertisement\" value=\"Insert Advertisement\">");
 echo("<input type=\"button\" id=\"makesingle\" value=\"Make single spaced\">");
-echo("<input type=\"button\" id=\"wrapimage\" value=\"Wrap image\">");
+echo("<input type=\"button\" id=\"wrapimage\" value=\"Get, wrap and insert an image\">");
 echo("<br /><hr />");
 echo("Price Members  <input type = \"text\" name = \"price_members\" size = \"20 \" value =\"$row[Price_members]\"><br>\n");
 echo("Price Guests  <input type = \"text\" name = \"price_guests\" size = \"20\" value = \"$row[Price_guests]\"><br>");
@@ -627,7 +629,7 @@ Blog Reference</label>
 
 <p>
 	<label for="password">Enter Password</label>
-	<input type="password" id="password" name="password">
+	<input type="password" id="password" name="password" value="">
   <input type ="submit" name= "submit" value="Submit Form">
 </p>
 
