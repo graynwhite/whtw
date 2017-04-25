@@ -49,7 +49,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 	<meta http-equiv="pragma" content="no-cache">
 	<meta name="Keywords" content="Sailing, Skiing, Golf, Dance, Christian, Jewish,Michigan, Single, Married, Bethany, Adultery, Catholic, Trips, Cruises, heath, fitness"/>
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css"/>
-	<link rel="stylesheet" href="//pjnews.mobi/peggyjo4.css"/>
+	<link rel="stylesheet" href="peggyjo4.css"/>
 	<style type="text/css">
 
 	</style>
@@ -108,6 +108,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 			$( "#anotherEntry" ).click( function () {
 				console.log( "Entering another entry button " );
 				$( "#eventTitle" ).val( "" );
+				$("#returnmessage").html("<b>Results will be shown here.</b>");
 				$( "#dateStart" ).val( "2017-01-01" );
 				$( "#reserve_date" ).val( "2017-01-01" );
 				$( "#dateEnd" ).val( "2017-01-01" );
@@ -123,9 +124,9 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				$( "#activity" ).val( " " );
 				$( "#price_member" ).val( " " )
 				$( "#pice_non_member" ).val( " " );
-				$( "#recurDesc" ).val( "2017-01-01 " );
-				$( "#recurBegin" ).val( "2017-01-01" );
-				$( "#recurEnd" ).val( "2017-01-01 " );
+				$( "#recurDesc" ).val( "2017-01-01" );
+				$( "#recurBegin" ).val("2017-01-01" );
+				$( "#recurEnd" ).val( "2017-01-01" );
 				$( "#anotherEntryArea" ).hide();
 				$( "#submitButtonArea" ).show();
 				document.getElementById( "eventTitle" ).focus();

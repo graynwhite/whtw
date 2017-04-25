@@ -118,7 +118,7 @@ class insertMultipleRecords
 
 function insertRecord($place,$date_from,$time_start,$time_end,$date_to,$resby,$confirm,$activity,$media)
 {
-require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/connect.php");//print "SQL is " . $SQL;
+global $conn;
  $sql= "
          insert into events
          SET Place = \"$place\",
@@ -144,7 +144,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/connect.php");//print "SQL i
           $result = mysqli_query($conn,$sql);
 		  
           if (!$result) {
-          echo("<p> Error in Insert a record    Email this information to cauleyfrank@gmail.com<br>" . mysqli_error($result) . "\n" . $sql  ."</p>");
+          echo("<p> Error in Insert a record    Email this information to cauleyfrank@gmail.com<br>" . mysqli_error($conn) . "\n" . $sql  ."</p>");
 		  exit();
           }
 		  
