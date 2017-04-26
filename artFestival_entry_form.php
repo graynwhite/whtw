@@ -1,5 +1,6 @@
 <?php
-require_once("../phpClasses/Class_Ire.php");
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
+require_once "../gwsecurity/private/initialize.php";
 $ire = new IREclass;
 $ire->setHeader('Art Fairs,Festivals, Community Events and Google Calendar');
 $header = $ire->getHeader();
