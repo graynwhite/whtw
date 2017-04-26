@@ -87,7 +87,7 @@ $listbox="<div data-role=\"fieldcontain\">
 <div data-role="page" id="page">
   <div data-role='header'>
 <h1>Theater Event Information Input<br /> 
-<img src="graypluswhitebannereventMaint.jpg" width="100%"  /></h1>
+<img src="graynwhitebannereventMaint.jpg" width="100%"  /></h1>
 </div>
 
   
@@ -107,7 +107,7 @@ $listbox="<div data-role=\"fieldcontain\">
    
   
   <legend>Starting date</legend>
-    <input type="date" name="fdate" id="fdate"
+    <input type="text" name="fdate" id="fdate"
    class="validate[required]"  
 	  data-prompt-position="bottomLeft:140,5"
 	  title="Enter date of the first performance" >
