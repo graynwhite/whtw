@@ -55,8 +55,8 @@ $listbox="<div data-role=\"fieldcontain\">
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
-		<script src="http://www.graypluswhite.com/dough/Dough/dough.min.js"></script>
-<script>		
+		<!--<script src="http://www.graypluswhite.com/dough/Dough/dough.min.js"></script> -->
+<script> 		
 	$(document).ready(function(){
   jQuery("#formInput").validationEngine(
   { 'custom_error_messages':
@@ -77,7 +77,7 @@ $listbox="<div data-role=\"fieldcontain\">
 <div id="page1" data-role='page'>
 <div data-role="header">
 <h1>Theater/Trip Event Information Input</h1>
-<img src="graypluswhitebannereventMaint.jpg" width="100%"  />
+	<center><img src="graynwhitebannereventMaint.jpg" width="60%"  /></center>
 </div>
 
 <div id="pgcontent" data-role='content'>
