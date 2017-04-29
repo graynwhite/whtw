@@ -42,25 +42,22 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 <head>
 
 	<title>Organization Event Input Mobile</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, user-scalable=yes"/>
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta name="Keywords" content="Sailing, Skiing, Golf, Dance, Christian, Jewish,Michigan, Single, Married, Bethany, Adultery, Catholic, Trips, Cruises, heath, fitness"/>
-	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css"/>
-	<link rel="stylesheet" href="peggyjo4.css"/>
-	<style type="text/css">
+	<m<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/template.css" />
+	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/validationEngine.jquery.css" />
+	<link rel="stylesheet" href="mobile.css"/>
+	
+		
+		
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
+		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
 
-	</style>
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-	<style type="text/css">
-		.allcaps {
-			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-			color: #F30D11;
-		}
-	</style>
 	<script>
 		// Replace ending plus sign or  end of a string plus signs with blanks'
 		function myTrim( x ) {
@@ -71,6 +68,8 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 	<script>
 		$( document ).ready( function () {
+			 $("#formInput").validationEngine('attach');
+		$("#formInput").validationEngine({promptPosition : "topRight", scroll: false});
 			console.log( "Starting document ready function" );
 			$( "#anotherEntryArea" ).hide();
 			var someDate = new Date();
@@ -367,7 +366,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<fieldset>
 
 						<legend>Title of Event(keep it short do not use all caps) </legend>
-						<input name="EventTitle" type="text" id="eventTitle" />
+						<input name="EventTitle" type="text" id="eventTitle" data-validation-engine="validate[required]"/>
 
 
 						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>

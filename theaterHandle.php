@@ -1,23 +1,15 @@
 <?php
 // print "Post values \n";
-//var_dump($_POST);
+print_r($_POST);
 
-if(trim($_POST['passwrd']) !='/FJ6r1n11M'){
-	print "password submitted was " . $_POST['passwrd'] . "\n";
-	print "production name is " . $_POST['prodname'] . "\n";
-	print "date start was " . $_POST['dateStart'] . "\n";
-	print  "Password not valid";
-	exit;
-	
-}
-	
-require_once($_SERVER['DOCUMENT_ROOT']."/phpClasses/Class_Ire.php");
-require_once($_SERVER['DOCUMENT_ROOT']."/cgi-bin/connect.inc");
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
+require_once "../gwsecurity/private/initialize.php";
 
+if(trim($_POST['passwrd']) != MAINT_PASS)	die("Password not valid");
 $ire = new IREclass;
 
 $confirm = $_POST["radioEntryType"]=="Theater"? "Y" : "T";
-
+echo("Confirm is " . $confirm);
 $groupName = str_replace("+"," ",$_POST["selectmenu"]);
 $event_date =  $_POST["dateStart"];
 $event_end = $_POST["dateEnd"];
@@ -46,7 +38,7 @@ $html_text .= "<br /> Confirm is " . $confirm;
 $html_text .= "<br /> Day of week is " . $dow;
 
 	
-$SQL = "  insert into events
+$sql = "  insert into events
            SET Place = \"$event_place\",
            Date_from = \"$event_date\",
            Date_to = \"$event_end\",
@@ -62,9 +54,9 @@ $SQL = "  insert into events
            SUBMITTED_BY = \"calendarMobile\"
            ";
 		   //print ("<br />" . $SQL);
-             $result = @mysql_query($SQL);
+             $result = @mysqli_query($conn,$sql);
           if (!$result) {
-          $html_text .= "<p> Error in insert " . mysql_error() ."<br>". $SQL . "</p>";
+          $html_text .= "<p> Error in insert <br />"  . mysqli_error($conn) ."<br>". $ql . "</p>";
           }else{
             $html_text .= "<br />Event posted<p>";
         }
@@ -77,13 +69,13 @@ $SQL = "  insert into events
 <head>
 <title>Theater Handler</title>
  
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device_width, initial_scale=1">
 	
-	<!--<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />-->
+	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css"> 
 	<link rel="stylesheet" href="stylesheet.css"/>
     <link rel="stylesheet" href="mobile.css"/>
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<!--<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script> -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>"
+	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script> 
 	
 </head>
 <body>

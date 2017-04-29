@@ -16,14 +16,15 @@
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
-		<script src="http://www.graypluswhite.com/dough/Dough/dough.min.js"></script>
+		<!--<script src="http://www.graypluswhite.com/dough/Dough/dough.min.js"></script> -->
 		
 	
 </head>
 
 <body>
 <div data-role="page">
-<div data-role="header"><h1>Holiday, Trip or Special Event Input</h1></div>
+<div data-role="header"><h1>Holiday, Trip or Special Event Input
+<center><img src="graynwhitebannereventMaint.jpg" width="60%"  /></center></h1></div>
 <form method="post" action="holiday_input.php">
 <table border="1" width="100%">
 <tr>

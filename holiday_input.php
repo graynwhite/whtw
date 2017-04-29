@@ -1,5 +1,6 @@
-<?php>
-
+<?php
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
+require_once "../gwsecurity/private/initialize.php";
 	print_r($_POST);
 echo("array printed");
 printArray($_POST);
@@ -11,21 +12,19 @@ printArray($_POST);
         }  
     } 
 	}
-	exit();
+	
 
 
 $return_message='';
 $break="\<br \/>";
 $break="\n";
-include("class_connect.php");
-$con = new connect_to_database;
-$con->connect();
+
+
 $return_message="Pass is " . $_POST["passx"];
 
- if (trim($_POST['pasx']) != "/FJ6r1n11M" ){
-	 $return_message.="<br />Your are not authorized to use this syastem";
-	 exit;
-	}else{
+ if (trim($_POST['pasx']) != MAINT_PASS ){
+	 die("<br />Your are not authorized to use this syastem");
+	
 	$return_message="Starting insert process";
 
 $dateWork = $_POST['holiday_date'];
@@ -35,25 +34,27 @@ $dateArray =explode("/",$dateWork);
 $emonth=$dateArray[1];
 $eday = $dateArray[2];
 $eyear =$dateArray[0];
-$priority=$_POST[priority];
+$priority=$_POST['priority'];
 $timestamp=mktime(0,0,0,$emonth,$eday,$eyear);
 $dow = date('D',$timestamp);
 $event_date=$dateWork;
-$place = $_POST[holiday_description];
-$activity=$_POST[holiday_description];
-$holimage=$_POST[holimage];
-
+$place = $_POST['holiday_description'];
+$activity=$_POST['holiday_description'];
+$holimage=$_POST['holimage'];
+$media=$_POST['holiday_description'];
 if(strlen($holimage)>0){
-$activity = '<table><tr><td>'; 
-$activity .= "<img src=\"http://www.peggyjostudio.net/E/" . $holimage ."\"";
-$activity .= "alt='Holiday Logo' align='left' height='100'>";
-$activity .= "<h2>" .$place . "</h2>";
+$media = '<table><tr><td>'; 
+$media .= "<img src=\"http://www.peggyjostudio.net/E/" . $holimage ."\"";
+$media .= "alt='Holiday Logo' align='left' height='100'>";
+$media .= $_POST['holiday_description'];	
+$media .= "<h2>" .$place . "</h2>";
 if($_POST['disclaim']=='Y'){
-	$activity .= "<h3>Regularly scheduled events may not take place on this day and the prior evening. Check with the sponsoring organization before travelling to the venue</h3>";
+	$media .= "<h3>Regularly scheduled events may not take place on this day and the prior evening. Check with the sponsoring organization before travelling to the venue</h3>";
 }
-$activity.="</td></tr></table>";
-$activity = htmlentities($activity);
-$media=$activity;
+$media.="</td></tr></table>";
+	
+$media = htmlentities($media);
+$activity=htmlentities($activity);
 }else{
 	$activity='  ';
 }
@@ -69,14 +70,16 @@ $media=$activity;
            Price_members = \" \",
            Price_guests = \" \",
            Event_open = \"Y\",
-           Event_priority = \"$priority\",
+		   image=\"$holimage\",
+		   Event_priority = \"$priority\",
            SUBMITTED_BY = \"holiday_entry\" ";
 		   
 		  
-		   $result = @mysql_query($sql);
-		   if(@mysql_error()!=''){
+		   $result = mysqli_query($conn,$sql);
+		   if(mysqli_error($conn)!=''){
 			   $return_message.="<br /> there was an error in execution";
-			   $return_message.="br/>" . @mysql_error();
+			   $return_message.="br/>" . mysqli_error();
+			   echo($return_messsage);
 		   }
 
            
@@ -84,8 +87,10 @@ $media=$activity;
 		  $return_message.="<br />however something was wrong with the Sql";
 		   $return_message.="<br />this is the sql";
 		   $return_message.="<br />" .$sql;
+			  echo($return_message);
           }else{
-			  $return_message.="Event Posted";            
+			  $return_message.="Event Posted";
+			  echo($return_message);
         }
 }
 

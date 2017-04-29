@@ -1,5 +1,7 @@
 <?php
-$file_to_read="theaterVenues.xml";
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
+require_once "../gwsecurity/private/initialize.php";
+$file_to_read="theaterVenues.xml";  
 $xml =  simplexml_load_file($file_to_read) or die("Unable to load file");
 
 $listbox="<div data-role=\"fieldcontain\">
@@ -20,7 +22,7 @@ $listbox="<div data-role=\"fieldcontain\">
 <head>
 
 <title>Organization Event Input Mobile</title>
-	<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<meta name="viewport" content="width=device-width, user-scalable=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
@@ -35,14 +37,11 @@ $listbox="<div data-role=\"fieldcontain\">
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
-		<script src="http://www.graypluswhite.com/dough/Dough/dough.min.js"></script>
+		<script src="http://www.graypluswhite.com//dough/Dough/dough.min.js"></script>
 <link rel="stylesheet" href="wide.css"/>		
 	<script>
 	$(document).ready(function(){
 	
-	 
-	   
-
   jQuery("#formInput").validationEngine(
   { 'custom_error_messages':
   {'#Orgname' :{
@@ -71,16 +70,7 @@ $listbox="<div data-role=\"fieldcontain\">
 <link rel="stylesheet" href="wide.css"/>
 
 <title>Theater Event Entry</title>
-	<script>
-	$(document).ready(function(){
-
-  jQuery("#formInput").validationEngine( );
-});
-
-
-
-</script>
-
+	
 </head>
 
 <body>
