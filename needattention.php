@@ -1,19 +1,27 @@
 <?php
-
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw
+');
+require_once "../gwsecurity/private/initialize.php";
 /*
  * Created on Jan 10, 2006
  *
  * To change the template for this generated file go to
  * Window - Preferences - PHPeclipse - PHP - Code Templates
  */
-?>
-<?php
-include("../cgi-bin//connect.inc");
+
+function decode_entities($text) {
+    $text= html_entity_decode($text,ENT_QUOTES,"ISO-8859-1"); #NOTE: UTF-8 does not work!
+    //$text= preg_replace_callback('/&#(\d+);/',"chr(\\1)",$text); #decimal notation
+    //$text= preg_replace_callback('/&#x([a-f0-9]+);/mei',"chr(0x\\1)",matches);  #hex notation
+    return $text;
+}
+
+
    $sql="select * from events where (Event_org = \"HOL\") or (Event_org=\"hol\")  
    order by Date_from ";
-   $result = @mysql_query($sql);
+   $result = mysqli_query($conn,$sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com <br />" . mysqli_error() . "<br />" . $sql . "</p>");
 	 		exit;
 
       		}
@@ -32,49 +40,68 @@ include("../cgi-bin//connect.inc");
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-	</head>
+</head>
 
 <body>
 <div data-role=header>
 	<p align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></p>
 	<h1 align="center">Events that need attention</h1>
 	</div>
-	<div data-role=content>
-<table border="1" cellpadding="0" cellspacing="0"  >
+	<div data-role="c"ontent">
+<table border="1" cellpadding="0" cellspacing="0" bordercolor="#000000" width="100%">
   <tr>
-    <td width="12%">
-		<p align="center">From Date</p></td>
-    <td width="12%">
-		<p align="center">To Date</p></td>
-    <td width="32%=">
-		<p align="center">Place</p></td>
-    <td width="32%">
-		<p align="center">Activity</p></td>
-    <td width="12%">
-		<p align="center">Action</p></td>
+    <th width="12%">
+		<p align="center">From Date</p></th>
+    <th width="12%">
+		<p align="center">To Date</p></th>
+    <th width="32%=">
+		<p align="center">Place</p></th>
+    <th width="32%">
+		<p align="center">Activity</p></th>
+    <th width="12%">
+		<p align="center">Action</p></th>
   </tr>
-  <tr>
-  <?       while ($row = mysql_fetch_array($result)){
-
+  
+  <?       while ($row = mysqli_fetch_assoc($result)){
+  			if($row['Event_org']=='HOL'){
+			$dispActivity= decode_entities($row['Activity']);
+			$dispMedia=decode_entities($row['media']);
+			$dispPlace=decode_entities($row['Place']);
+			$row['Activity']=$dispActivity;
+			}		
     ?>
-	  <td><?php echo $row['Event_org']?>
-	  <?php echo $row['Date_from']?>&nbsp;
-	  <?php echo $row['Time_start']?>&nbsp;
-    <?php echo $row['Time_end']?>&nbsp;&nbsp;
-    <?php echo $row['Dow']?>&nbsp;
-	<?php echo $row['Event_number']?>&nbsp;</td>
-     <td><?php echo $row['Date_to']?>&nbsp;</td>
-      <td><?php echo $row['Place']?>&nbsp;</td>
-       <td><?php echo $row['Activity']?>&nbsp;</td>
-	  <td><a href="event_maint.php?action=byitem&Event_number=<?php echo['Event_number']?>">select</a></td>
+	<tr>
+    <td>	
+	<?print $row['Date_from']?>
+      &nbsp;
+    <?print$row['Time_start']?>&nbsp;
+    <?print$row['Time_end']?>&nbsp;&nbsp;
+    <?print$row['Dow']?><br />MP&nbsp;
+	<?print$row['Price_members']?>&nbsp;GP&nbsp;
+	<?print$row['Price_guests']?>&nbsp;
+    </td>
+     <td>
+	 Id = <?print$row['Event_number']?><br>
+	 To=<?print $row['Date_to']?>&nbsp;
+	 Resv=<?print $row['Resby']?>&nbsp;
+	 </td>
+	 
+      <td>Title: <?print $row['Event_title']?><br />
+	  Place =<?print $dispPlace ?>&nbsp;
+	  
+      <br />Activity=<?print $dispActivity ?>&nbsp;
+      <br />Media= <?print $dispMedia ?>
+      <br /><a href="http://www.graypluswhite.com/whtw/event_maint.php?action=byitem&Event_number=<?print$row['Event_number']?>" target="_blank">
+	  <input type="button" value="Select"/></a>
+		
 	</tr>
+	<?php } ?>
  </table>
  
  	<div data-role="footer">
 			<h1 align="center">Gray and white computing</h1>
 	</div>
-		
-
+	</div> <!--End of content-->
 </body>
 
 </html>
