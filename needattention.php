@@ -17,7 +17,7 @@ function decode_entities($text) {
 }
 
 
-   $sql="select * from events where (Event_org = \"HOL\") or (Event_org=\"hol\")  
+   $sql="select * from events where (Event_org = \"HOL\") or (Event_org=\"hol\") or (needsReview = \"1\") 
    order by Date_from ";
    $result = mysqli_query($conn,$sql);
     if (!$result) {
@@ -45,40 +45,38 @@ function decode_entities($text) {
 <body>
 <div data-role=header>
 	<p align="center"><img src="graynwhitebannereventMaint.jpg" width="468" height="60"></p>
-	<h1 align="center">Events that need attention</h1>
+	<h1 align="center">Events That Need Attention</h1>
 	</div>
 	<div data-role="c"ontent">
 <table border="1" cellpadding="0" cellspacing="0" bordercolor="#000000" width="100%">
   <tr>
-    <th width="12%">
-		<p align="center">From Date</p></th>
-    <th width="12%">
+    <th width="20%">
+		<p align="center">From Date
+   </p></th>
+    <th width="20%">
 		<p align="center">To Date</p></th>
-    <th width="32%=">
-		<p align="center">Place</p></th>
-    <th width="32%">
-		<p align="center">Activity</p></th>
-    <th width="12%">
-		<p align="center">Action</p></th>
+    <th width="60%=">
+		<p align="center">Place, Activity and Action</p></th>
+    
   </tr>
   
   <?       while ($row = mysqli_fetch_assoc($result)){
-  			if($row['Event_org']=='HOL'){
+  			
 			$dispActivity= decode_entities($row['Activity']);
 			$dispMedia=decode_entities($row['media']);
 			$dispPlace=decode_entities($row['Place']);
 			$row['Activity']=$dispActivity;
-			}		
+					
     ?>
 	<tr>
     <td>	
-	<?print $row['Date_from']?>
-      &nbsp;
+	<?print $row['Date_from']?>&nbsp;
     <?print$row['Time_start']?>&nbsp;
     <?print$row['Time_end']?>&nbsp;&nbsp;
     <?print$row['Dow']?><br />MP&nbsp;
 	<?print$row['Price_members']?>&nbsp;GP&nbsp;
 	<?print$row['Price_guests']?>&nbsp;
+   Priority&nbsp<?print$row['Event_priority']?>;
     </td>
      <td>
 	 Id = <?print$row['Event_number']?><br>
