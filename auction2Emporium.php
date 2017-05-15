@@ -1,10 +1,11 @@
 <?PHP
-require_once("../cgi-bin/connect.inc");
-require_once("../phpClasses/dateClass.php");
-require_once("../phpClasses/Class_orgs.php");
-require_once("../phpClasses/PHPAUCTIONXL_categories.php");
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw
+');
+require_once "../gwsecurity/private/initialize.php";
+
+
 $result = mysql_query("Select * from PHPAUCTIONXL_auctions ");
-	if (!$result) {trigger_error("problem with sql" . mysql_error());
+	if (!$result) {trigger_error("problem with sql" . mysql_error($result));
 	exit;
 	}
 	$bump_factor = 5;
