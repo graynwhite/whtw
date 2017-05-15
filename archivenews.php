@@ -1,4 +1,7 @@
 <?php
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw
+');
+require_once "../gwsecurity/private/initialize.php";
 /** @package 
 
         archivenews
@@ -14,13 +17,12 @@
       $page_top_text = "Peggy Jo Studio Archived Newsletters";
 define('WP_MEMORY_LIMIT', '96M');	  
 	  
-include_once("../cgi-bin/connect.inc");
 
-$newslettersql = "select * from newsletters order by campaign Desc";
-$newsresult = @mysql_query($newslettersql);
-if ( !$newsresult ){
+$sql = "select * from newsletters order by campaign Desc";
+$result = mysqli_query($con,$sql);
+if ( !$result ){
 
-    echo("<p> The newsletter database could not be opened.  " . Mysql_error());
+    echo("<p> The newsletter database could not be opened.  " . Mysqli_error($result));
     exit;
 }
 ?>
