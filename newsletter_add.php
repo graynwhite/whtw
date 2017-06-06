@@ -21,7 +21,7 @@
 if ( $_GET['action'] == "delete" ) {
             $sql = "delete from newsletters where  campaign = \"" . $_GET['campaign'] . "\"";
 
-        $result = @mysql_query($sql);  
+        $result = @mysqli_query($conn,$sql);  
  	if (!$result) {
 	}
 exit;

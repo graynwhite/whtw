@@ -19,7 +19,8 @@ define('WP_MEMORY_LIMIT', '96M');
 	  
 
 $sql = "select * from newsletters order by campaign Desc";
-$result = mysqli_query($con,$sql);
+
+$result = mysqli_query($conn,$sql);
 if ( !$result ){
 
     echo("<p> The newsletter database could not be opened.  " . Mysqli_error($result));
@@ -27,80 +28,46 @@ if ( !$result ){
 }
 ?>
 <html>
-<?php //include_once("http://www.peggyjostudio.net/pjtop.inc"); ?>
-<style>
-#otherleftstuff{
-	visibility:hidden;
-}
-</style>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Archived Newsletters</title>
+</head>
 <body>
-
-<?php
-
- echo("<div id=\"center\">");
- 
-echo "<h2> These archived newsletters contain the events and details as of the publication date and any changes are not included. If you are interested in seeing the current events for the next week that contain any changes after the publication please <a href=\"http://www.graypluswhite.com/tweener.php\"> click here</a></h2>";
-
- echo("<table border=\"1\" ");
- echo("<tr><td colspan=\"5\"  align=\"center\">Archived Newsletters (Most recent is  first)</td></tr>");
+<div id="center">
+<h2> These archived newsletters contain the events and details as of the publication date and any changes added after publication are not included. </h2>
+<p>At the present time, we are not able to add any current archved publications.Some of the links might not work(Portions of the newsletter are no longer available)</p>
+<table border="1" width="100%">;
+<tr><td colspan="5"  align="center">Archived Newsletters (Most recent is  first)</td></tr>");
+ <?php
  $row_count=0;
  while 
- ( $newsrow= @mysql_fetch_array($newsresult))
+ ( $newsrow= @mysqli_fetch_array($result))
     {
-    $news_url =  $newsrow['url'];
-    $campaign=$newsrow['campaign'];
-
+	$campaign=$newsrow['campaign'];	
+	$news_url="http://www.peggyjostudio.net/";
+	$news_url.=$newsrow['url'];	
+   
+	
+//echo("<br>campaign is:".$campaign);		
+//echo("<br>news_url is :".$news_url);
    if ( $row_count > 4 )
         { echo("</tr><tr>");
         $row_count=0;
         }
-  $row_count= $row_count+1;
-   echo("<td><a href=\"$news_url\">$campaign</a></td>");
+  $row_count++;
+   echo("<td height=\"10\"><a href=\"$news_url\">$campaign</a></td>");
     }
 
 ?>
 
     </table> <!--end of table of archive newsletters-->
 	
-<script type="text/javascript">
-
-// Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
-// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
-// This notice must stay intact for use
-
-//Enter domain of site to search.
-var domainroot="www.peggyjostudio.net"
-
-function Gsitesearch(curobj){
-curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
-}
-
-</script>
 
 
-<form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
-
-<p>Search Peggy Jo studio with JavaScript Kit:<br />
-<input name="q" type="hidden" />
-<input name="qfront" type="text" style="width: 180px" /> <input type="submit" value="Search" /></p>
-
-</form>
-
-<p style="font: normal 11px Arial">This free script provided by<br />
-<a href="http://www.javascriptkit.com">JavaScript Kit</a></p>
 	
-<h2>Newsletter</h2>
-		<p>Sign up to the Peggy Jo Studio Newsletter and you will be kept up to date on many events.</p>
-		<form name="ccoptin" action="http://ccprod.roving.com/roving/d.jsp" target="_blank" method="post">
-			<p><strong>Email Address:</strong></p>
-			<p><input type="text" name="ea" class="textbox" />
-                        <input type=hidden name="m" value="1011148101198">
-                        <input type=hidden name="p" value="oi">
-                        <input type="submit" value="Submit" class="button" /></p>
-		</form>
+<h2>&nbsp;</h2>
 </div> <!--end of table content-->
-<?php include("http://www.peggyjostudio.net/pjnav.inc");?>
-
+<?php include("pjnavcopy.php");?>
 <p><a href="http://validator.w3.org/check/referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
 
 

@@ -672,14 +672,14 @@ If ($dowCorrect){
 		 $_POST['media']=htmlentities($_POST['media']);
 		 $dchange = new entryControlDate;
  		 $NewDow = $dchange->makeCopyDate($_POST['copyToDate']);
-         $SQL= "
+         $sql= "
          insert into events
          SET Place = \"" . $_POST['place']. "\",
          Event_org= \"" . $_POST['Event_org']. "\",
 		 
          Date_from =\"" . $_POST['copyToDate'] . "\",
          Time_start = \"" . $_POST['time_start'] . "\",
-         Time_end= \"" . $_POST['time_end'] . "\",
+         Time_end= \"" . $_POST['date_to'] . "\",
         Date_to =\"" . $_POST['copyToDate'] . "\",
         Resby= \"" . $_POST['copyToDate'] . "\",
         Dow = \"" . $NewDow . "\",
@@ -688,11 +688,11 @@ If ($dowCorrect){
         Price_members=\"" . $_POST['price_members'] . "\",
         Price_guests = \"" . $_POST['price_guests'] . "\",
         Event_open=\"" . $_POST['event_open']. "\",
-		SUBMITTED_BY= \"" . $_POST[submitted_by] . "\",
+		SUBMITTED_BY= \"" . $_POST['submitted_by'] . "\",
 		Event_title= \"" . $_POST['event_title'] . "\",
         Event_priority=\"" . $_POST['event_priority'] . "\" ";
 //print ("<br>$SQL");
-          $result = mysql_query($SQL);
+          $result = mysqli_query($conn,$sql);
           if (!$result) {
           echo("<p> Error in copy   Email this information to cauleyfrank@gmail.com" . mysql_error() . "</p>");
           }
@@ -1015,6 +1015,8 @@ If ($dowCorrect){
 		{ echo "Day of Week not set";
 		exit;
 		}
+			 $insertcount=0;
+			 
 		//print("<br /> comparing " . $this_day_of_week . " to " . $_POST['dow'] );
        if (strtoupper($this_day_of_week) == strtoupper($_POST['dow'] ) ){
 	   		//print("<br /> comparing " . $this_day . " to " . $_POST['checkSelect[0]']);
@@ -1044,7 +1046,7 @@ If ($dowCorrect){
 						Event_title = \"" . $_POST['event_title']. "\",
 						Date_from =\"$event_date\",
 						Time_start = \"" . $_POST['time_start']. "\",
-						Time_end= \"" . $_POST['time_end']. "\",
+						Time_end= \"" . $_POST['date_to']. "\",
 						Date_to =\"$event_date']\",
 						Resby= \"$event_date\",
 						Dow = \"" . $_POST['dow']. "\",
@@ -1052,14 +1054,14 @@ If ($dowCorrect){
 						media = \"" .$_POST['media'] . "\",
 						Price_members=\"" . $_POST['price_members'] . "\",
 						Price_guests = \"" . $_POST['price_guests'] . "\",
-						SUBMITTED_BY= \"" . $_POST[submitted_by] . "\",
+						SUBMITTED_BY= \"" . $_POST['submitted_by'] . "\",
 						Event_open=\"" . $_POST['event_open']. "\",
 						confirm = \"Y\",
 						Event_priority= \"" . $_POST['event_priority'] . "\" " ;
 						  
                        $result = mysqli_query($conn,$sql);
                         if (!$result) {
-						echo("<p> Error in generation  Email this information to cauleyfrank@gmail.com" . mysql_error() . $sql ."</p>");
+						echo("<p> Error in generation  Email this information to cauleyfrank@gmail.com" . mysqli_error($conn) . $sql ."</p>");
           }
                      #end of post
 					$insertcount ++;
