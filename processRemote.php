@@ -37,9 +37,7 @@ $entryType=$xml->entryType;
 $recurring=$xml->recurdesc;
 $refferSrc = $xml->refferSrc;
 $From_date=$xml->From_date;
-$From_date=str_replace($From_date,"-","/");
-//echo('<br>entry type is'.$entryType);
-$date_work = explode('/',$From_date);
+$date_work = explode("-",$From_date);
 //echo("<br>Date work is ".$date_work[0].'-'.$date_work[1]. '-'. $date_work[2]. " on line 42");
 if(strlen($date_work[0])>2){
 $From_date =$xml->From_date;
@@ -52,8 +50,7 @@ if($xml->to_date == ''){
 }
 else{
 	$date_work2=$xml->to_date;
-	$date_work2=str_replace(date_work2,"-","/");
-	$date_work2 = explode('/',date_work2);
+	$date_work2 = explode("-",$date_work2);
 	if(strlen($date_work2[0])>2){
 	$date_to=$xml->to_date;
 
@@ -64,19 +61,15 @@ else{
 //echo("<br />Date to is ").$date_to ." on line 48";
 if($xml->reserve_by == ''){
 	$reserve_by = $From_date;
-}
-else
+}else{
 	$date_work3=$xml->reserve_by;
-	$date_work3=str_replace(date_work3,"-","/");
-	$date_work3 = explode('/',$date_work3);
-	if(strlen($date_work3[0])>2)
-	{
+	$date_work3 = explode('-',$date_work3);
+	if(strlen($date_work3[0])>2);
+	
 	$reserve_by=$xml->reserve_by;
 
-	}else{
-	$reserve_by=$date_work3[2] . "-" .$date_work3[0]. "-".$date_work3[1];
-
 	}
+	
 
 
 //print_r($xml);
@@ -121,7 +114,7 @@ if($timeEndWork!=" "){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../javascript/typeAhead.css" rel="stylesheet" type="text/css" />
 <link href="../event_input.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googlens.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
