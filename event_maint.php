@@ -1,3 +1,7 @@
+
+
+
+
 <?php
 /** @package
 
@@ -124,9 +128,8 @@ if ( $action == "browse" ){
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="nl2br.js"></script>
-	<!--<script type="text/javascript" src="http://www.graypluswhite.com/markitup/markitup/jquery.js"></script>-->
-	<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
-	<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
+	<script type="text/javascript" src="../../markitup/jquery.markitup.js"></script>
+	<script type="text/javascript" src="../../markitup/sets/default/set.js"></script>
 	
 	<script language=javascript>
 	var workarea=" ";
@@ -371,14 +374,15 @@ function UCWords(str){
   str.value=strOut;
 }
 </script>
+
+<link rel="stylesheet" type="text/css" href="../../markitup/skins/markitup/style.css" />
+<link rel="stylesheet" type="text/css" href="../../markitup/sets/default/style.css" />
 <script type="text/javascript" >
    $(document).ready(function() {
-      $(".markItUp").markItUp(mySettings);
+      $("textarea").markItUp(mySettings);
    });
 
 </script>
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/skins/markitup/style.css" />
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/style.css" />
 </head>
 <body>
 <p><font size="7"><b>Event Maintenance</b></font></p>
@@ -407,7 +411,7 @@ echo("End Time  <input type = \"text\" name = \"end_time\" size = \"10 \" value 
 echo("Day of Week  <input type = \"text\" name = \"dow\" size = \"3\" value = \"$row[Dow]\"> (WE. WK. MOS mul) <br>\n");
 echo("Event Open ? <input type = \"text\" name = \"event_open\" size = \"1\" value =\"$row[Event_open]\"><br>\n");
 echo("Place<br> <textarea wrap cols = \"50\" rows = \"4\" name = \"place\" id=\"venue\" >$row[Place]</textarea><br>\n");
-echo("Activity<br> <textarea class=\"markItUp\" wrap name = \"activity\" id=\"activity\" cols=\"50\" rows=\"4\" >$row[Activity]</textarea><br>\n");
+echo("Activity<br> <textarea  wrap name = \"activity\" id=\"activity\" cols=\"50\" rows=\"4\" >$row[Activity]</textarea><br>\n");
 echo("<input type=\"button\" id=\"editact\" value=\"Edit Activity\" onclick=\"regxMicrosoft(activity)\">");
 
 //echo("<input type=\"button\" id=\"instab\" value=\"Insert Table\" onclick=\"insertTable(activity)\">");
@@ -415,7 +419,7 @@ echo("<input type=\"button\" id=\"isgolf\" value=\"Make it a Golf Activity\" onc
 echo("<input type=\"button\" id=\"issomer\" value=\"Make it a Somerset Activity\" onclick=\"somer()\">");
 echo("<input type=\"button\" id=\"iscopyact\" value=\"Copy Activity to Media\" onclick=\"copyactivity()\">");
 echo("<br /><hr />");
-echo("Media Text<br> <textarea wrap class=\"markItUp\" name = \"media\" id=\"media\" cols=\"50\" rows=\"20\" >$row[media]</textarea><br>\n");
+echo("Media Text<br> <textarea wrap name = \"media\" id=\"media\" cols=\"50\" rows=\"20\" >$row[media]</textarea><br>\n");
 echo("<input type=\"button\" id=\"editmed\" value=\"Edit Media\" onclick=\"regxMicrosoft(media)\">");
 echo(" <input type=\"button\" id=\"breakbutton\" value=\"Break lines\">");
 echo("<input type=\"button\" id=\"insertAvatar\" value=\"Insert Avatar\">");
