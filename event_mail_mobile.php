@@ -42,7 +42,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 <head>
 
 	<title>Organization Event Input Mobile</title>
-	<m<meta name="viewport" content="width=device-width, user-scalable=yes" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
