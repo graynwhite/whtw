@@ -112,18 +112,16 @@ if($timeEndWork!=" "){
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="../javascript/typeAhead.css" rel="stylesheet" type="text/css" />
 <link href="../event_input.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="//ajax.googlens.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
 
-<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
-<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
+<script type="text/javascript" src="../../markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../../markitup/sets/default/set.js"></script>
 
-<script src="../javascript/ajaxBasics.js" type="text/javascript"></script>
-<script src="../javascript/typeAhead.js" type="text/javascript"></script>
+<script src="../../javascript/ajaxBasics.js" type="text/javascript"></script>
+<script src="../../javascript/typeAhead.js" type="text/javascript"></script>
 
 
 <title>Process Remote Event Entry</title>
@@ -372,7 +370,7 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
 
 <script type="text/javascript" >
    $(document).ready(function() {
-      $(".markItUp").markItUp(mySettings);
+      $("textarea").markItUp(mySettings);
    });
    
     $(function(){
@@ -388,8 +386,8 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
       });
 </script>
 
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/skins/markitup/style.css" />
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/style.css" />
+<link rel="stylesheet" type="text/css" href="../../markitup/skins/markitup/style.css" />
+<link rel="stylesheet" type="text/css" href="../../markitup/sets/default/style.css" />
  <style type="text/css" media="screen">
       .map_canvas { float: left; }
       form { width: 300px; float: left; }
@@ -550,14 +548,14 @@ var fileToClear = 'http://www.graypluswhite.com' + document.getElementById('file
     </tr>
     <tr>
       <td>Activity:</td>
-      <td><textarea name="activity" class="markItUp" cols="80" rows="3" id="activity">
+      <td><textarea name="activity" cols="80" rows="3" id="activity">
 	  <? echo nl2br(htmlentities($xml->activity))?></textarea>
       <input name="Edit" type="button" id="Edit" value="Edit" onClick="regxMicrosoft('activity')" />
       <input type="button" name="Submit2" value="Copy Title" onClick="copyTitle()" /></td>
     </tr>
     <tr>
       <td>Media:</td>
-      <td><textarea name="media" class="markItUp" cols="80" rows="5" id="media">
+      <td><textarea name="media" cols="80" rows="5" id="media">
 	  <? echo nl2br(htmlentities($xml->comments))?></textarea>
       <input name="edMedia" type="button" id="edMedia" value="Edit" onClick="regxMicrosoft('media')" /></td>
     </tr>
