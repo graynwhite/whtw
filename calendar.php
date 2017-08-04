@@ -1,14 +1,56 @@
 <?php
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
+require_once "../gwsecurity/private/initialize.php";
+// $affil is set to Gray unless it is requested in a call to this program as a paameter
 $affil=isset($_REQUEST['affil']) ? $_REQUEST['affil'] : "Gray";
+
+$Year=date("Y");
+$Month=date('m');
+	
+if ($Month == 0) {
+   $Month = 1;
+}
+// calculate the viewed month
+$Timestamp = mktime(0,0,0,$Month,1,substr($Year,0,4));
+$Monthname = date("F",$Timestamp);
+$year_print = substr($Year,0,4);
+$nextTimestamp = mktime(0,0,0,$Month+1,1,substr($Year,0,4));
+$nextMonthName = date("F",$nextTimestamp);
+$nextMonth = date("m",$nextTimestamp);
+$nextYear = date("Y",$nextTimestamp);
+$prevTimestamp = mktime(0,0,0,$Month-1,1,substr($Year,0,4));
+$prevMonthName = date("F",$prevTimestamp);
+$prevMonth=date("m",$prevTimestamp);
+$prevYear = date("Y",$prevTimestamp);
+$LastDay = date("d",mktime(0,0,0,$Month+1,0,substr($Year,0,4)));
+
+//$array_push $dbbegin= $Year  ."-". $Month .'-01';
+$dbend =  $Year  ."-". $Month . "-" . $LastDay;
+								 
+$Month = isset($_REQUEST['Month'])? $_REQUEST['Month'] : $Month;
+$Year = isset($_REQUEST['Year']) ? $_REQUEST['Year'] : $Year;;
+if(strlen($Month)==0)
+{
+$Month = date("m");
+	if(strlen($Month)==1)
+	{
+		$Month= '0' . $Month;
+	}
+}
+if(strlen($Year)==1)
+{
+  $Year = date("Y"). '-';
+}
+
 ?>
-<HTML>
-<HEAD>
- <meta name="viewport" content="width=device-width", initial-scale=1; user-scaleable=1;">
+<html>
+<head>
+ <meta name="viewport" content="width=device-width"  initial-scale=1 user-scaleable=1/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
-<TITLE>Monthly Calendar</TITLE>
+<title>Monthly Calendar</title>
 
 
 <script language="javascript">
@@ -34,32 +76,24 @@ function bump(number)
 	color: #FF0000;
 	font-size: 24px;
 }
-   </style>
+   
+.bluerow
+{
+	background-color: #0000FF;
+	color: white;
+	text-align: center;
+}
+	  .bluerow td{align-content: center;
+	  	 width: 14%}	  
+  </style>
+   
    <script src="http://www.graypluswhite.com/gwanalytics.js"></script>
-</HEAD>
-<BODY>
+</head>
+<body>
 <div id="main" data-role="page">
-<div id="top" data_role="header"><h1>Gray and White Computing Event Calendar</h1></div>
+<div id="top" data-role="header"><h1>Gray and White Computing Event Calendar</h1></div>
 <div id="content" data-role="content">
-<?php
-$currentMonth=date('m');
-$currentYear=date('Y');									 
-$Month = isset($_REQUEST['Month'])? $_REQUEST['Month'] : $currentMonth;
-$Year = isset($_REQUEST['Year']) ? $_REQUEST['Year'] : $currentYear;;
-if(strlen($Month)==0)
-{
-$Month = date("m");
-	if(strlen($Month)==1)
-	{
-		$Month= '0' . $Month;
-	}
-}
-if(strlen($Year)==1)
-{
-  $Year = date("Y"). '-';
-}
-
-$submit= isset($_REQUEST['Submit'])? $_REQUEST['Submit']: 'yes';
+<?php	
 $PageTitle ="What's Happening This Month Calendar";
 if ( $affil =="arch" ){
 $PageTitle ="Archdiocese of Detroit Singles Calendar";
@@ -69,65 +103,45 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
            $Year = date("Y"). '-';
 }
 
-// calculate the viewed month
-$Timestamp = mktime(0,0,0,$Month,1,substr($Year,0,4));
-$Monthname = date("F",$Timestamp);
-$year_print = substr($Year,0,4);
-$nextTimestamp = mktime(0,0,0,$Month+1,1,substr($Year,0,4));
-$nextMonthName = date("F",$nextTimestamp);
-$nextMonth = date("m",$nextTimestamp);
-$nextYear = date("Y",$nextTimestamp);
-$prevTimestamp = mktime(0,0,0,$Month-1,1,substr($Year,0,4));
-$prevMonthName = date("F",$prevTimestamp);
-$prevMonth=date("m",$prevTimestamp);
-$prevYear = date("Y",$prevTimestamp);
+
 ?>
 
-
-<?php
-print("<p><span style=\"font-family: Arial, Helvetica, sans-serif;
+<p><span style="font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #FF0000;
-	font-size: 24px;\">Click on the day number to see the detail for that day. ");
-print("</span> Click on the day to see the expanded events </p>");
-// make a table with the proper month
-print ("<table border=\"1\" cellpadding=\"3\" cellspacing=\"0\" width=\"100%\" align=\"center\">");
-print ("<TR BGCOLOR=BLUE><TD COLSPAN=7 ALIGN=CENTER><FONT COLOR=WHITE><B>$Monthname $year_print</B></FONT></TD></TR>");
-print ("<tr BGCOLOR=BLUE><TD>");
-print ("<form action=\"calendar.php\" method=\"post\">\n");
-print ("<input type=\"hidden\" name=\"Month\" value=\"$prevMonth\">\n");
-print ("<input type=\"hidden\" name=\"Year\" value=\"$prevYear\">\n");
-print ("<input type=\"Submit\" name=\"SUBMIT\" value=\"<< $prevMonthName $prevYear\">\n");
-print ("</form> \n");
-print ("</td><TD colspan=5 </td><td align=\"right\">\n");
-print ("<form action=\"calendar.php\" method=\"post\">\n");
-print ("<input type=\"hidden\" name=\"Month\" value=\"$nextMonth\">\n");
-print ("<input type=\"hidden\" name=\"Year\" value=\"$nextYear\">\n");
-print ("<input type=\"Submit\" name=\"SUBMIT\" value=\"$nextMonthName $nextYear >>\">\n");
-print ("</form> \n");
-print ("</td></tr></table>");
-print ("<table border=\"1\" cellpadding=\"3\" cellspacing=\"0\" width=\"100%\" align=\"center\">");
-print ("<tr BGCOLOR=BLUE>");
-print  ("<td ALIGN=CENTER width=\"14%\"<b><FONT COLOR=White>Sun</FONT></B></TD>
-         <td ALIGN=CENTER width=\"14%\"<b><FONT COLOR=White>Mon</FONT></B></TD>
-         <td ALIGN=CENTER width=\"14%\"<b><FONT COLOR=White>Tue</FONT></B></TD> 
-         <td ALIGN=CENTER width=\"14%\"<b><FONT COLOR=White>Wed</FONT></B></TD>
-         <td ALIGN=CENTER width=\"14%\"<b><FONT COLOR=White>Thu</FONT></B></TD>
-         <td ALIGN=CENTER width=\"14%\"<b><FONT COLOR=White>Fri</FONT></B></TD>
-         <td ALIGN=CENTER width=\"14%\"<b><FONT COLOR=White>Sat</FONT></B></TD></TR></table");
-print ("<table border=\"1\" cellpadding=\"3\" cellspacing=\"0\" width=\"100%\" align=\"center\">");		 
-$MonthStart = date ("w", $Timestamp);
+	font-size: 24px;">Click on the day number to see the detail for that day. 
+</span>  </p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr style="bluerow">
+	<td colspan=7><b><?php echo $Monthname, $Year ?></b></td>
+	</tr>
 
-if ($MonthStart == 0) {
-   $MonthStart = 1;
-}
-$LastDay = date("d",mktime(0,0,0,$Month+1,0,substr($Year,0,4)));
-$dbbegin= $Year  ."-". $Month .'-01';
-$dbend =  $Year  ."-". $Month . "-" . $LastDay;
+<tr style="bluerow">
+<td id="linkBackOneMonth">
+<input type="hidden" name="prevMonth" value=<?php echo $prevMonth?>/>
+<input type="hidden" name="Year" value="<?php echo $prevYear?>">,
+</td>
+<td id="linkForwardOneMonth" colspan=5 </td><td align="right">
+
+<input type="hidden" name="Month" value="$nextMonth">
+<input type="hidden" name="Year" value="$nextYear">
+</td></tr></table>
+<table border="1" cellpadding="3" cellspacing="0" width="100%" align="center">
+<tr style="bluerow">
+	<td align="center" width="14%"<b><font color="white">Sun</font></b></td>
+    <td align="center" width="14%"<b><font color="white">Mon</font></b></td>
+    <td align="center" width="14%"<b><font color="white">Tue</font></b></td>
+    <td align="center" width="14%"<b><font color="white">Wed</font></b></td>
+    <td align="center" width="14%"<b><font color="white">Thu</font></b></td>
+    <td align="center" width="14%"<b><font color="white">Fri</font></b></td>
+    <td align="center" width="14%"<b><font color="white">Sat</font></b></td>
+<td align="center" width="14%"<b><font color="white">Sun</font></b></td>      </tr></table>
+<table border="1" cellpadding="3" cellspacing="0" width="100%" align="center">
+
 									 
-print ("<input type=\"hidden\" id=\"calMonth\" value=\"$Month\">");
-print ("<input type=\"hidden\" id=\"calYear\" value=\"$Year\">");
-                   
+<input type="hidden" id="calMonth" value="$Month">
+<input type="hidden" id="calYear" value="$Year">
+<?php                   
 	//connect to the database server
             include("../phpClasses/connect.php");
             
@@ -173,24 +187,24 @@ print ("<input type=\"hidden\" id=\"calYear\" value=\"$Year\">");
 
   $howmany =count($array_date);
  print("<p>There are $howmany  events to display.</p>");
-$StartDate = -$MonthStart;
+$StartDate = -$Month;
 //echo("<br /> start date is " . $StartDate); 
 for ($k =1; $k <= 6; $k++ ) {
-    print("<TR BGCOLOR=White>");
+    print("<tr bgcolor=\"white\">");
     for ($i=1; $i <= 7; $i++) {
          $StartDate++;
          $this_day = $StartDate;
          if (strlen($this_day)<"2"){ $this_day = "0" . $StartDate; }
 //echo("<br /> start date is " . $StartDate . " k is " . $k . "i is " . $i); 
      if (($StartDate <= 0) || ($StartDate  > $LastDay)) {
-               print("<td BGCOLOR=GREEN>&nbsp</td>");
+               print("<td bgcolor=\"green\">>&nbsp</td>");
             } elseif (($StartDate >= 1) && ($StartDate <= $LastDay   )) {
                        $this_date = $Year . "-". $Month . "-" . $this_day;
                      //  print("<br> $this_date");
                if ( !$affil ){
-               print("<td ALIGN=LEFT VALIGN=TOP ><A HREF=\"../pjsn/dailyNews.php?eventDate=$this_date target='_blank'\">$StartDate</a>");
+               print("<td align=\"left\" valign=\"top\" ><a href=\"../pjsn/dailyNews.php?eventDate=$this_date target=\'_blank\'\">$StartDate</a>");
                }else{
-                 print("<td ALIGN=LEFT VALIGN=TOP ><A HREF=\"../pjsn/dailyNews.php?eventDate=$this_date&affil=$affil target='_blank'\">$StartDate</a>");
+                 print("<td aliign=\"left\" valign=\"top\" ><a href=\"../pjsn/dailyNews.php?eventDate=$this_date&affil=$affil target=\'_blank\'\">$StartDate</a>");
             }
                      
                         for($l=0;$l<count($array_date);$l++) {
@@ -202,41 +216,41 @@ for ($k =1; $k <= 6; $k++ ) {
              print("</td>");     
           }
           } // end of one week $k< 7
-    print ("</TR>\n");
+    print ("</tr>\n");
    
 }
 print ("</table>\n");
 
-print ("<FORM ACTION=\"calendar.php\" METHOD=POST>\n");
+print ("<form action=\"calendar.php\" method=\"post\">\n");
 print ("Select a new Month to view \n");
-print ("<SELECT name = Month>
-           <OPTION VALUE=01>January</OPTION>\n
-           <OPTION VALUE=02>February</OPTION>\n
-           <OPTION VALUE=03>March</OPTION>\n
-           <OPTION VALUE=04>April</OPTION>\n
-           <OPTION VALUE=05>May</OPTION>\n
-           <OPTION VALUE=06>June</OPTION>\n
-           <OPTION VALUE=07>July</OPTION>\n
-           <OPTION VALUE=08>August</OPTION>\n
-           <OPTION VALUE=09>September</OPTION>\n
-           <OPTION VALUE=10>October</OPTION>\n
-           <OPTION VALUE=11>November</OPTION>\n
-           <OPTION VALUE=12>December</OPTION>\n
+print ("<select name = Month>
+           <option value=01>January</option>\n
+           <option value=02>February</option>\n
+           <option value=03>March</option>\n
+           <option value=04>April</option>\n
+           <option value=05>May</option>\n
+           <option value=06>June</option>\n
+           <option value=07>July</option>\n
+           <option value=08>August</option>\n
+           <option value=09>September</option>\n
+           <option value=10>October</option>\n
+           <option value=11>November</option>\n
+           <option value=12>December</option>\n
            </SELECT>\n");
            // php_functions_gen_years('Year',True);
 //print ("<SELECT Name=Year>
 //
-//           <OPTION VALUE=2003>2003</OPTION>\n
-//            <OPTION VALUE=2004>2004</OPTION>\n
-//            <OPTION VALUE=2005>2005</OPTION>\n
+//           <OPTION value=2003>2003</OPTION>\n
+//            <OPTION value=2004>2004</OPTION>\n
+//            <OPTION value=2005>2005</OPTION>\n
 //             </SELECT>\n");
-print ("<INPUT TYPE =\"Submit\" NAME=SUBMIT VALUE=\"Submit\">\n");
-print ("</FORM>\n");
+print ("<input type =\"Submit\" name=\"SUBMIT\" value=\"Submit\">\n");
+print ("</form>\n");
 
        
 ?>
 </div><!-- end of content -->
 <div id="footer" data-role="footer"><h1>Monthly Calendar</h1></div>
 </div><!-- End of Page -->
-</BODY>
-</HTML>
+</body>
+</html>
