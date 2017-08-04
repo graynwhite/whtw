@@ -86,14 +86,16 @@ preg_replace_
 			//}		
     ?>
 	<tr>
-    <td>	
+    <td>
+    From:&nbsp;	
 	<?print $row['Date_from']?>
       &nbsp;
     <?print$row['Time_start']?>&nbsp;
     <?print$row['Time_end']?>&nbsp;&nbsp;
     <?print$row['Dow']?><br />MP&nbsp;
 	<?print$row['Price_members']?>&nbsp;GP&nbsp;
-	<?print$row['Price_guests']?>&nbsp;
+	<?print$row['Price_guests']?>&nbspPriority&nbsp;
+    <?print$row['Event_priority']?>
     </td>
      <td>
 	 Id = <?print$row['Event_number']?><br>
