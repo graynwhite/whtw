@@ -125,8 +125,7 @@ if ( $action == "browse" ){
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
 	<style type="text/css">
 	</style>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="nl2br.js"></script>
 	<script type="text/javascript" src="../../markitup/jquery.markitup.js"></script>
 	<script type="text/javascript" src="../../markitup/sets/default/set.js"></script>
