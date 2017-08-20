@@ -68,12 +68,12 @@ preg_replace_
 <div data-role="content">
 <table border="1" cellpadding="0" cellspacing="0"  bordercolor="#000000" " width="100%" >
   <tr>
-    <th width="12%">
-    <p align="center">From Date</p></th>
-    <th width="12%"> 
-    <p align="center">To Date</p></th>
-    <th width="76%">
-    <p align="center">Place/Activity</p></th>
+    <th width="15%">
+    <p align="center">From Date Information</p></th>
+    <th width="15%"> 
+    <p align="center">To Date Information</p></th>
+    <th width="70%">
+    <p align="center">Place/Activity Information</p></th>
   
   </tr>
  
@@ -89,13 +89,14 @@ preg_replace_
     <td>
     From:&nbsp;	
 	<?print $row['Date_from']?>
-      &nbsp;
-    <?print$row['Time_start']?>&nbsp;
-    <?print$row['Time_end']?>&nbsp;&nbsp;
-    <?print$row['Dow']?><br />MP&nbsp;
-	<?print$row['Price_members']?>&nbsp;GP&nbsp;
-	<?print$row['Price_guests']?>&nbspPriority&nbsp;
-    <?print$row['Event_priority']?>
+      <br />
+    Time Start:<?print$row['Time_start']?>
+    <br />Time End:<?print$row['Time_end']?>
+    <br />Day:<?print$row['Dow']?>
+    <br />MP:<?print$row['Price_members']?>
+    <br />GP:<?print$row['Price_guests']?>
+    <br />Priority: <?print$row['Event_priority']?>
+    <br />Confirmation:<?print$row['confirm']?>
     </td>
      <td>
 	 Id = <?print$row['Event_number']?><br>
