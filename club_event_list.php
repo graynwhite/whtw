@@ -109,10 +109,13 @@ preg_replace_
 	  
       <br />Activity=<?print $dispActivity ?>&nbsp;
       <br />Media= <?print $dispMedia ?> <br />
+      
       <div data-role='fieldcontain'>
       <fieldset data-role="controlgroup" datatype="horizontal">
       <input type="button" value="Change Priority">
       <input type="button" value="Make trip">
+	   </fieldset>
+	   </div>
      
       
 		<a href="http://www.graypluswhite.com/whtw/event_maint.php?action=byitem&Event_number=<?print$row['Event_number']?>" target="_blank"><input type="button" value="Edit"></a>
