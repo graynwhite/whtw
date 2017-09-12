@@ -3,9 +3,8 @@ define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
 require_once "../gwsecurity/private/initialize.php";
 // $affil is set to Gray unless it is requested in a call to this program as a paameter
 $affil=isset($_REQUEST['affil']) ? $_REQUEST['affil'] : "Gray";
-
-$Year=date("Y");
-$Month=date('m');
+$Year=isset($_REQUEST['year'])? $_REQUEST['year'] : date("Y");
+$Month=isset($_REQUEST['month']) ? $_REQUEST['month']: date('m');
 	
 if ($Month == 0) {
    $Month = 1;
@@ -239,7 +238,7 @@ print ("<select name = Month>
            <option value=11>November</option>\n
            <option value=12>December</option>\n
            </SELECT>\n");
-           // php_functions_gen_years('Year',True);
+           php_functions_gen_years('Year',True);
 //print ("<SELECT Name=Year>
 //
 //           <OPTION value=2003>2003</OPTION>\n
@@ -251,6 +250,7 @@ print ("</form>\n");
 
        
 ?>
+
 </div><!-- end of content -->
 <div id="footer" data-role="footer"><h1>Monthly Calendar</h1></div>
 </div><!-- End of Page -->
