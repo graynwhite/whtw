@@ -24,7 +24,7 @@ $prevMonth=date("m",$prevTimestamp);
 $prevYear = date("Y",$prevTimestamp);
 $LastDay = date("d",mktime(0,0,0,$Month+1,0,substr($Year,0,4)));
 
-//$array_push $dbbegin= $Year  ."-". $Month .'-01';
+$dbbegin= $Year  ."-". $Month .'-01';
 $dbend =  $Year  ."-". $Month . "-" . $LastDay;
 								 
 $Month = isset($_REQUEST['Month'])? $_REQUEST['Month'] : $Month;
@@ -81,6 +81,8 @@ function bump(number)
 {
 	background-color: #0000FF;
 	color: white;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 11;
 	text-align: center;
 }
 	  .bluerow td{align-content: center;
@@ -113,37 +115,37 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 </span>  </p>
 <table border="1" cellpadding="3" cellspacing="0" width="100%">
 <tr style="bluerow">
-	<td colspan=7><b><?php echo $Monthname, $Year ?></b></td>
+	<td colspan=7><center><b><?php echo $Monthname," ", $Year ?></b></center></td>
 	</tr>
 
 <tr style="bluerow">
 <td id="linkBackOneMonth">
-<input type="hidden" name="prevMonth" value=<?php echo $prevMonth?>/>
-<input type="hidden" name="Year" value="<?php echo $prevYear?>">,
+
+<<	<?php echo $prevMonthName ,' ', $prevYear?>
 </td>
-<td id="linkForwardOneMonth" colspan=5 </td><td align="right">
+<td> </td>
+<td align="right">
 
 <input type="hidden" name="Month" value="$nextMonth">
 <input type="hidden" name="Year" value="$nextYear">
+<?php echo $nextMonthName, " ", $nextYear ?>>>	
 </td></tr></table>
 <table border="1" cellpadding="3" cellspacing="0" width="100%" align="center">
 <tr style="bluerow">
-	<td align="center" width="14%"<b><font color="white">Sun</font></b></td>
-    <td align="center" width="14%"<b><font color="white">Mon</font></b></td>
-    <td align="center" width="14%"<b><font color="white">Tue</font></b></td>
-    <td align="center" width="14%"<b><font color="white">Wed</font></b></td>
-    <td align="center" width="14%"<b><font color="white">Thu</font></b></td>
-    <td align="center" width="14%"<b><font color="white">Fri</font></b></td>
-    <td align="center" width="14%"<b><font color="white">Sat</font></b></td>
-<td align="center" width="14%"<b><font color="white">Sun</font></b></td>      </tr></table>
+	<td>Sun</td>
+  	<td>Mom</td>
+  	<td>Tue</td>
+  	<td>Wed</td>
+  	<td>Thu</td>
+   	<td>Fri</td>
+   	<td>Sat</td>
+    </tr></table>
 <table border="1" cellpadding="3" cellspacing="0" width="100%" align="center">
 
 									 
 <input type="hidden" id="calMonth" value="$Month">
 <input type="hidden" id="calYear" value="$Year">
-<?php                   
-	//connect to the database server
-            include("../phpClasses/connect.php");
+<?php 
             
         if ( $affil=="Gray" ){
         $sql = "SELECT T1.*, T2.Short_name FROM events as T1,
