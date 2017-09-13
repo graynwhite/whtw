@@ -69,6 +69,18 @@ function bump(number)
   alert("work year is " + workYear.value);
 }
 </script>
+<!-- Link logic follows -->
+ <script>
+$(document).ready(function(){	 
+$("#linkBackOneMonth").click(function(){
+	console.log("Back clicked");
+});
+$("#linkFwdOneMonth").click(function(){
+	console.log("Forward clicked");
+});
+});
+</script>
+	
   <style type="text/css">
 
 .returnmessage {
@@ -154,7 +166,7 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 <<	<?php echo $prevMonthName ,' ', $prevYear?>
 </td>
 <td> </td>
-<td align="right">
+<td align="right" id="linkFwdOneMonth">
 
 <input type="hidden" name="Month" value="$nextMonth">
 <input type="hidden" name="Year" value="$nextYear">
