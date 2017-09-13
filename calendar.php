@@ -85,7 +85,28 @@ function bump(number)
 	text-align: center;
 }
 	  .bluerow td{align-content: center;
+	  	 width: 14%}
+.whiterow
+{
+	background-color: #ffffff;
+	color: #000000;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 11;
+	text-align: left;
+}
+	  .whiterow td{align-content: left;
 	  	 width: 14%}	  
+.greerow
+{
+	background-color: #00ff00;
+	color: white;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 11;
+	text-align: center;
+}
+	  .bluerow td{align-content: center;
+	  	 width: 14%}	  
+
   </style>
    
    <script src="http://www.graypluswhite.com/gwanalytics.js"></script>
