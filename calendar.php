@@ -83,11 +83,16 @@ function bump(number)
 	background-color: #0000FF;
 	color: white;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	font-size: 11;
+	font-size: 14;
 	text-align: center;
 }
-	  .bluerow td{align-content: center;
-	  	 width: 14%}
+ .bluerow td{
+	align-content: center;
+	width: 14%;
+	-webkit-box-shadow: 0px 0px #F9F5F6;
+	box-shadow: 0px 0px #F9F5F6;
+	color: #FFFFFF;
+}
 .whiterow
 {
 	background-color: #ffffff;
@@ -95,20 +100,24 @@ function bump(number)
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 11;
 	text-align: left;
+	-webkit-box-shadow: 0px 0px #000000;
+	box-shadow: 0px 0px #000000;
 }
 	  .whiterow td{align-content: left;
 	  	 width: 14%}	  
-.greerow
+.greenrow
 {
 	background-color: #00ff00;
 	color: white;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	font-size: 11;
 	text-align: center;
+	
 }
-	  .bluerow td{align-content: center;
-	  	 width: 14%}	  
-
+	  .greenrow td{
+		  align-content: center;
+		  width: 14%
+	  }
   </style>
    
    <script src="http://www.graypluswhite.com/gwanalytics.js"></script>
@@ -140,9 +149,8 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 	<td colspan=7><center><b><?php echo $Monthname," ", $Year ?></b></center></td>
 	</tr>
 
-<tr style="bluerow">
-<td id="linkBackOneMonth">
-
+<tr class="bluerow">
+<td id="linkBackOneMonth" align="left">
 <<	<?php echo $prevMonthName ,' ', $prevYear?>
 </td>
 <td> </td>
@@ -153,9 +161,9 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 <?php echo $nextMonthName, " ", $nextYear ?>>>	
 </td></tr></table>
 <table border="1" cellpadding="3" cellspacing="0" width="100%" align="center">
-<tr style="bluerow">
+<tr class="bluerow">
 	<td>Sun</td>
-  	<td>Mom</td>
+  	<td>Mon</td>
   	<td>Tue</td>
   	<td>Wed</td>
   	<td>Thu</td>
@@ -210,7 +218,7 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 		   }
 
   $howmany =count($array_date);
- print("<p>There are $howmany  events to display.</p>");
+ //print("<p>There are $howmany  events to display.</p>");
 	$StartDate =-$dowk;
 //echo("<br /> start date is " . $StartDate); 
 for ($k =1; $k <= 6; $k++ ) {
@@ -221,7 +229,7 @@ for ($k =1; $k <= 6; $k++ ) {
          if (strlen($this_day)<"2"){ $this_day = "0" . $StartDate; }
 //echo("<br /> start date is " . $StartDate . " k is " . $k . "i is " . $i); 
      if (($StartDate <= 0) || ($StartDate  > $LastDay)) {
-               print("<td bgcolor=\"green\"width=\"14%\">&nbsp</td>");
+               print("<td class=\"greenrow\">&nbsp;</td>");
             } elseif (($StartDate >= 1) && ($StartDate <= $LastDay   )) {
                        $this_date = $Year . "-". $Month . "-" . $this_day;
                      //  print("<br> $this_date");
