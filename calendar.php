@@ -12,6 +12,8 @@ if ($Month == 0) {
 // calculate the viewed month
 $Timestamp = mktime(0,0,0,$Month,1,substr($Year,0,4));
 $Monthname = date("F",$Timestamp);
+$dowk=date("w",$Timestamp);
+echo("day of week is " . $dowk);
 $year_print = substr($Year,0,4);
 $nextTimestamp = mktime(0,0,0,$Month+1,1,substr($Year,0,4));
 $nextMonthName = date("F",$nextTimestamp);
@@ -209,17 +211,17 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 
   $howmany =count($array_date);
  print("<p>There are $howmany  events to display.</p>");
-$StartDate = -$Month;
+	$StartDate =-$dowk;
 //echo("<br /> start date is " . $StartDate); 
 for ($k =1; $k <= 6; $k++ ) {
-    print("<tr bgcolor=\"white\">");
+    print("<tr bgcolor=\"white\" width=\"14%\">");
     for ($i=1; $i <= 7; $i++) {
          $StartDate++;
          $this_day = $StartDate;
          if (strlen($this_day)<"2"){ $this_day = "0" . $StartDate; }
 //echo("<br /> start date is " . $StartDate . " k is " . $k . "i is " . $i); 
      if (($StartDate <= 0) || ($StartDate  > $LastDay)) {
-               print("<td bgcolor=\"green\">&nbsp</td>");
+               print("<td bgcolor=\"green\"width=\"14%\">&nbsp</td>");
             } elseif (($StartDate >= 1) && ($StartDate <= $LastDay   )) {
                        $this_date = $Year . "-". $Month . "-" . $this_day;
                      //  print("<br> $this_date");
@@ -259,7 +261,7 @@ print ("<select name = Month>
            <option value=11>November</option>\n
            <option value=12>December</option>\n
            </SELECT>\n");
-           php_functions_gen_years('Year',True);
+//php_functions_gen_years('Year',True);
 //print ("<SELECT Name=Year>
 //
 //           <OPTION value=2003>2003</OPTION>\n
