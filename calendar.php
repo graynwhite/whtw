@@ -234,7 +234,7 @@ for ($k =1; $k <= 6; $k++ ) {
                        $this_date = $Year . "-". $Month . "-" . $this_day;
                      //  print("<br> $this_date");
                if ( !$affil ){
-               print("<td align=\"left\" valign=\"top\" ><a href=\"../pjsn/dailyNews.php?eventDate=$this_date target=\'_blank\'\">$StartDate</a>");
+               print("<td class=\"whiterow\" ><a href=\"../pjsn/dailyNews.php?eventDate=$this_date target=\'_blank\'\">$StartDate</a>");
                }else{
                  print("<td aliign=\"left\" valign=\"top\" ><a href=\"../pjsn/dailyNews.php?eventDate=$this_date&affil=$affil target=\'_blank\'\">$StartDate</a>");
             }
@@ -251,37 +251,9 @@ for ($k =1; $k <= 6; $k++ ) {
     print ("</tr>\n");
    
 }
-print ("</table>\n");
 
-print ("<form action=\"calendar.php\" method=\"post\">\n");
-print ("Select a new Month to view \n");
-print ("<select name = Month>
-           <option value=01>January</option>\n
-           <option value=02>February</option>\n
-           <option value=03>March</option>\n
-           <option value=04>April</option>\n
-           <option value=05>May</option>\n
-           <option value=06>June</option>\n
-           <option value=07>July</option>\n
-           <option value=08>August</option>\n
-           <option value=09>September</option>\n
-           <option value=10>October</option>\n
-           <option value=11>November</option>\n
-           <option value=12>December</option>\n
-           </SELECT>\n");
-//php_functions_gen_years('Year',True);
-//print ("<SELECT Name=Year>
-//
-//           <OPTION value=2003>2003</OPTION>\n
-//            <OPTION value=2004>2004</OPTION>\n
-//            <OPTION value=2005>2005</OPTION>\n
-//             </SELECT>\n");
-print ("<input type =\"Submit\" name=\"SUBMIT\" value=\"Submit\">\n");
-print ("</form>\n");
-
-       
 ?>
-
+	</table>
 </div><!-- end of content -->
 <div id="footer" data-role="footer"><h1>Monthly Calendar</h1></div>
 </div><!-- End of Page -->
