@@ -151,7 +151,9 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 
 ?>
 
-<p><span style="font-family: Arial, Helvetica, sans-serif;
+<p>
+The text that you see in the day boxes are organization codes.
+<span style="font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #FF0000;
 	font-size: 24px;">Click on the day number to see the detail for that day. 
@@ -163,14 +165,14 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 
 <tr class="bluerow">
 <td id="linkBackOneMonth" align="left">
-<<	<?php echo $prevMonthName ,' ', $prevYear?>
+<img src="../pjsnimages/arrowLeft.png" height="50px">	<?php echo $prevMonthName ,' ', $prevYear?>
 </td>
 <td> </td>
 <td align="right" id="linkFwdOneMonth">
 
 <input type="hidden" name="Month" value="$nextMonth">
 <input type="hidden" name="Year" value="$nextYear">
-<?php echo $nextMonthName, " ", $nextYear ?>>>	
+<?php echo $nextMonthName, " ", $nextYear ?><img src="../pjsnimages/arrowRight.png" height="50px">	
 </td></tr></table>
 <table border="1" cellpadding="3" cellspacing="0" width="100%" align="center">
 <tr class="bluerow">
