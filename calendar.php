@@ -152,7 +152,7 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 ?>
 
 <p>
-The text that you see in the day boxes are organization codes.
+The text that you see in the day boxes are the event sponsoring organization codes.
 <span style="font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #FF0000;
