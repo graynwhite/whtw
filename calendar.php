@@ -69,14 +69,69 @@ function bump(number)
   alert("work year is " + workYear.value);
 }
 </script>
+<script>
+function reloadWithQueryStringVars (queryStringVars) {
+    var existingQueryVars = location.search ? location.search.substring(1).split("&") : [],
+        currentUrl = location.search ? location.href.replace(location.search,"") : location.href,
+        newQueryVars = {},
+        newUrl = currentUrl + "?";
+    if(existingQueryVars.length > 0) {
+        for (var i = 0; i < existingQueryVars.length; i++) {
+            var pair = existingQueryVars[i].split("=");
+            newQueryVars[pair[0]] = pair[1];
+        }
+    }
+    if(queryStringVars) {
+        for (var queryStringVar in queryStringVars) {
+            newQueryVars[queryStringVar] = queryStringVars[queryStringVar];
+        }
+    }
+    if(newQueryVars) { 
+        for (var newQueryVar in newQueryVars) {
+            newUrl += newQueryVar + "=" + newQueryVars[newQueryVar] + "&";
+        }
+        newUrl = newUrl.substring(0, newUrl.length-1);
+        window.location.href = newUrl;
+    } else {
+        window.location.href = location.href;
+    }
+}
+	</script>	
 <!-- Link logic follows -->
  <script>
 $(document).ready(function(){	 
 $("#linkBackOneMonth").click(function(){
 	console.log("Back clicked");
+	var d= new Date();
+	var year = d.getFullYear();
+	var thisMonth = d.getMonth();
+	var prevMonth= thisMonth;
+	if(prevMonth==0)
+			{prevMonh=12;
+			var prevYear=year-1;}
+			else{
+			prevYear=year;	
+			}
+	console.log("Previous month "+prevMonth);
+	console.log("Previous Year"+prevYear);
+	reloadWithQueryStringVars({"month": prevMonth,"year": prevYear});
+	
 });
 $("#linkFwdOneMonth").click(function(){
 	console.log("Forward clicked");
+	var d= new Date();
+	var year = d.getFullYear();
+	var thisMonth = d.getMonth();
+	var nextMonth= thisMonth+2;
+	if(nextMonth==13)
+			{nextMonh=1;
+			var nextYear=year +1;}
+			else{
+			nextYear=year;	
+			}
+	console.log("Next month "+nextMonth);
+	console.log("Next year"+nextYear);
+	reloadWithQueryStringVars({"month": nextMonth,"year": nextYear});
 });
 });
 </script>
@@ -104,7 +159,7 @@ $("#linkFwdOneMonth").click(function(){
 	-webkit-box-shadow: 0px 0px #F9F5F6;
 	box-shadow: 0px 0px #F9F5F6;
 	color: #FFFFFF;
-}
+ 
 .whiterow
 {
 	background-color: #ffffff;
@@ -136,7 +191,8 @@ $("#linkFwdOneMonth").click(function(){
 </head>
 <body>
 <div id="main" data-role="page">
-<div id="top" data-role="header"><h1>Gray and White Computing Event Calendar</h1></div>
+<div id="top" data-role="header">
+  <h1>Gray and White Computing  Three Month Event Calendar</h1></div>
 <div id="content" data-role="content">
 <?php	
 $PageTitle ="What's Happening This Month Calendar";
@@ -165,22 +221,19 @@ The text that you see in the day boxes are the event sponsoring organization cod
 
 <tr class="bluerow">
 <td id="linkBackOneMonth" align="left">
-<img src="../pjsnimages/arrowLeft.png" height="50px">	<?php echo $prevMonthName ,' ', $prevYear?>
+<img src="../pjsnimages/arrowLeft.png" height="50px">
 </td>
 <td> </td>
 <td align="right" id="linkFwdOneMonth">
 
 <input type="hidden" name="Month" value="$nextMonth">
 <input type="hidden" name="Year" value="$nextYear">
-<?php echo $nextMonthName, " ", $nextYear ?><img src="../pjsnimages/arrowRight.png" height="50px">	
+<img src="../pjsnimages/arrowRight.png" height="50px">	
 </td></tr></table>
 <table border="1" cellpadding="3" cellspacing="0" width="100%" align="center">
 <tr class="bluerow">
 	<td>Sun</td>
-  	<td>Mon</td>
-  	<td>Tue</td>
-  	<td>Wed</td>
-  	<td>Thu</td>
+  	/td>
    	<td>Fri</td>
    	<td>Sat</td>
     </tr></table>
