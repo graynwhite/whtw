@@ -311,7 +311,7 @@ for ($k =1; $k <= 6; $k++ ) {
          if (strlen($this_day)<"2"){ $this_day = "0" . $StartDate; }
 //echo("<br /> start date is " . $StartDate . " k is " . $k . "i is " . $i); 
      if (($StartDate <= 0) || ($StartDate  > $LastDay)) {
-               print("<td  class=\"greenrow\">&nbsp;</td>");
+               print("<td bgcolor=\"green\" class=\"greenrow\">&nbsp;</td>");
             } elseif (($StartDate >= 1) && ($StartDate <= $LastDay   )) {
                        $this_date = $Year . "-". $Month . "-" . $this_day;
                      //  print("<br> $this_date");
