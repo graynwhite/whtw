@@ -5,7 +5,7 @@ print_r($_POST);
 define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
 require_once "../gwsecurity/private/initialize.php";
 
-if(trim($_POST['passwrd']) != MAINT_PASS)	die("Password not valid");
+//if(trim($_POST['passwrd']) != MAINT_PASS)	die("Password not valid");
 $ire = new IREclass;
 
 $confirm = $_POST["radioEntryType"]=="Theater"? "Y" : "T";

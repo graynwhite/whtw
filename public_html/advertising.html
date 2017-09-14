@@ -1,0 +1,147 @@
+<STYLE type=text/css>
+.heading {font-family: verdana,arial,helvetica,sans-serif;font-size: 16px;font-weight: bold;color: #FFFFFF;}	
+
+.subheading {font-family: verdana,arial,helvetica,sans-serif;font-size: 14px;font-weight: bold;color: #000099;}	
+.subheading2 {font-family: verdana,arial,helvetica,sans-serif;font-size: 14px;font-weight: bold;color: #000000;}	
+
+.title {font-family: verdana,arial,helvetica,sans-serif;font-size: 11px;font-weight: bold;color: #000000;}	
+.title2 {font-family: verdana,arial,helvetica,sans-serif;font-size: 11px;font-weight: bold;color: #FFFFFF;}	
+
+.required {font-family: verdana,arial,helvetica,sans-serif;font-size: 11px;font-weight: bold;color: #000099;}	
+
+.errortext {font-family: verdana,arial,helvetica,sans-serif;font-size: 13px;font-weight: normal;color: #ff0000;}
+BODY,TR,TD,P,BR,LI {font-family: verdana,arial,helvetica,sans-serif;font-size: 12px;font-weight: normal;color: #000000;}
+.smalltext {font-family: verdana,arial,helvetica,sans-serif;font-size: 10px;font-weight: normal;color: #000000;}
+.footer {font-family: verdana,arial,helvetica,sans-serif;font-size: 11px;font-weight: normal;color: #aaaaaa;}
+td.instructions { background-color: #E7E7E7 }
+td.input { background-color: #FFFFFF }
+td.required   { background-color: #FFF6C9 }
+
+.headings {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 16px;
+	font-weight: bold;
+	color: #006699;
+	background-color: #E7E7E7;
+}
+.content {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 14px;
+	font-weight: normal;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+.content2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 14px;
+	font-weight: normal;
+	color: #000000;
+	background-color: #000099;
+}
+
+.subheadings {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: underline;
+}
+.smalltext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 11px;
+	font-weight: normal;
+	color: #CCCCCC;
+}
+-->
+</style>
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!--
+
+function OpenPopup(URL) {
+	window.self.name = "main";
+	var now = new Date();
+	var width = 300;
+	var height = 300;
+	var remote = window.open(URL, "popup" + now.getTime(), "width=" + width + ",height=" + height + ",toolbar=0,location=0,directories=0,resizable=1,status=1,menubar=0,scrollbars=0");
+}
+
+//-->
+</SCRIPT>
+
+<?php if ($error_message) {	echo '<p><font color=red><b>'.$error_message.'</b></font></p>';} ?>
+
+<form name="form1" action="advertising.php"   method="post"  >
+<table width="80%" bgcolor=#E7E7E7 align="center"  border="1" cellpadding="0" cellspacing="8">
+<tr> 
+<td height=10 bgcolor=#FFFFFF colspan=2 align="center" class="subheading">Advertising Record </td>
+</tr>
+  
+ 
+<tr>
+<td width="45%" class="content"><strong>
+<label for="addName">Add Name </label>
+*</strong>
+<br>
+(maximum of 30 characters)</td>
+<td class="input"><input type="text" name="addName" id="addName" value="<?=htmlentities($addName,ENT_QUOTES);?>"  size="35"></td>
+</tr>
+  
+
+  
+<tr>
+<td width="45%" class="content"><strong><label for="text">Advertising Text</label></strong>
+<br>
+This is the text that will be inserted in the advertising template. </td>
+<td class="input">
+<textarea name="text" id="text" rows=10 cols=45">
+<?=htmlentities($text,ENT_QUOTES); ?> </textarea></td>
+</tr>
+
+<tr>
+<td class="content2" colspan="2" align="left">
+<span class="title2">Priority : The prioity field should consist of a digit that specifies the placement prioity from 1-4 1 being the highest priority. </span></td>
+</tr>
+<tr>
+<td class="input" align="right"><span class="title">Priority</span><span class="required"></span>:</td>
+<td class="input"><input name="priority" type="text" id="priority" size="2" maxlength="1"></td>
+</tr>
+<tr>
+<td class="input" align="right"><span class="title">Status:</span></td>
+<td class="input"><input type="text" name="active" id="active" size="1"  ></td>
+</tr>
+<tr>
+<td class="input" align="right">Date Begin </td>
+<td class="input"><input name="date_begin" type="text" id="date_begin" value="2007-12-01" /></td>
+</tr>
+<tr>
+<td class="input" align="right"><p>Date End </p>  </td>
+<td class="input"><input name="date_end" type="text" id="date_end" value="2010-12-01" /></td>
+</tr>
+<tr>
+<td class="input" align="right" valign="top"><span class="title">Weeks </span></td>
+<td class="input"><br>
+ One
+   <input name="week_1" type="checkbox" id="week_1" value="1">
+  Two
+  <input name="week_2" type="checkbox" id="week_2" value="1" />
+  Three
+  <input name="week_3" type="checkbox" id="week_3" value="1">
+  Four
+  <input name="week_4" type="checkbox" id="week_4" value="1">
+  Five
+  <input name="week_5" type="checkbox" id="week_5" value="1"center">
+  <input type="submit" name="Submit" value="Submit" />
+</p>
+</form>
+

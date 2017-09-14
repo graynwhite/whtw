@@ -1,4 +1,7 @@
 <?php
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
+require_once "../gwsecurity/private/initialize.php";
+
 $file_to_read="theaterVenues.xml";
 $xml =  simplexml_load_file($file_to_read) or die("Unable to load file");
 
@@ -107,13 +110,14 @@ $listbox="<div data-role=\"fieldcontain\">
 	 />
        <legend>End Date of multi day event: </legend>
 	 	
-	   <input name="dateEnd" id="dateEnd" type="date"  class="validate[required,custom[date],future[#dateStart] text-input datepicker"
+	   <p>
+	     <input name="dateEnd" id="dateEnd" type="date"  class="validate[required,custom[date],future[#dateStart] text-input datepicker"
 	  data-prompt-position="bottomLeft:140,5"
 	   />
-	 
-      
-	 <fieldset data-role="controlgroup" data-type="horizontal">
-    <legend>Entry Duration:</legend>  
+      </p>
+	   <p>&nbsp;</p>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <legend>Entry Duration:</legend>  
         <label for= "durSpan">Span</label>  
         <input name="radioEntryDur" id="durSpan" type="radio" value="mul" checked="checked" />
 
@@ -128,7 +132,7 @@ $listbox="<div data-role=\"fieldcontain\">
         <label for='durWeek'>Week</label>
         <input type="radio" name="radioEntryDur"  value="Week" id='durWeek' />
       		  
-     </fieldset>    
+   </fieldset>    
     	
 
     Password: <input name="passwrd" id="passwrd" type="password" 
