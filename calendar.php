@@ -117,6 +117,17 @@ $("#linkBackOneMonth").click(function(){
 	reloadWithQueryStringVars({"month": prevMonth,"year": prevYear});
 	
 });
+$("#linkReset").click(function(){
+	console.log("Reset clicked");
+	var d= new Date();
+	var year = d.getFullYear();
+	var thisMonth = d.getMonth();
+	thisMonth+=1;
+	console.log("This month "+thisMonth);
+	console.log("This Year " +year);
+	reloadWithQueryStringVars({"month": thisMonth,"year": year});
+	
+});	
 $("#linkFwdOneMonth").click(function(){
 	console.log("Forward clicked");
 	var d= new Date();
@@ -223,7 +234,8 @@ The text that you see in the day boxes are the event sponsoring organization cod
 <td id="linkBackOneMonth" align="left">
 <img src="../pjsnimages/arrowLeft.png" height="50px">
 </td>
-<td> </td>
+<td id="linkReset"><img src="../pjsnimages/arrowUp.png"
+	align="center" height="50px"/>Reset to this month</td>
 <td align="right" id="linkFwdOneMonth">
 
 <input type="hidden" name="Month" value="$nextMonth">
@@ -233,7 +245,10 @@ The text that you see in the day boxes are the event sponsoring organization cod
 <table border="1" cellpadding="3" cellspacing="0" width="100%" align="center">
 <tr class="bluerow">
 	<td>Sun</td>
-  	/td>
+  	<td>Mon</td>
+	<td>Tue</td>
+	<td>Wed</td>
+	<td>Thu</td>
    	<td>Fri</td>
    	<td>Sat</td>
     </tr></table>
@@ -296,7 +311,7 @@ for ($k =1; $k <= 6; $k++ ) {
          if (strlen($this_day)<"2"){ $this_day = "0" . $StartDate; }
 //echo("<br /> start date is " . $StartDate . " k is " . $k . "i is " . $i); 
      if (($StartDate <= 0) || ($StartDate  > $LastDay)) {
-               print("<td class=\"greenrow\">&nbsp;</td>");
+               print("<td  class=\"greenrow\">&nbsp;</td>");
             } elseif (($StartDate >= 1) && ($StartDate <= $LastDay   )) {
                        $this_date = $Year . "-". $Month . "-" . $this_day;
                      //  print("<br> $this_date");
