@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE activities SYSTEM	"activities.dtd" >
+<activities>
+	<activity>
+		<activityName>Single Mingle</activityName>
+		<title>Single Mingle Dance</title>
+		<description><![CDATA[Single Mingle Top 40 DJ, Cash Bar, Hors d'oeuvres (8:00-9:00)Dressy Casual (No jeans or Tennis Shoes) Non-Smoking.]]></description>
+		<timeStart>7:00 PM</timeStart>
+		<timeEnd></timeEnd>
+		<priceMember>$6.00</priceMember>
+		<priceGuest>$12</priceGuest>
+	</activity>
+	<activity>
+		<activityName>Singles Coalition</activityName>
+		<title>Singles Coalition Dance</title>
+		<description><![CDATA[Singles Coalition Dance Top 40 DJ, Cash Bar, Hors d'oeuvres (8:00-9:00)Dressy (Men must wear a coat and tie) Non-Smoking.]]></description>
+		<timeStart>7:00 PM</timeStart>
+		<timeEnd>1:00 AM</timeEnd>
+		<priceMember><![CDATA[$15 in advance $20 at door]]></priceMember>
+		<priceGuest><![CDATA[$15 in advance $20 at door]]></priceGuest>
+	</activity>
+	<activity>
+		<activityName>Barn Dance</activityName>
+		<title>Barn Dance</title>
+		<description><![CDATA[Barn Dance Top 40 DJ, Cash Bar, Non-Smoking.]]></description>
+		<timeStart>7:00 PM</timeStart>
+		<timeEnd></timeEnd>
+		<priceMember>$18 in advance $20 at door</priceMember>
+		<priceGuest>$18 in advance $20 at door</priceGuest>
+	</activity>
+	<activity>
+		<activityName>Thursday Dinners</activityName>
+		<title>Thursday Dinner</title>
+		<description><![CDATA[Everyone is Welcome to Join US Fun & Fine Dining! We will meet in the lounge Anytime between 6:00 and 7:30pm for socializing with dinner afterwards.]]></description>
+		<timeStart>6:00 PM</timeStart>
+		<timeEnd></timeEnd>
+		<priceMember>Menu</priceMember>
+		<priceGuest>Menu</priceGuest>
+	</activity>
+</activities>
+
+
+    
+    

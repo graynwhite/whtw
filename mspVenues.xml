@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE  venues SYSTEM "venues.dtd" >
+<venues>
+	<venue>
+		<venueName>Crown Plaza - Novi</venueName>
+		<venueAddress><![CDATA[Crowne Plaza formerly(Double Tree Guest Suites). 27000 Sheraton Drive  Novi Rd, Novi, MI.  for directions only call 248-348-5000.]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Marriott Hotel Livonia</venueName>
+		<venueAddress><![CDATA[Marriott Hotel Livonia. 17100 Laurel Park Drive, Livonia, MI.  6 Mile at I-275,  exit 170 Drive for directions only 734-462-3100.]]></venueAddress>
+		</venue>
+	<venue>
+		<venueName>Radisson Livonia </venueName>
+		<venueAddress><![CDATA[Raddison, Livonia (Formerly Holiday Inn). 17123 Laurel Park Dr, Livonia, Mi.  N 6 Mile Road at I-275 734-464-1300]]></venueAddress>
+		</venue>	
+	<venue>
+		<venueName>Gazebo Convention Center</venueName>
+		<venueAddress><![CDATA[Gazebo Convention Center. 31104 Mound Rd, Warren, Mi.  at 13 Mile  for directions only call 586-979-6030]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Troy Hilton</venueName>
+		<venueAddress><![CDATA[Troy Hilton. 5500 Crooks Rd Troy, Mi. at I-75 exit 72 for directions only call 248-879-2100]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Embassy Suites -Southfield</venueName>
+		<venueAddress><![CDATA[Embassy Suites Hotel. 28100 Franklin Road, Southfield, Mi. for directions only call 248-350-2000]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Lazy J</venueName>
+		<venueAddress><![CDATA[Lazy J Ranch. 625 South Hickory Ridge Road, Milford, MI. 48380-1501 For directions only 248-887-1551]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Glen Oaks</venueName>
+		<venueAddress><![CDATA[Glen Oaks Country Club. 30500 W 13 Mile, Farmington Hills, Mi. 13 Mile Rd east of Orchard Lake Rd  for directions only 249-626-2600]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Club Venetion</venueName>
+		<venueAddress><![CDATA[Club Venetion Banquet Center. 29310 John R, Madison Heights, Mi.  North of 12 mile. for directions only 248-399-6788]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Sheraton Novi</venueName>
+		<venueAddress><![CDATA[Sheraton Hotel Novi. 21111 Haggerty Rd. Novi, Mi. North of 8 Mile Rd For directions only 248-349-4000]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Royalty House</venueName>
+		<venueAddress><![CDATA[Royalty House Banquet Center.  8201 East 13 Mile Road,  Warren, Mi. For directions only (586) 264-8400  On old 13 mile just east of Van Dyke]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Farmington Hills Manor</venueName>
+		<venueAddress><![CDATA[Farmington Hills Manor. 23666 Orchard Lake Rd
+Farmington Hills, MI. 48336-2546 - Orchard Lake Rd Just South of 10 Mile Rd]]></venueAddress>
+	</venue>
+	<venue>
+		<venueName>Rennaisance Baronette</venueName>
+		<venueAddress><![CDATA[ Barronette Hotel . 27790 Novi Rd, Novi, Mi. North of I-96
+Enter from service drive of Twelve Oaks Mall For Directions Only Call (248) 349-7800 ]]></venueAddress>
+	</venue>
+	
+	<venue>
+		<venueName>Diamond Center Ballroom</venueName>
+		<venueAddress><![CDATA[ Diamond Center ballroom in the Rock Financial Showplace . 46100 Grand river Ave, Novi, Mi. Just east of Beck Rd.for directions only call 248-348-5600 ]]></venueAddress>
+	</venue>
+</venues>
+  
+   

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE  venues SYSTEM "venues.dtd" > 
+<venues>
+	<venue>
+		<venueName>Banff, Alberta</venueName>
+		<venueAddress><![CDATA[Baldwin Theater. 150  S Lafayette, Royal Oak, Mi.]]></venueAddress>
+		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Whitefish Mountain, Montana</venueName>
+		<venueAddress><![CDATA[Village Playhouse. 34660 Woodward Ave, Birmingham, Mi. 48009-0924]]></venueAddress>
+		<contact><![CDATA[Call (248) 644-9667  for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Steamboar Springs, Colorado</venueName>
+		<venueAddress><![CDATA[Orchestra Hall. 3663 Woodward Avenue, Detroit,  Mi. 48201-2400]]></venueAddress>
+		<contact><![CDATA[Call (313) 576-5100 for concerts and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Snowmass/Aspen, Colorado</venueName>
+		<venueAddress><![CDATA[Detroit Opera House. 1426 Broadway Street, Detroit  Mi. ]]></venueAddress>
+		<contact><![CDATA[Call (313) 965-4052
+ for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Alyeska, Alaska</venueName>
+		<venueAddress><![CDATA[Ridgedale Players theater. 205 W. Long Lake Rd, Troy, MI. 48098 
+(248) 988-7049 ]]></venueAddress>
+		<contact><![CDATA[Call 248-988-7049  for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Nub's Nob</venueName>
+		<venueAddress><![CDATA[Emerald Theatre. 31 N Walnut St,  Mt. Clemens, MI. 48043 
+(586) 913-1920 ]]></venueAddress>
+		<contact><![CDATA[Call 248-988-7049  for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Jackson Hole, Wyoming</venueName>
+		<venueAddress><![CDATA[St Dunstan's Guild Theatre. 400 Lone Pine Ct, Bloomfield Hills,  MI. 48304 ]]></venueAddress>
+		<contact><![CDATA[Call (248) 645-1576  for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Park City, Utah</venueName>
+		<venueAddress><![CDATA[Birmingham Community House. 380 South Bates Street, Birmingham, MI. 48009 ]]></venueAddress>
+		<contact><![CDATA[Call (248) 644-6842  for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Breckinridge, Colorado</venueName>
+		<venueAddress><![CDATA[Jewish Ensemble Theatre. 6600 W Maple, West Bloomfield, MI. 48322 ]]></venueAddress>
+		<contact><![CDATA[Call (248) 788-2900 for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Vail, Colorado</venueName>
+		<venueAddress><![CDATA[The Scarab Club. 217 Farnsworth St, Detroit, MI. 48202-4018 (313) 831-1250  ]]></venueAddress>
+		<contact><![CDATA[Call(248) 474-8930  for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+	<venueName>Whistler, British Columbia</venueName>
+		<venueAddress><![CDATA[The Grosse Pointe Unitarian Church. 17150 Maumee Avenue, Grosse Pointe, Mi. At the corner of Maumee and  St. Clair. ]]></venueAddress>
+		<contact><![CDATA[Call (248) 474-8930  for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+	<venueName>Searchmont/Kewadin</venueName>
+		<venueAddress><![CDATA[Marygrove College. 8425 McNichols Road W, Detroit, Mi. at the corner of McNichols and Wyoming.]]></venueAddress>
+		<contact><![CDATA[Call (313) 927 - 1538   for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+	<venueName>Sun Valley, Idaho</venueName>
+		<venueAddress><![CDATA[Palmer Woods. Detroit, MI. 48203 313-891-2514 web palmerwoods.org Email  concertseries@palmerwoods.org Address supplied with ticket purchase. Advance sales only Discounts available for groups of six. ]]></venueAddress>
+		<contact><![CDATA[Tickets are available on palmerwoods.org or by calling 313-891-2514 .]]></contact>
+		<org>orgtheater</org>
+	</venue>
+		<venue>
+		<venueName>Uptown Palladium</venueName>
+		<venueAddress>250 N. Old Woodward Ave, Birmingham, Mi.</venueAddress>
+		<contact></contact>
+		<org>orgtheater</org>
+		</venue>
+	<venue>
+		<venueName>Birmingham 8 Theater</venueName>
+		<venueAddress>111 S. Old Woodward Ave, Birmingham, Mi.</venueAddress>
+		<contact></contact>
+		<org>orgtheater</org>
+		</venue>
+	<venue>
+		<venueName>Redford Theater</venueName>
+		<venueAddress>17360 Lasher Road, Detroit, Mi.</venueAddress>
+		<contact></contact>
+		<org>orgtheater</org>
+		</venue>	
+	<venue>
+		<venueName>Other</venueName>
+		<venueAddress></venueAddress>
+		<contact></contact>
+		<org>orgtheater</org>
+	</venue>
+</venues>

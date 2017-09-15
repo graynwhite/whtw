@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE activities SYSTEM	"activities.dtd" >
+<activities>
+	<activity>
+		<activityName>Breakfast Club</activityName>
+		<title>Breakfast Club</title>
+		<description><![CDATA[Join other singles for casual brunch.]]></description>
+		<timeStart>11:00 AM</timeStart>
+		<timeEnd></timeEnd>
+		<priceMember>Menu</priceMember>
+		<priceGuest>Menu</priceGuest>
+	</activity>
+	<activity>
+		<activityName>Birthday Celebration</activityName>
+		<title>Birthday Celebration</title>
+		<description><![CDATA[Come celebrate with other singles born in this month.]]></description>
+		<timeStart>7:00 PM</timeStart>
+		<timeEnd></timeEnd>
+		<priceMember>Order from menu</priceMember>
+		<priceGuest>Order from menu</priceGuest>
+	</activity>
+	<activity>
+		<activityName>Dance Lessons</activityName>
+		<title>Dance Lessons</title>
+		<description><![CDATA[Please give Patti Backos a call 586-883-2596 (pbackos@yahoo.com if you would like to join . Note a dance partner not required.]]></description>
+		<timeStart>7:00 PM</timeStart>
+		<timeEnd></timeEnd>
+		<priceMember></priceMember>
+		<priceGuest></priceGuest>
+	</activity>
+	<activity>
+		<activityName>Dancing Under the Stars</activityName>
+		<title>Dancing Under the Stars</title>
+		<description><![CDATA[Sunday Nights - "Dancing Under the Stars" at Metro Beach -]]></description>
+		<timeStart></timeStart>
+		<timeEnd></timeEnd>
+		<priceMember>Free with park admission</priceMember>
+		<priceGuest>Free with park admission</priceGuest>
+	</activity>
+</activities>
+
+
+    
+    

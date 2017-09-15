@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<orgs>
+	<org>
+		<orgName>Birmingham</orgName>
+		<orgCode>kelet</orgCode>
+	</org>
+	<org>
+		<orgName>Clinton Township</orgName>
+		<orgCode>keclt</orgCode>
+	</org>
+	<org>
+		<orgName>Troy</orgName>
+		<orgCode>ketry</orgCode>
+	</org>
+	<org>
+		<orgName>Rochester/Lake Orion</orgName>
+		<orgCode>kerlo</orgCode>
+	</org>
+	<org>
+		<orgName>Kensington Church</orgName>
+		<orgCode>kcit</orgCode>
+	</org>
+	<org>
+		<orgName>GM Ski Club</orgName>
+		<orgCode>GM</orgCode>
+	</org>
+</orgs>
+
+
+    
+    

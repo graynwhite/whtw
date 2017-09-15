@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<orgs>
+	<org>
+		<orgName>GM Ski Club</orgName>
+		<orgCode>GM</orgCode>
+	</org>
+	<org>
+		<orgName>Somerset</orgName>
+		<orgCode>Somer</orgCode>
+	</org>
+	<org>
+		<orgName>Thunderbird</orgName>
+		<orgCode>tbird</orgCode>
+	</org>
+	<org>
+		<orgName>Skiwi Ski Club</orgName>
+		<orgCode>Skwii</orgCode>
+	</org>
+	<org>
+		<orgName>Schussmeister</orgName>
+		<orgCode>schus</orgCode>
+	</org>
+	<org>
+		<orgName>Ann Arbor Ski Club</orgName>
+		<orgCode>A2</orgCode>
+	</org>
+	<org>
+		<orgName>Livonia Ski Club</orgName>
+		<orgCode>liv</orgCode>
+	</org>
+	<org>
+		<orgName>Grand Rapids Ski Club</orgName>
+		<orgCode>grsc</orgCode>
+	</org>
+	<org>
+		<orgName>Windsor Ski Club</orgName>
+		<orgCode>wsc</orgCode>
+	</org>
+	<org>
+		<orgName>Washtenaw Ski Touring Club</orgName>
+		<orgCode>wstc</orgCode>
+	</org>
+	<org>
+		<orgName>DTE Ski Club</orgName>
+		<orgCode>dtesc</orgCode>
+	</org>
+	<org>
+		<orgName>Jug and Mug</orgName>
+		<orgCode>jug</orgCode>
+	</org>
+	<org>
+		<orgName>Jim Dandy </orgName>
+		<orgCode>Other</orgCode>
+	</org>
+	<org>
+		<orgName>Somerset</orgName>
+		<orgCode>Somer</orgCode>
+	</org>
+			<org>
+		<orgName>Five Star Conection</orgName>
+		<orgCode>pwpr</orgCode>
+	</org>
+		
+	<org>
+		<orgName>Test </orgName>
+		<orgCode>test</orgCode>
+	</org>
+	
+	
+	<org>
+		<orgName>Detroit Regional Yacht-Racing Association DRYA</orgName>
+		<orgCode>drya</orgCode>
+	</org>
+	
+	<org>
+		<orgName>Other</orgName>
+		<orgCode>Other</orgCode>
+	</org>
+</orgs>
+
+
+    
+    

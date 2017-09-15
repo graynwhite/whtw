@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE  venues SYSTEM "venues.dtd" > 
+<venues>
+	<venue>
+		<venueName>Stagecrafters</venueName>
+		<venueAddress><![CDATA[Baldwin Theater. 150  S Lafayette, Royal Oak, Mi]]></venueAddress>
+		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Village Players</venueName>
+		<venueAddress><![CDATA[Baldwin Theater. 150  S Lafayette, Royal Oak, Mi]]></venueAddress>
+		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Detroit Symphony Orchestra</venueName>
+		<venueAddress><![CDATA[Baldwin Theater. 150  S Lafayette, Royal Oak, Mi]]></venueAddress>
+		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Detroit Opera House</venueName>
+		<venueAddress><![CDATA[Baldwin Theater. 150  S Lafayette, Royal Oak, Mi]]></venueAddress>
+		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+	<venue>
+		<venueName>Automation Alley Headquarters</venueName>
+		<venueAddress><![CDATA[Automation Alley. 2675 Bellingham, Troy, Mi]]></venueAddress>
+		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
+		<org>orgtheater</org>
+	</venue>
+</venues>
