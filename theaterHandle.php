@@ -9,7 +9,7 @@ require_once "../gwsecurity/private/initialize.php";
 $ire = new IREclass;
 
 $confirm = $_POST["radioEntryType"]=="Theater"? "Y" : "T";
-echo("Confirm is " . $confirm);
+//echo("Confirm is " . $confirm);
 $groupName = str_replace("+"," ",$_POST["selectmenu"]);
 $event_date =  $_POST["dateStart"];
 $event_end = $_POST["dateEnd"];
@@ -18,7 +18,7 @@ $event_activity = $ire->getSiteInfo("theaterVenues.xml",$groupName);
 $event_media = $event_activity;
 $event_place = $ire->getSiteVenue("theaterVenues.xml",$groupName);
 if($confirm=="T"){
-	$event_place=$event_title . ". " .$event_place;
+	$event_place=$event_title . ". More information available at " .$event_place;
 }
 $event_org = $ire->getSiteOrg("theaterVenues.xml",$groupName);
 $dow='mul';
@@ -30,8 +30,8 @@ $dow='mul';
 
 $html_text= "<br /> Starting date is " . $_POST["dateStart"];
 $html_text .= "<br /> Ending  date is " . $_POST["dateEnd"];
-$html_text .= "<br /> Theater group is " . ($_POST["selectmenu"]);
-$html_text .= "<br /> Production is " . $_POST["prodname"];
+$html_text .= "<br /> Theater/Organization is " . ($_POST["selectmenu"]);
+$html_text .= "<br /> Production/Trip is " . $_POST["prodname"];
 $html_text .= "<br /> Venue is " . $event_place;
 $html_text .= "<br /> org is " . $event_org;
 $html_text .= "<br /> Confirm is " . $confirm;
