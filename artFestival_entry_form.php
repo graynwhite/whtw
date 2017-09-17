@@ -24,13 +24,6 @@ $header = $ire->getHeader();
 <script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
 <script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
 
-<script language="javascript">
-$(document).ready(function()	{
-   $('#html').markItUp(myHtmlSettings);
-});
-</script>
-
-
 
 <script type="text/javascript">
 	
@@ -338,11 +331,11 @@ window.addEventListener("load", assignDate);
     <a id="topOfPage" ></a>
 
 	<input type="hidden" name="website"/>
+
 <?php
 $orglist="";	
 include_once("../phpClasses/orgSelect.php");	
 //$orgRadio = $ire->bldOrgRadio();
-
 
 	echo $orglist;
 //$orgRadio=	
@@ -350,27 +343,30 @@ include_once("../phpClasses/orgSelect.php");
 //$venueRadio = $ire->bldVenueRadio("theaterVenues.xml",80);
 //echo $venueRadio;
 $original_date=$ire->bldDateEntryShort();
-?>
-
-<p>Media Input:
-  <textarea name="media" id="media" cols="100%"  rows="10"></textarea><br/>
+?> // end of PHP for now
+<br>
+<label for "media">Media Input</label><br>
+  <textarea name="media" id="media" cols="100%" class="markItUp" rows="10"></textarea><br/>
   <input type="button" id="breakbutton" value="Break lines"/>
   <input type="button" id="cleanupbutton" value="Clean up Calendar"/>
   
-</p>
+
 <p>Note: if Site is &quot;Other&quot; then Site information must be completed conversely to specify site information site must be set to Other. </p>
-<p>Title:
+
+<p>Title:<br>
   <input name="title" type="text" id="event_title" size="60" maxlength="60" />
 </p>
-<p>Event Description:
+<p>Event Description:<br>
   <textarea rows="3" name="event_text" id="event_text"  cols="100%"></textarea></p>
   <p>
-  Place Name:<input name="geocomplete"; type="text" id="geocomplete" value="" size="80" />
-	  <input id="find" type="button" value="find" /><input name="useFound" type="button" id="useFound" value="Use Found" onClick="UseFound()"/></p>
+  Place Name:<br>
+    <input name="geocomplete"; type="text" id="geocomplete" value="" size="80" /><br>
+    <input id="find" type="button" value="find" /><input name="useFound" type="button" id="useFound" value="Use Found" onClick="UseFound()"/></p>
 	  
- <p>Found Location:<input name="formatted_address" type="text" size="150" value=""/></p>
+ <p>Found Location:<br>
+ <input name="formatted_address" type="text" size="150" value=""/></p>
 		
-<p> Site description:
+<p> Site description:<br>
 <textarea rows="3" name="other_site_text" id="other_site_text" cols="80"></textarea></p>
 <p>Mail to Blog 
   <input name="checkMailToBlog" type="checkbox" id="checkMailToBlog" value="True" /> 
