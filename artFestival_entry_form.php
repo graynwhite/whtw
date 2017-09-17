@@ -300,9 +300,10 @@ Read more about web engineering on web-engineering.info.
 
 <script>
 function scrollUp()
-	document.ackform.subname="";
-	document.ackform.email="";{
-	scrollTo(0,0)
+	{   
+
+	
+	scrollTo(0,0);
 	}
 	
 function assignDate() {
@@ -345,8 +346,7 @@ include_once("../phpClasses/orgSelect.php");
 //$venueRadio = $ire->bldVenueRadio("theaterVenues.xml",80);
 //echo $venueRadio;
 $original_date=$ire->bldDateEntryShort();
-?> // end of PHP for now
-<br>
+?><br>
 <label for "media">Media Input</label><br>
   <textarea name="media" id="media" cols="100%" class="markItUp" rows="10"></textarea><br/>
   <input type="button" id="breakbutton" value="Break lines"/>
@@ -368,7 +368,7 @@ $original_date=$ire->bldDateEntryShort();
  <p>Found Location:<br>
  <input name="formatted_address" type="text" size="150" value=""/></p>
 		
-<p> Site description:<br
+<p> Site description:<br>
 <textarea rows="3" name="other_site_text" id="other_site_text" cols="80"></textarea></p>
 <p>Mail to Blog 
   <input name="checkMailToBlog" type="checkbox" id="checkMailToBlog" value="True" /> 
@@ -457,11 +457,12 @@ Farmington Hills Manor <br>
 </p>
 </form>
 <div id="form-messages"></div>
-<form id="ackForm" name="ackForm" method="post">
-Name of person submitting event<input name="subname" id="subName" type="text"/><br />
+<form id="ackForm" name="ackForm" >
+Name of person submitting event<input name="subName" id="subName" type="text"/><br />
 Email <input name="email" id="emailid" type="text" /><br />
 Source of input: <input name="eventSource" id="eventSource"/><br />
 <input type="button" value="Send Acknowledge Letter" onClick="acknowledge()" >
+<input type="reset" value="Clear Acnowledge Letter info">
 <!--<input type="button" value="acknowledge" name="acknowledge" id="acknowledgebutton" onClick="testit()"/> -->
 </form>
 </div> <!-- End of content -->
