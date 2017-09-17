@@ -15,14 +15,14 @@ $header = $ire->getHeader();
 <script  src="markitup.json"></script>
 	
 		
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/markitup.css" />
-<link rel="stylesheet" type="text/css" href="../markitup/markitup/sets/html/html.css" />
+<link rel="stylesheet" type="text/css" href="../../markitup/markitup/sets/html/markitup.css" />
+<link rel="stylesheet" type="text/css" href="../../markitup/markitup/sets/html/html.css" />
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
 
 
 <script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
-<script type="text/javascript" src="../markitup/markitup/sets/html/set.js"></script>
+<script type="text/javascript" src="../../markitup/markitup/sets/html/set.js"></script>
 
 
 <script type="text/javascript">
@@ -299,7 +299,9 @@ Read more about web engineering on web-engineering.info.
  -->
 
 <script>
-function scrollUp(){
+function scrollUp()
+	document.ackform.subname="";
+	document.ackform.email="";{
 	scrollTo(0,0)
 	}
 	
@@ -366,7 +368,7 @@ $original_date=$ire->bldDateEntryShort();
  <p>Found Location:<br>
  <input name="formatted_address" type="text" size="150" value=""/></p>
 		
-<p> Site description:<br>
+<p> Site description:<br
 <textarea rows="3" name="other_site_text" id="other_site_text" cols="80"></textarea></p>
 <p>Mail to Blog 
   <input name="checkMailToBlog" type="checkbox" id="checkMailToBlog" value="True" /> 
