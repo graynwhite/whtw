@@ -186,7 +186,14 @@ info@michiganfashfest.com]]></contact>
 		<org>other</org>
 	</venue>
 	
-	
+	<venue>
+		<venueName>MACC Racing</venueName>
+		<venueAddress><![CDATA[      ]]></venueAddress>
+		<venueAddress></venueAddress>
+		<org>macc</org>
+		<sponsorweb>www.maccracing.org</sponsorweb>
+		<contact><![CDATA[Lou Oles(810) 750-3479 ouoles@hotmail.com]]></contact>
+	</venue>
 	<venue>
 		<venueName>Ski Cruisers Ski Club</venueName>
 		<venueAddress><![CDATA[Meetings:Shields of Troy, 1476 W. Maple Troy, Michigan ]]></venueAddress>
