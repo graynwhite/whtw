@@ -11,8 +11,9 @@
 */
 ?>
 <?php
-require_once("../../cgi-bin/connect.inc");
-
+//require_once("../../cgi-bin/connect.inc");
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
+require_once "../gwsecurity/private/initialize.php";
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -33,9 +34,9 @@ require_once("../../cgi-bin/connect.inc");
 <?php
 
     $sql = "select * from newsletters  order by campaign ";
-    $result = @mysql_query($sql);
+    $result = mysqli_query($conn,$sql);
     if (!$result) {
-	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() . " </p>");
+	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysqli_error() . " </p>");
 	 		exit;
 
       		}
@@ -47,28 +48,31 @@ require_once("../../cgi-bin/connect.inc");
 <form method=post action="my_newsletter_form_head.php">
   <input type="submit" value="Add New" name="submit">
   </form>
+<?
+$returnHtml="<table><tr>";
+$returnHtml.="<th align=\"center\">Newsletter Link</th>";
+$returnHtml.="<th align=\"center\">URL</th>";
+$returnHtml.="<th align=\"center\">Action</th></tr>\n";
+  while ($row = mysqli_fetch_assoc($result)){
+  $currentCampaign=htmlentities($row["campaign"]);
+  $returnHtml.="<tr><td>";
+  $returnHtml.=$currentCampaign;
+  $returnHtml.="</td><td>";
+  $returnHtml.=htmlentities($row["url"]);
+  $returnHtml.="</td><td>";
+  $returnHtml.="<a href=\"newsletter_change.php";
+  $returnHtml.="?campaign=";	  
+  $returnHtml.=$currentCampaign;
+  $returnHtml.="&submit=no\">Change</a>";
+  $returnHtml.="|<a href=\"newsletter_add.php?campaign=";
+  $returnHtml.="$currentCampaign"; $returnHtml.="&action=Delete\">Delete</a></td></tr>";
+  } 
+	
+  $returnHtml.="</table>";
+echo("$returnHtml");
+?>
 
 
-
-<table border="1" cellpadding="2" cellspacing="2">
-<tr>
-        <th align="center">Newsletter link</th>
-        <th align=center>Url </th>
-        <th align=center>Action </th>
-</tr>
- <?       while ($row = mysql_fetch_array($result)){
-
-    ?>
- <tr>
-        <td><?=$row['campaign']?>&nbsp;</td>
-        <td><?=$row['url']?>&nbsp;</td>
-        <td><a href="newsletter_change.php?campaign=".<?=$row['campaign']?> | &submit=\"no\" >Change</a>
-            <a href="newsletter_add.php?campaign=\"" . <?=$row['campaign']?>. "&action=Delete>Delete</a>
-            </td>
-<?php } ?>
- </tr>
-
-</table>
 </body>
 </html>
 
