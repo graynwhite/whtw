@@ -179,13 +179,13 @@ function MakeArray(n){
 
 <table width="100%" border="0">
   <tr align="center" valign="top">
-    <td width="25%" height="10"><div align="center"><a href="event_mail.php"><img src="addbtn.gif" width="100" height="30"></a></div></td>
+    <td width="25%" height="10"><div align="center"><a href="event_mail.php"><img src="img/addbtn.gif" width="100" height="30"></a></div></td>
     <td width="25%" ><a href="../TripsAndCruises.php"><img src="clubTripBtn.png" alt="Club Trips and Cruises" width="100" height="30" border="0"></a></td>
-    <td width="25%" height="10" ><a href="calendar.php"><img src="ftrbtn.gif" width="100" height="30"></a></td>
+    <td width="25%" height="10" ><a href="calendar.php"><img src="img/ftrbtn.gif" width="100" height="30"></a></td>
     <td width="25%" height="10">
          <a HREF="http://ui.constantcontact.com/sa/fp.jsp?plat=i&p=f&m=osf4rwn6">
-  <img src="sendFriend.gif"width="100" height="30"></a>  </td>
-    <td width="25%" height="10"><a href="http://ui.constantcontact.com/d.jsp?m=1011148101198&p=oi" "><img src="joinEmail.gif" width="100" height="30"></a></td>
+  <img src="img/sendFriend.gif"width="100" height="30"></a>  </td>
+    <td width="25%" height="10"><a href="http://ui.constantcontact.com/d.jsp?m=1011148101198&p=oi" "><img src="img/joinEmail.gif" width="100" height="30"></a></td>
   </tr>
 </table>
   <CENTER> 

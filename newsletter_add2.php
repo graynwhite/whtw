@@ -1,4 +1,6 @@
 <?php
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
+require_once "../gwsecurity/private/initialize.php";
 /** @package 
 
         newsletter_add
@@ -13,9 +15,9 @@
 //$campaign = $_REQUEST[campaign];
 $newDate = $_REQUEST[new_date];
 echo "this is the new date  " . $newDate . "<br />";
-require_once($_SERVER['DOCUMENT_ROOT']. "/cgi-bin/connect.inc");
 
-if ($_REQUEST[action] == 'newevent'){	
+
+if ($_REQUEST['action'] == 'newevent'){	
 	 $carray = explode("-",$_REQUEST[new_date]);
     $campaign = "Newsletter ". $carray[0]. "/" . $carray[1] . "/" . $carray[2];
 	 $url = "Events for week of " .$carray[1]. "-" . $carray[2] . "-" . $carray[0] . ".htm";
@@ -23,9 +25,9 @@ if ($_REQUEST[action] == 'newevent'){
 	  
 	   $sql = "insert into newsletters set campaign = \"$campaign\",
                 url=\"$url\" ";
-		 $result = @mysql_query($sql);
+		 $result = mysqli_query($conn,$sql);
 		 if (!$result) {
-		       echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysql_error() ." </p>");
+		       echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysqli_error($conn) ." </p>");
 			
 		
 	 }		
