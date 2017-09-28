@@ -33,7 +33,7 @@ require_once "../gwsecurity/private/initialize.php";
 
 <?php
 
-    $sql = "select * from newsletters  order by campaign ";
+    $sql = "select * from newsletters  order by campaign DESC";
     $result = mysqli_query($conn,$sql);
     if (!$result) {
 	 		echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysqli_error() . " </p>");
