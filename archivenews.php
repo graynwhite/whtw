@@ -31,6 +31,7 @@ if ( !$result ){
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>Archived Newsletters</title>
+<link rel="stylesheet" type="text/css" href="./css/pjstyles.css"
 </head>
 <body>
 <div id="center">
@@ -50,9 +51,9 @@ if ( !$result ){
 	
 //echo("<br>campaign is:".$campaign);		
 //echo("<br>news_url is :".$news_url);
-   if ( $row_count > 4 )
+       if ( $row_count > 4 )
         { echo("</tr><tr>");
-        $row_count=0;
+		 $row_count=0;
         }
   $row_count++;
    echo("<td height=\"10\"><a href=\"$news_url\">$campaign</a></td>");

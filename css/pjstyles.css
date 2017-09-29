@@ -1,0 +1,353 @@
+/* CSS Document */
+
+/* ------------------------------- formatting ----------------------------- */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgba(128,0,0,1.00);
+	}
+
+	
+
+h1 {
+	font-weight: bold;
+	font-size: medium;
+	font-family: Arial, sans-serif;
+	color: #43616B;
+	margin-top: 0px;
+	}
+
+
+h2 {
+	font-size: large;
+	font-family: Arial, sans-serif;
+	color: #150001;
+	font-weight: bold;
+	}
+
+h4 {
+	font: bold small Verdana, sans-serif;
+	color: #9C1A1E;
+	margin-bottom: 2px;
+	}
+
+h5 {
+	font: italic bold small Arial, sans-serif;
+	color: #43616B;
+	margin-top: 2px;
+	}
+	
+p {
+	font: 0.7em Verdana, sans-serif;
+	}
+
+#center p {
+	font: 0.8em Verdana, sans-serif;
+	width: 74%;
+	left: 25%;
+	}
+
+
+	
+#footer p {
+	margin: 10px;
+	text-align: center;
+	float:none;
+	
+	
+	}
+
+a {
+	color: blue;		
+	}
+a:hover {
+	color: #F5F40C;
+	position: static;
+	top: 10%;
+	}
+
+hr {
+	color: #A5B5C6;
+	height: 1px;
+	}
+	
+a img {
+	border: 0px none;
+	display: block;			/* removes extra space underneath caused by default text-alignment */
+	}
+
+div#top a {
+	display: block;			/* makes the background hover effect work in Mozilla */
+	width: 153px;
+	background-color: Maroon;
+	}
+
+div#top a:hover {
+	background-color: Blue;
+	}
+
+.textbox {					/* Until IE understands <css> input[type="file"] { </css> It's better to define a new style then it is to re-define the input tag because radio buttons cop a beating */
+	padding: 4px;
+	font:  small verdana, sans-serif;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+	}
+
+
+
+
+
+
+
+
+/* 
+
+------------------------------- layout ----------------------------- 
+
+Notes:
+
+Do not mix px widths with % widths for margins, borders or padding because 
+the total box width = set width + padding + border.  (It helps if you can add them together)
+
+The box model hack is used to fix an bug in IE5-Win ...for an explanation from the guy that
+wrote it go to http://www.tantek.com/CSS/Examples/boxmodelhack.html
+
+
+
+Left Col Widths:
+ |  pad   |         width        |  pad   | 				
+ ------------------------------------------					
+ |   0    |          25%         |   0    |	
+ 
+Center Margins:
+ |  marg  |         width        |  marg  | 
+ ------------------------------------------
+ |   25%  |        (auto)        |   25%  |
+
+Right Col Widths:
+ |  pad   |         width        |  pad   | 				
+ ------------------------------------------					
+ |  1.5%  |          22%         |  1.5%  |				total width= 25%
+ 
+
+*/
+
+#top {
+	padding: 4px;
+	background: maroon url(images/pjbgtop.jpg) repeat-x;
+	border-bottom: 2px solid blue;
+	width: 100%;
+	}
+	
+#center {
+	left: 25%;
+	width: 74%;
+	background: #fff;
+	color: #000;
+	overflow: scroll;
+	position: relative;
+	padding-left: 5px;
+}
+	
+#scrpt {
+	font-family:  "Signet Roundhand", "New Century Schoolbook", Baskerville serif;
+	color: maroon;
+	float: left;
+	
+}
+
+#left{
+	position:absolute;
+	top: 21%;
+	padding: 0px;
+	width: 24%;
+	color: #fff;
+	text-decoration: none;
+	overflow:auto;
+	background-color: maroon;
+	}
+	#left li a{
+		color: #fff;
+	text-decoration: none;
+	}
+
+.spacer {
+	display: block;
+	height: 1px;
+	font: 1px /1 sans-serif;
+	clear: both;
+	}
+
+		
+#topcontent {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 75%;
+	}
+
+#topcontent h2, #topcontent p {
+	display: inline;
+	margin-right: 0.5em;
+	text-align:center;
+	}
+
+
+
+#footer {
+	clear: both;
+	margin-top:10px;
+	border-top: 2px solid blue;
+	border-bottom: 2px solid blue;
+	background-color: maroon;
+	color: white;
+	text-align: center;
+	
+	}
+#lx1 {
+	font: 10px , "New Century Schoolhouse", Baskerville, serif;
+	font-size: 100%;
+	text-align: center;
+	color: white;
+	}
+	
+#featureimg {
+	position: relative;
+	left: 25%;
+	width: 74%;
+	height: 250px;
+	background: #153976 url(images/angel911031030small.JPG) no-repeat left top;
+	border-top: 1px solid #A5B5C6;		/*	Without this 1px border, Mozilla/Netscape applies the 200px margin from the child element (div#mstrans) - I don't know why? In these crazy topsy turvey times it seems that nothing is certain  */
+	margin-top: 0px;
+	margin-right: 0%;
+	margin-bottom: 0px;
+	
+	}
+	
+#mstrans {
+	position: relative;
+	left: 25%;
+	width: 100%;
+	float: 0;
+	}
+	
+#mstrans img {
+	border: 0px solid cyan;
+	}
+
+ul#mainnav {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: maroon;
+	}
+		
+ul#mainnav li {
+	display: block;
+	border-top: 1px solid maroon;
+	}
+
+ul#mainnav li a {
+	display: block;
+	margin: 1px 1px 1px 1px;
+	padding: 6px 6%;
+	background-color: maroon;
+	font: bold 0.8em /1.5 arial, sans-serif;		/* If you get an unwanted gap after your a block (IE-Win) try increasing the line height		*/
+	color: #fff;
+	text-decoration: none;
+	width: 88%;				/* 	Causes Problems in IE5-Mac and Netscape/Mozzilla - see next fix		*/
+	}
+
+ul#mainnav li a:hover {
+	background-color: maroon;
+	color: #eee;
+	
+	}
+	
+ul#mainnav ul.subnav {
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+	border: 0px solid pink;
+	}
+
+ul#mainnav ul.subnav li {
+	border-top: 0 none;
+	border: 0px solid green;
+	padding-left: 1.5em;
+	}
+
+ul#mainnav ul.subnav li a {
+	padding: 1%;
+	margin: 0px;
+	font: bold 0.7em /1.5 verdana, sans-serif;
+	color: #5C6F90;
+	background-color: transparent;
+	border: 0px solid yellow;
+	}
+
+ul#mainnav ul.subnav li a:hover {
+	color: #43616B;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	
+div#topcontent ul {
+	position: absolute;
+	right: 0px;
+	list-style: none;
+	margin: 0px 0px 40px 0px;
+	}
+div#topcontent ul li {
+	display: inline;
+	padding: 0 0.5em;
+	border-left: 1px solid #34339B;	
+	}
+	
+	
+div#topcontent ul li.first {
+	border-left: 0px none;
+	}
+div#topcontent ul li a {
+	font: 0.7em /1 verdana, sans-serif;
+	color: white;
+	}
+
+div#topcontent form {
+	position: absolute;
+	right: 0px;
+	top: 55px;
+	margin: 0px;
+	}
+#otherleft {
+	background: maroon url(images/pjbgbot.jpg) repeat-x;
+	padding-left: 1%;
+	padding-bottom: 2em;
+	position: static;
+	bottom: 15px;
+}
+#otherleft h2 p {
+	color: #000000;
+}
+
+
+@media screen and (max-width:479px){
+	#left{
+		position:relative;
+		top:5;
+		width:100%;
+	}
+	#center, #featureimg{
+		left:0px;
+		width:100%;
+	}
+	
+	
+	
+}
+
+
+.liregular {
+}
