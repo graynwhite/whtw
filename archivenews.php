@@ -34,7 +34,7 @@ if ( !$result ){
 <body>
 <div id="center">
 <h2> These archived newsletters contain the events and details as of the publication date and any changes added after publication are not included. </h2>
-<p>At the present time, we are not able to add any current archved publications.Some of the links might not work(Portions of the newsletter are no longer available)</p>
+<p>Some of the links might not work(Linked portions of the newsletter are no longer available)</p>
 <table border="1" width="100%">;
 <tr><td colspan="5"  align="center">Archived Newsletters (Most recent is  first)</td></tr>");
  <?php
