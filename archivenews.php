@@ -1,6 +1,5 @@
 <?php
-define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw
-');
+define("APP_ROOT", $_SERVER['DOCUMENT_ROOT']."/whtw");
 require_once "../gwsecurity/private/initialize.php";
 /** @package 
 
@@ -29,10 +28,9 @@ if ( !$result ){
 ?>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Archived Newsletters</title>
-<link rel="stylesheet" type="text/css" href="./css/pjstyles.css"
-</head>
+<link rel="stylesheet" type="text/css" href="./css/pjstyles.css" </head>
 <body>
 <div id="center">
 <h2> These archived newsletters contain the events and details as of the publication date and any changes added after publication are not included. </h2>
@@ -63,9 +61,6 @@ if ( !$result ){
 
     </table> <!--end of table of archive newsletters-->
 	
-
-
-	
 <h2>&nbsp;</h2>
 </div> <!--end of table content-->
 <?php include("pjnavcopy.php");?>
@@ -77,5 +72,3 @@ if ( !$result ){
 </body>
 
 </html>
-
-
