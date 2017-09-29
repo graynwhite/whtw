@@ -10,7 +10,7 @@
 		<!--<li><a href="http://www.peggyjostudio.net/orderCharleysMustard.php">Order Charley's Ballpark Mustard.php</a></li>
 		<li><a href="http://www.charleysmustard.com/index.php?option=com_content&view=article&id=2&Itemid=2">Stores that are carrying Charley's Ballpark Mustard</a></li>-->
         
-		<li><a href="http://www.peggyjostudio.net/wordpress/">Blog</a>
+		<li><a href="http://peggyjostudioblog.wordpress.com">Blog</a>
 		<li><a href="http://www.peggyjostudio.net/faq.php">Frequently Asked Questions</a></li>
 		<!--<li><a href="http://www.peggyjostudio.biz/emporium/">Emporium</a></li>-->
 		<li> <a href="http://www.peggyjostudio.net/pjdontGetLeftOut.php">Don't Feel Left Out</a></li>
