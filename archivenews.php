@@ -3,7 +3,7 @@ define("APP_ROOT", $_SERVER['DOCUMENT_ROOT']."/whtw");
 require_once "../gwsecurity/private/initialize.php";
 /** @package 
 
-        archivenews
+        archivenews 
         
         Copyright()Gray and White Computing 2004
         
@@ -63,7 +63,7 @@ if ( !$result ){
 	
 <h2>&nbsp;</h2>
 </div> <!--end of table content-->
-<?php include("pjnavcopy.php");?>
++++++
 <p><a href="http://validator.w3.org/check/referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a></p>
 
 

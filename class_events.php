@@ -1,5 +1,5 @@
 <?php
-require_once("Class_connect.php");
+require_once("public_html/Class_connect.php");
 $con = new connect_to_database;
 
 class events {
