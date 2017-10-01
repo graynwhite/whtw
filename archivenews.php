@@ -32,6 +32,10 @@ if ( !$result ){
 <title>Archived Newsletters</title>
 <link rel="stylesheet" type="text/css" href="./css/pjstyles.css" </head>
 <body>
+<div data_role="page">
+<div data_role="content">
+<?php require_once("pjnavcopy.php")?>
+
 <div id="center">
 <h2> These archived newsletters contain the events and details as of the publication date and any changes added after publication are not included. </h2>
 <p>Some of the links might not work(Linked portions of the newsletter are no longer available)</p>
