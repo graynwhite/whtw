@@ -3,9 +3,7 @@ define("APP_ROOT", $_SERVER['DOCUMENT_ROOT'].'/whtw');
 require_once "../gwsecurity/private/initialize.php";
 /** @package 
         newsletter_add
-        
         Copyright()Gray and White Computing 2004
-        
         Author: FRANK J CAULEY
         Created: FJC 1/4/2005 12:43:01 AM
 	Last change: FJC 2/13/2005 7:03:05 PM
