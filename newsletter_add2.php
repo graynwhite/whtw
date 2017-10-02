@@ -8,12 +8,9 @@ require_once "../gwsecurity/private/initialize.php";
         Created: FJC 1/4/2005 12:43:01 AM
 	Last change: FJC 2/13/2005 7:03:05 PM
 */
-
 //$campaign = $_REQUEST[campaign];
 $newDate = $_REQUEST['new_date'];
 echo "this is the new date  " . $newDate . "<br />";
-
-
 if ($_REQUEST['action'] == 'newevent'){	
 	 $carray = explode("-",$_REQUEST['new_date']);
     $campaign = "Newsletter ". $carray[0]. "/" . $carray[1] . "/" . $carray[2];
@@ -25,23 +22,14 @@ if ($_REQUEST['action'] == 'newevent'){
 		 $result = mysqli_query($conn,$sql);
 		 if (!$result) {
 		       echo("<p> Your inquiry  was rejected Email this information to cauleyfrank@gmail.com" . mysqli_error($conn) ." </p>");
-			
-		
-	 }		
+}		
 }
 ?>
-      
-
-
-
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Untitled Document</title>
+	<title>Add newsletter to archivr</title>
 </head>
 
 <body>
