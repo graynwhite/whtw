@@ -188,18 +188,14 @@ if ( $action == "browse" ){
 	
 	$("#wrapimage").click(function(){
 		var imagename=prompt("Enter Image name ","notfound");
-		var workarea="<table><tr><td><img src=\"http://www.graypluswhite.com/pjsnimages/" + imagename + "\"" +
+		var workarea="<table><tr><td><img src=\"http://www.peggyjostudio.net/E/" + imagename + "\"" +
 		 " align=\"left\" width=\"28%\" alt=\"image Photo\" hspace=\"5\">";
-		alert("work area is " + workarea);
+		//alert("work area is " + workarea);
 		
 		var workarea2= $("#media").val() + "</td></tr></table>";
 		$("#media").html(workarea + workarea2);
-		alert("media is " + $("#media").html());
-		
-		
-		
-		
-	});
+		//alert("media is " + $("#media").html());
+		});
 	
 	$("#makesingle").click(function(){
 		var workarea = $("#media").val();
