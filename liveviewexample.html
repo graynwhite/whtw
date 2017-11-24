@@ -1,0 +1,102 @@
+<!DOCTYPE HTML SYSTEM "-//Adobe//DWExtension layout-engine 10.0// dialog"> <html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>Browser Test</title> 
+<script type="text/javascript"> 
+var browserLoad = function(e) 
+{     
+    var uri = document.getElementById("uri"); 
+    uri.value = e.currentBrowserLocation; 
+} 
+var promptToNavigate = function (e) 
+{ 
+    if( ! confirm(" Is it ok to go from \n" + e.currentBrowserLocation + " to page \n " + e.requestedBrowserLocation ) ) 
+    { 
+        e.preventDefault(); 
+    } 
+} 
+function initUI() 
+{ 
+    var browser = document.getElementById("browser"); 
+    browser.addEventListener("BrowserControlBeforeNavigation", 
+promptToNavigate, true); 
+    browser.addEventListener("BrowserControlLoad", browserLoad, true); 
+    browser.openURL("http://www.adobe.com"); 
+} 
+function loadUri() 
+{ 
+    var uri = document.getElementById("uri"); 
+    var browser = document.getElementById("browser"); 
+    browser.openURL(uri.value); 
+} 
+function showSource(){ 
+    var browser = document.getElementById("browser"); 
+    alert(browser.getWindowObj().document.documentElement.outerHTML); 
+} 
+function commandButtons() { 
+                            return new Array( "Close", "window.close()", 
+                            "Load URI", "loadUri()", 
+                            "Show Source", "showSource()"
+); 
+} 
+</script> 
+</head> 
+<body onLoad="initUI()"> 
+<form> 
+<p> 
+<label> 
+<input id="uri" type="text" style="width:500px"> 
+</label> 
+</p> <mm:browsercontrol id="browser" style="width:500px; height:300px;"/> </form> </body> </html>
+<p>This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License  Twitter™ and Facebook posts are not covered under the terms of Creative Commons.</p>.
+
+<p>Legal Notices   |   Online Privacy Policy</p><h1>DREAMWEAVER</h1>
+ See all apps
+Learn & Support
+Beginner's Guide
+User Guide
+Tutorials
+Ask the Community Post questions and get answers from experts. Ask now
+Contact Us Real help from real people. Start now^ Back to top
+Was this helpful?
+Yes   No
+Products
+Creative Cloud
+Experience Cloud
+Document Cloud
+Elements 2018 Family
+Special offers
+View all products
+Blogs & Community
+Adobe Conversations
+Creative Cloud blog
+Create Magazine
+Behance
+99u
+Digital Marketing blog
+CMO.com
+Document Services
+Adobe I/O
+View all
+Support
+Adobe Support
+Community Forums
+Contact Adobe
+Download and Install
+Adobe
+About
+Newsroom
+Corporate Responsibility
+Investor Relations
+Events
+Careers
+Acrobat Reader DC
+Adobe Flash Player
+Adobe Air
+Adobe Shockwave Player
+Change region
+Copyright © 2017 Adobe Systems Incorporated. All rights reserved.
+Privacy
+Terms of Use
+Cookies
+AdChoices

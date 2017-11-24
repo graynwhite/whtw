@@ -11,18 +11,21 @@ $header = $ire->getHeader();
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>Art,Festivals and Community Input</title>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script  src="markitup.json"></script>
-	
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script  src="markitup.json"></script>-->
+<script type="text/javascript" src="../../markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../../markitup/sets/default/set.js"></script>	
 		
-<link rel="stylesheet" type="text/css" href="../../markitup/markitup/sets/html/markitup.css" />
-<link rel="stylesheet" type="text/css" href="../../markitup/markitup/sets/html/html.css" />
+<!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/markitup.css" />-->
+<!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/markitup.css" />-->
+<!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/html.css" />-->
+<link rel="stylesheet" type="text/css" href="../../markitup/skins/markitup/style.css" />
+<link rel="stylesheet" type="text/css" href="../../markitup/sets/default/style.css" />	
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
 
 
-<script type="text/javascript" src="../markitup/markitup/jquery.markitup.js"></script>
-<script type="text/javascript" src="../../markitup/markitup/sets/html/set.js"></script>
+
 
 
 <script type="text/javascript">
@@ -84,7 +87,7 @@ document.entry_form.resby.value = document.entry_form.date_from.value;
 
 <script type="text/javascript" >
    $(document).ready(function() {
-      $(".markItUp").markItUp(mySettings);
+      $("textarea").markItUp(mySettings);
 	 
 	  });
 	  
@@ -228,8 +231,6 @@ document.entry_form.other_site_text.value = place_work;
 
 </script>
 
-<!--<link rel="stylesheet" type="text/css" href=$_SERVER['document_home']."./markitup/markitup/default/style.css" /> -->
-<!--<link rel="stylesheet" type="text/css" href="./MarkItUp/skins/style.css" />-->
 
 <style type="text/css">
 
@@ -348,7 +349,7 @@ include_once("../phpClasses/orgSelect.php");
 $original_date=$ire->bldDateEntryShort();
 ?><br>
 <label for "media">Media Input</label><br>
-  <textarea name="media" id="media" cols="100%" class="markItUp" rows="10"></textarea><br/>
+  <textarea name="media" id="media" cols="100" rows="10"></textarea><br/>
   <input type="button" id="breakbutton" value="Break lines"/>
   <input type="button" id="cleanupbutton" value="Clean up Calendar"/>
   
@@ -358,23 +359,24 @@ $original_date=$ire->bldDateEntryShort();
 <p>Title:<br>
   <input name="title" type="text" id="event_title" size="60" maxlength="60" />
 </p>
-<p>Event Description:<br>
-  <textarea rows="3" name="event_text" id="event_text"  cols="100%"></textarea></p>
+<p>Event Short Description:<br>
+  <textarea rows="3" name="event_text" id="event_text"  cols="100"></textarea></p>
   <p>
   Place Name:<br>
-    <input name="geocomplete"; type="text" id="geocomplete" value="" size="80" /><br>
-    <input id="find" type="button" value="find" /><input name="useFound" type="button" id="useFound" value="Use Found" onClick="UseFound()"/></p>
+    <input name="geocomplete"; type="text" id="geocomplete" value="" size="100" /><br>
+    <input id="find" type="button" value="find" /><input name="useFound" type="button" id="useFound" value="Use Found" onClick="UseFound()"/>
+  </p>
 	  
- <p>Found Location:<br>
- <input name="formatted_address" type="text" size="150" value=""/></p>
+ <p>Found Location
+   <input name="formatted_address" type="text" size="100" value=""/>:<br></p>
 		
 <p> Site description:<br>
-<textarea rows="3" name="other_site_text" id="other_site_text" cols="80"></textarea></p>
+<textarea rows="3" name="other_site_text" id="other_site_text" cols="100"></textarea></p>
 <p>Mail to Blog 
   <input name="checkMailToBlog" type="checkbox" id="checkMailToBlog" value="True" /> 
   Blog Post Address: 
   <input name="blogNumber" type="text" id="blogNumber" size="60" />
-  <label>URL</label>
+  <br><label>URL</label>
   <input name="URL" type="text" id="URL" size="40" />
   
 </p>
@@ -422,16 +424,15 @@ Farmington Hills Manor <br>
   <label>Priority</label>
   <input name="priority" type="text" value="7" />
   
-  Confirm Y=Confirmed,T=Confirmed Trip,G=Confirmed Golf 
-  <input type="text" name="confirm"  width="5" value="Y">
+  <br>Confirm Y=Confirmed,T=Confirmed Trip,G=Confirmed Golf 
+  <input type="text" name="confirm"  size="5" value="Y"><br>
 </p>
 <p>
   <label>Time Start
   <input name="timeStart" type="text" id="timeStart" />
   </label>
-  <label>Time End
+  <label>Time End  </label>
   <input name="timeEnd" type="text" id="timeEnd" />
-  </label>
 </p>
 
 
@@ -458,7 +459,8 @@ Farmington Hills Manor <br>
 </form>
 <div id="form-messages"></div>
 <form id="ackForm" name="ackForm" >
-Name of person submitting event<input name="subName" id="subName" type="text"/><br />
+Name of person submitting event 
+  <input name="subName" id="subName" type="text"/><br />
 Email <input name="email" id="emailid" type="text" /><br />
 Source of input: <input name="eventSource" id="eventSource"/><br />
 <input type="button" value="Send Acknowledge Letter" onClick="acknowledge()" >
