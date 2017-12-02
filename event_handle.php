@@ -424,9 +424,9 @@ If ($dowCorrect){
  if ($_POST['action']  == 'deleteAfterNumber')
  {
  	  $SQL = " delete from events where Event_org  = \"" . $_POST['Event_org'] . "\" && Event_number  > \"" . $_POST['actionPhrase']. "\"";
-	$result = mysql_query($SQL);
+	$result = mysqli_query($conn,$SQL);
 	if (!$result){
-		trigger_error("	Records not deleted " . " " . $sql . " " . mysql_error());
+		trigger_error("	Records not deleted " . " " . $SQL . " " . mysql_error());
 		exit;
 		}
  
