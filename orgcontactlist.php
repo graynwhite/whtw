@@ -25,7 +25,14 @@ if (mysqli_connect_errno()) {
 		<th width="20%">Phone</th>
 		<th width="30%">Email</th>
 		</tr>
-		<?php while($row=mysqli_fetch_assoc($result)){ ?>
+		<?php while($row=mysqli_fetch_assoc($result))
+			{
+			if(strstr(strtolower($_SERVER['HTTP_USER_AGENT']), 'mobile') || strstr(strtolower($_SERVER['HTTP_USER_AGENT']), 'android')) {
+           echo '<a href="tel:123456">';
+        }else{
+           echo 'You are not in a mobile';
+			}
+				?>
 			<tr>
 				<td><?php echo($row["Org_name"])?></td>
 				<td><?php echo($row["contact_name"])?></td>

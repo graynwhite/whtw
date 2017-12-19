@@ -122,7 +122,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				$( "#comments" ).val( " " );
 				$( "#activity" ).val( " " );
 				$( "#price_member" ).val( " " )
-				$( "#pice_non_member" ).val( " " );
+				$( "#price_non_member" ).val( " " );
 				$( "#recurDesc" ).val( "2017-01-01" );
 				$( "#recurBegin" ).val("2017-01-01" );
 				$( "#recurEnd" ).val( "2017-01-01" );
@@ -447,11 +447,11 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				<fieldset>
 					<legend>How much does it cost?</legend>
 					<legend>Price for members.</legend>
-					<input type="text" name="Price_Member" id="Price_Member" val=""/>
+					<input type="text" name="price_member" id="price_member" val=""/>
 				</fieldset>
 				<fieldset>
 					<legend>Price for Guests.</legend>
-					<input type="text" name="Non_Member_Price" id="price_non_member" val=''/>
+					<input type="text" name="price_non_member" id="price_non_member" val=''/>
 				</fieldset>
 
 				<fieldset>
@@ -470,6 +470,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				title="If you click on this button and nothing happens, one of your fields is not correct and alerts have been disabled. Check to make sure all requried fields have been entered and are correct. " />
 				 </div>
 			</form>
+			
 			<div id="returnmessage">Results will be shown here.</div>
 			<div id="anotherEntryArea">
 			<input type="button" name="anotherEntry" id="anotherEntry" value="Enter another event" title="Click on this button to enter another entry using this form."/>
