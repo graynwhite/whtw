@@ -433,7 +433,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<legend>What the event is about</legend>
 					<legend>Media Input or Long version:</legend>
 					<p> This is where you can give a full lengthy description of the event or trip. 
-					Include a person and phone number to contact if desired .<strong>Do not use all caps. </strong> If there is a preliminary meeting place and you think it is neccessary to inform everyone, then place that information here. The text box will expand to accept your input Do not repeat the time and place of the event because they will be inserted from the the fields you were required to enter.</p>
+					Include a person and phone number to contact if desired .<strong>Do not use all caps. </strong> If there is a preliminary meeting place and you think it is neccessary to inform the whole world and not just the people signed up, then place that information here. The text box will expand to accept your input Do not repeat the time and place of the event because they will be inserted from the the fields you were required to enter.</p>
 					<legend>Long description:</legend>
 					<textarea name="comments" class="markitup"	id="comments"></textarea>
 				</fieldset>
@@ -447,11 +447,11 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				<fieldset>
 					<legend>How much does it cost?</legend>
 					<legend>Price for members.</legend>
-					<input type="text" name="price_member" id="price_member" val=""/>
+					<input type="text" name="price_member" id="price_member" val="" maxlength="6"/>
 				</fieldset>
 				<fieldset>
 					<legend>Price for Guests.</legend>
-					<input type="text" name="price_non_member" id="price_non_member" val=''/>
+					<input type="text" name="price_non_member" id="price_non_member" val=" " maxlength="6"/>
 				</fieldset>
 
 				<fieldset>
