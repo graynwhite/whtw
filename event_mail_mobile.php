@@ -337,7 +337,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 						<input type="radio" name="radioEntryType" value="Delete" id='typedelete'/>
 					</fieldset>
 
-					<p>Change/Delete (Send an email to cauleyfrank@gmail.com to explain change or delete)
+					<p>Change/Delete (Send an email to webmaster@peggyjostudio.net to explain change or delete)
 					</p>
 
 				</div>
@@ -347,19 +347,19 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<legend>Your information</legend>
 
 					<legend>Organization Name </legend>
-					<input name="Orgname" type="text" id="Orgname" value="<?php echo $eventOrg ?>" onBlur='setCookie("eventOrg",this.value,90)' ;/>
+					<input name="Orgname" type="text" id="Orgname" value="<?php echo $eventOrg ?>" onBlur='setCookie("eventOrg",this.value,360)' ;/>
 
 
 
 					<legend>Your Name: </legend>
-					<input name="yourName" type="text" id="yourName"  value="<?php echo $eventName ?>" onBlur='setCookie("eventName",this.value,90)'/>
+					<input name="yourName" type="text" id="yourName"  value="<?php echo $eventName ?>" onBlur='setCookie("eventName",this.value,360)'/>
 
 					<legend>Your E-Mail Address</legend>
-					<input name="Email" id="Email" type="email"  value="<?php echo $eventEmail ?>" onBlur='setCookie("eventEmail",this.value,90)'/>
+					<input name="Email" id="Email" type="email"  value="<?php echo $eventEmail ?>" onBlur='setCookie("eventEmail",this.value,360)'/>
 
 
 					<legend> Your Phone Number</legend>
-					<input name="Yphone" id="Yphone" type="tel" value="<?php echo $eventPhone ?>" onBlur='setCookie("eventPhone",this.value,90)'/>
+					<input name="Yphone" id="Yphone" type="tel" value="<?php echo $eventPhone ?>" onBlur='setCookie("eventPhone",this.value,360)'/>
 				</fieldset>
 
 				
