@@ -74,7 +74,7 @@ function get_page_title($select_org){
 <body>
 <div id="mainPage" data-role="page">
 <div data-role="header">
-<p align="center"><img src="graypluswhitebannereventMaint.jpg" width="100%"></p>
+<p align="center"><img src="graynwhitebannereventMaint.jpg" width="100%"></p>
 <p align="center"><b><font size="6"><?print $page_title?></font></b></p>
 </div><!--end of header -->
 <div data-role="content">
