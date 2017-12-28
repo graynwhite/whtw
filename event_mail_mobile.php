@@ -1,25 +1,25 @@
 <?php
-if ( isset( $_POST[ 'jstest' ] ) ) {
-	$nojs = FALSE;
-	$nojs2 = "No Javascript is not disabled";
-} else {
-	// create a hidden form and submit it with javascript
-	echo '<form name="jsform" id="jsform" method="post" style="display:none">';
-	echo '<input name="jstest" type="text" value="true" />';
-	echo '<script language="javascript">';
-	echo 'document.jsform.submit();';
-	echo '</script>';
-	echo '</form>';
-	// the variable below would be set only if the form wasn't submitted, hence JS is disabled
-	$nojs = TRUE;
-	$nojs2 = "Yes Javascript is disabled";
-}
-if ( $nojs ) {
-	die( "<h2>To use this site it is necessary to enable JavaScript.<br />
- Here are the <a href=\"http://www.enable-javascript.com/\" target=\"_blank\">
- instructions on how to enable JavaScript in your web browser</a>.</h2>" );
-	//JS is OFF, do the PHP stuff
-}
+//if ( isset( $_POST[ 'jstest' ] ) ) {
+//	$nojs = FALSE;
+//	$nojs2 = "No Javascript is not disabled";
+//} else {
+//	// create a hidden form and submit it with javascript
+//	echo '<form name="jsform" id="jsform" method="post" style="display:none">';
+//	echo '<input name="jstest" type="text" value="true" />';
+//	echo '<script language="javascript">';
+//	echo 'document.jsform.submit();';
+//	echo '</script>';
+//	echo '</form>';
+//	// the variable below would be set only if the form wasn't submitted, hence JS is disabled
+//	$nojs = TRUE;
+//	$nojs2 = "Yes Javascript is disabled";
+//}
+//if ( $nojs ) {
+//	die( "<h2>To use this site it is necessary to enable JavaScript.<br />
+// Here are the <a href=\"http://www.enable-javascript.com/\" target=\"_blank\">
+// instructions on how to enable JavaScript in your web browser</a>.</h2>" );
+//	//JS is OFF, do the PHP stuff
+//}
 
 $genVercode = rand( 10000, 99999 );
 
@@ -41,7 +41,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 <head>
 
-	<title>Organization Event Input Mobile</title>
+	<title>Organization Event Input </title>
 	<meta name="viewport" content="width=device-width, user-scalable=yes" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
@@ -53,7 +53,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 		
 		
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	    <script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
