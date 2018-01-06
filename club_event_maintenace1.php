@@ -81,7 +81,7 @@ function get_page_title($select_org){
 </div><!--end of header -->
 <div  data-role="content">
 <p align="left"><font size="6"><b>Select the organization:</b></font></p>
-<table border="2" cellpadding="1" cellspacing="1"  width="700px" >
+<table border="2" cellpadding="1" cellspacing="1"  width="350px" >
    <tr>
         <th>Organization name</th>
         <th>Action </th>
