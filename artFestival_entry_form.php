@@ -13,14 +13,14 @@ $header = $ire->getHeader();
 <title>Art,Festivals and Community Input</title>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--<script  src="markitup.json"></script>-->
-<script type="text/javascript" src="../../markitup/jquery.markitup.js"></script>
-<script type="text/javascript" src="../../markitup/sets/default/set.js"></script>	
+<script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../markitup/sets/html/set.js"></script>	
 		
 <!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/markitup.css" />-->
 <!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/markitup.css" />-->
 <!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/html.css" />-->
-<link rel="stylesheet" type="text/css" href="../../markitup/skins/markitup/style.css" />
-<link rel="stylesheet" type="text/css" href="../../markitup/sets/default/style.css" />	
+<link rel="stylesheet" type="text/css" href="../markitup/skins/markitup/style.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/sets/html/style.css" />	
 
 <script src="../geocomplete/jquery.geocomplete.min.js"></script>
 
