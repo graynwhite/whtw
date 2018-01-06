@@ -123,8 +123,8 @@ if ( $action == "browse" ){
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="nl2br.js"></script>
-	<script type="text/javascript" src="../../markitup/jquery.markitup.js"></script>
-	<script type="text/javascript" src="../../markitup/sets/default/set.js"></script>
+	<script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
+	<script type="text/javascript" src="../markitup/sets/html/set.js"></script>
 	
 	<script language=javascript>
 	var workarea=" ";
@@ -366,8 +366,8 @@ function UCWords(str){
 }
 </script>
 
-<link rel="stylesheet" type="text/css" href="../../markitup/skins/markitup/style.css" />
-<link rel="stylesheet" type="text/css" href="../../markitup/sets/default/style.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/skins/markitup/style.css" />
+<link rel="stylesheet" type="text/css" href="../markitup/sets/html/style.css" />
 <script type="text/javascript" >
    $(document).ready(function() {
       $("textarea").markItUp(mySettings);
