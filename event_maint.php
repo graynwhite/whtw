@@ -565,12 +565,28 @@ Blog Reference</label>
                 <legend>Duration of recurrance</legend>
             <input name="duration" type="radio" value="30" id="dur30" >
             <label for="dur30">30 days</label>
+				
             <input name="duration" type="radio" value="60" id="dur60">
             <label for="dur60">60 days</label>
+				
             <input name="duration" type="radio" value="90" id="dur90">
             <label for="dur90">90 days</label>
-            <input name="duration" type="radio" value="365" id="dur365">
-            <label for="dur365">Year </label>
+				
+			<input name="duration" type="radio" value="365" id="dur365">
+			<label for="dur365">Year</label>	
+				
+			<input name="duration" type="radio" value="730" id="dur730">
+			<label for="dur730">2 Years</label>
+				            
+            <input name="duration" type="radio" value="1095" id="dur1095">
+			<label for="dur1095">3 years</label>	
+								
+			<input name="duration" type="radio" value="1465" id="dur1465">
+			<label for="dur1465">4 Years</label>
+				
+			
+            <input name="duration" type="radio" value="1825" id="dur1825">
+			<label for="dur1825">5 Years</label>
             </fieldset>
     
   <table width="100%" height="177" border="2">
