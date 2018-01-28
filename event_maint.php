@@ -563,7 +563,7 @@ Blog Reference</label>
     
             <fieldset data-role="controlgroup">
                 <legend>Duration of recurrance</legend>
-            <input name="duration" type="radio" value="30" id="dur30" >
+            <input name="duration" type="radio" value="30" id="dur30" > 
             <label for="dur30">30 days</label>
 				
             <input name="duration" type="radio" value="60" id="dur60">
