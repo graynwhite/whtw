@@ -42,7 +42,7 @@ $listbox="<div data-role=\"fieldcontain\">
 <!DOCTYPE html> 
 <html><head>
 
-	<title>Theater Event Input Mobile</title>
+	<title>Theater/Trip/Holiday Event Input Mobile</title>
 	<meta name="viewport" content="width=device-width, user-scalable=yes" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
@@ -79,7 +79,7 @@ $listbox="<div data-role=\"fieldcontain\">
 
 <div id="page1" data-role='page'>
 <div data-role="header">
-<h1>Theater/Trip Event Information Input</h1>
+<h1>Theater/Trip/Holiday Event Information Input</h1>
 	<center><img src="graynwhitebannereventMaint.jpg" width="60%"  /></center>
 </div>
 
@@ -95,22 +95,26 @@ $listbox="<div data-role=\"fieldcontain\">
         <label for= "typeTheater">Theater</label>  
         <input name="radioEntryType" id="typeTheater" type="radio" value="Theater" checked="checked" />
 		          
-       <label for='typeTrip'>Trip</label>
+       
+       <label for='typeTrip'>Trip or Holiday</label>
         <input type="radio" name="radioEntryType"  value="Trip" id='typeTrip' />
-        		  
+        
+				 
      </fieldset>  
 	   
-    <legend>Theater Production name  or Trip Site Name</legend>
-    <input name="prodname" type="text" value="   " class="validate[required]"
+    <legend>Theater Production name  or Trip Site Name or Holiday Name</legend>
+    <legend>
+    <input name="prodname" type="text" value="   "
+	size="60"  class="validate[required]"
     data-prompt-position="bottomLeft:140,5" >  		
-		
-      <legend>Date of Event or Date Start of multi day event: <span style="color:#FF0000;">*</span></legend>
+      </legend>
+    <legend>Date of Event or Date Start of multi day event  <span style="color:#FF0000;">*</span></legend>
 	       <input name="dateStart" id="dateStart" type="date"  class="validate[required,custom[date],future[now]] text-input datepicker"
 	 data-prompt-position="bottomLeft:140,5" 
 	 />
        <legend>End Date of multi day event: </legend>
 	 	
-	   <p>
+	   
 	     <input name="dateEnd" id="dateEnd" type="date"  class="validate[required,custom[date],future[#dateStart] text-input datepicker"
 	  data-prompt-position="bottomLeft:140,5"
 	   />

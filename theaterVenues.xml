@@ -2,11 +2,18 @@
 <!DOCTYPE  venues SYSTEM "venues.dtd" > 
 <venues>
 	<venue>
+		<venueName>Holiday</venueName>
+		<venueAddress>  </venueAddress>
+		<contact>   </contact>
+		<org>Hol</org>
+	</venue><venue>
 		<venueName>Stagecrafters</venueName>
 		<venueAddress><![CDATA[Baldwin Theater. 150  S Lafayette, Royal Oak, Mi.]]></venueAddress>
 		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
 		<org>stage</org>
 	</venue>
+	
+	
 	<venue>
 		<venueName>Detroit Repertory Theatre</venueName>
 		<venueAddress><![CDATA[Detroit Repertory Theatre. 13103 Woodrow Wilson St, Detroit, MI. 48238]]>></venueAddress>

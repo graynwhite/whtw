@@ -17,10 +17,12 @@ $event_title = $_POST["prodname"];
 $event_activity = $ire->getSiteInfo("theaterVenues.xml",$groupName);
 $event_media = $event_activity;
 $event_place = $ire->getSiteVenue("theaterVenues.xml",$groupName);
-if($confirm=="T"){
+if($confirm=="T" && $groupName !="Holiday"){
 	$event_place=$event_title . ". More information available at " .$event_place;
 }
 $event_org = $ire->getSiteOrg("theaterVenues.xml",$groupName);
+
+
 $dow='mul';
 	if(!isset($_POST['dateEnd']) || $_POST['dateStart']==$_POST['dateEnd'])
 	{
