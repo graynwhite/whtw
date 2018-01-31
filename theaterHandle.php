@@ -11,6 +11,10 @@ $ire = new IREclass;
 $confirm = $_POST["radioEntryType"]=="Theater"? "Y" : "T";
 //echo("Confirm is " . $confirm);
 $groupName = str_replace("+"," ",$_POST["selectmenu"]);
+$needsattention=0;
+if($groupName=="Holiday"){
+	$needsattention=1;
+}
 $event_date =  $_POST["dateStart"];
 $event_end = $_POST["dateEnd"];
 $event_title = $_POST["prodname"];
@@ -21,8 +25,14 @@ if($confirm=="T" && $groupName !="Holiday"){
 	$event_place=$event_title . ". More information available at " .$event_place;
 }
 $event_org = $ire->getSiteOrg("theaterVenues.xml",$groupName);
-
-
+if($event_org=="HOL"){
+	$event_media .= trim($_POST['eventimage']);
+	$event_media .= '\" alt=\" Event image\" height=\"180\"  hspace=\"5px\" />';
+	if($_POST['eventWarning']=="yeswarning"){
+		$event_media .= "Regularly scheduled events on or near this date might not occur. Please check with the sponsoring organization before going to the event venue.";
+		}
+	$event_activity = "";
+}
 $dow='mul';
 	if(!isset($_POST['dateEnd']) || $_POST['dateStart']==$_POST['dateEnd'])
 	{
@@ -38,6 +48,8 @@ $html_text .= "<br /> Venue is " . $event_place;
 $html_text .= "<br /> org is " . $event_org;
 $html_text .= "<br /> Confirm is " . $confirm;
 $html_text .= "<br /> Day of week is " . $dow;
+$html_text .= "<br /> Warning is " . $_POST['eventWarning'];
+$html_text .= "<br /> Needs attention is ". $needsattention;
 
 	
 $sql = "  insert into events
@@ -53,14 +65,14 @@ $sql = "  insert into events
            Event_open = \"Y\",
            Event_priority = \"35\",
 		   Event_title = \"$event_title\",
+		   needsReview = \"$needsattention\",
            SUBMITTED_BY = \"calendarMobile\"
            ";
 		   //print ("<br />" . $SQL);
              $result = @mysqli_query($conn,$sql);
           if (!$result) {
           $html_text .= "<p> Error in insert <br />"  . mysqli_error($conn) ."<br>". $ql . "</p>";
-          }else{
-            $html_text .= "<br />Event posted<p>";
+          }else{            $html_text .= "<br />Event posted<p>";
         }
 
 //$html_text .= "<br /><br />" . $SQL;

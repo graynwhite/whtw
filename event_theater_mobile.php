@@ -112,15 +112,27 @@ $listbox="<div data-role=\"fieldcontain\">
 	       <input name="dateStart" id="dateStart" type="date"  class="validate[required,custom[date],future[now]] text-input datepicker"
 	 data-prompt-position="bottomLeft:140,5" 
 	 />
-       <legend>End Date of multi day event: </legend>
+       <legend>End Date of multi day event or same date as start<span style="color:#FF0000">*</span> </legend>
 	 	
 	   
 	     <input name="dateEnd" id="dateEnd" type="date"  class="validate[required,custom[date],future[#dateStart] text-input datepicker"
 	  data-prompt-position="bottomLeft:140,5"
 	   />
-      </p>
-	   <p>&nbsp;</p>
-      <fieldset data-role="controlgroup" data-type="horizontal">
+	<legend>Image for event</legend>
+	<input type="text" id="eventimage" name="eventimage"size="35px"/>
+	
+	 <fieldset data-role="controlgroup" data-type="horizontal">
+    <legend>Event warning</legend>  
+        <label for= "nowarning">No Warning</label>  
+        <input name="eventWarning" id="nowarning" type="radio" value="nowarning" checked="checked" />
+		          
+       
+       <label for='yeswarning'>Insert Warning</label>
+        <input type="radio" name="eventWarning"  value="yeswarning" id='yeswarning' />
+        
+				 
+     </fieldset> 
+	<fieldset data-role="controlgroup" data-type="horizontal">
         <legend>Entry Duration:</legend>  
         <label for= "durSpan">Span</label>  
         <input name="radioEntryDur" id="durSpan" type="radio" value="mul" checked="checked" />

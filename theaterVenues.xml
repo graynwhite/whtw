@@ -3,16 +3,16 @@
 <venues>
 	<venue>
 		<venueName>Holiday</venueName>
-		<venueAddress>  </venueAddress>
-		<contact>   </contact>
-		<org>Hol</org>
+		<venueAddress> </venueAddress>
+		<contact><![CDATA[<img src="http://www.peggyjostudio.net/E/]]></contact>
+		<org>HOL</org>
 	</venue><venue>
 		<venueName>Stagecrafters</venueName>
 		<venueAddress><![CDATA[Baldwin Theater. 150  S Lafayette, Royal Oak, Mi.]]></venueAddress>
 		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
 		<org>stage</org>
 	</venue>
-	
+
 	
 	<venue>
 		<venueName>Detroit Repertory Theatre</venueName>
