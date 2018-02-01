@@ -8,7 +8,7 @@ $xml =  simplexml_load_file($file_to_read) or die("Unable to load file");
 $listbox="<div data-role=\"fieldcontain\">
     <label for=\"selectmenu\" class=\"select\">Options:</label>
     <select name=\"selectmenu\" id=\"selectmenu\">";
-	$listbox.="<option value=select a venue or trip sponsor>Select a theater venue or trip sponsor</option>";
+	$listbox.="<option value=select a venue, trip sponsor or holiday processing>Select a theater venue, trip sponsor or designate holiday processing </option>";
 	
 	foreach($xml as $element):
 	$groupName=urlencode($element->venueName);
@@ -54,7 +54,7 @@ $listbox="<div data-role=\"fieldcontain\">
 		
 		
 		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	    <script src="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery-1.8.2.min.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/languages/jquery.validationEngine-en.js"></script>
 		<script src="http://www.graypluswhite.com/jqvaleng/js/jquery.validationEngine.js"></script>
@@ -67,9 +67,9 @@ $listbox="<div data-role=\"fieldcontain\">
   			'required': {
   				'message': "This field must contain the name of the organization that you are representing for this event"
 				}
-				}
-				}
-				}
+			}
+		}
+	}
   );
 });
 </script>
@@ -116,7 +116,7 @@ $listbox="<div data-role=\"fieldcontain\">
 	 	
 	   
 	     <input name="dateEnd" id="dateEnd" type="date"  class="validate[required,custom[date],future[#dateStart] text-input datepicker"
-	  data-prompt-position="bottomLeft:140,5"
+	   value="" data-prompt-position="bottomLeft:140,5"
 	   />
 	<legend>Image for event</legend>
 	<input type="text" id="eventimage" name="eventimage"size="35px"/>

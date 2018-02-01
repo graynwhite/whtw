@@ -6,7 +6,8 @@
 		<venueAddress> </venueAddress>
 		<contact><![CDATA[<img src="http://www.peggyjostudio.net/E/]]></contact>
 		<org>HOL</org>
-	</venue><venue>
+	</venue>
+	<venue>
 		<venueName>Stagecrafters</venueName>
 		<venueAddress><![CDATA[Baldwin Theater. 150  S Lafayette, Royal Oak, Mi.]]></venueAddress>
 		<contact><![CDATA[Call 248-123-4567 or www.baldwin.org for showtimes and tickets.]]></contact>
@@ -142,26 +143,26 @@ info@michiganfashfest.com]]></contact>
 	</venue>
 		<venue>
 		<venueName>Uptown Palladium</venueName>
-		<venueAddress>250 N. Old Woodward Ave, Birmingham, Mi.</venueAddress>
+		<venueAddress><![CDATA[250 N. Old Woodward Ave, Birmingham, Mi.]]></venueAddress>
 		<contact></contact>
 		<org>theat</org>
 		</venue>
 	<venue>
 		<venueName>Birmingham 8 Theater</venueName>
-		<venueAddress>111 S. Old Woodward Ave, Birmingham, Mi.</venueAddress>
+		<venueAddress><![CDATA[111 S. Old Woodward Ave, Birmingham, Mi.]]></venueAddress>
 		<contact></contact>
 		<org>theat</org>
 		</venue>
 	<venue>
 		<venueName>Redford Theater</venueName>
-		<venueAddress>17360 Lasher Road, Detroit, Mi.</venueAddress>
+		<venueAddress><![CDATA[17360 Lasher Road, Detroit, Mi.]]></venueAddress>
 		<contact></contact>
 		<org>theat</org>
 		</venue>
 	<venue>
 		<venueName>Automation Alley Headquarters</venueName>
-		<venueAddress>2675 Bellingham, Troy, Mi.</venueAddress>
-		<contact>info@automationalley.com (800)427-5100</contact>
+		<venueAddress><![CDATA[2675 Bellingham, Troy, Mi.]]></venueAddress>
+		<contact><![CDATA[info@automationalley.com (800)427-5100]]></contact>
 		<org>bpevt</org>
 		</venue>
 		
@@ -174,7 +175,7 @@ info@michiganfashfest.com]]></contact>
 			
 	    <venue>
         <venueName>Art Birmingham</venueName>
-        <venueAddress>Downtown Birmingham Michigan</venueAddress>
+        <venueAddress><![CDATA[Downtown Birmingham Michigan]]></venueAddress>
         <contact></contact>
         <org>artsc</org>
    </venue>
@@ -183,7 +184,7 @@ info@michiganfashfest.com]]></contact>
 		<venueName>Toledo Ski Club</venueName>
 		<venueAddress><![CDATA[Meetings: 3555 Briarfield, Maumee, Ohio ]]></venueAddress>
 		<org>tolsk</org>
-		<contact>larryyunker@gmail.com</contact>
+		<contact><![CDATA[larryyunker@gmail.com]]></contact>
 	</venue>
 	
     	<venue>
@@ -196,7 +197,6 @@ info@michiganfashfest.com]]></contact>
 	<venue>
 		<venueName>MACC Racing</venueName>
 		<venueAddress><![CDATA[      ]]></venueAddress>
-		<venueAddress></venueAddress>
 		<org>macc</org>
 		<sponsorweb>www.maccracing.org</sponsorweb>
 		<contact><![CDATA[Lou Oles(810) 750-3479 ouoles@hotmail.com]]></contact>
