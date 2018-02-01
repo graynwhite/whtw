@@ -275,8 +275,8 @@ info@michiganfashfest.com]]></contact>
 		<venue>
 		<venueName>Jug and Mug Ski Club</venueName>
 		<venueAddress><![CDATA[Meetings: 3rd Thursday, See website jugandmug.org ]]></venueAddress>
-		<org>jug</org>
-		<sponsorweb>jugandmug.org</sponsorweb>
+		<org>jug</org>jugandmug
+		<sponsorweb>.org</sponsorweb>
 		<contact>517-342-9955</contact>
 	</venue>
 	
