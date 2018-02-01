@@ -18,26 +18,6 @@ $listbox="<div data-role=\"fieldcontain\">
 	
 	endforeach;
 	$listbox.="</select></div>";
-	
-	
-	
-	$file_to_read="tripSponsors.xml";
-	$xml =  simplexml_load_file($file_to_read) or die("Unable to load file");
-	
-	$tripbox="<div data-role=\"fieldcontain\">
-	<label for=\"tripmenu\" class=\"select\">Options:</label>
-	<select name=\"tripmenu\" id=\"tripmenu\">";
-	$tripbox.="<option value=select a sponsor>select a sponsor</option>/n";
-	
-	foreach($xml as $element):
-	$tripName=urlencode($element->sponsorname);
-	$tripNameRaw=$element->sponsorname;
-	
-	$tripbox .="<option value=". $tripName . ">". $tripNameRaw ."</option>/n" ;
-	
-	endforeach; 
-	$tripbox.="</selct></div>";
-	
 ?>
 <!DOCTYPE html> 
 <html><head>

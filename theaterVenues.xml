@@ -276,13 +276,13 @@ info@michiganfashfest.com]]></contact>
 		<venueName>Jug and Mug Ski Club</venueName>
 		<venueAddress><![CDATA[Meetings: 3rd Thursday, See website jugandmug.org ]]></venueAddress>
 		<org>jug</org>jugandmug
-		<sponsorweb>.org</sponsorweb>
+		<sponsorweb><![CDATA[http://jugandmug.org/]]></sponsorweb>
 		<contact>517-342-9955</contact>
 	</venue>
 	
 	<venue>
 		<venueName>Livonia Ski Club</venueName>
-		<venueAddress><![CDATA[Meetings: G. Subus Leather Bottle, 20300 Farmington Rd Livonia see websit mdscski.org ]]></venueAddress>
+		<venueAddress><![CDATA[Meetings: G. Subus Leather Bottle, 20300 Farmington Rd Livonia see website mdscski.org ]]></venueAddress>
 		<org>liv</org>
 		<sponsorweb>mdsc.org</sponsorweb>
 		<contact>248-489-9082</contact>
