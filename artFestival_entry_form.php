@@ -421,24 +421,24 @@ Farmington Hills Manor <br>
 </p>
 <p>Price:
   <input name="price" type="text" id="price" />
-  <label>Priority</label>
-  <input name="priority" type="text" value="7" />
+  <label for="priority">Priority</label>
+  <input name="priority" type="text" value="7" id="priority" />
   
   <br>Confirm Y=Confirmed,T=Confirmed Trip,G=Confirmed Golf 
   <input type="text" name="confirm"  size="5" value="Y"><br>
 </p>
 <p>
-  <label>Time Start
+	<label for="timeStart">Time Start</label>
   <input name="timeStart" type="text" id="timeStart" />
   </label>
-  <label>Time End  </label>
+  <label for="timeEnd">Time End</label>
   <input name="timeEnd" type="text" id="timeEnd" />
 </p>
 
 
-  <label>Date From:
+	<label>Date From:</label>
   <input name="date_from" type="text" id="date_from" size="12" value="<?=$original_date?>"  onblur="copyDateFrom()" onDblClick="copyDateFrom()" />
-  </label>
+  
   <label>Date To
   <input name="date_to" type="text" id="date_to" size="12" value="<?=$original_date?>"/>
   </label>
