@@ -436,16 +436,15 @@ Farmington Hills Manor <br>
 </p>
 
 
-	<label>Date From:</label>
+<p>	<label>Date From:</label>
   <input name="date_from" type="text" id="date_from" size="12" value="<?=$original_date?>"  onblur="copyDateFrom()" onDblClick="copyDateFrom()" />
   
-  <label>Date To
+	<label>Date To</label>
   <input name="date_to" type="text" id="date_to" size="12" value="<?=$original_date?>"/>
-  </label>
-  <label>Reserve By:
+  
+	<label>Reserve By:</label>
   <input name="resby" type="text" id="resby" size="12" value="<?=$original_date?>"/>
-  </label>
-</p>
+  </p>
 <p>
    Password
  
