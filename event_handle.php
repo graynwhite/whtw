@@ -1021,7 +1021,7 @@ If ($dowCorrect){
        if (strtoupper($this_day_of_week) == strtoupper($_POST['dow'] ) ){
 	   		//print("<br /> comparing " . $this_day . " to " . $_POST['checkSelect[0]']);
 		   if(!isset($_POST['checkSelect']))
-			  {print("<br> checkSelect not set");
+			  {print("<br> checkSelect not set. Go back and specify week of month. ");
 			  exit();}
            if ( 
 			 	(( in_array('first',$_POST['checkSelect'])) and ($this_day < 8 )) or 
@@ -1033,8 +1033,8 @@ If ($dowCorrect){
                 ((in_array('alternate',$_POST['checkSelect'])) and ($alternateswitch == "True" ))
 				)
 				{
+			      $insertCount ++;
                   $bodyText .= "Posting  $this_year $this_month  $this_day  $insertCount <br />";
-                  $insertCount ++;
                   $event_date = "$this_year";
                   $event_date .="-";
                   $event_date .="$this_month";
