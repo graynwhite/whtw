@@ -139,14 +139,16 @@ document.entry_form.resby.value = document.entry_form.date_from.value;
 	$("#event_title").mouseenter(function(){
 		//$("#media").css({backgroundColor: 'red'});
 		if($("#event_title").val()==''){
-		var title = getSelectionText();
-		$("#event_title").val(title);
-		var newtitle = "<h2>" + title + "</h2>";
-		$("#event_text").val(newtitle);
+			var title = getSelectionText();
+			title=title.toLowerCase();
+			$("#event_title").val(title);
+			var newtitle = "<h2>" + title + "</h2>";
+			$("#event_text").val(newtitle);
 		}
 	
 	});
 	
+		
 	$("#other_site_text").mouseenter(function(){
 		if($("#other_site_text").val()==''){
 		var selectedText = getSelectionText();
