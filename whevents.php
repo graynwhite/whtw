@@ -113,14 +113,14 @@ Do the following if you're using your customized build of modernizr (http://www.
     <td  ><a href="../admin/TripsAndCruises.php"><span class="label label-info">Club Trips and Cruises</span></a></td>
     <td  height="10" ><a href="calendar.php"><span class="label label-info">Monthly Calendar</span></td>
     <td  height="10">
-         <a href="http://pjnews.mobi">
+         <a href="http://peggyjomobile.net">
       <span class="label label-info">Mobile Version</span></a></td>
   </tr>
 </table>
 
 <div class="text-center">
 <p><span style="color:red; font-size:16px;">Events with a red background have past their advance registration date. Check with the sponsoring organization for availability.</span></p>
-<p><span style="color:blue; font-size:16px">To get more information, on your smartphone, laptop or desktop, try the <a href="http://pjnews.mobi"><span class="label label-info">Mobile Version</span></a></p>
+<p><span style="color:blue; font-size:16px">To get more information, on your smartphone, laptop or desktop, try the <a href="http://peggyjomobile.net"><span class="label label-info">Mobile Version</span></a></p>
 <p><span  style="color:green; font-size:18px">You can now reach this page from your tablet or smartphone.</span></p>
 </div>
 
@@ -238,7 +238,7 @@ while($row = mysql_fetch_array($result))
 <div id="footer" class="fluid"><span style="text-align:center">&copy; 2003-2014 Peggy Jo Studio Newsletter</span></div>
   
   <script>
-document.location.href="http://pjnews.mobi/weeklyNewsletter.html";
+document.location.href="http://peggyjomobile.net/weeklyNewsletter.html";
 </script>
 </body>
 </html>

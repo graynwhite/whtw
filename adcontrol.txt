@@ -41,25 +41,25 @@ width="183">
                   
 			      </div></a>		"} 
 
- {"id":"202","addName" :"Pjnews mobi 001","priority":"2","payStatus":"G","date_begin":"2015-01-01","date_end": "2032-07-19","week_1":"1","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"																<a href="http://pjnews.mobi">																		
+ {"id":"202","addName" :"Pjnews mobi 001","priority":"2","payStatus":"G","date_begin":"2015-01-01","date_end": "2032-07-19","week_1":"1","week_2":"0","week_3":"0","week_4":"0","week_5":"0,""text":"																<a href="http://peggyjomobile.net">																		
 <div style="border: 2px solid black; width:185px" >
  <img alt="pjnewsad 01"
  src="http://www.peggyjostudio.net/E/pjnewsAd001.jpg" width="195px" />
 </div></a>		"} 
 
- {"id":"203","addName" :"Pjnews Ad 002","priority":"2","payStatus":"G","date_begin":"2015-01-02","date_end": "2032-07-19","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"0,""text":"														<a href="http://pjnews.mobi">																		
+ {"id":"203","addName" :"Pjnews Ad 002","priority":"2","payStatus":"G","date_begin":"2015-01-02","date_end": "2032-07-19","week_1":"0","week_2":"1","week_3":"0","week_4":"0","week_5":"0,""text":"														<a href="http://peggyjomobile.net">																		
 <div style="border: 2px solid black; width:185px" >
  <img alt="Pjnews ad 002" 
  src="http://www.peggyjostudio.net/E/pjnewsAd002.jpg" width="185px" />
 </div></a>		"} 
 
- {"id":"204","addName" :"Pjnews Ad 003","priority":"2","payStatus":"G","date_begin":"2015-01-01","date_end": "2032-07-19","week_1":"0","week_2":"0","week_3":"1","week_4":"0","week_5":"1,""text":"														<a href="pjnews.mobi">																		
+ {"id":"204","addName" :"Pjnews Ad 003","priority":"2","payStatus":"G","date_begin":"2015-01-01","date_end": "2032-07-19","week_1":"0","week_2":"0","week_3":"1","week_4":"0","week_5":"1,""text":"														<a href="peggyjomobile.net">																		
 <div style="border: 2px solid black; width:185px" >
  <img alt="pjnews ad 003" 
  src="http://www.peggyjostudio.net/E/pjnewsAd003.jpg" width="185px" />
 </div></a>		"} 
 
- {"id":"205","addName" :"Pjnews Ad 004","priority":"2","payStatus":"G","date_begin":"2015-01-01","date_end": "2032-07-19","week_1":"0","week_2":"0","week_3":"0","week_4":"1","week_5":"0,""text":"																		<a href="http://pjnews.mobi">																		
+ {"id":"205","addName" :"Pjnews Ad 004","priority":"2","payStatus":"G","date_begin":"2015-01-01","date_end": "2032-07-19","week_1":"0","week_2":"0","week_3":"0","week_4":"1","week_5":"0,""text":"																		<a href="http://peggyjomobile.net">																		
 <div style="border: 2px solid black; width:185px" >
  <img alt="pjnews ad 004"
  src="http://www.peggyjostudio.net/E/pjnewsAd004.jpg" width="185px" />

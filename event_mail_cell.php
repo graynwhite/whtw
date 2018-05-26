@@ -10,7 +10,7 @@ $genVercode = rand(10000,99999);
 	<link href="../javascript/typeAhead.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="http://www.graypluswhite.com/css/common.css" />
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-	<link rel="stylesheet" href="http://pjnews.mobi/peggyjo4.css"/>
+	<link rel="stylesheet" href="http://peggyjomobile.net/peggyjo4.css"/>
 	<script src="../javascript/ajaxBasics.js" type="text/javascript"></script>
 	<script src="../javascript/typeAhead.js" type="text/javascript"></script>
 	

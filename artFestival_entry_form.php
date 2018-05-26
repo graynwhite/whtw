@@ -162,6 +162,11 @@ document.entry_form.resby.value = document.entry_form.date_from.value;
 	
 	});
 			
+		
+		
+		
+		
+			
 	$("#cleanupbutton").click(function(){
 		console.log("At cleanup click");
 		var mediawork = $('#media').val();
@@ -353,6 +358,7 @@ $original_date=$ire->bldDateEntryShort();
   <input type="button" id="breakbutton" value="Break lines"/>
   <input type="button" id="cleanupbutton" value="Clean up Calendar"/>
   
+  <input type="button" id="fixtitlebutton" value="Fix Title"/>
 
 <p>Note: if Site is &quot;Other&quot; then Site information must be completed conversely to specify site information site must be set to Other. </p>
 

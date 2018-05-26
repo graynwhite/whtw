@@ -27,7 +27,7 @@
 		$email_content .=" to be removed from the database";
 		$email_content .="\n\n To resume your subscription click on this link , fill out the form and then submit it.";
 		$email_content .=" In addition, please place this email address in your contact list: peggyjo@peggyjostudio.net ";
-		$email_content .="\n\nThe newsletter is sent to over 8,000 email addresses every Monday morning. you can see past issues at http://www.peggyjostudio.net/archivenews.php. A mobile version of the newsletter can be seen on your mobile device, laptop and desktop at http://pjnews.mobi ";
+		$email_content .="\n\nThe newsletter is sent to over 8,000 email addresses every Monday morning. you can see past issues at http://www.peggyjostudio.net/archivenews.php. A mobile version of the newsletter can be seen on your mobile device, laptop and desktop at http://peggyjomobile.net ";
 		$email_content .="\n\n\t\tFrom: Webmaster\n\t\tWebmaster@peggyjostudio.net";	 
 
         // Build the email headers.

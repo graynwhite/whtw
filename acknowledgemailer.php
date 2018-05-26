@@ -32,7 +32,7 @@
         $email_content .= "\n\nYou can see how your entry will be presented by going to ";
 		$email_content .= "http://www.graypluswhite.com/whtw/calendar.php and selecting the date of the event.";
 		$email_content .= "\n\nThe \"Peggy Jo Studio Newsletter\" is published every Monday and sent to over 8,000 email subscribers. Past issues of the newsletter can be seen at http://www.peggyjostudio.net/archivenews.php";
-		$email_content .= "\n\nPlease inform your members about http://pjnews.mobi which can be accessed on most smartphones, tablets, laptops and desktops.";
+		$email_content .= "\n\nPlease inform your members about http://peggyjomobile.net which can be accessed on most smartphones, tablets, laptops and desktops.";
 		$email_content .= "  An annoucement at an event or an entry in a newsletter would be greatly appreciated.";
 		$email_content .= "\n\n\t\t From: \n\t\t cauleyfrank@gmail.com";
 		 

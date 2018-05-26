@@ -4,7 +4,7 @@
   <h2>Links</h2>
   <ul id="mainnav">
       <li><a href="http://www.peggyjostudio.net/index.php">Home</a></li>
-	  <li><a href="http://pjnews.mobi">Mobile Version Of This Site</a></li>
+	  <li><a href="http://peggyjomobile.net">Mobile Version Of This Site</a></li>
 	  <!--<li><a href="http://www.peggyjostudio.net/gotmustard/gotmustard.php">Got Mustard ??? Picture Gallery</a></li>-->
 	  <!--<li><a href="http://www.peggyjostudio.net/newmustard.php">Charley's new Mustards</a></li>-->
 	  <!--<li><a href="http://www.peggyjostudio.net/orderCharleysMustard.php">Order Charley's Ballpark Mustard.php</a></li>

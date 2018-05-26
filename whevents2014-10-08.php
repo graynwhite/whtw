@@ -83,14 +83,14 @@ DEFINE ("INCLUDED", "yes");
     <td width="25%" ><a href="../admin/TripsAndCruises.php"><span class="label label-info">Club Trips and Cruises</span></a></td>
     <td width="25%" height="10" ><a href="calendar.php"><span class="label label-info">Monthly Calendar</span></td>
     <td width="25%" height="10">
-         <a href="http://pjnews.mobi">
+         <a href="http://peggyjomobile.net">
       <span class="label label-info">Mobile Version</span></a></td>
   </tr>
 </table>
 
 <div class="text-center">
 <p><span style="color:red; font-size:16px;">Events in red have past their advance registration date. Check with the sponsoring organization for availability.</span></p>
-<p><span style="color:blue; font-size:16px">To get more information, on your smartphone, laptop or desktop, try the <a href="http://pjnews.mobi"><span class="label label-info">Mobile Version</span></a></p>
+<p><span style="color:blue; font-size:16px">To get more information, on your smartphone, laptop or desktop, try the <a href="http://peggyjomobile.net"><span class="label label-info">Mobile Version</span></a></p>
 <p><span style="color:green; font-size:18px">Scroll right to see entire page</span></p>
 </div>
 

@@ -12,7 +12,7 @@
 	<title>pjinfo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="//code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
-	<link rel="stylesheet" href="http://pjnews.mobi/peggyjo4.css"/>
+	<link rel="stylesheet" href="http://peggyjomobile.net/peggyjo4.css"/>
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	
@@ -62,7 +62,7 @@
       <li><a href="http://www.graypluswhite.com/whtw/calendar.php" target="_blank" data-ajax="false" data-role="button">View the Monthly Calendar </a></li>
       <li><a href="http://www.peggyjostudio.net/processPhotos.php" target="_blank" data-ajax="false" data-role="button">Select Photo</a></li>
 
-      <li><a href="http://pjnews.mobi/post.php" target="_blank" data-ajax="false" data-role="button" >Signup for newsletter</a>
+      <li><a href="http://peggyjomobile.net/post.php" target="_blank" data-ajax="false" data-role="button" >Signup for newsletter</a>
       <li><a href="http://www.peggyjostudio.net/signup.html" target="_blank" data-ajax="false" data-role="button">Change your newsletter Status</a></li>
       <li><a href="http://peggyjostudio.net/archivenews.php" target="_blank" data-ajax="false" data-role="button" >See past issues of the Newsletter</a></li>
       <li><a href="http://www.peggyjostudio.net/wordpress" target="_blank" data-ajax="false" data-role="button">Visit the PJSN Blog</a></li>
@@ -148,10 +148,10 @@
 <p>
 pjEvents is an android application that people can download from the Google play store:
     it runs on the users cell phone and is activated by clicking on the icon on the cell phone.
-    it opens a browser, accesses the internet and then opens the web page at  http://pjnews.mobi.</p>
+    it opens a browser, accesses the internet and then opens the web page at  http://peggyjomobile.net.</p>
 
-<h3>pjnews.mobi</h3>
-pjnews.mobi is a web page for the general public. You can access it by opening your browser and entering "pjnews.mobi" in the URL text box.
+<h3>peggyjomobile.net</h3>
+peggyjomobile.net is a web page for the general public. You can access it by opening your browser and entering "peggyjomobile.net" in the URL text box.
  It can be accessed on the desktop as well.
     at the present time it provides access to:
 	<ul>

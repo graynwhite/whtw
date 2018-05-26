@@ -262,7 +262,7 @@ function MakeArray(n){
 	} ?>
 
     <div align="center"><span class="style2"><font face="ARIAL, HELVETICA"><I>Events in italics need advance registration or require advance notice.!!</I></font> <br>
-    <a href="http://pjnews.mobi"><h1> Get this information on your cellphone, tablet or desktop.</h1></a>  
+    <a href="http://peggyjomobile.net"><h1> Get this information on your cellphone, tablet or desktop.</h1></a>  
       
         </span>
       <table border =4  width="100%" align="center" >
