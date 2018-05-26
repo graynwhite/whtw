@@ -221,7 +221,7 @@ var n=str.search(",");
 var place_work = str.substring(0,n);
 
 place_work = place_work + ". " + document.entry_form.formatted_address.value;
-n=place_work.search("MI,");
+n=place_work.search("MI,");p
 place_work=place_work.substring(0,n+2) + ".";
 var lenPlace_work = place_work.length;
 //alert("length of work place" + lenPlace_work);
@@ -369,7 +369,7 @@ $original_date=$ire->bldDateEntryShort();
 <p>Note: if Site is &quot;Other&quot; then Site information must be completed conversely to specify site information site must be set to Other. </p>
 
 <p>Title:<br>
-  <input name="title" type="text" id="event_title" class="titleclass" size="60" maxlength="60" />
+  <input name="title" type="text" id="event_title" class="titlestyle" size="60" maxlength="60" />
 </p>
 <p>Event Short Description:<br>
   <textarea rows="3" name="event_text" id="event_text"  cols="100"></textarea></p>
