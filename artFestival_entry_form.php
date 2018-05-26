@@ -468,7 +468,7 @@ Farmington Hills Manor <br>
 
 </p>
 </form>
-<div id="form-messages" class='success'</div>
+<div id="form-messages" class='success'></div>
 
 <form id="ackForm" name="ackForm" >
 Name of person submitting event 
