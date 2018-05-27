@@ -364,11 +364,12 @@ $original_date=$ire->bldDateEntryShort();
   <input type="button" id="breakbutton" value="Break lines"/>
   <input type="button" id="cleanupbutton" value="Clean up Calendar"/>
   
-  <p>Note: if Site is &quot;Other&quot; then Site information must be completed conversely to specify site information site must be set to Other. </p>
+  
 
 <p>Title:<br>
   <input name="title" type="text" id="event_title" class="titlestyle" size="60" maxlength="60" />
 </p>
+	<p>Note: if Site is &quot;Other&quot; then Site information must be completed conversely to specify site information site must be set to Other. </p>
 <p>Event Short Description:<br>
   <textarea rows="3" name="event_text" id="event_text"  cols="100"></textarea></p>
   <p>
