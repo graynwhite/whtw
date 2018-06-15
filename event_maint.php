@@ -128,6 +128,14 @@ if ( $action == "browse" ){
 	
 	<script language=javascript>
 	var workarea=" ";
+	String.prototype.toUpperCaseWords = function(){
+		return this.replace(/\w+/g, function(a){
+			return a.charAt(0)+a.slice(1).toLowerCase()
+		})
+		}
+	String.prototype.toUpperCaseFirst = function () {
+		return this.charAt(0).toUpperCase()+this.slice(1).toLowerCase()
+	}
 	$(function(){
 	$("#breakbutton").click(function(){
 		 console.log("At media  click");
@@ -386,7 +394,8 @@ function UCWords(str){
  while ($row = mysqli_fetch_assoc($result)){
  echo ("<input type=\"hidden\" name=\"event\" id=\"event\" value= \"$row[Event_number]\"><br>");
  echo("Organization Code <input type=\"text\" id=\"Event_org\" name=\"Event_org\" size = \"5\" value= \"$row[Event_org]\"><br>\n");
- echo("Event Title <input type=\"text\" name=\"event_title\" size = \"50\" value= \"$row[Event_title]\"><br>\n");
+ echo("Event Title <input type=\"text\" name=\"event_title\" size = \"50\" value= \"$row[Event_title]\"
+ onDblClick=\"fixtitle()\">To fix double click <br>\n");
  echo("Event Identification <input type=\"text\" name=\"event_id\" size=\"3\" value = \"$row[Event_number]\"><br>\n");
  echo("Start date  <input type =\"text\" name = \"date_from\" size = \"12\" value = \"$row[Date_from]\" onDblClick=\"copyDateFrom()\">To copy double click<br>\n");
  $recurbeginval=$row['Date_from'];
