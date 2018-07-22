@@ -57,7 +57,7 @@ function get_page_title($select_org){
 <html>
 
 <head>
-	<title>Club Event Maint.</title>
+	<title>Club Event Maint1.</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
 	
@@ -81,17 +81,18 @@ function get_page_title($select_org){
 </div><!--end of header -->
 <div  data-role="content">
 <p align="left"><font size="6"><b>Select the organization:</b></font></p>
-<table border="2" cellpadding="1" cellspacing="1"  width="350px" >
+<table border="2" cellpadding="1" cellspacing="1" >
    <tr>
+	    <th>Org Code</th>
         <th>Organization name</th>
-        <th>Action </th>
+	   <th>Action &nbsp;</th>
 </tr>
  <?       while ($row = mysqli_fetch_assoc($result)){
 
     ?>
  <tr>
-
-        <td width="80%"><?print$row['Org_name']?>&nbsp;</td>
+	 <td width="10%"><?print $row['Org_num']?>&nbsp;</td>
+        <td width="70%"><?print$row['Org_name']?>&nbsp;</td>
         <td width="20%"><a href="club_event_list.php?org=<?print$row['Org_num']?>" target="_blank">Select</a>
           
     </td>
