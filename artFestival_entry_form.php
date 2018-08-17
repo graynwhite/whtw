@@ -36,6 +36,11 @@ alert("attest");
 }
 
 function acknowledge(){
+	String.prototype.toUpperCaseWords = function () {
+		return this.replace(/\w+/g, function(a){
+			return a.charAt(0).toUpperCase() + a.slice(1).toLowerCase()
+		})
+	}
 	
 	var recipientName = document.getElementById("subName");
 	var recipientEmail = document.getElementById("emailid");
