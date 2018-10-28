@@ -11,12 +11,13 @@ $header = $ire->getHeader();
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title>Art,Festivals and Community Input</title>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!--<script  src="markitup.json"></script>-->
 <script type="text/javascript" src="../markitup/jquery.markitup.js"></script>
 <script type="text/javascript" src="../markitup/sets/html/set.js"></script>	
-		
-<!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/markitup.css" />-->
+
+	
+	<!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/markitup.css" />-->
 <!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/markitup.css" />-->
 <!--<link rel="stylesheet" type="text/css" href="../../markitup/sets/html/html.css" />-->
 <link rel="stylesheet" type="text/css" href="../markitup/skins/markitup/style.css" />
@@ -29,7 +30,11 @@ $header = $ire->getHeader();
 
 
 <script type="text/javascript">
-	
+String.prototype.toUpperCaseWords = function () {
+    return this.replace(/\w+/g, function(a){ 
+      return a.charAt(0).toUpperCase() + a.slice(1).toLowerCase()
+    })
+  }	
 
 function testit(){
 alert("attest");
@@ -145,8 +150,11 @@ document.entry_form.resby.value = document.entry_form.date_from.value;
 		//$("#media").css({backgroundColor: 'red'});
 		if($("#event_title").val()==''){
 			var title = getSelectionText();
-			title=title.toLowerCase();
-			$("#event_title").val(title);
+			title=title.toUpperCaseWords();
+			console.log("title lowercase is "+title);
+//var titleUCW = title.toUpperCaseWords();
+//			console.log("title upper case words is "+titleUCW);
+				$("#event_title").val(title);
 			var newtitle = "<h2>" + title + "</h2>";
 			$("#event_text").val(newtitle);
 		}
@@ -372,7 +380,7 @@ $original_date=$ire->bldDateEntryShort();
   
 
 <p>Title:<br>
-  <input name="title" type="text" id="event_title" class="titlestyle" size="60" maxlength="60" />
+  <input name="title" type="text" id="event_title" size="60" maxlengt h="60" />
 </p>
 	<p>Note: if Site is &quot;Other&quot; then Site information must be completed conversely to specify site information site must be set to Other. </p>
 <p>Event Short Description:<br>
