@@ -34,19 +34,17 @@ String.prototype.toUpperCaseWords = function () {
     return this.replace(/\w+/g, function(a){ 
       return a.charAt(0).toUpperCase() + a.slice(1).toLowerCase()
     })
-  }	
+  }
+String.prototype.toUpperCaseFirst = function () {
+     return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase()
+  }
 
 function testit(){
 alert("attest");
 }
 
 function acknowledge(){
-	String.prototype.toUpperCaseWords = function () {
-		return this.replace(/\w+/g, function(a){
-			return a.charAt(0).toUpperCase() + a.slice(1).toLowerCase()
-		})
-	}
-	
+		
 	var recipientName = document.getElementById("subName");
 	var recipientEmail = document.getElementById("emailid");
 	var recipientAddress = recipientName.value + " <" + recipientEmail.value + "> ";
@@ -83,6 +81,7 @@ function acknowledge(){
 				$("#form-messages").text('Oops! An error occured and your message could not be sent.');
 			}
 		});
+	
 }
 
 
@@ -151,9 +150,7 @@ document.entry_form.resby.value = document.entry_form.date_from.value;
 		if($("#event_title").val()==''){
 			var title = getSelectionText();
 			title=title.toUpperCaseWords();
-			console.log("title lowercase is "+title);
-//var titleUCW = title.toUpperCaseWords();
-//			console.log("title upper case words is "+titleUCW);
+			console.log("Title UpperCaseWords is "+title);
 				$("#event_title").val(title);
 			var newtitle = "<h2>" + title + "</h2>";
 			$("#event_text").val(newtitle);
@@ -380,14 +377,15 @@ $original_date=$ire->bldDateEntryShort();
   
 
 <p>Title:<br>
-  <input name="title" type="text" id="event_title" size="60" maxlengt h="60" />
+  <input name="title" type="text" id="event_title" size="60" maxlength="60" />
 </p>
-	<p>Note: if Site is &quot;Other&quot; then Site information must be completed conversely to specify site information site must be set to Other. </p>
+	<p>Note: if Org name is &quot;Other&quot; then Site information must be completed conversely to specify site information org name must be set to Other. </p>
 <p>Event Short Description:<br>
   <textarea rows="3" name="event_text" id="event_text"  cols="100"></textarea></p>
   <p>
   Place Name:<br>
-    <input name="geocomplete"; type="text" id="geocomplete" value="" size="100" /><br>
+    <input name="geocomplete" type="text" id="geocomplete" value="" size="100" />
+	  <br>
     <input id="find" type="button" value="find" /><input name="useFound" type="button" id="useFound" value="Use Found" onClick="UseFound()"/>
   </p>
 	  
