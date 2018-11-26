@@ -127,6 +127,14 @@ $("#linkReset").click(function(){
 	console.log("This Year " +year);
 	reloadWithQueryStringVars({"month": thisMonth,"year": year});
 	
+});
+$("#adjustMonths").click(function(){
+	console.log("Adjust months clicked");
+	var thisMonth= document.getElementById('viewMonth').value;
+	var year = document.getElementById('viewYear').value;
+	console.log("This month "+thisMonth);
+	console.log("This Year " +year);
+	reloadWithQueryStringVars({"month": thisMonth,"year": year});
 });	
 $("#linkFwdOneMonth").click(function(){
 	console.log("Forward clicked");
@@ -203,7 +211,7 @@ $("#linkFwdOneMonth").click(function(){
 <body>
 <div id="main" data-role="page">
 <div id="top" data-role="header">
-  <h1>Gray and White Computing  Three Month Event Calendar</h1></div>
+  <h1>Gray and White Computing Event Calendar</h1></div>
 <div id="content" data-role="content">
 <?php	
 $PageTitle ="What's Happening This Month Calendar";
@@ -214,12 +222,9 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
            $Month = date("m");
            $Year = date("Y"). '-';
 }
-
-
 ?>
-
 <p>
-The text that you see in the day boxes are the event sponsoring organization codes.
+The text that you see in the day boxes are the sponsoring organization  identification codes.
 <span style="font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #FF0000;
@@ -336,6 +341,14 @@ for ($k =1; $k <= 6; $k++ ) {
 
 ?>
 	</table>
+	<h3>See other events loaded into the databae only in the future.</h3>
+	<h4>When this method is used, one can only work with one month. The back and forward arrows will limit one to the three months, this month last month and next month. </h4>
+	<label for viewMonth>View this month number: </label>
+	<input id='viewMonth' type="text" width='2' name="vewMonth">
+	<label for 'viewYear'>In this year: </label>
+	<input id='viewYear' type=text width='4'>
+	<input name="newDate" id="adjustMonths" type="button" class="bluerow"  value="Change months">
+	
 </div><!-- end of content -->
 <div id="footer" data-role="footer"><h1>Monthly Calendar</h1></div>
 </div><!-- End of Page -->
