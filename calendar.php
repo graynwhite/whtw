@@ -224,12 +224,14 @@ $PageTitle ="Archdiocese of Detroit Singles Calendar";
 }
 ?>
 <p>
+This calendar is prepared from informaton contained in the Gray and White Event Database.	
+	
 The text that you see in the day boxes are the sponsoring organization  identification codes.
 <span style="font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	color: #FF0000;
 	font-size: 24px;">Click on the day number to see the detail for that day. 
-</span>  </p>
+	</span>It might take more than one day to process event entries but before the weekly newsletter is published on Sunday, all entries would be processed. </p>
 <table border="1" cellpadding="3" cellspacing="0" width="100%">
 <tr style="bluerow">
 	<td colspan=7><center><b><?php echo $Monthname," ", $Year ?></b></center></td>
@@ -350,7 +352,7 @@ for ($k =1; $k <= 6; $k++ ) {
 	<input name="newDate" id="adjustMonths" type="button" class="bluerow"  value="Change months">
 	
 </div><!-- end of content -->
-<div id="footer" data-role="footer"><h1>Monthly Calendar</h1></div>
+<div id="footer" data-role="footer"><h1>Monthly Event Calendar</h1></div>
 </div><!-- End of Page -->
 </body>
 </html>
