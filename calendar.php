@@ -352,7 +352,7 @@ for ($k =1; $k <= 6; $k++ ) {
 	<input name="newDate" id="adjustMonths" type="button" class="bluerow"  value="Change months">
 	
 </div><!-- end of content -->
-<div id="footer" data-role="footer"><h1>Monthly Event Calendar</h1></div>
+<div id="footer" data-role="footer"><h1>Monthly Database Event Calendar</h1></div>
 </div><!-- End of Page -->
 </body>
 </html>
