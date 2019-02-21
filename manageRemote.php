@@ -57,7 +57,7 @@ rsort($file_array);
 	$submitted = substr($fileName,5,4) ."-" . substr($fileName,9,2) ."-" . substr($fileName,11,2) . " at " . substr($fileName,13,2) . ":". substr($fileName,15,2) . ":" . substr($fileName,17,2);
 	echo "<td> " . $submitted . "</td >\n";
 	
-    echo "<td> <a href=\"deleteRemote.php?file=" .$fileName . "\"> Delete </a>  <a href=\"processRemote.php?file=$fileName\">Process</a><a href=\"viewRemote.php?file=" . $fileName . "\">View</a></td>";
+    echo "<td> <a href=\"deleteRemote.php?file=" .$fileName . "\"> Delete </a>  <a href=\"processRemote.php?file=$fileName\">Process</a></td>";
     echo "</tr>";
    }
   ?>
