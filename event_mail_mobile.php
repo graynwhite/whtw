@@ -43,7 +43,6 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 	<title>Organization Event Input </title>
 	<meta name="viewport" content="width=device-width, user-scalable=yes" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
 	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/template.css" />
@@ -104,6 +103,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 						} ) // end of ajax 
 
 			} ); // end of submit button
+			
 			$( "#anotherEntry" ).click( function () {
 				console.log( "Entering another entry button " );
 				$( "#eventTitle" ).val( "" );
@@ -128,7 +128,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				$( "#recurEnd" ).val( "2017-01-01" );
 				$( "#anotherEntryArea" ).hide();
 				$( "#submitButtonArea" ).show();
-				document.getElementById( "eventTitle" ).focus();
+				document.getElementById( "orgName" ).focus();
 			} );
 		} ); // end of on document
 	</script>
@@ -346,11 +346,6 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				<fieldset>
 					<legend>Your information</legend>
 
-					<legend>Organization Name </legend>
-					<input name="Orgname" type="text" id="Orgname" value="<?php echo $eventOrg ?>" onBlur='setCookie("eventOrg",this.value,360)' ;/>
-
-
-
 					<legend>Your Name: </legend>
 					<input name="yourName" type="text" id="yourName"  value="<?php echo $eventName ?>" onBlur='setCookie("eventName",this.value,360)'/>
 
@@ -364,16 +359,20 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 				
 					<fieldset>
-
-						<legend>Title of Event(keep it short do not use all caps) </legend>
+                    <legend>Organization Name for this event </legend>
+					<input name="Orgname" type="text" id="Orgname"
+						   value="<?php echo $eventOrg ?>" onBlur='setCookie("eventOrg",this.value,1)' ;/>
+					</fieldset>	
+					<fieldset>	
+					<legend>Title of Event(keep it short do not use all caps) </legend>
 						<input name="EventTitle" type="text" id="eventTitle" data-validation-engine="validate[required]"/>
-
-
+					</fieldset>
+					<fieldset>
 						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>
-						
-						<input name="dateStart" id="dateStart" type="date" placeholder="01/01/2017"  title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." onBlur="checkStartDate()"/>
+			        </fieldset>	
+						<input name="dateStart" id="dateStart" type="date" placeholder="2017-01-01"  title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." onBlur="checkStartDate()"/>
 
-						<legend>Reserve By: Must be less than the  begin date otherwise leave it blank. Use your browsers datepicker or enter the date.  </legend>
+						<legend>Reserve By: Must be less than the  begin date otherwise make it blank. Use your browsers datepicker or enter the date.  </legend>
 						<input name="dateRes" id="reserve_date" type="date" onBlur=checkReserveDate() title="Reserve By is the date that reservations are required. Leave blank if not applicable"/>
 
 
@@ -456,14 +455,14 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 				<fieldset>
 					<legend>Recurring Event</legend>
-					<p>If this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to the cauleyfrank@gmail.com in order to delete those specific events.</p>
+					<p>If this event takes place on a regular basis without changes, include this information so that the webmaster can replicate the event so that you do not have to enter it repeatably. If for some reason the event will not take place on one or more occasions, send an email to cauleyfrank@gmail.com in order to delete those specific events.</p>
 					<p>If you have an event that occurs regularly, but there will be program additions and/or changes, do not classify it as a recurring event and leave this box blank. You will have to enter each event individually.</p>
 					<legend>Describe the recurring pattern</legend>
 					<textarea name="recurdesc" id="recurdesc" Title="Describe the occurance pattern .eg. First and third Tuesdays."></textarea>
 					<legend>Event will start recurring on</legend>
-					<input type="date" name="recurbegin" id="recurbegin"placeholder="01/01/2017"/>
+					<input type="date" name="recurbegin" id="recurbegin"placeholder="2017-01-01"/>
 					<legend> and will end on </legend>
-					<input type="date" name="recurend" id="recurEnd" placeholder="12/31/2017"/>
+					<input type="date" name="recurnd" id="recurEnd" placeholder="2017--12-31"/>
 				</fieldset>
 				<div id="submitButtonArea">
 				<input type="button" name="Submit" id="submitbutton" value="Submit Form"
