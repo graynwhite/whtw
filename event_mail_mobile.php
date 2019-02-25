@@ -31,7 +31,8 @@ require_once( $_SERVER[ 'DOCUMENT_ROOT' ] . "/javascript/dateHandling.js" );
 $sourceg = $_SERVER[ 'REMOTE_ADDR' ];
 //echo "the source is " . $sourceg;
 
-$eventOrg = isset( $_COOKIE[ "eventOrg" ] ) ? $_COOKIE[ "eventOrg" ] : '';
+//$eventOrg = isset( $_COOKIE[ "eventOrg" ] ) ? $_COOKIE[ "eventOrg" ] : '';
+// Deleting use of this cookie Feb 25, 2019
 $eventName = isset( $_COOKIE[ "eventName" ] ) ? $_COOKIE[ "eventName" ] : '';
 $eventEmail = isset( $_COOKIE[ "eventEmail" ] ) ? $_COOKIE[ "eventEmail" ] : '';
 $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
@@ -67,7 +68,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 	<script>
 		$( document ).ready( function () {
-			 $("#formInput").validationEngine('attach');
+		$("#formInput").validationEngine('attach');
 		$("#formInput").validationEngine({promptPosition : "topRight", scroll: false});
 			console.log( "Starting document ready function" );
 			$( "#anotherEntryArea" ).hide();
@@ -79,7 +80,6 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 			var mm = someDate.getMonth() + 1;
 			if ( mm < 10 ) mm = "0" + mm;
 			var y = someDate.getFullYear();
-
 			var minDate = y + '-' + mm + '-' + dd;
 			console.log( "The minimum start date is " + minDate );
 			$( "#minStartDate" ).val( minDate );
@@ -317,7 +317,9 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					This form will be eMailed to the webmaster for review and editing and will be placed in the Gray and White Event database as soon as possible. </p>
 				<p>To check the status of an event one can access the calendar of events at <a href="http://www.graypluswhite.com/whtw/calendar.php">http://www.graypluswhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form. </p>
 
-				<h3 class="important"><span class="allcaps"><u>Do not use all caps words anywhere,</u></span> only capitilize where appropriate- press releases will not accept them!!! Enabling javascript is required to use this form </h3>
+				<h3 class="important"><span class="allcaps"><u>Do not use all caps words anywhere,</u></span> only capitilize where appropriate- press releases will not accept them!!! Enabling javascript is required to use this form.
+				When entering dates, use the format: yyyy-mm-dd eg. 2019-03-17.
+			</h3>
 
 
 
