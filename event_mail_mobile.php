@@ -371,15 +371,17 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					</fieldset>
 					<fieldset>
 						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>
-			        </fieldset>	
+		              <span class="important">When entering dates, use the format: yyyy-mm-dd eg. 2019-03-17</span>
+					</fieldset>	
 						<input name="dateStart" id="dateStart" type="date" placeholder="2017-01-01"  title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." onBlur="checkStartDate()"/>
 
-						<legend>Reserve By: Must be less than the  begin date otherwise make it blank. Use your browsers datepicker or enter the date.  </legend>
+						<legend>Reserve By: Must be less than the  begin date otherwise make it blank. Use your browsers datepicker or enter the date.  <span class="important">When entering dates, use the format: yyyy-mm-dd eg. 2019-03-17</span></legend>
 						<input name="dateRes" id="reserve_date" type="date" onBlur=checkReserveDate() title="Reserve By is the date that reservations are required. Leave blank if not applicable"/>
 
 
 						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use your browser's datepicker or enter the date.</legend>
 
+						<span class="important">When entering dates, use the format: yyyy-mm-dd eg. 2019-03-17</span>
 						<input name="dateEnd" id="dateEnd" type="date" onBlur="checkEndDate()"  title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
 						
 
