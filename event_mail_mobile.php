@@ -128,7 +128,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				$( "#recurEnd" ).val( "2017-01-01" );
 				$( "#anotherEntryArea" ).hide();
 				$( "#submitButtonArea" ).show();
-				document.getElementById( "orgName" ).focus();
+				document.getElementById( "orgName" ).Changed instructions and git ();
 			} );
 		} ); // end of on document
 	</script>
@@ -363,7 +363,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<fieldset>
                     <legend>Organization Name for this event </legend>
 					<input name="Orgname" type="text" id="Orgname"
-						   value="<?php echo $eventOrg ?>" onBlur='setCookie("eventOrg",this.value,1)' ;/>
+						   value="<?php echo $eventOrg ?>"  ;/>
 					</fieldset>	
 					<fieldset>	
 					<legend>Title of Event(keep it short do not use all caps) </legend>
