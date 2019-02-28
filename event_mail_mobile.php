@@ -46,8 +46,11 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 	<meta name="viewport" content="width=device-width, user-scalable=yes" />
 	
 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+	
 	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/template.css" />
+	
 	<link rel="stylesheet" href="http://www.graypluswhite.com/jqvaleng/css/validationEngine.jquery.css" />
+	
 	<link rel="stylesheet" href="mobile.css"/>
 	
 		
@@ -71,6 +74,11 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 		$("#formInput").validationEngine('attach');
 		$("#formInput").validationEngine({promptPosition : "topRight", scroll: false});
 			console.log( "Starting document ready function" );
+			
+		$("#Orgname").change(function(){
+			alert("Orgname was changed")
+			return;
+		});
 			$( "#anotherEntryArea" ).hide();
 			var someDate = new Date();
 			var numberOfDaysToAdd = 3;
@@ -89,7 +97,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 			console.log( "Got past datepicker errors" );
 
 
-			$( '#submitbutton' ).click( function () {
+			$( '#submitbutton' ).click(function () {
 				var formvalues = '';
 				formvalues = $( '#formInput' ).serialize();
 				console.log( "form values are " + formvalues );
@@ -108,9 +116,9 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				console.log( "Entering another entry button " );
 				$( "#eventTitle" ).val( "" );
 				$("#returnmessage").html("<b>Results will be shown here.</b>");
-				$( "#dateStart" ).val( "2017-01-01" );
-				$( "#reserve_date" ).val( "2017-01-01" );
-				$( "#dateEnd" ).val( "2017-01-01" );
+				$( "#dateStart" ).val( "01/01/2019" );
+				$( "#reserve_date" ).val( "01/01/2019" );
+				$( "#dateEnd" ).val( "01/01/2019" );
 				$( "#dayofweek" ).val( " " );
 				$( "#placeName" ).val( " " );
 				$( "#place_address" ).val( " " );
@@ -123,13 +131,14 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				$( "#activity" ).val( " " );
 				$( "#price_member" ).val( " " )
 				$( "#price_non_member" ).val( " " );
-				$( "#recurDesc" ).val( "2017-01-01" );
-				$( "#recurBegin" ).val("2017-01-01" );
-				$( "#recurEnd" ).val( "2017-01-01" );
+				$( "#recurDesc" ).val( "01/01/2019" );
+				$( "#recurBegin" ).val("01/01/2019" );
+				$( "#recurEnd" ).val( "01/01/2019" );
 				$( "#anotherEntryArea" ).hide();
 				$( "#submitButtonArea" ).show();
-				document.getElementById( "orgName" ).Changed instructions and git ();
-			} );
+				console.log("At end of another entry");
+				checkOrganization();
+					} );
 		} ); // end of on document
 	</script>
 
@@ -219,7 +228,31 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 			checkReserveDate();
 
 		}
-
+		function checkOrganization(){
+			//alert("checking Organization")
+			var valueEntered = document.formInput.Orgname.value;
+			valueEntered== valueEntered.trim.length;
+			console.log("Organization value" + valueEntered);			
+			if ( valueEntered == '') {
+				alert("Organization must be entered")
+				$("#Orgname").focus();
+			}
+		}
+		
+		function checkTitle(){
+			//alert("checking title")
+			var valueEntered = document.formInput.eventTitle.value;
+			valueEntered== valueEntered.trim.length;
+			console.log("Title  value" + valueEntered);			
+			if ( valueEntered == '') {
+				alert("Title  must be entered.")
+				return false;
+			}
+			
+		}
+			
+		
+		
 		function checkEndDate()
 
 		{
@@ -267,7 +300,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 			} else {
 				alert( "The event date or event start date must be a valid date and greater than todays date plus three days." );
-				document.getElementById( "EventTitle" ).focus();
+				document.getElementById( "dateStart" ).focus();
 			}
 		}
 
@@ -318,7 +351,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				<p>To check the status of an event one can access the calendar of events at <a href="http://www.graypluswhite.com/whtw/calendar.php">http://www.graypluswhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form. </p>
 
 				<h3 class="important"><span class="allcaps"><u>Do not use all caps words anywhere,</u></span> only capitilize where appropriate- press releases will not accept them!!! Enabling javascript is required to use this form.
-				When entering dates, use the format: yyyy-mm-dd eg. 2019-03-17.
+				When entering dates, use the format: mm/dd/yyyy eg. 03/17/2019.
 			</h3>
 
 
@@ -361,38 +394,40 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 
 				
 					<fieldset>
-                    <legend>Organization Name for this event </legend>
-					<input name="Orgname" type="text" id="Orgname"
-						   value="<?php echo $eventOrg ?>"  ;/>
+                    <label for Orgname>Organization Name for this event(Required) </label>
+					<input name="Orgname" type="text" id="Orgname"/>
 					</fieldset>	
+			
 					<fieldset>	
-					<legend>Title of Event(keep it short do not use all caps) </legend>
-						<input name="EventTitle" type="text" id="eventTitle" data-validation-engine="validate[required]"/>
+					<label for eventTitle>Title of Event(keep it short do not use all caps)(Required) </label>
+						<input name="EventTitle" type="text" id="eventTitle" />
 					</fieldset>
+			
 					<fieldset>
 						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>
-		              <span class="important">When entering dates, use the format: yyyy-mm-dd eg. 2019-03-17</span>
+		              <span class="important">When entering dates, use the format: mm/dd/yyyy eg. 03/17/2019</span>
 					</fieldset>	
-						<input name="dateStart" id="dateStart" type="date" placeholder="2017-01-01"  title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." onBlur="checkStartDate()"/>
+						<input name="dateStart" id="dateStart" type="date" placeholder="01/01/2017"  title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." />
 
-						<legend>Reserve By: Must be less than the  begin date otherwise make it blank. Use your browsers datepicker or enter the date.  <span class="important">When entering dates, use the format: yyyy-mm-dd eg. 2019-03-17</span></legend>
-						<input name="dateRes" id="reserve_date" type="date" onBlur=checkReserveDate() title="Reserve By is the date that reservations are required. Leave blank if not applicable"/>
+						<label for reserve_date>Reserve By: Must be less than the  begin date otherwise make it blank. Use your browsers datepicker or enter the date.  <span class="important">When entering dates, use the format: mm/dd/yyyy eg. 03/17/2019</span></label>
+						<input name="dateRes" id="reserve_date" type="date" title="Reserve By is the date that reservations are required. Leave blank if not applicable"/>
 
 
-						<legend>End Date: Must be greater than the  begin date otherwise leave it blank. Use your browser's datepicker or enter the date.</legend>
+						<label for dateEnd>End Date: Must be greater than the  begin date otherwise leave it blank. Use your browser's datepicker or enter the date.</label>
 
-						<span class="important">When entering dates, use the format: yyyy-mm-dd eg. 2019-03-17</span>
-						<input name="dateEnd" id="dateEnd" type="date" onBlur="checkEndDate()"  title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
+						
+						<input name="dateEnd" id="dateEnd" type="date"  title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
 						
 
-						<legend>Start Time (required but will be ignored for multi-day events). You can enter the start time directly in the form hh:mm (AM or PM). If you use the form timepicker, scroll the hour, minutes and AM or PM so that they are between the paralell horizontal blue lines.</legend>
+			<label for timeStart>Start Time (required but will be ignored for multi-day events).</label> 
+			
 
-						<input name="timeStart" id="timeStart" type="time" value="07:00:00"  title="Enter time in twelve hour format include am or pm."/>
+						<input name="timeStart" id="timeStart" type="time" value="19:00"  title="You can enter the start time directly in the form hh:mm (AM or PM). If you use the form timepicker, scroll the hour, minutes and AM or PM so that they are between the paralell horizontal blue lines."/>
 
-						<legend>End Time: if applicable</legend>
-						<input name="timeEnd" id="timeEnd" type="time" val=" " title="Day of week so the system can verify that the date and day of week agree 	Day of the week or Weekend, Week, etc."/>
+						<label for timeEnd>End Time if applicable</label>
+						<input name="timeEnd" id="timeEnd" type="time" val=" " title = "Day of week so the system can verify that the date and day of week agree Day of the week or Weekend, Week, etc." />
 
-						<legend>Day of Week (Required) </legend>
+						<label for dayofweek >Day of Week (Required) </label>
 
 						<input name="Day_of_week" id="dayofweek"type="text" val=" " >
 
@@ -432,6 +467,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<legend>Additional directions (optional)</legend>
 					<textarea name="PlaceDirections" val=" " id="PlaceDirections"></textarea>
 				</fieldset>
+				
 				<fieldset>
 					<legend>What the event is about</legend>
 					<legend>Media Input or Long version:</legend>
@@ -464,10 +500,12 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 					<legend>Describe the recurring pattern</legend>
 					<textarea name="recurdesc" id="recurdesc" Title="Describe the occurance pattern .eg. First and third Tuesdays."></textarea>
 					<legend>Event will start recurring on</legend>
-					<input type="date" name="recurbegin" id="recurbegin"placeholder="2017-01-01"/>
+					<input type="date" name="recurbegin" id="recurbegin"placeholder="01/01/2017"/>
+					
 					<legend> and will end on </legend>
-					<input type="date" name="recurnd" id="recurEnd" placeholder="2017--12-31"/>
+					<input type="date" name="recurnd" id="recurEnd" placeholder="01/01/2017"/>
 				</fieldset>
+			
 				<div id="submitButtonArea">
 				<input type="button" name="Submit" id="submitbutton" value="Submit Form"
 				title="If you click on this button and nothing happens, one of your fields is not correct and alerts have been disabled. Check to make sure all requried fields have been entered and are correct. " />
