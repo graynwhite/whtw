@@ -348,7 +348,7 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				</p>
 				<p>
 					This form will be eMailed to the webmaster for review and editing and will be placed in the Gray and White Event database as soon as possible. </p>
-				<p>To check the status of an event one can access the calendar of events at <a href="http://www.graypluswhite.com/whtw/calendar.php">http://www.graypluswhite.com/whtw/calendar.php</a> and clicking on the date. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form. </p>
+				<p>To check the status of an event, one can access the calendar of events at <a href="http://www.graypluswhite.com/whtw/calendar.php">http://www.graypluswhite.com/whtw/calendar.php</a> and clicking on the date. Please allow time for the webmaster to do his work. Initially the current month is presented but future months can be displayed by using the date box at the bottom of the form. </p>
 
 				<h3 class="important"><span class="allcaps"><u>Do not use all caps words anywhere,</u></span> only capitilize where appropriate- press releases will not accept them!!! Enabling javascript is required to use this form.
 				When entering dates, use the format: mm/dd/yyyy eg. 03/17/2019.
@@ -395,28 +395,28 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				
 					<fieldset>
                     <label for Orgname>Organization Name for this event(Required) </label>
-					<input name="Orgname" type="text" id="Orgname"/>
+					<input name="Orgname" type="text" id="Orgname" required/>
 					</fieldset>	
 			
 					<fieldset>	
 					<label for eventTitle>Title of Event(keep it short do not use all caps)(Required) </label>
-						<input name="EventTitle" type="text" id="eventTitle" />
+						<input name="EventTitle" type="text" id="eventTitle" requred />
 					</fieldset>
 			
 					<fieldset>
 						<legend>Date of Event: Use your browser's datepicker or enter the date. ( It must be greater than todays date plus 3).</legend>
 		              <span class="important">When entering dates, use the format: mm/dd/yyyy eg. 03/17/2019</span>
 					</fieldset>	
-						<input name="dateStart" id="dateStart" type="date" placeholder="01/01/2017"  title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." />
+						<input name="dateStart" id="dateStart" type="date"  required placeholder="01/01/2019"  title="The Date of Event is the date of the event  or the beginning date of a multiple day event. It must be greater than todays date plus 3." />
 
-						<label for reserve_date>Reserve By: Must be less than the  begin date otherwise make it blank. Use your browsers datepicker or enter the date.  <span class="important">When entering dates, use the format: mm/dd/yyyy eg. 03/17/2019</span></label>
-						<input name="dateRes" id="reserve_date" type="date" title="Reserve By is the date that reservations are required. Leave blank if not applicable"/>
+						<label for reserve_date>Reserve By: Must be less than the  begin date otherwise make it the same as begin date. Use your browsers datepicker or enter the date.  <span class="important">When entering dates, use the format: mm/dd/yyyy eg. 03/17/2019</span></label>
+						<input name="dateRes" id="reserve_date" type="date" title="Reserve By is the date that reservations are required. make it the same as begin date blank if not applicable"/>
 
 
-						<label for dateEnd>End Date: Must be greater than the  begin date otherwise leave it blank. Use your browser's datepicker or enter the date.</label>
+						<label for dateEnd>End Date: Must be greater than the  begin date otherwise leave it same as begin date. Use your browser's datepicker or enter the date.</label>
 
 						
-						<input name="dateEnd" id="dateEnd" type="date"  title="The End Date is for events that span multiple days. Leave blank if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend, leave it blank for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
+						<input name="dateEnd" id="dateEnd" type="date"  title="The End Date is for events that span multiple days. make it the same as start date if not applicable. This is not to be used to describe recurring events. This is the ending date of a multiple day event, such as a weekend,  make it the same as start date for single day events.  It is not the end date of a recurring  event such as every monday from a date to another date. Use the box at the bottom of the form to let the webmaster know that this is a recurring event so that it can be replicated. follow format specified for the beginning date."/>
 						
 
 			<label for timeStart>Start Time (required but will be ignored for multi-day events).</label> 
@@ -479,17 +479,17 @@ $eventPhone = isset( $_COOKIE[ "eventPhone" ] ) ? $_COOKIE[ "eventPhone" ] : '';
 				<fieldset>	
 					<legend>Event Activity or Short Version (required)</legend>
 					<P>Describe the event here.The two description fields are not merged. Include a person and phone number to contact if desired . This is a shortened version of the media input only the first 235 characters will be accepted. Do not repeat the Date, time or place because they will be inserted from the fields you were requied to enter.</p>
-					<legend>Short Description:</legend>
+					<label for activity>Short Description:</label>
 					<textarea name="activity" id="activity" class="textbox"></textarea>
 			  </p></fieldset>
 
 				<fieldset>
-					<legend>How much does it cost?</legend>
+					<label for price_member>How much does it cost?</label>
 					<legend>Price for members.</legend>
 					<input type="text" name="price_member" id="price_member" val="" maxlength="6"/>
 				</fieldset>
 				<fieldset>
-					<legend>Price for Guests.</legend>
+					<label for price_non_member>Price for Guests.</label>
 					<input type="text" name="price_non_member" id="price_non_member" val=" " maxlength="6"/>
 				</fieldset>
 
